@@ -11,14 +11,16 @@
 @import "variables/master-variables";
 
 // Layout
-
 @import "layout/master-layout";
 
 // Blocks
-
 @import "blocks/master-blocks";
 
-@import "widgets/master-widgets";
+// Components
+@import "components/master-components";
 
- // Pages
+// Pages
 @import "pages/master-pages";
+
+// Widgets
+@import "widgets/master-widgets";

@@ -2,6 +2,10 @@
 
 .hp-slick-slider {
   margin-top: 8.4rem;
+  
+  @include breakpoint(desktopOnly) { 
+    margin-top: 6.4rem;
+  }
 }
 
 .teaser-news {

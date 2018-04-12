@@ -1,0 +1,46 @@
+.slick-slider__images {
+    width: 100%;
+}
+
+.slick-slider__arrows {
+    position: absolute;
+    z-index: 999;
+    visibility: hidden;
+    top: 44rem;
+    @include breakpoint(desktopOnly) { 
+        visibility: visible;
+    }
+}
+
+.slick-slider__arrows-left {
+    left: 2.82vw;
+}
+
+.slick-slider__arrows-right {
+    right: 2.82vw;
+}
+
+.slider__text-content {
+    width: 88%;
+    position: absolute;
+    left: 6.25vw;
+    top: 14.8rem;
+}
+
+.slider__text-heading {
+    text-transform: uppercase;
+}
+
+.slider__text-content h3  {
+    color: $yellow;
+    font-size: 3rem;
+    margin-top: 2.6rem;
+}
+
+.slider__text-content h2  {
+    color: $white;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 1.2rem;
+    line-height: calcRem(42);
+}

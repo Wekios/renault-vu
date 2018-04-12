@@ -20,68 +20,10 @@ a img {
   clear: both;
 }
 
-// New grid, mine. Mobile.
-
-.l-wrap {
-
-  max-width: 82.4vw;
+.container {
+  width: 87.5vw;
   margin: 0 auto;
 }
-
-.row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.three-col-grid .grid-item {
-  width: 33.33333%;
-  float: left;
-}
-
-.grid-item {
-  width: calc((100% - 20px * 3) / 3);
-  margin-right: 10px;
-  margin-left: 10px;
-  float: left;
-}
-
-.grid-item:last-child {
-  margin-right: 0;
-  float: right;
-}
-
-.grid-item:nth-child(3n+3) {
-  margin-right: 0;
-  float: right;
-}
-
-.l-guest-article {
-  @include clearfix;
-
-  .l-one-third {
-    width: percentage(4/12);
-    float: left;
-  }
-
-  .l-two-thirds {
-    width: percentage(8/12);
-    float: left;
-  }
-}
-
-
-
-// DEBUG COLUMN 
-.column {
-  width: calc((100% - 20px * 12) / 12);
-  height: 80px;
-  margin-right: 10px;
-  margin-left: 10px;
-  background: rgba(0, 0, 255, 0.25);
-  float: left;
-}
-
-
 
 // .row--mob {
 //   width: 100%;

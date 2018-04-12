@@ -1,0 +1,30 @@
+.first-media-objects {
+    margin-top: 4rem;
+}
+
+.figure {
+    display: inline-block;
+    .button {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.fan-de-vu {
+    background: url("../../assets/image/teaser-news.jpg") no-repeat center center;
+    width: 20rem;
+    height: 26rem;
+    position: relative;
+    margin-right: 2.1875vw;
+    // width: 200 width 265 h
+            // 233 310
+}
+
+.tout-sur-le-vu {
+    background: url("../../assets/image/teaser-news-bigger.jpg") no-repeat right center;
+    width: 34.3rem;
+    height: 45.5rem;
+    position: relative;
+    // width: 406 width 536 h desk
+    // width  350       455
+}
