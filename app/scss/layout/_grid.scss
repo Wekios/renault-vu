@@ -23,8 +23,14 @@ a img {
 // New grid, mine. Mobile.
 
 .l-wrap {
-  max-width: 87.5vw;
+
+  max-width: 82.4vw;
   margin: 0 auto;
+}
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .three-col-grid .grid-item {
@@ -52,17 +58,13 @@ a img {
 .l-guest-article {
   @include clearfix;
 
-  .l-main {
+  .l-one-third {
     width: percentage(4/12);
-    padding-right: 10px;
-    padding-left: 10px;
     float: left;
   }
 
-  .l-sidebar {
+  .l-two-thirds {
     width: percentage(8/12);
-    padding-right: 10px;
-    padding-left: 10px;
     float: left;
   }
 }
