@@ -16,6 +16,37 @@ body {
   src: url('../../assets/fonts/Airways.woff');
 }
 
+// Headings and other 
+
+h1{
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+  margin-top: 1rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+h1,h2,h3 {
+  text-transform: uppercase;
+}
+
+h1,h2,h3,h4 {
+  letter-spacing: calcLS(50);
+  line-height: calcRem(32);
+}
+
+
 // text modifiers \\
 
 .text--regular {
@@ -32,6 +63,8 @@ body {
 
 .text--italic {
   font-family: 'Airways';
+  text-transform: none;
+  padding-left:1rem;
 }
 
 .text--clear {

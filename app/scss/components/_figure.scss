@@ -1,7 +1,3 @@
-.first-media-objects {
-    margin-top: 4rem;
-}
-
 .figure {
     display: inline-block;
     .button {
@@ -13,7 +9,7 @@
 .fan-de-vu {
     background: url("../../assets/image/teaser-news.jpg") no-repeat center center;
     width: 20rem;
-    height: 26rem;
+    height: 26.7rem;
     position: relative;
     margin-right: 2.1875vw;
     // width: 200 width 265 h
@@ -27,4 +23,21 @@
     position: relative;
     // width: 406 width 536 h desk
     // width  350       455
+}
+
+.cote-business {
+    background: url("../../assets/image/teaser-cote.jpg") no-repeat right center;
+    width: 100%;
+    height: 46rem;
+    position: relative;
+}
+
+.tout-sur-le-vu-tools {
+    background: url("../../assets/image/teaser-cote-tools.jpg") no-repeat right center;
+    height: 22.2rem;
+    width: 48%;
+    // width: 27.2rem;
+    position: relative;
+    margin-right: 3%;
+//    margin-right: 2.5vw;
 }

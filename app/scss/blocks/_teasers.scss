@@ -1,0 +1,54 @@
+.teaser {
+    margin: 4rem 0;
+}
+
+// First block 
+
+.teaser__news {
+    .teaser__captions--left {
+        width: 18rem;
+    }
+    .teaser__captions--right {
+        width: 33.3rem;
+        margin-left: 3.5rem;
+    }
+}
+
+.news__first-block {
+    display: inline-block;
+}
+
+.news__heading {
+    position: relative;
+    top: -7rem;
+
+    .text--regular {
+        font-size: 4rem;
+    }
+}
+
+// Second Block
+
+.teaser__cote {
+    margin-top: 7.7rem;
+}
+
+// Third Block
+
+.teaser__tout-sur {
+    margin-top: 7rem;
+
+    h4 {
+        width: 48%;
+        margin-top: 0;
+    }
+}
+
+// Fourth Block 
+
+.teaser__plus-de-news-button {
+    text-align: center;
+}
+
+
+//
