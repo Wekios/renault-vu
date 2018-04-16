@@ -1,43 +1,119 @@
 .figure {
     display: inline-block;
+    position: relative;
     .button {
         position: absolute;
         bottom: 0;
     }
 }
 
-.fan-de-vu {
-    background: url("../../assets/image/teaser-news.jpg") no-repeat center center;
-    width: 20rem;
-    height: 26.7rem;
-    position: relative;
-    margin-right: 2.1875vw;
-    // width: 200 width 265 h
-            // 233 310
-}
-
-.tout-sur-le-vu {
-    background: url("../../assets/image/teaser-news-bigger.jpg") no-repeat right center;
-    width: 34.3rem;
-    height: 45.5rem;
-    position: relative;
-    // width: 406 width 536 h desk
-    // width  350       455
-}
-
-.cote-business {
-    background: url("../../assets/image/teaser-cote.jpg") no-repeat right center;
+.news-de-la__first-teaser__figure {
+    background: center / cover no-repeat url("../../assets/image/teaser-news.jpg");
     width: 100%;
-    height: 46rem;
-    position: relative;
+    height: 26.6rem;
+    margin-right: 2.1875vw;
 }
 
-.tout-sur-le-vu-tools {
-    background: url("../../assets/image/teaser-cote-tools.jpg") no-repeat right center;
-    height: 22.2rem;
-    width: 48%;
-    // width: 27.2rem;
-    position: relative;
-    margin-right: 3%;
-//    margin-right: 2.5vw;
+.news-de-la__second-teaser__figure{
+    background: url("../../assets/image/teaser-news-bigger.jpg") right / cover no-repeat;
+    width: 100%;
+    height: 45.5rem;
 }
+
+.news-de-la__third-teaser__figure {
+    background: url("../../assets/image/teaser-cote.jpg") center / cover no-repeat;
+    width: 100%;
+    height: 45.5rem;
+}
+
+.news-de-la__fourth-teaser__figure {
+    background: url("../../assets/image/teaser-cote-tools.jpg") center / cover no-repeat;
+    height: 22.2rem;
+    width: 100%;
+}
+
+.fan-de-vu__first-teaser__figure {
+    background: url("../../assets/image/fan-de-vu__first-teaser-img.jpg") center / cover no-repeat;
+    width: 100%;
+    height: 34rem;
+}
+
+.fan-de-vu__second-teaser__figure {
+    background: url("../../assets/image/fan-de-vu__second-teaser-img.jpg") center / cover no-repeat;
+    width: 100%;
+    height: 22rem;
+}
+
+.fan-de-vu__third-teaser__figure {
+    background: url("../../assets/image/fan-de-vu__third-teaser-img.jpg") center / cover no-repeat;
+    width: 100%;
+    height: 22rem;
+}
+
+.fan-de-vu__fourth-teaser__figure {
+    background: url("../../assets/image/fan-de-vu__second-teaser-img.jpg") center / cover no-repeat;
+    width: 100%;
+    height: 22rem;
+}
+
+.vu-astuces__first-teaser__figure {
+    background: url("../../assets/image/vu-astuces__first-teaser-img.jpg") center / cover no-repeat;
+    width: 100%;
+    height: 36rem;
+}
+
+.vu-astuces__second-teaser__figure {
+    background: url("../../assets/image/vu-astuces__second-teaser-img.jpg") center / cover no-repeat;
+    width: 100%;
+    height: 22rem;
+}
+
+.vu-astuces__third-teaser__figure {
+    @extend .news-de-la__third-teaser__figure;
+}
+
+.vu-astuces__fourth-teaser__figure {
+    @extend .vu-astuces__second-teaser__figure;
+}
+.vu-astuces__fifth-teaser__figure {
+    @extend .vu-astuces__first-teaser__figure;
+}
+
+.foire__first-teaser__figure {
+    background: url("../../assets/image/foire__first-teaser-img.jpg") no-repeat center center;
+    width: 100%;
+    height: 47rem;
+    margin-top: 4.5rem;
+}
+
+.cote-business__first-teaser__figure {
+    @extend .vu-astuces__fourth-teaser__figure;
+}
+
+.cote-business__second-teaser__figure {
+    @extend .vu-astuces__fifth-teaser__figure;
+}
+
+.cote-business__third-teaser__figure {
+    @extend .vu-astuces__first-teaser__figure;
+    margin-top: -9rem;
+
+}
+
+.cote-business__fourth-teaser__figure {
+    @extend .vu-astuces__second-teaser__figure;
+    margin-top: 5rem;
+    
+}
+
+.cote-business__fifth-teaser__figure {
+    @extend .fan-de-vu__second-teaser__figure;
+    
+}
+
+.cote-business__sixth-teaser__figure {
+    @extend .fan-de-vu__third-teaser__figure;
+    
+}
+
+

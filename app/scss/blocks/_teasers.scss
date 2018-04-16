@@ -1,54 +1,155 @@
-.teaser {
+.teaser-block {
     margin: 4rem 0;
 }
 
-// First block 
-
-.teaser__news {
-    .teaser__captions--left {
-        width: 18rem;
-    }
-    .teaser__captions--right {
-        width: 33.3rem;
-        margin-left: 3.5rem;
-    }
-}
-
-.news__first-block {
+.teaser {
     display: inline-block;
 }
 
-.news__heading {
-    position: relative;
-    top: -7rem;
+.news-de-la__first-teaser {
+    width: 31.25vw;
+    margin-right: 2.5vw;
 
-    .text--regular {
-        font-size: 4rem;
+    &__heading {
+        margin-bottom: 4.5rem;
+        line-height: calcRem(40);
+
+        //later refactor this and put spans instead of child selectors cause of IE
+        & h1:first-of-type {
+            font-size: 4.5rem;
+        }
+
+        & h1:nth-of-type(2) {
+            font-size: 5rem;
+        }
     }
 }
 
-// Second Block
+.news-de-la__second-teaser {
+    width: 53.35vw;
+}
 
-.teaser__cote {
+.news-de-la__third-teaser {
+    width: 87.5vw;
+    margin-top: 8rem;
+}
+
+.news-de-la__fourth-teaser {
+    width: 42.5vw;
+    margin-top: 7.5rem;
+
+    &__caption {
+        float: right;
+        width: 42.5vw;
+        margin-top: -1.7rem;
+    }
+}
+
+.news-de-la__button {
+    text-align: center;
     margin-top: 7.7rem;
 }
 
-// Third Block
+.fan-de-vu__first-teaser {
+    width: 87.5vw;
 
-.teaser__tout-sur {
-    margin-top: 7rem;
+    &-white-background {
+        margin-top: 6rem;
+        background: white;
+        padding: 5rem 6rem 6rem 4.5rem;
 
-    h4 {
-        width: 48%;
-        margin-top: 0;
+        .text--bolder {
+            margin-top: 4.5rem;
+            font-size: 3.6rem;
+        }
     }
 }
 
-// Fourth Block 
-
-.teaser__plus-de-news-button {
-    text-align: center;
+.fan-de-vu__second-teaser {
+    margin-top: 7rem;
+    width: 42.5vw;
+    margin-right: 2vw; 
 }
 
+.fan-de-vu__third-teaser {
+    margin-top: 7rem;
+    width: 42.5vw;
+}
 
-//
+.fan-de-vu__fourth-teaser {
+    margin-top: 9.5rem;
+    width: 42.5vw;
+}
+
+.vu-astuces__first-teaser {
+    margin-top: 10rem;
+    width: 42.5vw;
+    margin-right: 2vw; 
+}
+
+.vu-astuces__second-teaser {
+    margin-top: 18rem;
+    width: 42.5vw;
+    vertical-align: top;
+
+    &__caption {
+        h4 {
+            letter-spacing: 0.06em;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.vu-astuces__third-teaser {
+    @extend .news-de-la__fourth-teaser;
+}
+
+.vu-astuces__fourth-teaser {
+    @extend .vu-astuces__second-teaser;
+    margin-right: 2vw;
+    margin-top: 8rem;
+}
+
+.vu-astuces__fifth-teaser {
+    @extend .vu-astuces__first-teaser;
+    margin-right: 0;
+    margin-top: 8rem;
+}
+
+.foire__first-teaser {
+    @extend .news-de-la__third-teaser;
+    position: relative;
+    top: -34rem;
+
+    &__caption {
+        margin-top: 3rem;
+    }
+}
+
+.cote-business__first-teaser {
+    @extend .vu-astuces__fourth-teaser;
+    margin-top: 5rem;
+}
+
+.cote-business__second-teaser {
+    @extend .vu-astuces__fifth-teaser;
+    margin-top: 5rem;
+}
+
+.cote-business__third-teaser {
+    @extend .vu-astuces__first-teaser;
+    margin-top: 5rem;
+}
+
+.cote-business__fourth-teaser {
+    @extend .vu-astuces__second-teaser;
+    margin-top: 5rem;
+}
+
+.cote-business__fifth-teaser {
+    @extend .fan-de-vu__second-teaser;
+}
+
+.cote-business__sixth-teaser {
+    @extend .fan-de-vu__third-teaser;
+}

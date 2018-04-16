@@ -19,7 +19,7 @@ body {
 // Headings and other 
 
 h1{
-  font-size: 4.5rem;
+  @include fontSize(40,32,70)
 }
 
 h2 {
@@ -27,11 +27,12 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
+  @include fontSize(30,16,36);
 }
 
 h4 {
-  font-size: 2.8rem;
+  @include fontSize(28,14,14);
+  @include letterSpacing(50,50,50);
   margin-top: 1rem;
   display: inline-block;
   vertical-align: top;
@@ -41,7 +42,7 @@ h1,h2,h3 {
   text-transform: uppercase;
 }
 
-h1,h2,h3,h4 {
+h2,h3,h4 {
   letter-spacing: calcLS(50);
   line-height: calcRem(32);
 }

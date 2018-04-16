@@ -8,28 +8,16 @@
   }
 }
 
-.teaser-news {
-  margin-top: 4rem;
+.fan-de-vu {
+  background: $lightGray;
 }
 
-.text-pic-text {
-  width: 20rem;
-  
-  h3 {
-    font-size: 4rem;
-    padding-top: 3rem;
-    margin-bottom: 4.5rem;
-
-
-    span:nth-child(3) {
-      margin-left: 1rem;
-  
-    }
-
-  }
-
+.foire {
+  margin-top: 36rem;
+  height: 53rem;
+  background: $lightGray;
 }
 
-.text--bottom {
-  font-size: 2.8rem;
+.cote-business {
+  margin-top: 8rem;
 }
