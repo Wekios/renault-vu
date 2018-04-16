@@ -81,14 +81,16 @@
     width: 42.5vw;
 }
 
+.vu-astuces__heading {
+    margin-bottom: 5rem;
+}
+
 .vu-astuces__first-teaser {
-    margin-top: 10rem;
     width: 42.5vw;
     margin-right: 2vw; 
 }
 
 .vu-astuces__second-teaser {
-    margin-top: 18rem;
     width: 42.5vw;
     vertical-align: top;
 
@@ -101,13 +103,13 @@
 }
 
 .vu-astuces__third-teaser {
-    @extend .news-de-la__fourth-teaser;
+    @extend .news-de-la__third-teaser;
 }
 
 .vu-astuces__fourth-teaser {
     @extend .vu-astuces__second-teaser;
-    margin-right: 2vw;
     margin-top: 8rem;
+    margin-right: 2vw; 
 }
 
 .vu-astuces__fifth-teaser {

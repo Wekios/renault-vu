@@ -19,7 +19,10 @@ body {
 // Headings and other 
 
 h1{
-  @include fontSize(40,32,70)
+  @include fontSize(40,32,70);
+  @include lineHeight(42,32,63);
+  @include letterSpacing(-25,-25,-25 );
+
 }
 
 h2 {
@@ -28,6 +31,8 @@ h2 {
 
 h3 {
   @include fontSize(30,16,36);
+  @include lineHeight(48.87,37.75,26);
+  @include letterSpacing(-25,-25,-25);
 }
 
 h4 {
@@ -40,11 +45,6 @@ h4 {
 
 h1,h2,h3 {
   text-transform: uppercase;
-}
-
-h2,h3,h4 {
-  letter-spacing: calcLS(50);
-  line-height: calcRem(32);
 }
 
 
