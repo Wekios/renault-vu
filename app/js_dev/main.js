@@ -107,7 +107,7 @@ $(document).ready(function(){
     
     // Slick Slider working version
   
-      $('.hp-slick-slider').slick({
+      $('.hp-slider').slick({
         autoplay: true,
         prevArrow:"<img class='slick-slider__arrows slick-slider__arrows-left' src='../../assets/image/arrow-left-yellow.png'>",
         nextArrow:"<img class='slick-slider__arrows slick-slider__arrows-right' src='../../assets/image/arrow-right-yellow.png'>"    

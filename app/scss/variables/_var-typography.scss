@@ -20,23 +20,25 @@ body {
 
 h1{
   @include fontSize(40,32,70);
-  @include lineHeight(42,32,63);
+  @include lineHeight(42,32,70.78);
   @include letterSpacing(-25,-25,-25 );
-
+  vertical-align: -4.42px;
 }
 
 h2 {
-  font-size: 4rem;
+  @include fontSize(40,20,32);
+  @include lineHeight(48,24.52,48);
+  @include letterSpacing(50,50,0);
 }
 
 h3 {
   @include fontSize(30,16,36);
-  @include lineHeight(48.87,37.75,26);
+  @include lineHeight(48.87,37.75,83.36);
   @include letterSpacing(-25,-25,-25);
 }
 
 h4 {
-  @include fontSize(28,14,14);
+  @include fontSize(28,14,18);
   @include letterSpacing(50,50,50);
   margin-top: 1rem;
   display: inline-block;

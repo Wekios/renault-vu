@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 gulp.task('concatJS', function() {
   gulp.src('app/js_dev/**/*.js')
   .pipe(order([
-    "slick.min.js",
+    "slick.js",
     "**/*.js"
   ]))
   .pipe(concat('master.js'))

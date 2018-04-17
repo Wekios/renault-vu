@@ -1,28 +1,27 @@
 .teaser-block {
     margin: 4rem 0;
+
+    .text--bolder {
+        font-size: 4.5rem;
+    }
+
+    .text--italic {
+        font-size: 5rem;
+    }
 }
 
 .teaser {
     display: inline-block;
 }
 
+.news-de-la__heading {
+    margin-top: 2rem;
+    position: absolute;
+}
+
 .news-de-la__first-teaser {
     width: 31.25vw;
     margin-right: 2.5vw;
-
-    &__heading {
-        margin-bottom: 4.5rem;
-        line-height: calcRem(40);
-
-        //later refactor this and put spans instead of child selectors cause of IE
-        & h1:first-of-type {
-            font-size: 4.5rem;
-        }
-
-        & h1:nth-of-type(2) {
-            font-size: 5rem;
-        }
-    }
 }
 
 .news-de-la__second-teaser {
@@ -35,7 +34,7 @@
 }
 
 .news-de-la__fourth-teaser {
-    width: 42.5vw;
+    width: 87.5vw;
     margin-top: 7.5rem;
 
     &__caption {

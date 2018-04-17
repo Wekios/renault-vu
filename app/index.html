@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Home</title>
   <link rel="shortcut icon" type="image/png" href="assets/image/RenaultVU_Favicon.png">
-  <link rel="stylesheet" type="text/css" href="master/css/master.css">
   <link rel="stylesheet" type="text/css" href="master/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="master/css/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="master/css/master.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
     crossorigin="anonymous"></script>
@@ -175,25 +176,28 @@
 
   <!-- MAIN SLIDER SLICK -->
 
-  <div class="slick-slider hp-slick-slider">
+  <div class="hp-slider">
     <div>
-      <img class="slick-slider__images" src="./assets/image/slide1-mob.jpg" alt=""> </div>
+      <img class="hp-slider__images" src="./assets/image/slide1.jpg" alt=""> </div>
     <div>
-      <img src="./assets/image/slide2.jpg" alt=""> </div>
+      <img class="hp-slider__images" src="./assets/image/slide2.jpg" alt=""> </div>
     <div>
-      <img src="./assets/image/slide3.jpg" alt=""> </div>
+      <img class="hp-slider__images" src="./assets/image/slide3.jpg" alt=""> </div>
   </div>
 
-  <div class="slider__text-content text--bold">
+
+
+  <!-- <div class="hp-slider__text-content">
     <a class="button" href="#">Lorem Ipsum</a>
-    <h3 class="slider__text-heading">
+    <h3 class="hp-slider__text-content-smaller">
       Communication
     </h3>
-    <h1 class="slider__text-heading">
+    <h1 class="hp-slider__text-content-bigger text--bold">
       Maecenas velit nunc,
       <br> ultricies a fringilla
     </h1>
-  </div>
+  </div> -->
+
 
   <!-- page content -->
 
@@ -201,12 +205,13 @@
   <section class="news-de-la teaser-block">
     <div class="container">
 
+      <div class="news-de-la__heading">
+        <h2 class="text--bolder">News</h2>
+        <h2 class="text--italic">de la</h2>
+        <h2 class="text--regular">Semaine</h2>
+      </div>
+
       <div class="news-de-la__first-teaser teaser">
-        <div class="news-de-la__first-teaser__heading">
-          <h1 class="text--bolder">News</h1>
-          <h1 class="text--italic">de la</h1>
-          <h1 class="text--regular">Semaine</h1>
-        </div>
         <div class="news-de-la__first-teaser__figure figure">
           <button class="button">fan de vu</button>
         </div>
@@ -265,11 +270,11 @@
       <div class="fan-de-vu__first-teaser teaser">
         <div class="fan-de-vu__first-teaser-white-background">
           <div class="fan-de-vu__first-teaser__heading">
-            <h1>
+            <h2>
               <span>Fan</span>
               <span class="text--italic">de</span>
               <span class="text--bold">Vu</span>
-            </h1>
+            </h2>
           </div>
           <div class="fan-de-vu__first-teaser__caption">
             <h4 class="text--bolder">
@@ -314,10 +319,10 @@
     <div class="container">
 
       <div class="vu-astuces__heading">
-        <h1>
+        <h2>
           <span class="text--bold">Vu</span> &
           <br> Astuces
-        </h1>
+        </h2>
       </div>
 
       <div class="vu-astuces__first-teaser teaser">
@@ -349,7 +354,7 @@
         </div>
         <div class="vu-astuces__third-teaser__caption">
           <h4 class="text--bold">
-              A quel moment je peux prétendre aux offres « formule flotte entreprise » chez mon assureur ?          </h4>
+            A quel moment je peux prétendre aux offres « formule flotte entreprise » chez mon assureur ? </h4>
         </div>
       </div>
 
@@ -382,12 +387,12 @@
 
       <div class="foire__first-teaser teaser">
         <div class="foire__first-teaser__heading">
-          <h1>
+          <h2>
             foire
             <span class="text--italic">aux</span>
             <br>
             <span class="text--bold">questions</span>
-          </h1>
+          </h2>
         </div>
         <div class="foire__first-teaser__figure figure">
         </div>
@@ -405,11 +410,11 @@
     <div class="container">
 
       <div class="cote-business__heading">
-        <h1>
+        <h2>
           <span class="text--italic">Cote</span>
           <br>
           <span class="text--bold">business</span>
-        </h1>
+        </h2>
       </div>
 
       <div class="cote-business__first-teaser teaser">
