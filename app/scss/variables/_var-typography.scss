@@ -21,7 +21,7 @@ body {
 h1{
   @include fontSize(40,32,70);
   @include lineHeight(42,32,70.78);
-  @include letterSpacing(-25,-25,-25 );
+  @include letterSpacing(-25,-25,-25);
   vertical-align: -4.42px;
 }
 
@@ -39,6 +39,7 @@ h3 {
 
 h4 {
   @include fontSize(28,14,18);
+  @include lineHeight(32,18,26);
   @include letterSpacing(50,50,50);
   margin-top: 1rem;
   display: inline-block;

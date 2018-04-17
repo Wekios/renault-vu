@@ -1,0 +1,62 @@
+.hp-slider {
+    margin-top: 8.5rem;
+}
+
+.hp-slider__images {
+    width: 100%;
+}
+
+.hp-slider__arrows {
+    z-index: 999;
+    position: absolute;
+    top: 20rem;
+    color: $yellow;
+    font-size: 2.5rem;
+    visibility: hidden;
+    @include breakpoint(tabletAndDesktop) {
+        visibility: visible;
+    }
+
+    @include breakpoint(desktopOnly) {
+        top: 30rem;
+    }
+
+    &:hover {
+        color: $gray;
+    }
+}
+
+.hp-slider__arrows-left {
+    left: 2.82vw;
+}
+
+.hp-slider__arrows-right {
+    right: 2.82vw;
+}
+
+.hp-slider__text-content {
+    width: 88%;
+    position: absolute;
+    top: 14.5rem;
+    left: 6.25vw;
+
+    @include breakpoint(tabletAndDesktop) {
+        top: 23rem;
+        left: 15.625vw;
+    }
+}
+
+.hp-slider__button {
+    margin-bottom: 1.5rem;
+    @include breakpoint(tabletAndDesktop) {
+        margin-bottom: 0;
+    }
+}
+
+.hp-slider__text-content-smaller {
+    color: $yellow;
+}
+
+.hp-slider__text-content-bigger {
+    color: $white;
+}
