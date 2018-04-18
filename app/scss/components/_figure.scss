@@ -80,13 +80,6 @@
     @extend .vu-astuces__first-teaser__figure;
 }
 
-.foire__first-teaser__figure {
-    background: url("../../assets/image/foire__first-teaser-img.jpg") no-repeat center center;
-    width: 100%;
-    height: 47rem;
-    margin-top: 4.5rem;
-}
-
 .cote-business__first-teaser__figure {
     @extend .vu-astuces__fourth-teaser__figure;
 }

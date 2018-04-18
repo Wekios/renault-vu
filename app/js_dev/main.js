@@ -105,7 +105,7 @@ $(document).ready(function () {
 
   }
 
-  // Slick Slider working version
+  // Slick Slider 
 
   $('.hp-slider').slick({
     arrows: true,

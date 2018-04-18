@@ -10,12 +10,17 @@
   background: $lightGray;
 }
 
-.foire {
-  margin-top: 36rem;
-  height: 53rem;
-  background: $lightGray;
+.line-break {
+  margin-top: 5rem;
+  margin-bottom: 8.7rem;
+  opacity: 0.3;
 }
 
-.cote-business {
-  margin-top: 8rem;
+.faq {
+  height: 52rem;
+  top: 26.5rem;
+  background: $lightGray;
+  position: relative;
+  margin-bottom: 34rem;
 }
+

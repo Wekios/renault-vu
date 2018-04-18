@@ -3003,6 +3003,41 @@
 
 }));
 
+// Const and Lets 
+const faqSlider = $('.faq-slider');
+const counterCurrent = $('.faq-slider__current');
+const counterTotal = $('.faq-slider__total');
+
+
+// Counter Function
+
+faqSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+  let i = (currentSlide ? currentSlide : 0) + 1;
+  counterCurrent.text("0" + i);
+  counterTotal.text(" / " + "0" + slick.slideCount);
+  if(slick.slideCount == null ) {
+    slick.slideCount = 3;
+  };
+});
+
+
+// Slider Settings
+
+faqSlider.slick({
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: true,
+  speed: 400,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  pauseOnHover: true,
+  infinite: true,
+  dots: false,
+  prevArrow: $(".faq-slider__arrows-left"),
+  nextArrow: $(".faq-slider__arrows-right")
+});
 $(document).ready(function () {
 
   // navigation \\
@@ -3110,11 +3145,50 @@ $(document).ready(function () {
 
   }
 
-  // Slick Slider working version
+  // Slick Slider 
 
   $('.hp-slider').slick({
     arrows: true,
     prevArrow: '<div class="hp-slider__arrows hp-slider__arrows-left"><span class="fas fa-arrow-circle-left"></span><span class="sr-only">Prev</span></div>',
     nextArrow: '<div class="hp-slider__arrows hp-slider__arrows-right"><span class="fas fa-arrow-circle-right"></span><span class="sr-only">Next</span></div>'
+  });
+});
+$(document).ready(function () {
+
+// Const and Lets 
+
+const portraitSlider = $('.portrait-slider');
+const counterCurrent = $('.portrait-slider__current');
+const counterTotal = $('.portrait-slider__total');
+
+
+// Counter Function
+
+portraitSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+  let i = (currentSlide ? currentSlide : 0) + 1;
+  counterCurrent.text(i);
+  counterTotal.text(" / " + slick.slideCount);
+  if(slick.slideCount == null ) {
+    slick.slideCount = 5;
+  };
+});
+
+
+// Slider Settings
+
+$('.portrait-slider').slick({
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    speed: 400,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    dots: false,
+    infinite: true,
+    prevArrow: $(".portrait-slider__arrows-left"),
+    nextArrow: $(".portrait-slider__arrows-right")
   });
 });

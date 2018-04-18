@@ -68,7 +68,18 @@ h1,h2,h3 {
 .text--italic {
   font-family: 'Airways';
   text-transform: none;
-  padding-left:1rem;
+}
+
+.text--italic-large {
+  @include fontSize(50,18,30)
+}
+
+.text--slider {
+  @include fontSize(36,16,22);
+  @include lineHeight(38,20,30);
+  @include letterSpacing(50,50,50);
+  font-weight: 700;
+  text-transform: none;
 }
 
 .text--clear {

@@ -10,7 +10,19 @@
     @include fontSize(12,8,12);
     @include lineHeight(34,18.39,36);
     @include letterSpacing(50,50,50);
+
+    &--white-bg {
+        @extend .button;
+        background: white;
+        padding-left: 2.1rem;
+        padding-right: 2.1rem;
+        @include letterSpacing(100,100,100);
+    }
 }
+
+// .button--white-bg {
+//     background: $white;
+// }
 
 .button-alt {
     text-align: center;
