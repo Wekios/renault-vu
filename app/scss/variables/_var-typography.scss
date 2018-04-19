@@ -41,7 +41,7 @@ h4 {
   @include fontSize(28,14,18);
   @include lineHeight(32,18,26);
   @include letterSpacing(50,50,50);
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   display: inline-block;
   vertical-align: top;
 }
@@ -78,7 +78,6 @@ h1,h2,h3 {
   @include fontSize(36,16,22);
   @include lineHeight(38,20,30);
   @include letterSpacing(50,50,50);
-  font-weight: 700;
   text-transform: none;
 }
 

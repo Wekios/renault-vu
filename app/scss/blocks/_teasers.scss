@@ -6,17 +6,33 @@
     display: inline-block;
 }
 
+.heading {
+
+    .text--bolder {
+        @include fontSize(45,20,32);
+        @include lineHeight(48,24,48);
+        @include letterSpacing(0,0,0);    
+    }
+
+    .text--italic {
+        @include fontSize(50,20,30);
+        @include lineHeight(38,24.52,48);
+        @include letterSpacing(0,0,0);
+        padding-left: 0.5rem;    
+    }
+
+    .text--regular {
+        @include fontSize(40,20,30);
+        @include lineHeight(48,24.52,48);
+        @include letterSpacing(50,50,50);
+    }
+
+}
+
+
 .news-de-la__heading {
     margin-top: 2rem;
     position: absolute;
-
-    h2 {
-        line-height: 4.1rem;
-    }
-
-    h2:nth-of-type(2) {
-        padding-left: 1rem;
-    }
 }
 
 .news-de-la__first-teaser {
@@ -42,7 +58,7 @@
         width: 50%;
         position: absolute;
         right: -2%;
-        top: 0;
+        top: -8%;
     }
 }
 
@@ -51,16 +67,21 @@
     margin: 6.8rem 0 10rem;
 }
 
+.fan-de-vu {
+    height: 85rem;
+    margin-bottom: 86rem;
+}
+
 .fan-de-vu__first-teaser {
     width: 87.5vw;
 
     &-white-background {
         margin-top: 6rem;
         background: white;
-        padding: 5rem 6rem 6rem 4.5rem;
+        padding: 4rem 6rem 6rem 5.6rem;
 
         .text--bolder {
-            margin-top: 4.5rem;
+            margin-top: 3rem;
         }
     }
 
@@ -72,13 +93,12 @@
 }
 
 .fan-de-vu__second-teaser {
-    margin-top: 7rem;
+    margin-top: 4.5rem;
     width: 42.5vw;
     margin-right: 2vw; 
 }
 
 .fan-de-vu__third-teaser {
-    margin-top: 7rem;
     width: 42.5vw;
 }
 
@@ -168,6 +188,54 @@
     @extend .fan-de-vu__third-teaser;
 }
 
+.quiz-teaser {
+    margin-top: 8.8rem;
+
+    .container {
+        width: 100%;
+    }
+
+    &__wrapper {
+        background: center / cover no-repeat url("../../assets/image/quiz__bg-image--mob.jpg");
+    }
+
+    &__text-content {
+        padding: 7rem 11rem 4rem;
+    }
+
+    &__text {
+        margin: 4rem 0 4.5rem;
+        @include fontSize(26,26,14);
+        @include lineHeight(32,32,18);
+        @include letterSpacing(50,50,50);
+    }
+
+    &__button {
+        text-align: center;
+
+        .button--white-bg {
+            @include fontSize(18,10,12);
+            padding: 1.5rem 9rem;
+        }
+
+    }
+
+}
+
+.les-plus__first-teaser,
+.les-plus__third-teaser {
+    @extend .fan-de-vu__second-teaser;
+}
+
+.les-plus__second-teaser,
+.les-plus__fourth-teaser {
+    @extend .fan-de-vu__third-teaser;
+}
+
+.les-plus__teaser-hidden {
+    display: none;
+}
+
 
 
 ////////////////////////////////////
@@ -219,5 +287,9 @@
             right: 10%;
             top: -10%;
         }
+    }
+
+    .les-plus__teaser-hidden {
+        display: inline-block;
     }
 }

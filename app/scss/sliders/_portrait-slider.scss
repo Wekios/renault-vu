@@ -14,7 +14,7 @@
 }
 
 .portrait-slider__second-slide {
-    background: center / cover no-repeat url("../../assets/image/faq__first-teaser-img.jpg");
+    background: center / cover no-repeat url("../../assets/image/portrait-slider__second-slide.jpg");
     width: 100%;
     height: 47rem;
 }
@@ -30,24 +30,25 @@
     }
 }
 
-.portrait-slider__arrows {
-    display: inline-block!important;
+.portrait-slider__navigation {
+    position: absolute;
     top: 8rem;
     color: $white;
-    @include fontSize(30,40,20);
-    position: absolute;
+    @include fontSize(25,10,14);
+    right: 1rem;
+
+}
+
+.portrait-slider__arrows {
+    display: inline-block!important;
+    padding: 0 2rem;
 
     &:hover {
         color: $gray;
     }
 }
 
-.portrait-slider__arrows-left {
-    bottom: -5rem;
-    right: 17rem;
+.portrait-slider__current {
+    color: $yellow;
 }
 
-.portrait-slider__arrows-right {
-    bottom: -5rem;
-    right: 4rem;
-}

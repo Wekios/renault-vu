@@ -102,15 +102,32 @@
 
 .cote-business__fifth-teaser__figure {
     @extend .fan-de-vu__second-teaser__figure;
-    
+    // width: 100%;
+    // height: 22rem;
+    background: center / cover no-repeat url("../../assets/image/cote-business__fifth-teaser-img.jpg");
 }
 
 .cote-business__sixth-teaser__figure {
     @extend .fan-de-vu__third-teaser__figure;
+    background: center / cover no-repeat url("../../assets/image/cote-business__sixth-teaser-img.jpg");
     
 }
 
+.les-plus__first-teaser__figure {
+    @extend .fan-de-vu__third-teaser__figure;
+}
 
+.les-plus__second-teaser__figure {
+    @extend .fan-de-vu__fourth-teaser__figure;
+}
+
+.les-plus__third-teaser__figure {
+    @extend .cote-business__fifth-teaser__figure;
+}
+
+.les-plus__fourth-teaser__figure {
+    @extend .cote-business__sixth-teaser__figure;
+}
 
 ////////////////////////////////////
 /////// Media Queries /////////////
@@ -134,6 +151,13 @@
     
     .news-de-la__fourth-teaser__figure {
         height: 12rem;
+    }
+
+    .les-plus__first-teaser__figure,    
+    .les-plus__second-teaser__figure,    
+    .les-plus__third-teaser__figure,
+    .les-plus__fourth-teaser__figure {
+        height: 9rem;
     }
 
 }
