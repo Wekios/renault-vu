@@ -1,6 +1,7 @@
+// -- GLOBAL FONT SETTINGS -- //
+
 $font-size-base: 10;
 
-//------GLOBAL FONT SETTINGS
 html {
   @include fontSizeVw($font-size-base, $font-size-base, $font-size-base);
 }
@@ -41,7 +42,7 @@ h4 {
   @include fontSize(28,14,18);
   @include lineHeight(32,18,26);
   @include letterSpacing(50,50,50);
-  margin-top: 1.2rem;
+  margin-top: 1.5rem;
   display: inline-block;
   vertical-align: top;
 }

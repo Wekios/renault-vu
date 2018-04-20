@@ -1,0 +1,57 @@
+// Mixin for All My Responsive Margins // ( Maybe an overkill -_- )
+
+@mixin marginTop($fs-phone, $fs-tablet, $fs-desktop) {
+    @include breakpoint(phoneOnly) {
+        margin-top: calcVw($fs-phone, 640);
+    }
+
+    @include breakpoint(tabletOnly){
+        margin-top: calcVw($fs-tablet, 768);
+    }
+
+    @include breakpoint(desktopOnly){
+        margin-top: calcVw($fs-desktop, 1024);
+    }
+}
+
+@mixin marginRight($fs-phone, $fs-tablet, $fs-desktop) {
+    @include breakpoint(phoneOnly) {
+        margin-right: calcVw($fs-phone,640);
+    }
+
+    @include breakpoint(tabletOnly){
+        margin-right: calcVw($fs-tablet, 768);
+    }
+
+    @include breakpoint(desktopOnly){
+        margin-right: calcVw($fs-desktop, 1024);
+    }
+}
+
+@mixin marginBottom($fs-phone, $fs-tablet, $fs-desktop) {
+    @include breakpoint(phoneOnly) {
+        margin-bottom: calcVw($fs-phone,640);
+    }
+
+    @include breakpoint(tabletOnly){
+        margin-bottom: calcVw($fs-tablet, 768);
+    }
+
+    @include breakpoint(desktopOnly){
+        margin-bottom: calcVw($fs-desktop, 1024);
+    }
+}
+
+@mixin marginLeft($fs-phone, $fs-tablet, $fs-desktop) {
+    @include breakpoint(phoneOnly) {
+        margin-left: calcVw($fs-phone,640);
+    }
+
+    @include breakpoint(tabletOnly){
+        margin-left: calcVw($fs-tablet, 768);
+    }
+
+    @include breakpoint(desktopOnly){
+        margin-left: calcVw($fs-desktop, 1024);
+    }
+}

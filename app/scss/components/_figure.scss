@@ -1,84 +1,91 @@
 .figure {
     display: inline-block;
     position: relative;
+    width: 100%;
+    // background: url("../../assets/image/teaser--default-img.jpg")
+
     .button {
         position: absolute;
         bottom: 0;
     }
+
 }
 
+// News De La Semaine Figures //
+
 .news-de-la__first-teaser__figure {
-    background: center / cover no-repeat url("../../assets/image/teaser-news.jpg");
-    width: 100%;
-    height: 26.6rem;
+    @include teaser__figureResponsive(
+    url("../../assets/image/news-de-la__first-teaser-img.jpg"),
+    264,202,500);
 }
 
 .news-de-la__second-teaser__figure{
-    background: url("../../assets/image/teaser-news-bigger.jpg") right / cover no-repeat;
-    width: 100%;
-    height: 45.5rem;
+    @include teaser__figureResponsive( 
+        url("../../assets/image/news-de-la__second-teaser-img.jpg"),
+    455,195,500);
 }
 
 .news-de-la__third-teaser__figure {
-    background: url("../../assets/image/teaser-cote.jpg") center / cover no-repeat;
-    width: 100%;
-    height: 45.5rem;
+    @include teaser__figureResponsive(url("../../assets/image/news-de-la__third-teaser-img.jpg"),
+    455,227,340);
 }
 
 .news-de-la__fourth-teaser__figure {
-    background: url("../../assets/image/teaser-cote-tools.jpg") center / cover no-repeat;
-    height: 22.2rem;
-    width: 50%;
+    @include teaser__figureResponsive(url("../../assets/image/news-de-la__fourth-teaser-img.jpg"),
+    222,154,340);
+    @include width(272,154,999);
 }
 
+//  Fan De Vu Figures //
+
 .fan-de-vu__first-teaser__figure {
-    background: url("../../assets/image/fan-de-vu__first-teaser-img.jpg") center / cover no-repeat;
-    width: 100%;
-    height: 34rem;
+    @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__first-teaser-img.jpg"),
+    340,239,340);
 }
 
 .fan-de-vu__second-teaser__figure {
-    background: url("../../assets/image/fan-de-vu__second-teaser-img.jpg") center / cover no-repeat;
-    width: 100%;
-    height: 22rem;
+    @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__second-teaser-img.jpg"),
+    220,125,340);
 }
 
 .fan-de-vu__third-teaser__figure {
-    background: url("../../assets/image/fan-de-vu__third-teaser-img.jpg") center / cover no-repeat;
-    width: 100%;
-    height: 22rem;
+    @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__third-teaser-img.jpg"),
+    220,125,340);
 }
 
 .fan-de-vu__fourth-teaser__figure {
-    background: url("../../assets/image/fan-de-vu__second-teaser-img.jpg") center / cover no-repeat;
-    width: 100%;
-    height: 22rem;
+    @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__second-teaser-img.jpg"),
+    220,125,340);
 }
 
+//  Vu & Astuces Figures //
+
 .vu-astuces__first-teaser__figure {
-    background: url("../../assets/image/vu-astuces__first-teaser-img.jpg") center / cover no-repeat;
-    width: 100%;
-    height: 36rem;
+    @include teaser__figureResponsive(url("../../assets/image/vu-astuces__first-teaser-img.jpg"),
+    360,256,340);
 }
 
 .vu-astuces__second-teaser__figure {
-    background: url("../../assets/image/vu-astuces__second-teaser-img.jpg") center / cover no-repeat;
-    width: 100%;
-    height: 22rem;
+    @include teaser__figureResponsive(url("../../assets/image/vu-astuces__second-teaser-img.jpg"),
+    220,125,340);
 }
 
 .vu-astuces__third-teaser__figure {
-    @extend .news-de-la__third-teaser__figure;
-    background: url("../../assets/image/vu-astuces__third-teaser-img.jpg") center / cover no-repeat;
-
+    @include teaser__figureResponsive(url("../../assets/image/vu-astuces__third-teaser-img.jpg"),
+    340,227,340);
 }
 
 .vu-astuces__fourth-teaser__figure {
     @extend .vu-astuces__second-teaser__figure;
 }
+
 .vu-astuces__fifth-teaser__figure {
     @extend .vu-astuces__first-teaser__figure;
 }
+
+// -- Faq Slider Is In It's Own File -- //
+
+// Cote Business Figures //
 
 .cote-business__first-teaser__figure {
     @extend .vu-astuces__fourth-teaser__figure;
@@ -86,32 +93,40 @@
 
 .cote-business__second-teaser__figure {
     @extend .vu-astuces__fifth-teaser__figure;
+
+    @include breakpoint(tabletAndDesktop) {
+        height: 20rem;
+    }
 }
 
 .cote-business__third-teaser__figure {
     @extend .vu-astuces__first-teaser__figure;
-    margin-top: -9rem;
+
+    @include breakpoint(tabletAndDesktop) {
+        height: 20rem;
+    }
 
 }
 
 .cote-business__fourth-teaser__figure {
     @extend .vu-astuces__second-teaser__figure;
-    margin-top: 5rem;
-    
 }
 
 .cote-business__fifth-teaser__figure {
-    @extend .fan-de-vu__second-teaser__figure;
-    // width: 100%;
-    // height: 22rem;
-    background: center / cover no-repeat url("../../assets/image/cote-business__fifth-teaser-img.jpg");
+    @include teaser__figureResponsive(url("../../assets/image/cote-business__fifth-teaser-img.jpg"),
+        222,125,300
+        );
 }
 
 .cote-business__sixth-teaser__figure {
-    @extend .fan-de-vu__third-teaser__figure;
-    background: center / cover no-repeat url("../../assets/image/cote-business__sixth-teaser-img.jpg");
-    
+    @include teaser__figureResponsive(url("../../assets/image/cote-business__sixth-teaser-img.jpg"),
+    222,125,300
+    );
 }
+
+// -- Portrait Slider is in it's Own File -- //
+
+// Les Plus Figures and Slider //
 
 .les-plus__first-teaser__figure {
     @extend .fan-de-vu__third-teaser__figure;
@@ -133,31 +148,6 @@
 /////// Media Queries /////////////
 //////////////////////////////////
 
-
-
-@include breakpoint(tabletAndDesktop) {
-
-    .news-de-la__first-teaser__figure {
-        height: 20rem;
-    }
+// @include breakpoint(tabletAndDesktop) {
     
-    .news-de-la__second-teaser__figure{
-        height: 26rem;
-    }
-    
-    .news-de-la__third-teaser__figure {
-        height: 23rem;
-    }
-    
-    .news-de-la__fourth-teaser__figure {
-        height: 12rem;
-    }
-
-    .les-plus__first-teaser__figure,    
-    .les-plus__second-teaser__figure,    
-    .les-plus__third-teaser__figure,
-    .les-plus__fourth-teaser__figure {
-        height: 9rem;
-    }
-
-}
+// }

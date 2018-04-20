@@ -1,0 +1,13 @@
+// Width Sizes For all Viewports
+
+@mixin width($fs-phone,$fs-tablet, $fs-desktop) {
+    @include breakpoint(phoneOnly) {
+      width: calcVw($fs-phone,640);
+    }
+    @include breakpoint(tabletOnly){
+      width: calcVw($fs-tablet, 768);
+    }
+    @include breakpoint(desktopOnly){
+      width: calcVw($fs-desktop, 1024);
+    }
+  }

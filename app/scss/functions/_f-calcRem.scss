@@ -1,4 +1,5 @@
-// Calculate rem from pixels
+// Calculate Rem From Pixels
+
 @function calcRem($size) {
   $remSize: $size / $font-size-base;
   @return #{$remSize}rem;

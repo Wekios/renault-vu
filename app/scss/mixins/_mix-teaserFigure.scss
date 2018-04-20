@@ -1,0 +1,14 @@
+@mixin teaser__figureResponsive($bg-image, $heightMob, $heightTab, $heightDesk) {
+    @include breakpoint(phoneOnly) {
+        background: center / cover no-repeat $bg-image;
+        height: calcRem($heightMob);
+    }
+    @include breakpoint(tabletAndDesktop) {
+        background: center / cover no-repeat $bg-image;
+        height: calcRem($heightTab);
+    }
+    @include breakpoint(DesktopOnly) {
+        background: center / cover no-repeat $bg-image;
+        height: calcRem($heightDesk);
+    }
+}

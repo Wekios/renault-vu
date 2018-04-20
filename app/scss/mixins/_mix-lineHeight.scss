@@ -1,4 +1,5 @@
-// rem line height for all viewports
+// Rem Line Height For All Viewports //
+
 @mixin lineHeight($lh-phone, $lh-tablet, $lh-desktop) {
   @include breakpoint(phoneOnly) {
     line-height: calcRem($lh-phone);
