@@ -1,0 +1,161 @@
+.diaporama-trigger {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+
+    &__button {
+        position: absolute;
+        top: 60%;
+        z-index: 300;
+    }
+
+    &__footnote {
+      z-index: 600;
+    }
+  
+    &__slide {
+      position: relative;
+      width: 100%;
+    }
+  
+    &__arrows {
+      @include circled-icon(8.5vw);
+      background: $yellow;
+      color: $black;
+      top: -2vw;
+      font-size: 1.5rem;
+  
+      @include breakpoint(tabletOnly) {
+        @include circled-icon(4.5vw);
+        font-size: 1.3rem;
+        top: -1.8vw;
+      }
+  
+      @include breakpoint(desktopOnly) {
+        @include circled-icon(2vw);
+        font-size: 1.1rem;
+        top: 12vw;
+      }
+
+    }
+  
+    &__thumbs {
+      width: 34%;
+      position: absolute;
+      bottom: 3.7vw;
+      left: 52%;
+      margin-left: -17%;
+      z-index: 1000;
+  
+      @include breakpoint(phoneAndTablet) {
+        display: none;
+      }
+  
+      &__thumb {
+        position: relative;
+        display: inline-block;
+        width: 18%;
+        height: 100%;
+        margin-right: 2.75%;
+        cursor: pointer;
+        outline: none;
+  
+        // &overlay {
+        //   opacity: 0;
+        //   position: absolute;
+        //   top: 0;
+        //   right: 0;
+        //   bottom: 0;
+        //   left: 0;
+        //   box-shadow: inset 0 0 0 5px $yellow;
+        //   transition: opacity .1s linear;
+        // }
+  
+      }
+  
+      & .diaporama-trigger__thumb:hover {
+        & img {
+          filter: grayscale(0);
+        }
+  
+        & .overlay {
+          opacity: 1;
+        }
+      }
+    }
+}
+  
+
+// Diaporama Images and Thumbs 
+
+.diaporama-trigger__slide1 {
+    // @include teaser__figureResponsive(
+    // url("../../assets/image/news-de-la__first-teaser-img.jpg"),
+    // 264,202,500);
+    background: url("https://dummyimage.com/1700x700/b8b8b8/474747.png");
+    height: 783px;
+}
+
+.diaporama-trigger__thumb1 {
+    @include teaser__figureResponsive(
+        url("https://dummyimage.com/100x81/b8b8b8/474747.png"),
+        81,81,81
+    );
+}
+
+.diaporama-trigger__slide2 {
+    @include teaser__figureResponsive(
+        url("https://dummyimage.com/1700x450/b8b8b8/474747.png"),
+        330,396,700
+    );
+}
+
+.diaporama-trigger__thumb2 {
+    @include teaser__figureResponsive(
+        url("https://dummyimage.com/100x81/b8b8b8/474747.png"),
+        81,81,81
+    );
+}
+
+.diaporama-trigger__slide3 {
+    @include teaser__figureResponsive(
+        url("https://dummyimage.com/1700x800/b8b8b8/474747.png"),
+        330,396,700
+    );
+}
+
+.diaporama-trigger__thumb3 {
+    @include teaser__figureResponsive(
+        url("https://dummyimage.com/100x81/b8b8b8/474747.png"),
+        81,81,81
+    );
+}
+
+.diaporama-trigger__slide4 {
+    @include teaser__figureResponsive(
+        url("https://dummyimage.com/1700x450/b8b8b8/474747.png"),
+        330,396,700
+    );
+}
+
+.diaporama-trigger__thumb4 {
+    @include teaser__figureResponsive(
+        url("https://dummyimage.com/100x81/b8b8b8/474747.png"),
+        81,81,81
+    );
+}
+
+.diaporama-trigger__slide5 {
+    @include teaser__figureResponsive(
+        url("https://dummyimage.com/1700x800/b8b8b8/474747.png"),
+        330,396,700
+    );
+}
+
+.diaporama-trigger__thumb5 {
+    @include teaser__figureResponsive(
+        url("https://dummyimage.com/100x81/b8b8b8/474747.png"),
+        81,81,81
+    );
+}

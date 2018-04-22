@@ -8,6 +8,6 @@
       width: calcVw($fs-tablet, 768);
     }
     @include breakpoint(desktopOnly){
-      width: calcVw($fs-desktop, 1024);
+      width: calcVw($fs-desktop, 1700);
     }
   }

@@ -2,15 +2,15 @@
 
 @mixin marginTop($fs-phone, $fs-tablet, $fs-desktop) {
     @include breakpoint(phoneOnly) {
-        margin-top: calcVw($fs-phone, 640);
+        margin-top: calcRem($fs-phone);
     }
 
     @include breakpoint(tabletOnly){
-        margin-top: calcVw($fs-tablet, 768);
+        margin-top: calcRem($fs-tablet);
     }
 
     @include breakpoint(desktopOnly){
-        margin-top: calcVw($fs-desktop, 1024);
+        margin-top: calcRem($fs-desktop);
     }
 }
 
@@ -30,15 +30,15 @@
 
 @mixin marginBottom($fs-phone, $fs-tablet, $fs-desktop) {
     @include breakpoint(phoneOnly) {
-        margin-bottom: calcVw($fs-phone,640);
+        margin-bottom: calcRem($fs-phone);
     }
 
     @include breakpoint(tabletOnly){
-        margin-bottom: calcVw($fs-tablet, 768);
+        margin-bottom: calcRem($fs-tablet);
     }
 
     @include breakpoint(desktopOnly){
-        margin-bottom: calcVw($fs-desktop, 1024);
+        margin-bottom: calcRem($fs-desktop);
     }
 }
 
