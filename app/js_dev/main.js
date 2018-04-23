@@ -1,24 +1,25 @@
-$(document).ready(function () {
+(function($){
 
   // navigation \\
 
+  // cache DOM \\
   var $headerNavWrap = $('.c-main-navigation--wrap'),
-    $headerNav = $('.c-main-navigation'),
-    $menuTrigger = $('.b-header__menu-trigger i'),
-    $subMenuTrigger = $('.sub__menu__trigger'),
-    $menuOpenedOverlay = $('.menu__opened__overlay'),
-    $mainContent = $('.page'),
-    $headerSearch = $('.w-search-trigger'),
-    $searchOverlay = $('.w-search-popup'),
-    $searchClose = $('.search__close'),
-    windowWidth = $(window).outerWidth();
+      $headerNav = $('.c-main-navigation'),
+      $menuTrigger = $('.b-header__menu-trigger i'),
+      $subMenuTrigger = $('.sub__menu__trigger'),
+      $menuOpenedOverlay = $('.menu__opened__overlay'),
+      $mainContent = $('.page'),
+      $headerSearch = $('.w-search-trigger'),
+      $searchOverlay = $('.w-search-popup'),
+      $searchClose = $('.search__close'),
+      windowWidth = $(window).outerWidth();
 
 
   // mobile main menu \\
 
   if (windowWidth < 1025) {
 
-    $menuTrigger.on('click', function (e) {
+    $menuTrigger.on('click', function(e) {
 
       e.stopPropagation();
 
@@ -36,11 +37,11 @@ $(document).ready(function () {
 
     });
 
-    $.each($subMenuTrigger, function () {
+    $.each($subMenuTrigger, function() {
 
       var $current = $(this);
 
-      $current.on('click', function (e) {
+      $current.on('click', function(e) {
 
         e.preventDefault();
         e.stopPropagation();
@@ -65,13 +66,13 @@ $(document).ready(function () {
 
   // search overlay \\
 
-  $headerSearch.on('click', function () {
+  $headerSearch.on('click', function() {
 
     $searchOverlay.fadeIn(200);
 
   });
 
-  $searchClose.on('click', function () {
+  $searchClose.on('click', function() {
 
     $searchOverlay.fadeOut(200);
 
@@ -81,20 +82,20 @@ $(document).ready(function () {
 
   if (windowWidth > 1024) {
 
-    $.each($subMenuTrigger, function () {
+    $.each($subMenuTrigger, function() {
 
       var $current = $(this);
       var $li = $(this).closest('li');
       var $sub = $li.find('.sub__menu');
 
-      $li.on('mouseenter', function () {
+      $li.on('mouseenter', function() {
 
         $current.addClass('active');
         $sub.fadeIn(200);
 
       });
 
-      $sub.on('mouseleave', function () {
+      $sub.on('mouseleave', function() {
 
         $sub.fadeOut(200);
         $current.removeClass('active');
@@ -105,11 +106,14 @@ $(document).ready(function () {
 
   }
 
-  // Slick Slider 
+})(jQuery);
 
-  $('.hp-slider').slick({
-    arrows: true,
-    prevArrow: '<div class="hp-slider__arrows hp-slider__arrows-left"><span class="fas fa-arrow-circle-left"></span><span class="sr-only">Prev</span></div>',
-    nextArrow: '<div class="hp-slider__arrows hp-slider__arrows-right"><span class="fas fa-arrow-circle-right"></span><span class="sr-only">Next</span></div>'
-  });
-});
+
+//   // Slick Slider 
+
+//   $('.hp-slider').slick({
+//     arrows: true,
+//     prevArrow: '<div class="hp-slider__arrows hp-slider__arrows-left"><span class="fas fa-arrow-circle-left"></span><span class="sr-only">Prev</span></div>',
+//     nextArrow: '<div class="hp-slider__arrows hp-slider__arrows-right"><span class="fas fa-arrow-circle-right"></span><span class="sr-only">Next</span></div>'
+//   });
+// });

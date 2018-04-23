@@ -1,355 +1,355 @@
-// .w-diaporama {
-//     display: none;
-//     position: fixed;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     background: $yellow;
-//     z-index: 999999999;
-//     overflow-y: scroll;
-//   }
-  
-//   html.diaporamaOpened, body.diaporamaOpened {
-//     overflow: hidden;
-//   }
-  
-//   .diaporama--wrap, .diaporama__slide {
-//     width: 100%;
-//     overflow: hidden;
-//   }
-  
-//   .diaporama__close {
-//     color: $black;
-//     position: fixed;
-//     top: 2.6vw;
-//     right: 3.6vw;
-//     cursor: pointer;
-//     z-index: 999999999;
-//     font-size: calcRem(45);
-  
-//     @include breakpoint(tabletOnly) {
-//       font-size: calcRem(40);
-//       right: 4.6vw;
-//     }
-  
-//     @include breakpoint(desktopOnly) {
-//       font-size: calcRem(60);
-//       top: 0.8vw;
-//       right: 1.5vw;
-//     }
-//   }
-  
-//   .w-diaporama .slick-dots {
-//     @include ulClean;
-//     position: absolute;
-//     top: 38vw;
-//     left: 6vw;
-//     width: 46vw;
-//     height: 5vw;
-//     z-index: 30;
-//   }
-  
-//   .w-diaporama .slick-dots li {
-//     display: inline-block;
-//     max-width: calc(100% / 6 - 2%);
-//     height: 5vw;
-//     margin-right: 2%;
-//     position: relative;
-//   }
-  
-//   .w-diaporama .slick-dots li img {
-//     width: 100%;
-//     height: 100%;
-//     filter: grayscale(100%);
-//   }
-  
-//   .w-diaporama .slick-dots li .shadow {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     box-shadow: inset 0 0 0 5px transparent;
-//   }
-  
-//   .w-diaporama .slick-dots li:hover .shadow, .w-diaporama .slick-dots li.slick-active .shadow {
-//     box-shadow: inset 0 0 0 5px $yellow;
-//   }
-  
-//   .w-diaporama .slick-dots li:hover img, .w-diaporama .slick-dots li.slick-active img {
-//     filter: grayscale(0);
-//   }
-  
-//   .diaporama__image {
-//     position: relative;
-//     width: 100%;
-//     overflow: hidden;
-  
-//     @include breakpoint(desktopOnly) {
-//       width: 55.706%;
-//       // width: 101vh;
-//       top: 13%;
-//       left: 10.2%;
-//       z-index: 100;
-//     }
-  
-//     & img {
-//       width: 100%;
-//     }
-//   }
-  
-//   .diaporama__body {
-//     width: 87%;
-//     padding: 7vw 0;
-//     position: relative;
-//     margin: 0 auto;
-//     background: $yellow;
-//     color: $black;
-  
-//     @include breakpoint(tabletOnly) {
-//       width: 84.5%;
-//       padding: 5vw 0;
-//     }
-  
-//     @include breakpoint(desktopOnly) {
-//       position: absolute;
-//       top: 0;
-//       right: 0;
-//       width: 41.2%;
-//       height: 100%;
-//       padding: 0;
-//       z-index: 10;
-//     }
-  
-//     &--wrap {
-//       width: 100%;
-  
-//       @include breakpoint(desktopOnly) {
-//         width: 46%;
-//         position: relative;
-//         top: 13%;
-//         left: 29.5%;
-//       }
-//     }
-//   }
-  
-//   .diaporama__heading {
-//     text-transform: uppercase;
-//     font-weight: 900;
-//     margin-bottom: 4vw;
-//     @include fontSize(40,32,24);
-//     @include lineHeight(42,32,28);
-//     @include letterSpacing(50,50,50);
-  
-//     @include breakpoint(tabletOnly) {
-//       margin-bottom: 4vw;
-//     }
-  
-//     @include breakpoint(desktopOnly) {
-//       margin-bottom: 1.8vw;
-//     }
-//   }
-  
-//   .diaporama__text {
-//     margin-bottom: 8vw;
-//     @include fontSize(28,16,16);
-//     @include lineHeight(40,24,24);
-//     @include letterSpacing(50,50,50);
-  
-//     @include breakpoint(tabletOnly) {
-//       margin-bottom: 6vw;
-//     }
-  
-//     @include breakpoint(desktopOnly) {
-//       margin-bottom: 2vw;
-//     }
-//   }
-  
-//   .diaporama__social i {
-//     @include circled-icon(10vw);
-//     background: $black;
-//     color: $yellow;
-//     margin-right: 8vw;
-//     font-size: 1.2rem;
-  
-//     @include breakpoint(tabletOnly) {
-//       @include circled-icon(6.5vw);
-//       margin-right: 0.4vw;
-//       font-size: 1.6rem;
-//     }
-  
-//     @include breakpoint(desktopOnly) {
-//       @include circled-icon(1.65vw);
-//       font-size: 0.7rem;
-//       margin-right: 0.1vw;
-//     }
-//   }
-  
-//   .diaporama__arrows {
-//     position: absolute;
-//     top: 41.5vw;
-//     width: 100%;
-//     z-index: 1000;
-  
-//     @include breakpoint(tabletOnly) {
-//       top: 34.4vw;
-//     }
-  
-//     @include breakpoint(desktopOnly) {
-//       width: 8.5%;
-//       top: auto;
-//       bottom: 6vh;
-//       left: 54.5%;
-//     }
-//   }
-  
-//   .diaporama__prev, .diaporama__next {
-//     @include circled-icon(9vw);
-//     color: $yellow;
-//     background: $black;
-//     font-size: calcRem(14);
-//     z-index: 20;
-//     position: relative;
-  
-//     @include breakpoint(tabletOnly) {
-//       @include circled-icon(6vw);
-//       font-size: calcRem(12);
-//     }
-  
-//     @include breakpoint(desktopOnly) {
-//       @include circled-icon(2.65vw);
-//       font-size: calcRem(14);
-//     }
-//   }
-  
-//   .diaporama__prev {
-//     float: left;
-//     left: 6vw;
-  
-//     @include breakpoint(tabletOnly) {
-//       left: 3.5vw;
-//     }
-  
-//     @include breakpoint(desktopOnly) {
-//       left: 0;
-//     }
-//   }
-  
-//   .diaporama__next {
-//     float: right;
-//     right: 6vw;
-  
-//     @include breakpoint(tabletOnly) {
-//       right: 3.5vw;
-//     }
-  
-//     @include breakpoint(desktopOnly) {
-//       right: 0;
-//     }
-//   }
-  
-//   .diaporama__counter {
-//     font-weight: 900;
-//     color: $white;
-//     margin-bottom: 4.2vw;
-//     @include fontSize(32,24,24);
-  
-//     @include breakpoint(tabletOnly) {
-//       margin-bottom: 4vw;
-//     }
-  
-//     @include breakpoint(desktopOnly) {
-//       margin-bottom: 2vw;
-//     }
-  
-//     & .diaporama__separator {
-//       margin: 0 -1.3vw;
-  
-//       @include breakpoint(tabletOnly) {
-//         margin: 0 -0.7vw;
-//       }
-  
-//       @include breakpoint(desktopOnly) {
-//         margin: 0 -0.4vw;
-//       }
-//     }
-//   }
-  
-//   .diaporama__counter .diaporama__current {
-//     color: $black;
-//   }
-  
-//   .diaporama__thumbs {
-//     @include breakpoint(phoneAndTablet) {
-//       display: none;
-//     }
-  
-//     width: 41.7%;
-//     position: absolute;
-//     bottom: 4vh;
-//     left: 10.2%;
-//     overflow: hidden;
-//     z-index: 30;
-  
-//     & .diaporama__thumb {
-//       position: relative;
-//       display: inline-block;
-//       height: 100%;
-//       margin-right: 0.79%;
-//       cursor: pointer;
-//       outline: none;
-  
-//       & img {
-//         width: 100%;
-//         height: 100%;
-//         filter: grayscale(100%);
-//       }
-  
-//       & .overlay {
-//         opacity: 0;
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         bottom: 0;
-//         left: 0;
-//         box-shadow: inset 0 0 0 5px $yellow;
-//         transition: opacity .1s linear;
-//       }
-  
-//     }
-  
-//     & .diaporama__thumb:hover, .diaporama__thumb.slick-current {
-  
-//       & img {
-//         filter: grayscale(0);
-//       }
-  
-//       & .overlay {
-//         opacity: 1;
-//       }
-  
-//     }
-  
-//   }
-  
-//   @media only screen and (min-width: $break-desk) {
-  
-//     .w-diaporama {
-//       background: $white;
-//     }
-  
-//     .diaporama--wrap, .diaporama__slide {
-//       height: 100%;
-//     }
-  
-//     .w-diaporama .slick-list, .w-diaporama .slick-list .slick-track {
-//       height: 100%;
-//     }
-  
-//     .diaporama__slide {
-//       position: relative;
-//     }
-  
-//   }
+.diaporama {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $yellow;
+    z-index: 999999999;
+    overflow-y: scroll;
+  }
+  
+  html.diaporamaOpened, body.diaporamaOpened {
+    overflow: hidden;
+  }
+  
+  .diaporama--wrap, .diaporama__slide {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .diaporama__close {
+    color: $black;
+    position: fixed;
+    top: 2.6vw;
+    right: 3.6vw;
+    cursor: pointer;
+    z-index: 999999999;
+    font-size: calcRem(45);
+  
+    @include breakpoint(tabletOnly) {
+      font-size: calcRem(40);
+      right: 4.6vw;
+    }
+  
+    @include breakpoint(desktopOnly) {
+      font-size: calcRem(60);
+      top: 0.8vw;
+      right: 1.5vw;
+    }
+  }
+  
+  .w-diaporama .slick-dots {
+    @include ulClean;
+    position: absolute;
+    top: 38vw;
+    left: 6vw;
+    width: 46vw;
+    height: 5vw;
+    z-index: 30;
+  }
+  
+  .w-diaporama .slick-dots li {
+    display: inline-block;
+    max-width: calc(100% / 6 - 2%);
+    height: 5vw;
+    margin-right: 2%;
+    position: relative;
+  }
+  
+  .w-diaporama .slick-dots li img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+  }
+  
+  .w-diaporama .slick-dots li .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 5px transparent;
+  }
+  
+  .w-diaporama .slick-dots li:hover .shadow, .w-diaporama .slick-dots li.slick-active .shadow {
+    box-shadow: inset 0 0 0 5px $yellow;
+  }
+  
+  .w-diaporama .slick-dots li:hover img, .w-diaporama .slick-dots li.slick-active img {
+    filter: grayscale(0);
+  }
+  
+  .diaporama__image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  
+    @include breakpoint(desktopOnly) {
+      width: 55.706%;
+      // width: 101vh;
+      top: 13%;
+      left: 10.2%;
+      z-index: 100;
+    }
+  
+    & img {
+      width: 100%;
+    }
+  }
+  
+  .diaporama__body {
+    width: 87%;
+    padding: 7vw 0;
+    position: relative;
+    margin: 0 auto;
+    background: $yellow;
+    color: $black;
+  
+    @include breakpoint(tabletOnly) {
+      width: 84.5%;
+      padding: 5vw 0;
+    }
+  
+    @include breakpoint(desktopOnly) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 41.2%;
+      height: 100%;
+      padding: 0;
+      z-index: 10;
+    }
+  
+    &--wrap {
+      width: 100%;
+  
+      @include breakpoint(desktopOnly) {
+        width: 46%;
+        position: relative;
+        top: 13%;
+        left: 29.5%;
+      }
+    }
+  }
+  
+  .diaporama__heading {
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 4vw;
+    @include fontSize(40,32,24);
+    @include lineHeight(42,32,28);
+    @include letterSpacing(50,50,50);
+  
+    @include breakpoint(tabletOnly) {
+      margin-bottom: 4vw;
+    }
+  
+    @include breakpoint(desktopOnly) {
+      margin-bottom: 1.8vw;
+    }
+  }
+  
+  .diaporama__text {
+    margin-bottom: 8vw;
+    @include fontSize(28,16,16);
+    @include lineHeight(40,24,24);
+    @include letterSpacing(50,50,50);
+  
+    @include breakpoint(tabletOnly) {
+      margin-bottom: 6vw;
+    }
+  
+    @include breakpoint(desktopOnly) {
+      margin-bottom: 2vw;
+    }
+  }
+  
+  .diaporama__social i {
+    @include circled-icon(10vw);
+    background: $black;
+    color: $yellow;
+    margin-right: 8vw;
+    font-size: 1.2rem;
+  
+    @include breakpoint(tabletOnly) {
+      @include circled-icon(6.5vw);
+      margin-right: 0.4vw;
+      font-size: 1.6rem;
+    }
+  
+    @include breakpoint(desktopOnly) {
+      @include circled-icon(1.65vw);
+      font-size: 0.7rem;
+      margin-right: 0.1vw;
+    }
+  }
+  
+  .diaporama__arrows {
+    position: absolute;
+    top: 41.5vw;
+    width: 100%;
+    z-index: 1000;
+  
+    @include breakpoint(tabletOnly) {
+      top: 34.4vw;
+    }
+  
+    @include breakpoint(desktopOnly) {
+      width: 8.5%;
+      top: auto;
+      bottom: 6vh;
+      left: 54.5%;
+    }
+  }
+  
+  .diaporama__prev, .diaporama__next {
+    @include circled-icon(9vw);
+    color: $yellow;
+    background: $black;
+    font-size: calcRem(14);
+    z-index: 20;
+    position: relative;
+  
+    @include breakpoint(tabletOnly) {
+      @include circled-icon(6vw);
+      font-size: calcRem(12);
+    }
+  
+    @include breakpoint(desktopOnly) {
+      @include circled-icon(2.65vw);
+      font-size: calcRem(14);
+    }
+  }
+  
+  .diaporama__prev {
+    float: left;
+    left: 6vw;
+  
+    @include breakpoint(tabletOnly) {
+      left: 3.5vw;
+    }
+  
+    @include breakpoint(desktopOnly) {
+      left: 0;
+    }
+  }
+  
+  .diaporama__next {
+    float: right;
+    right: 6vw;
+  
+    @include breakpoint(tabletOnly) {
+      right: 3.5vw;
+    }
+  
+    @include breakpoint(desktopOnly) {
+      right: 0;
+    }
+  }
+  
+  .diaporama__counter {
+    font-weight: 900;
+    color: $white;
+    margin-bottom: 4.2vw;
+    @include fontSize(32,24,24);
+  
+    @include breakpoint(tabletOnly) {
+      margin-bottom: 4vw;
+    }
+  
+    @include breakpoint(desktopOnly) {
+      margin-bottom: 2vw;
+    }
+  
+    & .diaporama__separator {
+      margin: 0 -1.3vw;
+  
+      @include breakpoint(tabletOnly) {
+        margin: 0 -0.7vw;
+      }
+  
+      @include breakpoint(desktopOnly) {
+        margin: 0 -0.4vw;
+      }
+    }
+  }
+  
+  .diaporama__counter .diaporama__current {
+    color: $black;
+  }
+  
+  .diaporama__thumbs {
+    @include breakpoint(phoneAndTablet) {
+      display: none;
+    }
+  
+    width: 41.7%;
+    position: absolute;
+    bottom: 4vh;
+    left: 10.2%;
+    overflow: hidden;
+    z-index: 30;
+  
+    & .diaporama__thumb {
+      position: relative;
+      display: inline-block;
+      height: 100%;
+      margin-right: 0.79%;
+      cursor: pointer;
+      outline: none;
+  
+      & img {
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+      }
+  
+      & .overlay {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        box-shadow: inset 0 0 0 5px $yellow;
+        transition: opacity .1s linear;
+      }
+  
+    }
+  
+    & .diaporama__thumb:hover, .diaporama__thumb.slick-current {
+  
+      & img {
+        filter: grayscale(0);
+      }
+  
+      & .overlay {
+        opacity: 1;
+      }
+  
+    }
+  
+  }
+  
+  @media only screen and (min-width: $break-desk) {
+  
+    .w-diaporama {
+      background: $white;
+    }
+  
+    .diaporama--wrap, .diaporama__slide {
+      height: 100%;
+    }
+  
+    .w-diaporama .slick-list, .w-diaporama .slick-list .slick-track {
+      height: 100%;
+    }
+  
+    .diaporama__slide {
+      position: relative;
+    }
+  
+  }
   
