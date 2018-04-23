@@ -7,7 +7,6 @@
     <title>Article Diaporama</title>
     <link rel="shortcut icon" type="image/png" href="assets/image/RenaultVU_Favicon.png">
     <link rel="stylesheet" type="text/css" href="master/css/slick.css">
-    <link rel="stylesheet" type="text/css" href="master/css/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="master/css/master.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
@@ -190,7 +189,9 @@
 
         <!-- Diaporama Trigger Slider -->
 
-        <button class="diaporama-trigger__button button" type="button" name="button">Slideshow</button>
+        <div class="diaporama-trigger__button">
+            <button class="button button-alt" type="button" name="button">Slideshow</button>
+        </div>
 
         <div class="diaporama-trigger__slider">
 
@@ -228,7 +229,12 @@
 
         <!-- // Diaporama Trigger Slider End // -->
 
-        <!-- Diaporama Trigger Thumbs -->
+        <div class="diaporama-trigger__arrows diaporama-trigger__arrows-left">
+                <span class="fas fa-arrow-left"></span>
+                <span class="sr-only">Prev</span>
+            </div>
+            
+            <!-- Diaporama Trigger Thumbs -->
 
         <div class="diaporama-trigger__thumbs">
 
@@ -240,7 +246,12 @@
 
         </div>
 
-        <!-- Diaporama Trigger Thumbs -->
+        <!-- Diaporama Trigger Thumbs End-->
+
+        <div class="diaporama-trigger__arrows diaporama-trigger__arrows-right">
+                <span class="fas fa-arrow-right"></span>
+                <span class="sr-only">Next</span>
+            </div>
 
     </section>
 

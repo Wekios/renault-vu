@@ -3,11 +3,11 @@
         background: center / cover no-repeat $bg-image;
         height: calcRem($heightMob);
     }
-    @include breakpoint(tabletAndDesktop) {
+    @include breakpoint(tabletOnly) {
         background: center / cover no-repeat $bg-image;
         height: calcRem($heightTab);
     }
-    @include breakpoint(DesktopOnly) {
+    @include breakpoint(desktopOnly) {
         background: center / cover no-repeat $bg-image;
         height: calcRem($heightDesk);
     }

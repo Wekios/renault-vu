@@ -23,23 +23,23 @@ a img {
 }
 
 .container {
+  @include width($container-mobile, $container-tablet, $container-desktop);
+  margin: 0 auto;
   font-size: 0;
   line-height: 0;
-
-  @include breakpoint(phoneOnly) {
-  width: 87.5vw;
-  margin: 0 auto;
-  }
-  
-  @include breakpoint(tabletOnly) {
-    width: 84.375vw;
-    margin: 0 auto;
-  }
-
-  @include breakpoint(desktopOnly) {
-    width: 74.47058823529412vw;
-  }
 }
+
+//   width: 87.5vw;
+//   margin: 0 auto;
+  
+//   @include breakpoint(tabletOnly) {
+//     width: 84.375vw;
+//   }
+
+//   @include breakpoint(desktopOnly) {
+//     width: 74.47058823529412vw;
+//   }
+// }
 
 // .row--mob {
 //   width: 100%;

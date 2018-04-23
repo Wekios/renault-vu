@@ -1,8 +1,8 @@
-// Const and Lets 
+// Const and Lets
+
 const faqSlider = $('.faq-slider');
 const counterCurrent = $('.faq-slider__current');
 const counterTotal = $('.faq-slider__total');
-
 
 // Counter Function
 

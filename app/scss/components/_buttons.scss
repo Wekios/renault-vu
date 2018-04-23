@@ -18,11 +18,13 @@
         padding-right: 2.1rem;
         @include letterSpacing(100,100,100);
     }
+
+    &--caption {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
-// .button--white-bg {
-//     background: $white;
-// }
 
 .button-alt {
     text-align: center;
