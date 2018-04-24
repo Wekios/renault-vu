@@ -1,25 +1,26 @@
 // Search widget
 
-.w-search-trigger {
-    float: right;
-    position: relative;
-    top: 2.8rem;
-    right: 0.2rem;
-    font-size: 3rem;
-  
-    @include breakpoint(tabletOnly) {
+.search-trigger {
+  color: $white;
+  float: right;
+  position: relative;
+  top: 2.8rem;
+  right: 0.2rem;
+  font-size: 3rem;
+
+  @include breakpoint(tabletOnly) {
       right: 0.8rem;
       top: 2.5rem;
-    }
-  
-    @include breakpoint(desktopOnly) {
+  }
+
+  @include breakpoint(desktopOnly) {
       font-size: 1.7rem;
       top: 2.5rem;
       right: 0.6rem;
-    }
   }
+}
   
-  .w-search-popup {
+  .search-popup {
     display: none;
     position: fixed;
     top: 0;

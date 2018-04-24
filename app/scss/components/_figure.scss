@@ -6,6 +6,20 @@
 
 }
 
+// Sub Menu Desktop Top Article Figures
+
+.sub-menu__first--teaser__figure{
+    @include teaser__figureResponsive(url("../../assets/image/sub-menu__first-teaser-img.jpg"),
+    55,55,55);
+    @include width(68,68,68);
+}
+
+.sub-menu__second--teaser__figure{
+    @include teaser__figureResponsive(url("../../assets/image/sub-menu__second-teaser-img.jpg"),
+    55,55,55);
+    @include width(68,68,68);
+}
+
 // News De La Semaine Figures //
 
 .news-de-la__first-teaser__figure {
@@ -67,7 +81,7 @@
 
 .vu-astuces__third-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/vu-astuces__third-teaser-img.jpg"),
-    340,227,340);
+    458,227,340);
 }
 
 .vu-astuces__fourth-teaser__figure {

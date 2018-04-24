@@ -16,34 +16,35 @@
 
 <body>
 
-  <header class="b-header clearfix">
-    <!-- HEADER -->
+  <!-- Header -->
 
-    <div class="b-header__menu-trigger text--yellow">
+  <header class="header clearfix">
+
+    <div class="header__menu-trigger">
       <i class="fas fa-bars" aria-hidden="true"></i>
     </div>
 
-    <div class="b-header__logo">
+    <div class="header__logo">
       <a href="#">
         <img src="assets/image/header_logo_2.png" alt="header logo">
       </a>
     </div>
 
-    <div class="w-search-trigger text--white">
+    <div class="search-trigger">
       <i class="fas fa-search" aria-hidden="true"></i>
     </div>
 
-    <div class="c-main-navigation--wrap clearfix">
+    <div class="main-navigation--wrap clearfix">
 
-      <!-- HEADER NAVIGATION -->
-
-      <ul class="c-main-navigation">
+      <ul class="main-navigation">
 
         <li>
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
           <a class="sub__menu__trigger" href="#">my business</a>
 
-          <article class="sub__menu clearfix">
+          <!-- Sub Menu -->
+
+          <div class="sub__menu clearfix">
 
             <ul>
               <li>
@@ -66,83 +67,79 @@
               </li>
             </ul>
 
-            <article class="c-navigation-top-articles">
+            <div class="sub-menu-articles">
 
-              <h3 class="heading--row text--left">
-                <span class="text--bolder">TOP</span>
-                <span class="text--italic">articles</span>
-              </h3>
-
-              <div class="row--full clearfix">
-
-                <div class="top__article">
-
-                  <img src="assets/image/top_articles1.png" alt="top article">
-                  <p class="title">Proin rhoncus eros ac ante pellentesque, id lobortis turpis</p>
-
-                </div>
-
-                <div class="top__article">
-
-                  <img src="assets/image/top_articles1.png" alt="top article">
-                  <p class="title">Proin rhoncus eros ac ante pellentesque, id lobortis turpis</p>
-
-                </div>
-
+              <div class="sub-menu__heading heading">
+                <h2 class="text--bolder text--left">
+                  Top
+                  <span class="text--italic">articles</span>
+                </h2>
               </div>
 
-              <div class="row--full clearfix">
-
-                <div class="top__article">
-
-                  <img src="assets/image/top_articles2.png" alt="top article">
-                  <p class="title">Proin rhoncus eros ac ante pellentesque, id lobortis turpis</p>
-
+              <div class="sub-menu__first-teaser teaser">
+                <div class="sub-menu__first--teaser__figure"></div>
+                <div class="sub-menu__first-teaser__caption">
+                  <h4 class="text--bolder text--left">Lorem is lorem and lorem ipsum</h4>
                 </div>
-
-                <div class="top__article">
-
-                  <img src="assets/image/top_articles2.png" alt="top article">
-                  <p class="title">Proin rhoncus eros ac ante pellentesque, id lobortis turpis</p>
-
-                </div>
-
               </div>
 
-            </article>
+              <div class="sub-menu__second-teaser teaser">
+                <div class="sub-menu__second--teaser__figure"></div>
+                <div class="sub-menu__second-teaser__caption">
+                  <h4 class="text--bolder text--left">Lorem is lorem and lorem ipsum</h4>
+                </div>
+              </div>
 
-          </article>
+              <div class="sub-menu__first-teaser teaser">
+                <div class="sub-menu__first--teaser__figure"></div>
+                <div class="sub-menu__first-teaser__caption">
+                  <h4 class="text--bolder text--left">Lorem is lorem and lorem ipsum</h4>
+                </div>
+              </div>
+
+              <div class="sub-menu__second-teaser teaser">
+                <div class="sub-menu__second--teaser__figure"></div>
+                <div class="sub-menu__second-teaser__caption">
+                  <h4 class="text--bolder text--left">Lorem is lorem and lorem ipsum</h4>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Sub Menu End -->
 
         </li>
 
         <li>
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
           <a href="#">my van</a>
         </li>
 
         <li>
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
           <a href="#">faq</a>
         </li>
 
         <li>
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
           <a href="#">we, the vans driver</a>
         </li>
 
         <li>
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
           <a href="#">what's new</a>
         </li>
 
         <li>
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
           <a href="#">videos</a>
         </li>
 
       </ul>
 
-      <article class="b-header__social">
+      <article class="header__social">
 
         <i class="fab fa-facebook-f" aria-hidden="true"></i>
         <i class="fab fa-youtube" aria-hidden="true"></i>
@@ -155,9 +152,9 @@
   </header>
   <!-- / Header -->
 
-   <!-- Search Active -->
+  <!-- Search Active -->
 
-  <article class="w-search-popup">
+  <article class="search-popup">
 
     <div class="search__close">
       <i class="fas fa-times text--white" aria-hidden="true"></i>
@@ -165,508 +162,519 @@
 
     <div class="search__field">
       <input class="text--big" type="text" name="" value="">
-      <i class="fa fa-search text--white" aria-hidden="true"></i>
+      <i class="fas fa-search text--white" aria-hidden="true"></i>
     </div>
 
   </article>
 
   <!-- // Search Active End //-->
 
-  <!-- Main Slider Slick -->
-
-  <div class="hp-slider">
-    <div>
-      <img class="hp-slider__images" src="./assets/image/slide1.jpg" alt=""> </div>
-    <div>
-      <img class="hp-slider__images" src="./assets/image/slide2.jpg" alt=""> </div>
-    <div>
-      <img class="hp-slider__images" src="./assets/image/slide3.jpg" alt=""> </div>
-  </div>
-
-  <div class="hp-slider__text-content">
-    <a class="button hp-slider__button" href="article-diaporama.html">Lorem Ipsum</a>
-    <h3 class="hp-slider__text-content-smaller">
-      Communication
-    </h3>
-    <h1 class="hp-slider__text-content-bigger text--bold">
-      Maecenas velit nunc,
-      <br> ultricies a fringilla
-    </h1>
-  </div>
-
-  <!-- End Of Main Slick Slider -->
-
   <!-- Page Content -->
 
-  <!-- News De La Semaine Block  -->
-  <section class="news-de-la teaser-block clearfix">
-    <div class="container">
+  <div class="page">
 
-      <div class="news-de-la__heading heading">
-        <h2 class="text--bolder">News</h2>
-        <h2 class="text--italic">de la</h2>
-        <h2 class="text--regular">Semaine</h2>
+    <!-- Main Slider Slick -->
+
+    <div class="hp-slider__wrapper">
+      <div class="hp-slider">
+        <div>
+          <img class="hp-slider__images" src="./assets/image/slide1.jpg" alt=""> </div>
+        <div>
+          <img class="hp-slider__images" src="./assets/image/slide2.jpg" alt=""> </div>
+        <div>
+          <img class="hp-slider__images" src="./assets/image/slide3.jpg" alt=""> </div>
       </div>
 
-      <div class="news-de-la__first-teaser teaser">
-        <div class="news-de-la__first-teaser__figure figure">
-          <button class="button button--caption ">fan de vu</button>
-        </div>
-        <div class="news-de-la__first-teaser__caption">
-          <h4 class="text--bolder">
-            Quel statut juridique choisir pour mon entreprise artisanale ?
-          </h4>
-        </div>
+      <div class="hp-slider__text-content">
+        <a class="button hp-slider__button" href="article-diaporama.html">Lorem Ipsum</a>
+        <h3 class="hp-slider__text-content-smaller">
+          Communication
+        </h3>
+        <h1 class="hp-slider__text-content-bigger text--bold">
+          Maecenas velit nunc,
+          <br> ultricies a fringilla
+        </h1>
       </div>
-
-      <div class="news-de-la__second-teaser teaser">
-        <div class="news-de-la__second-teaser__figure figure">
-          <button class="button button--caption ">tout sur le vu</button>
-        </div>
-        <div class="news-de-la__second-teaser__caption">
-          <h4 class="text--bolder">
-            10 idées originales pour gagner de la place dans mon utilitaire.
-          </h4>
-        </div>
-      </div>
-
-      <div class="news-de-la__third-teaser teaser">
-        <div class="news-de-la__third-teaser__figure figure">
-          <button class="button button--caption ">cote business</button>
-        </div>
-        <div class="news-de-la__third-teaser__caption">
-          <h4 class="text--bolder">
-            A quel moment je peux prétendre aux offres « formule flotte entreprise » chez mon assureur ?
-          </h4>
-        </div>
-      </div>
-
-      <div class="news-de-la__fourth-teaser teaser">
-        <div class="news-de-la__fourth-teaser__figure figure">
-          <button class="button button--caption ">tout sur le vu</button>
-        </div>
-        <div class="news-de-la__fourth-teaser__caption">
-          <h4 class="text--bolder">
-            Comment fabriquer un rangement pour ses outils ?
-          </h4>
-        </div>
-      </div>
-
     </div>
-  </section>
 
-  <div class="news-de-la__button">
-    <button class="button button-alt">Plus de news</button>
-  </div>
+    <!-- End Of Main Slick Slider -->
 
-  <!-- Fan De Vu Block -->
+    <!-- News De La Semaine Block  -->
+    <section class="news-de-la teaser-block clearfix">
+      <div class="container">
 
-  <section class="fan-de-vu teaser-block">
-    <div class="container">
+        <div class="news-de-la__heading heading">
+          <h2 class="text--bolder">News</h2>
+          <h2 class="text--italic">de la</h2>
+          <h2 class="text--regular">Semaine</h2>
+        </div>
 
-      <div class="fan-de-vu__first-teaser teaser">
-        <div class="fan-de-vu__first-teaser-white-background">
-          <div class="fan-de-vu__first-teaser__heading heading">
-            <h2>
-              <span>Fan</span>
-              <span class="text--italic">de</span>
-              <span class="text--bold">Vu</span>
-            </h2>
+        <div class="news-de-la__first-teaser teaser">
+          <div class="news-de-la__first-teaser__figure figure">
+            <button class="button button--caption ">fan de vu</button>
           </div>
-          <div class="fan-de-vu__first-teaser__caption">
-            <h3 class="text--bolder text--slider">
-              Il transforme son truck en une superbe habitation en bois
+          <div class="news-de-la__first-teaser__caption">
+            <h4 class="text--bolder">
+              Quel statut juridique choisir pour mon entreprise artisanale ?
+            </h4>
+          </div>
+        </div>
+
+        <div class="news-de-la__second-teaser teaser">
+          <div class="news-de-la__second-teaser__figure figure">
+            <button class="button button--caption ">tout sur le vu</button>
+          </div>
+          <div class="news-de-la__second-teaser__caption">
+            <h4 class="text--bolder">
+              10 idées originales pour gagner de la place dans mon utilitaire.
+            </h4>
+          </div>
+        </div>
+
+        <div class="news-de-la__third-teaser teaser">
+          <div class="news-de-la__third-teaser__figure figure">
+            <button class="button button--caption ">cote business</button>
+          </div>
+          <div class="news-de-la__third-teaser__caption">
+            <h4 class="text--bolder">
+              A quel moment je peux prétendre aux offres « formule flotte entreprise » chez mon assureur ?
+            </h4>
+          </div>
+        </div>
+
+        <div class="news-de-la__fourth-teaser teaser">
+          <div class="news-de-la__fourth-teaser__figure figure">
+            <button class="button button--caption ">tout sur le vu</button>
+          </div>
+          <div class="news-de-la__fourth-teaser__caption">
+            <h4 class="text--bolder">
+              Comment fabriquer un rangement pour ses outils ?
+            </h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="news-de-la__button">
+      <button class="button button-alt">Plus de news</button>
+    </div>
+
+    <!-- Fan De Vu Block -->
+
+    <section class="fan-de-vu teaser-block">
+      <div class="container">
+
+        <div class="fan-de-vu__first-teaser teaser">
+          <div class="fan-de-vu__first-teaser-white-background">
+            <div class="fan-de-vu__first-teaser__heading heading">
+              <h2>
+                <span>Fan</span>
+                <span class="text--italic">de</span>
+                <span class="text--bold">Vu</span>
+              </h2>
+            </div>
+            <div class="fan-de-vu__first-teaser__caption">
+              <h3 class="text--bolder text--slider">
+                Il transforme son truck en une superbe habitation en bois
+              </h3>
+            </div>
+          </div>
+          <div class="fan-de-vu__first-teaser__figure figure"></div>
+        </div>
+
+        <div class="fan-de-vu__second-teaser teaser">
+          <div class="fan-de-vu__second-teaser__figure figure"></div>
+          <div class="fan-de-vu__second-teaser__caption">
+            <h4 class="text--bolder">
+              Comment fabriquer un rangement pour ses outils ?
+            </h4>
+          </div>
+        </div>
+
+        <div class="fan-de-vu__third-teaser teaser">
+          <div class="fan-de-vu__third-teaser__figure figure"></div>
+          <div class="fan-de-vu__third-teaser__caption">
+            <h4 class="text--bolder">
+              Comment fabriquer un rangement pour ses outils ?
+            </h4>
+          </div>
+        </div>
+
+        <div class="fan-de-vu__fourth-teaser teaser">
+          <div class="fan-de-vu__fourth-teaser__figure figure"></div>
+          <div class="fan-de-vu__fourth-teaser__caption">
+            <h4 class="text--bolder">
+              Comment fabriquer un rangement pour ses outils ?
+            </h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="vu-astuces">
+      <div class="container">
+
+        <div class="vu-astuces__heading heading">
+          <h2>
+            <span class="text--bolder">Vu</span> &
+            <br> Astuces
+          </h2>
+        </div>
+
+        <div class="vu-astuces__first-teaser teaser">
+          <div class="vu-astuces__first-teaser__figure figure">
+            <button class="button button--caption ">fan de vu</button>
+          </div>
+          <div class="vu-astuces__first-teaser__caption">
+            <h4 class="text--bolder">
+              Le rangement UPS...
+              <br> zero perte de place
+            </h4>
+          </div>
+        </div>
+
+        <div class="vu-astuces__second-teaser teaser">
+          <div class="vu-astuces__second-teaser__figure figure">
+            <button class="button button--caption ">fan de vu</button>
+          </div>
+          <div class="vu-astuces__second-teaser__caption">
+            <h4 class="text--bolder">
+              Solutrans - Le salon International des solutions de transport routier arrive à Lyon en 2017
+            </h4>
+          </div>
+        </div>
+
+        <div class="vu-astuces__third-teaser teaser">
+          <div class="vu-astuces__third-teaser__figure figure">
+            <button class="button button--caption ">fan de vu</button>
+          </div>
+          <div class="vu-astuces__third-teaser__caption">
+            <h4 class="text--bolder">
+              A quel moment je peux prétendre aux offres « formule flotte entreprise » chez mon assureur ? </h4>
+          </div>
+        </div>
+
+        <div class="vu-astuces__fourth-teaser teaser">
+          <div class="vu-astuces__fourth-teaser__figure figure">
+            <button class="button button--caption ">fan de vu</button>
+          </div>
+          <div class="vu-astuces__fourth-teaser__caption">
+            <h4 class="text--bolder">
+              Dois-je embaucher un comptable lorsque je suis seul à mon compte ?
+            </h4>
+          </div>
+        </div>
+
+        <div class="vu-astuces__fifth-teaser teaser">
+          <div class="vu-astuces__fifth-teaser__figure figure">
+            <button class="button button--caption ">fan de vu</button>
+          </div>
+          <div class="vu-astuces__fifth-teaser__caption">
+            <h4 class="text--bolder">
+              4 comptes Instagram d’artisan pâtissiers à déguster sans modération </h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container">
+      <hr class="line-break">
+    </div>
+
+    <section class="faq teaser-block clearfix">
+      <div class="container">
+
+        <div class="faq__first-teaser__heading heading">
+          <h2>
+            foire
+            <span class="text--italic">aux</span>
+            <br>
+            <span class="text--bolder">questions</span>
+          </h2>
+        </div>
+
+        <div class="faq__first-teaser teaser">
+
+          <div class="faq-slider">
+
+            <div class="faq__first-teaser__slide">
+            </div>
+            <div class="faq__second-teaser__slide">
+            </div>
+            <div class="faq__third-teaser__slide">
+            </div>
+
+          </div>
+
+          <div class="faq__first-teaser__caption">
+            <h4 class="text--bolder">
+              Quelle est l’autonomie d’un véhicule utilitaire éléctrique ?
+            </h4>
+          </div>
+
+          <div class="faq-slider__navigation">
+            <div class="faq-slider__arrows faq-slider__arrows-left">
+              <span class="fas fa-caret-left"></span>
+              <span class="sr-only">Prev</span>
+            </div>
+            <span class="faq-slider__current"></span>
+            <span class="faq-slider__total"></span>
+            <div class="faq-slider__arrows faq-slider__arrows-right">
+              <span class="fas fa-caret-right"></span>
+              <span class="sr-only">Next</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cote-business teaser-block clearfix">
+      <div class="container">
+
+        <div class="cote-business__heading heading">
+          <h2>
+            <span class="text--italic">Cote</span>
+            <br>
+            <span class="text--bolder">business</span>
+          </h2>
+        </div>
+
+        <div class="cote-business__first-teaser teaser">
+          <div class="cote-business__first-teaser__figure figure">
+            <button class="button button--caption ">cote business</button>
+          </div>
+          <div class="cote-business__first-teaser__caption">
+            <h4 class="text--bolder">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
+          </div>
+        </div>
+
+        <div class="cote-business__second-teaser teaser">
+          <div class="cote-business__second-teaser__figure figure">
+            <button class="button button--caption ">cote business</button>
+          </div>
+          <div class="cote-business__second-teaser__caption">
+            <h4 class="text--bolder">
+              Le rangement UPS... zéro perte de place ! </div>
+        </div>
+
+        <div class="cote-business__third-teaser teaser">
+          <div class="cote-business__third-teaser__figure figure">
+            <button class="button button--caption ">cote business</button>
+          </div>
+          <div class="cote-business__third-teaser__caption">
+            <h4 class="text--bolder">
+              Le rangement UPS... zéro perte de place !
+            </h4>
+          </div>
+        </div>
+
+        <div class="cote-business__fourth-teaser teaser">
+          <div class="cote-business__fourth-teaser__figure figure">
+            <button class="button button--caption ">cote business</button>
+          </div>
+          <div class="cote-business__fourth-teaser__caption">
+            <h4 class="text--bolder">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h4>
+          </div>
+        </div>
+
+        <div class="cote-business__fifth-teaser teaser">
+          <div class="cote-business__fifth-teaser__figure figure">
+            <button class="button button--caption ">cote business</button>
+          </div>
+          <div class="cote-business__fifth-teaser__caption">
+            <h4 class="text--bolder">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h4>
+          </div>
+        </div>
+
+        <div class="cote-business__sixth-teaser teaser">
+          <div class="cote-business__sixth-teaser__figure figure">
+            <button class="button button--caption ">cote business</button>
+          </div>
+          <div class="cote-business__sixth-teaser__caption">
+            <h4 class="text--bolder">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h4>
+          </div>
+        </div>
+
+        <!-- Portrait Slider -->
+        <div class="cote-business__portrait-slider">
+
+          <div class="portrait-slider">
+
+            <div class="portrait-slider__first-slide">
+            </div>
+            <div class="portrait-slider__second-slide">
+            </div>
+
+          </div>
+
+          <div class="portrait-slider__text-content">
+            <h3 class="text--italic text--italic-large text--yellow">
+              Portrait
             </h3>
+            <h1 class="text--slider text--white text--bold">
+              Ingrid et
+              <br> Estelle,
+              <br> créatrice du
+              <br> premier beauty
+              <br> van itinérant
+            </h1>
+            <a class="button--white-bg" href="#">découvrir</a>
           </div>
+
+          <div class="portrait-slider__navigation">
+            <div class="portrait-slider__arrows portrait-slider__arrows-left">
+              <span class="fas fa-caret-left"></span>
+              <span class="sr-only">Prev</span>
+            </div>
+            <span class="portrait-slider__current"></span>
+            <span class="portrait-slider__total"></span>
+            <div class="portrait-slider__arrows portrait-slider__arrows-right">
+              <span class="fas fa-caret-right"></span>
+              <span class="sr-only">Next</span>
+            </div>
+          </div>
+
         </div>
-        <div class="fan-de-vu__first-teaser__figure figure"></div>
+
+      </div>
+    </section>
+
+    <!-- QUIZ TEASER SECTION -->
+
+    <section class="quiz-teaser teaser-block clearfix">
+      <div class="container">
+
+        <div class="quiz-teaser__wrapper">
+
+          <div class="quiz-teaser__text-content">
+
+            <div class="quiz-teaser__heading">
+              <h2>
+                <span class="text--bolder">which vehicule</span>
+                <br>
+                <span class="text--italic">is right </span>
+                <span class="text--regular">for you</span>
+              </h2>
+            </div>
+
+            <p class="quiz-teaser__text">
+              Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue.
+            </p>
+
+            <div class="quiz-teaser__button">
+              <button class="button--white-bg">start</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LES PLUS LUS TEASER-BLOCK -->
+
+    <section class="les-plus teaser-block">
+      <div class="container">
+        <div class="les-plus__heading heading">
+          <h2>
+            <span class="text--italic">les</span>
+            <span class="text--regular">plus</span>
+            <span class="text--bolder">lus</span>
+          </h2>
+        </div>
+
+        <div class="les-plus-slider">
+
+          <div class="les-plus__first-teaser teaser">
+            <div class="les-plus__first-teaser__figure figure"></div>
+            <div class="les-plus_first-teaser__caption">
+              <h4 class="text--bold">
+                Renault Véhicule utilitaire propose un système de motricité sur terrain instable
+              </h4>
+            </div>
+          </div>
+
+          <div class="les-plus__second-teaser teaser">
+            <div class="les-plus__second-teaser__figure figure"></div>
+            <div class="les-plus_second-teaser__caption">
+              <h4 class="text--bold">
+                Renault Véhicule utilitaire propose un système de motricité sur terrain instable
+              </h4>
+            </div>
+          </div>
+
+          <div class="les-plus__third-teaser teaser">
+            <div class="les-plus__third-teaser__figure figure"></div>
+            <div class="les-plus_third-teaser__caption">
+              <h4 class="text--bold">
+                Renault Véhicule utilitaire propose un système de motricité sur terrain instable
+              </h4>
+            </div>
+          </div>
+
+          <div class="les-plus__fourth-teaser teaser">
+            <div class="les-plus__fourth-teaser__figure figure"></div>
+            <div class="les-plus_fourth-teaser__caption">
+              <h4 class="text--bold">
+                Quel statut juridique choisir pour mon entreprise artisanale
+              </h4>
+            </div>
+          </div>
+
+          <!-- two hidden ones -->
+
+          <div class="les-plus__second-teaser les-plus__teaser-hidden teaser ">
+            <div class="les-plus__second-teaser__figure figure"></div>
+            <div class="les-plus_second-teaser__caption">
+              <h4 class="text--bold">
+                Renault Véhicule utilitaire propose un système de motricité sur terrain instable
+              </h4>
+            </div>
+          </div>
+
+          <div class="les-plus__third-teaser les-plus__teaser-hidden teaser ">
+            <div class="les-plus__third-teaser__figure figure"></div>
+            <div class="les-plus_third-teaser__caption">
+              <h4 class="text--bold">
+                Renault Véhicule utilitaire propose un système de motricité sur terrain instable
+              </h4>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Les Plus Arrows -->
+
+        <div class="les-plus-slider__arrows clearfix">
+
+          <div class="arrow--alt les-plus-slider__arrows-prev">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+          </div>
+          <div class="arrow--alt les-plus-slider__arrows-next">
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="fan-de-vu__second-teaser teaser">
-        <div class="fan-de-vu__second-teaser__figure figure"></div>
-        <div class="fan-de-vu__second-teaser__caption">
-          <h4 class="text--bolder">
-            Comment fabriquer un rangement pour ses outils ?
-          </h4>
-        </div>
-      </div>
-
-      <div class="fan-de-vu__third-teaser teaser">
-        <div class="fan-de-vu__third-teaser__figure figure"></div>
-        <div class="fan-de-vu__third-teaser__caption">
-          <h4 class="text--bolder">
-            Comment fabriquer un rangement pour ses outils ?
-          </h4>
-        </div>
-      </div>
-
-      <div class="fan-de-vu__fourth-teaser teaser">
-        <div class="fan-de-vu__fourth-teaser__figure figure"></div>
-        <div class="fan-de-vu__fourth-teaser__caption">
-          <h4 class="text--bolder">
-            Comment fabriquer un rangement pour ses outils ?
-          </h4>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="vu-astuces">
-    <div class="container">
-
-      <div class="vu-astuces__heading heading">
-        <h2>
-          <span class="text--bolder">Vu</span> &
-          <br> Astuces
-        </h2>
-      </div>
-
-      <div class="vu-astuces__first-teaser teaser">
-        <div class="vu-astuces__first-teaser__figure figure">
-          <button class="button button--caption ">fan de vu</button>
-        </div>
-        <div class="vu-astuces__first-teaser__caption">
-          <h4 class="text--bolder">
-            Le rangement UPS...
-            <br> zero perte de place
-          </h4>
-        </div>
-      </div>
-
-      <div class="vu-astuces__second-teaser teaser">
-        <div class="vu-astuces__second-teaser__figure figure">
-          <button class="button button--caption ">fan de vu</button>
-        </div>
-        <div class="vu-astuces__second-teaser__caption">
-          <h4 class="text--bolder">
-            Solutrans - Le salon International des solutions de transport routier arrive à Lyon en 2017
-          </h4>
-        </div>
-      </div>
-
-      <div class="vu-astuces__third-teaser teaser">
-        <div class="vu-astuces__third-teaser__figure figure">
-          <button class="button button--caption ">fan de vu</button>
-        </div>
-        <div class="vu-astuces__third-teaser__caption">
-          <h4 class="text--bolder">
-            A quel moment je peux prétendre aux offres « formule flotte entreprise » chez mon assureur ? </h4>
-        </div>
-      </div>
-
-      <div class="vu-astuces__fourth-teaser teaser">
-        <div class="vu-astuces__fourth-teaser__figure figure">
-          <button class="button button--caption ">fan de vu</button>
-        </div>
-        <div class="vu-astuces__fourth-teaser__caption">
-          <h4 class="text--bolder">
-            Dois-je embaucher un comptable lorsque je suis seul à mon compte ?
-          </h4>
-        </div>
-      </div>
-
-      <div class="vu-astuces__fifth-teaser teaser">
-        <div class="vu-astuces__fifth-teaser__figure figure">
-          <button class="button button--caption ">fan de vu</button>
-        </div>
-        <div class="vu-astuces__fifth-teaser__caption">
-          <h4 class="text--bolder">
-            4 comptes Instagram d’artisan pâtissiers à déguster sans modération </h4>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <div class="container">
-    <hr class="line-break">
   </div>
-
-  <section class="faq teaser-block clearfix">
-    <div class="container">
-
-      <div class="faq__first-teaser__heading heading">
-        <h2>
-          foire
-          <span class="text--italic">aux</span>
-          <br>
-          <span class="text--bolder">questions</span>
-        </h2>
-      </div>
-
-      <div class="faq__first-teaser teaser">
-
-        <div class="faq-slider">
-
-          <div class="faq__first-teaser__slide">
-          </div>
-          <div class="faq__second-teaser__slide">
-          </div>
-          <div class="faq__third-teaser__slide">
-          </div>
-
-        </div>
-
-        <div class="faq__first-teaser__caption">
-          <h4 class="text--bolder">
-            Quelle est l’autonomie d’un véhicule utilitaire éléctrique ?
-          </h4>
-        </div>
-
-        <div class="faq-slider__navigation">
-          <div class="faq-slider__arrows faq-slider__arrows-left">
-            <span class="fas fa-caret-left"></span>
-            <span class="sr-only">Prev</span>
-          </div>
-          <span class="faq-slider__current"></span>
-          <span class="faq-slider__total"></span>
-          <div class="faq-slider__arrows faq-slider__arrows-right">
-            <span class="fas fa-caret-right"></span>
-            <span class="sr-only">Next</span>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
   </section>
 
-  <section class="cote-business teaser-block clearfix">
-    <div class="container">
-
-      <div class="cote-business__heading heading">
-        <h2>
-          <span class="text--italic">Cote</span>
-          <br>
-          <span class="text--bolder">business</span>
-        </h2>
-      </div>
-
-      <div class="cote-business__first-teaser teaser">
-        <div class="cote-business__first-teaser__figure figure">
-          <button class="button button--caption ">cote business</button>
-        </div>
-        <div class="cote-business__first-teaser__caption">
-          <h4 class="text--bolder">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
-        </div>
-      </div>
-
-      <div class="cote-business__second-teaser teaser">
-        <div class="cote-business__second-teaser__figure figure">
-          <button class="button button--caption ">cote business</button>
-        </div>
-        <div class="vu-astuces__second-teaser__caption">
-          <h4 class="text--bolder">
-            Le rangement UPS... zéro perte de place ! </div>
-      </div>
-
-      <div class="cote-business__third-teaser teaser">
-        <div class="cote-business__third-teaser__figure figure">
-          <button class="button button--caption ">cote business</button>
-        </div>
-        <div class="cote-business__third-teaser__caption">
-          <h4 class="text--bolder">
-            Dois-je embaucher un comptable lorsque je suis seul à mon compte ?
-          </h4>
-        </div>
-      </div>
-
-      <div class="cote-business__fourth-teaser teaser">
-        <div class="cote-business__fourth-teaser__figure figure">
-          <button class="button button--caption ">cote business</button>
-        </div>
-        <div class="cote-business__fourth-teaser__caption">
-          <h4 class="text--bolder">
-            Dois-je embaucher un comptable lorsque je suis seul à mon compte ?
-          </h4>
-        </div>
-      </div>
-
-      <div class="cote-business__fifth-teaser teaser">
-        <div class="cote-business__fifth-teaser__figure figure">
-          <button class="button button--caption ">cote business</button>
-        </div>
-        <div class="cote-business__fifth-teaser__caption">
-          <h4 class="text--bolder">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </h4>
-        </div>
-      </div>
-
-      <div class="cote-business__sixth-teaser teaser">
-        <div class="cote-business__sixth-teaser__figure figure">
-          <button class="button button--caption ">cote business</button>
-        </div>
-        <div class="cote-business__sixth-teaser__caption">
-          <h4 class="text--bolder">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </h4>
-        </div>
-      </div>
-
-      <!-- Portrait Slider -->
-      <div class="cote-business__portrait-slider">
-
-        <div class="portrait-slider">
-
-          <div class="portrait-slider__first-slide">
-          </div>
-          <div class="portrait-slider__second-slide">
-          </div>
-
-        </div>
-
-        <div class="portrait-slider__text-content">
-          <h3 class="text--italic text--italic-large text--yellow">
-            Portrait
-          </h3>
-          <h1 class="text--slider text--white text--bold">
-            Ingrid et
-            <br> Estelle,
-            <br> créatrice du
-            <br> premier beauty
-            <br> van itinérant
-          </h1>
-          <a class="button--white-bg" href="#">découvrir</a>
-        </div>
-
-        <div class="portrait-slider__navigation">
-          <div class="portrait-slider__arrows portrait-slider__arrows-left">
-            <span class="fas fa-caret-left"></span>
-            <span class="sr-only">Prev</span>
-          </div>
-          <span class="portrait-slider__current"></span>
-          <span class="portrait-slider__total"></span>
-          <div class="portrait-slider__arrows portrait-slider__arrows-right">
-            <span class="fas fa-caret-right"></span>
-            <span class="sr-only">Next</span>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- QUIZ TEASER SECTION -->
-
-  <section class="quiz-teaser teaser-block clearfix">
-    <div class="container">
-
-      <div class="quiz-teaser__wrapper">
-
-        <div class="quiz-teaser__text-content">
-
-          <div class="quiz-teaser__heading">
-            <h2>
-              <span class="text--bolder">which vehicule</span>
-              <br>
-              <span class="text--italic">is right </span>
-              <span class="text--regular">for you</span>
-            </h2>
-          </div>
-
-          <p class="quiz-teaser__text">
-            Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue.
-          </p>
-
-          <div class="quiz-teaser__button">
-            <button class="button--white-bg">start</button>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- LES PLUS LUS TEASER-BLOCK -->
-
-  <section class="les-plus teaser-block">
-    <div class="container">
-      <div class="les-plus__heading heading">
-        <h2>
-          <span class="text--italic">les</span>
-          <span class="text--regular">plus</span>
-          <span class="text--bolder">lus</span>
-        </h2>
-      </div>
-
-      <div class="les-plus-slider">
-
-        <div class="les-plus__first-teaser teaser">
-          <div class="les-plus__first-teaser__figure figure"></div>
-          <div class="les-plus_first-teaser__caption">
-            <h4 class="text--bold">
-              Renault Véhicule utilitaire propose un système de motricité sur terrain instable
-            </h4>
-          </div>
-        </div>
-
-        <div class="les-plus__second-teaser teaser">
-          <div class="les-plus__second-teaser__figure figure"></div>
-          <div class="les-plus_second-teaser__caption">
-            <h4 class="text--bold">
-              Renault Véhicule utilitaire propose un système de motricité sur terrain instable
-            </h4>
-          </div>
-        </div>
-
-        <div class="les-plus__third-teaser teaser">
-          <div class="les-plus__third-teaser__figure figure"></div>
-          <div class="les-plus_third-teaser__caption">
-            <h4 class="text--bold">
-              Renault Véhicule utilitaire propose un système de motricité sur terrain instable
-            </h4>
-          </div>
-        </div>
-
-        <div class="les-plus__fourth-teaser teaser">
-          <div class="les-plus__fourth-teaser__figure figure"></div>
-          <div class="les-plus_fourth-teaser__caption">
-            <h4 class="text--bold">
-              Quel statut juridique choisir pour mon entreprise artisanale
-            </h4>
-          </div>
-        </div>
-
-        <!-- two hidden ones -->
-        <div class="les-plus__second-teaser les-plus__teaser-hidden teaser ">
-          <div class="les-plus__second-teaser__figure figure"></div>
-          <div class="les-plus_second-teaser__caption">
-            <h4 class="text--bold">
-              Renault Véhicule utilitaire propose un système de motricité sur terrain instable
-            </h4>
-          </div>
-        </div>
-
-        <div class="les-plus__third-teaser les-plus__teaser-hidden teaser ">
-          <div class="les-plus__third-teaser__figure figure"></div>
-          <div class="les-plus_third-teaser__caption">
-            <h4 class="text--bold">
-              Renault Véhicule utilitaire propose un système de motricité sur terrain instable
-            </h4>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="les-plus-slider__navigation les-plus__teaser-hidden">
-        <div class="les-plus-slider__arrows les-plus-slider__arrows-left">
-          <span class="far fa-arrow-alt-circle-left"></span>
-          <span class="sr-only">Prev</span>
-        </div>
-        <div class="les-plus-slider__arrows les-plus-slider__arrows-right">
-          <span class="far fa-arrow-alt-circle-right"></span>
-          <span class="sr-only">Next</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
+  </div>
 
   <!-- FOOTER -->
 
@@ -688,10 +696,8 @@
   </footer>
 
 
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="./master/js/master.js"></script>
 </body>

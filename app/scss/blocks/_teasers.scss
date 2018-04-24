@@ -25,6 +25,28 @@
 
 }
 
+// Sub Menu Top Articles Teasers 
+
+.sub-menu__first-teaser,
+.sub-menu__second-teaser {
+    @include width(0,0,234);
+    @include marginTop(0,0,18);
+    position: relative;
+
+    &__caption {
+        width: 15rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        h4 {
+            margin: 0;
+        }
+    }
+    
+}
+
+// News de la teasers
 
 .news-de-la__heading {
     @include marginTop(22,30,30);
@@ -42,26 +64,26 @@
 
 .news-de-la__third-teaser {
     @include width(560,276,999);
-    @include marginTop(79,0,0)
+    @include marginTop(75,0,0)
 }
 
 .news-de-la__fourth-teaser {
     @include width(560,276,999);
-    @include marginTop(73,0,0);
+    @include marginTop(70,0,0);
     position: relative;
 
     &__caption {
         @include width(272,272,272);
         @include marginLeft(289,288,288);
         position: absolute;
-        top: -1%;
+        top: -2.2rem;;
     }
     
 }
 
 .news-de-la__button {
     text-align: center;
-    @include marginTop(63,55,68);
+    @include marginTop(68,55,68);
     @include marginBottom(98,68,123);
 }
 
@@ -69,7 +91,7 @@
     @include width(560,666,999);
 
     &-white-background {
-        margin-top: 6rem;
+        margin-top: 6.6rem;
         background: white;
         padding: 4rem 6rem 6rem 5.6rem;
 
@@ -87,8 +109,8 @@
 
 .fan-de-vu__second-teaser {
     @include width(272,666,999);    
-    margin-top: 4.5rem;
-    @include marginRight(16,11,24); 
+    @include marginRight(16,11,24);
+    @include marginTop(75,11,24); 
 }
 
 .fan-de-vu__third-teaser {
@@ -97,17 +119,16 @@
 
 .fan-de-vu__fourth-teaser { 
     @include width(272,666,999);
-    margin-top: 9.5rem;
-
+    @include marginTop(125,11,24); 
 }
 
 .vu-astuces__heading {
-    margin-bottom: 5rem;
+    @include marginBottom(39,70,70)
 }
 
 .vu-astuces__first-teaser {
     @include width(272,666,999);
-    margin-right: 2vw; 
+    @include marginRight(16,11,24);
 }
 
 .vu-astuces__second-teaser {
@@ -117,19 +138,20 @@
     &__caption {
         h4 {
             letter-spacing: 0.06em;
-            margin-top: 2rem;
+            @include marginTop(18,20,20);
         }
     }
 }
 
 .vu-astuces__third-teaser {
     @extend .news-de-la__third-teaser;
+    @include marginTop(66,68,68);
 }
 
 .vu-astuces__fourth-teaser {
     @extend .vu-astuces__second-teaser;
     margin-top: 8rem;
-    margin-right: 2vw; 
+    @include marginRight(16,11,24);
 }
 
 .vu-astuces__fifth-teaser {
@@ -146,7 +168,7 @@
 .faq__first-teaser {
     @extend .news-de-la__third-teaser;
     position: absolute;
-    top: -13rem;
+    top: -13.5rem;
     margin-top: 0;
 
     &__caption {
@@ -156,26 +178,27 @@
 
 .cote-business__first-teaser {
     @extend .vu-astuces__fourth-teaser;
-    margin-top: 5rem;
+    @include marginTop(43,43,43);
 }
 
 .cote-business__second-teaser {
     @extend .vu-astuces__fifth-teaser;
-    margin-top: 5rem;
+    @include marginTop(43,43,43);
 }
 
 .cote-business__third-teaser {
     @extend .vu-astuces__first-teaser;
-    @include marginTop(-32,0,0);
+    @include marginTop(-37,0,0);
 }
 
 .cote-business__fourth-teaser {
     @extend .vu-astuces__second-teaser;
-    margin-top: 5rem;
+    @include marginTop(103,0,0);
 }
 
 .cote-business__fifth-teaser {
     @extend .fan-de-vu__second-teaser;
+    @include marginTop(58,0,0);
 }
 
 .cote-business__sixth-teaser {
@@ -183,7 +206,7 @@
 }
 
 .quiz-teaser {
-    margin-top: 8.8rem;
+    @include marginTop(81,81,81);
 
     .container {
         width: 100%;
@@ -194,7 +217,7 @@
     }
 
     &__text-content {
-        padding: 7rem 11rem 4rem;
+        padding: 6.7rem 11.6rem 5.1rem;
     }
 
     &__text {
@@ -219,6 +242,7 @@
 .les-plus__first-teaser,
 .les-plus__third-teaser {
     @extend .fan-de-vu__second-teaser;
+    @include marginTop(59,59,59);
 }
 
 .les-plus__second-teaser,

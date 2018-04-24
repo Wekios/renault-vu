@@ -37,27 +37,27 @@ $('.portrait-slider').slick({
     nextArrow: $(".portrait-slider__arrows-right")
   });
 
-  $('.les-plus-slider').slick({
-    arrows: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      // {
-      //   breakpoint: 1024,
-      //   settings: {
-      //     slidesToShow: 3,
-      //     slidesToScroll: 3,
-      //     infinite: true,
-      //     dots: true
-      //   }
-      // },
-      {
-        breakpoint: 641,
-        settings: "unslick"
-      }
-    ],
-    prevArrow: $(".les-plus-slider__arrows-left"),
-    nextArrow: $(".les-plus-slider__arrows-right")
-  });
+  // $('.les-plus-slider').slick({
+  //   arrows: true,
+  //   speed: 300,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   responsive: [
+  //     // {
+  //     //   breakpoint: 1024,
+  //     //   settings: {
+  //     //     slidesToShow: 3,
+  //     //     slidesToScroll: 3,
+  //     //     infinite: true,
+  //     //     dots: true
+  //     //   }
+  //     // },
+  //     {
+  //       breakpoint: 641,
+  //       settings: "unslick"
+  //     }
+  //   ],
+  //   prevArrow: $(".les-plus-slider__arrows-left"),
+  //   nextArrow: $(".les-plus-slider__arrows-right")
+  // });
 });

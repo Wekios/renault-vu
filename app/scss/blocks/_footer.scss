@@ -1,14 +1,6 @@
 .footer {
-  @include container(100%, 11.5vw 0, 0);
+  margin-top: 64px;
   text-align: center;
-
-  @include breakpoint(tabletOnly) {
-    margin: 6.5vw 0;
-  }
-
-  @include breakpoint(desktopOnly) {
-    margin: 4.3vw 0;
-  }
 
   &__img {
     margin: 0 auto;

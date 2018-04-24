@@ -9,7 +9,7 @@
 .fan-de-vu {
   background: $lightGray;
   height: 85rem;
-  margin-bottom: 73rem;
+  @include marginBottom(835,730,730);
 }
 
 .line-break {
@@ -20,10 +20,10 @@
 
 .faq {
   height: 52rem;
-  top: 26.5rem;
+  top: 24.9rem;
   background: $lightGray;
   position: relative;
-  margin-bottom: 34rem;
+  @include marginBottom(330,340,340)
 }
 
 .les-plus {

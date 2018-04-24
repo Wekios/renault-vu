@@ -16,47 +16,83 @@
       position: relative;
       width: 100%;
     }
-  
-    &__arrows {
-      @include circled-icon(8.5vw);
-      background: $yellow;
-      color: $black;
-      top: -2vw;
-      font-size: 1.5rem;
-  
-      @include breakpoint(tabletOnly) {
-        @include circled-icon(4.5vw);
-        font-size: 1.3rem;
-        top: -1.8vw;
-      }
-  
-      @include breakpoint(desktopOnly) {
-        @include circled-icon(2vw);
-        font-size: 1.1rem;
-        top: 12vw;
+
+    &__navigation {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        top: 24vw;
+        z-index: 1000;
+    
+        @include breakpoint(tabletOnly) {
+          top: 27vw;
+        }
+    
+        @include breakpoint(desktopOnly) {
+          top: 22vw;
+        }
       }
 
-    }
+      &__prev, &__next {
+        @include circled-icon(8.5vw);
+        background: $yellow;
+        color: $black;
+        top: -2vw;
+        font-size: 1.5rem;
+    
+        @include breakpoint(tabletOnly) {
+          @include circled-icon(4.5vw);
+          font-size: 1.3rem;
+          top: -1.8vw;
+        }
+    
+        @include breakpoint(desktopOnly) {
+          @include circled-icon(2vw);
+          font-size: 1.1rem;
+          top: 12vw;
+        }
+
+      }
+
+      &__prev {
+        left: 1vw;
+    
+        @include breakpoint(tabletOnly) {
+          left: -1.4vw;
+        }
+    
+        @include breakpoint(desktopOnly) {
+          left: 25.6vw;
+        }
+      }
+    
+      &__next {
+        right: 1vw;
+    
+        @include breakpoint(tabletOnly) {
+          right: -1.4vw;
+        }
+    
+        @include breakpoint(desktopOnly) {
+          right: 21.6vw;
+        }
+      }
   
     &__thumbs {
       width: calcVw(580, 1700);
       position: absolute;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      bottom: 3.7vw; 
-      z-index: 300;
-  
-      @include breakpoint(phoneAndTablet) {
-        display: none;
+      bottom: 3.7vw;
+      left: 52%;
+      margin-left: -17%;
+      z-index: 1000;
 
-      }
-
+    @include breakpoint(phoneAndTablet) {
+      display: none;
     }
-    
+}
+
     &__thumb {
         position: relative;
-        display: inline-block;
         cursor: pointer;
         outline: none;
         max-width: calcVw(100, 1700);
@@ -82,37 +118,12 @@
     }
 }
   
-        // &overlay {
-        //   opacity: 0;
-        //   position: absolute;
-        //   top: 0;
-        //   right: 0;
-        //   bottom: 0;
-        //   left: 0;
-        //   box-shadow: inset 0 0 0 5px $yellow;
-        //   transition: opacity .1s linear;
-        // }
-  
-//       }
-  
-//       & .diaporama-trigger__thumb:hover {
-//         & img {
-//           filter: grayscale(0);
-//         }
-  
-//         & .overlay {
-//           opacity: 1;
-//         }
-//       }
-//     }
-// }
-  
 
 // Diaporama Images and Thumbs 
 
 .diaporama-trigger__slide1 {
     @include teaser__figureResponsive(
-    url("../../assets/image/slide2.jpg"),
+        url("https://dummyimage.com/1700x450/b8b8b8/474747.png"),
     330,202,700);
 }
 

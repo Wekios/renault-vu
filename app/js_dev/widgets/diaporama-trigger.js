@@ -24,83 +24,62 @@
     $('body, html').addClass('diaporamaOpened');
   });
 
+  arrowPrev.on('click', function (e) {
+    e.stopPropagation();
+    slider.slick('slickPrev');
+    slider.slick('slickPause');
+  });
+
+  arrowNext.on('click', function (e) {
+    e.stopPropagation();
+    slider.slick('slickNext');
+    slider.slick('slickPause');
+  });
+
   if (windowWidth < 767) {
 
     slider.slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false,
       fade: true,
       speed: 400,
       autoplay: false,
       dots: false,
       pauseOnHover: true,
+      arrows: false,
       adaptiveHeight: true
     });
 
   } else {
 
-    slider.slick({
+    $('.diaporama-trigger__slider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       fade: true,
-      speed: 300,
+      speed: 400,
       autoplay: false,
       dots: false,
       pauseOnHover: true,
-      infinite: false,
+      arrows: false,
       draggable: false,
-      asNavFor: diaporamaThumbs,
-      prevArrow: $(".diaporama-trigger__arrows-left"),
-      nextArrow: $(".diaporama-trigger__arrows-right")
+      asNavFor: '.diaporama-trigger__thumbs'
     });
 
-    diaporamaThumbs.slick({
+    $('.diaporama-trigger__thumbs').slick({
       slidesToShow: 5,
-      slidesToScroll: 5,
-      speed: 300,
+      slidesToScroll: 1,
+      speed: 400,
       autoplay: false,
       dots: false,
       pauseOnHover: true,
-      infinite: false,
+      arrows: false,
       draggable: false,
       centerMode: false,
       focusOnSelect: true,
-      asNavFor: slider
+      asNavFor: '.diaporama-trigger__slider'
     });
 
-
-
-
-    // Working version!
-
-    // $('.diaporama-trigger__slider').slick({
-    //   slidesToShow: 1,
-    //   slidesToScroll: 1,
-    //   fade: true,
-    //   speed: 400,
-    //   autoplay: false,
-    //   dots: false,
-    //   pauseOnHover: true,
-    //   arrows: false,
-    //   draggable: false,
-    //   asNavFor: '.diaporama-trigger__thumbs'
-    // });
-
-    // $('.diaporama-trigger__thumbs').slick({
-    //   slidesToShow: 5,
-    //   slidesToScroll: 1,
-    //   speed: 400,
-    //   autoplay: false,
-    //   dots: false,
-    //   pauseOnHover: true,
-    //   arrows: false,
-    //   draggable: false,
-    //   centerMode: false,
-    //   focusOnSelect: true,
-    //   asNavFor: '.diaporama-trigger__slider'
-    // });
-
   }
+
 
 })(jQuery);

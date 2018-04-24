@@ -40,7 +40,7 @@
     }
   }
   
-  .w-diaporama .slick-dots {
+  .diaporama .slick-dots {
     @include ulClean;
     position: absolute;
     top: 38vw;
@@ -50,7 +50,7 @@
     z-index: 30;
   }
   
-  .w-diaporama .slick-dots li {
+  .diaporama .slick-dots li {
     display: inline-block;
     max-width: calc(100% / 6 - 2%);
     height: 5vw;
@@ -58,13 +58,13 @@
     position: relative;
   }
   
-  .w-diaporama .slick-dots li img {
+  .diaporama .slick-dots li img {
     width: 100%;
     height: 100%;
     filter: grayscale(100%);
   }
   
-  .w-diaporama .slick-dots li .shadow {
+  .diaporama .slick-dots li .shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -73,11 +73,11 @@
     box-shadow: inset 0 0 0 5px transparent;
   }
   
-  .w-diaporama .slick-dots li:hover .shadow, .w-diaporama .slick-dots li.slick-active .shadow {
+  .diaporama .slick-dots li:hover .shadow, .diaporama .slick-dots li.slick-active .shadow {
     box-shadow: inset 0 0 0 5px $yellow;
   }
   
-  .w-diaporama .slick-dots li:hover img, .w-diaporama .slick-dots li.slick-active img {
+  .diaporama .slick-dots li:hover img, .diaporama .slick-dots li.slick-active img {
     filter: grayscale(0);
   }
   
@@ -185,69 +185,8 @@
       margin-right: 0.1vw;
     }
   }
-  
-  .diaporama__arrows {
-    position: absolute;
-    top: 41.5vw;
-    width: 100%;
-    z-index: 1000;
-  
-    @include breakpoint(tabletOnly) {
-      top: 34.4vw;
-    }
-  
-    @include breakpoint(desktopOnly) {
-      width: 8.5%;
-      top: auto;
-      bottom: 6vh;
-      left: 54.5%;
-    }
-  }
-  
-  .diaporama__prev, .diaporama__next {
-    @include circled-icon(9vw);
-    color: $yellow;
-    background: $black;
-    font-size: calcRem(14);
-    z-index: 20;
-    position: relative;
-  
-    @include breakpoint(tabletOnly) {
-      @include circled-icon(6vw);
-      font-size: calcRem(12);
-    }
-  
-    @include breakpoint(desktopOnly) {
-      @include circled-icon(2.65vw);
-      font-size: calcRem(14);
-    }
-  }
-  
-  .diaporama__prev {
-    float: left;
-    left: 6vw;
-  
-    @include breakpoint(tabletOnly) {
-      left: 3.5vw;
-    }
-  
-    @include breakpoint(desktopOnly) {
-      left: 0;
-    }
-  }
-  
-  .diaporama__next {
-    float: right;
-    right: 6vw;
-  
-    @include breakpoint(tabletOnly) {
-      right: 3.5vw;
-    }
-  
-    @include breakpoint(desktopOnly) {
-      right: 0;
-    }
-  }
+
+  //Insert Diaporama Arrows Here 
   
   .diaporama__counter {
     font-weight: 900;
@@ -335,7 +274,7 @@
   
   @media only screen and (min-width: $break-desk) {
   
-    .w-diaporama {
+    .diaporama {
       background: $white;
     }
   
@@ -343,7 +282,7 @@
       height: 100%;
     }
   
-    .w-diaporama .slick-list, .w-diaporama .slick-list .slick-track {
+    .diaporama .slick-list, .diaporama .slick-list .slick-track {
       height: 100%;
     }
   
