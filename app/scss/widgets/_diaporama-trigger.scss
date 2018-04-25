@@ -85,6 +85,10 @@
       margin-left: -17%;
       z-index: 1000;
 
+      @include breakpoint(phoneAndTablet) {
+        display: none;
+      }
+
       .slick-list {
           transform: none!important;
           .slick-track {
@@ -92,10 +96,6 @@
           }
         }
     }
-
-    // @include breakpoint(phoneAndTablet) {
-    //   display: none;
-    // }
 
     &__thumb {
         position: relative;
@@ -169,7 +169,7 @@
 
 .diaporama-trigger__thumb4 {
     @include teaser__figureResponsive(
-        url("https://dummyimage.com/100x81/b8b8b8/474747.png"),
+        url("../../assets/image/diaporama__fourth-slide.jpg"),
         81,81,81
     );
 }

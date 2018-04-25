@@ -25,64 +25,64 @@
 .news-de-la__first-teaser__figure {
     @include teaser__figureResponsive(
     url("../../assets/image/news-de-la__first-teaser-img.jpg"),
-    264,202,500);
+    264,202,202);
 }
 
 .news-de-la__second-teaser__figure{
     @include teaser__figureResponsive( 
         url("../../assets/image/news-de-la__second-teaser-img.jpg"),
-    455,195,500);
+    455,195,195);
 }
 
 .news-de-la__third-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/news-de-la__third-teaser-img.jpg"),
-    455,227,340);
+    455,227,227);
 }
 
 .news-de-la__fourth-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/news-de-la__fourth-teaser-img.jpg"),
-    222,154,340);
-    @include width(272,154,999);
+    222,154,154);
+    @include width(272,154,154);
 }
 
 //  Fan De Vu Figures //
 
 .fan-de-vu__first-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__first-teaser-img.jpg"),
-    340,242,340);
-    @include width(560,454.01,836);
+    340,242,242);
+    @include width(560,453,836);
 }
 
 .fan-de-vu__second-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__second-teaser-img.jpg"),
-    220,125,340);
+    220,125,125);
 }
 
 .fan-de-vu__third-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__third-teaser-img.jpg"),
-    220,125,340);
+    220,125,125);
 }
 
 .fan-de-vu__fourth-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__second-teaser-img.jpg"),
-    220,125,340);
+    220,125,125);
 }
 
 //  Vu & Astuces Figures //
 
 .vu-astuces__first-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/vu-astuces__first-teaser-img.jpg"),
-    360,256,340);
+    360,256,256);
 }
 
 .vu-astuces__second-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/vu-astuces__second-teaser-img.jpg"),
-    220,125,340);
+    220,125,256);
 }
 
 .vu-astuces__third-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/vu-astuces__third-teaser-img.jpg"),
-    458,227,340);
+    458,227,256);
 }
 
 .vu-astuces__fourth-teaser__figure {
@@ -91,7 +91,7 @@
 
 .vu-astuces__fifth-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/vu-astuces__fifth-teaser-img.jpg"),
-    360,256,340);
+    360,256,256);
 }
 
 // -- Faq Slider Is In It's Own File -- //

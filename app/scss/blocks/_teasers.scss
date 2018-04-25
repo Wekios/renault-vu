@@ -54,27 +54,27 @@
 }
 
 .news-de-la__first-teaser {
-    @include width(200,150,999);
+    @include width(200,150,150);
     @include marginRight(16,11,24);
 }
 
 .news-de-la__second-teaser {
-    @include width(344,195,999);
+    @include width(344,195,195);
 }
 
 .news-de-la__third-teaser {
-    @include width(560,276,999);
+    @include width(560,276,276);
     @include marginTop(75,-80,0)
 }
 
 .news-de-la__fourth-teaser {
-    @include width(560,276,999);
+    @include width(560,276,276);
     @include marginTop(70,24,0);
     position: relative;
 
     &__caption {
-        @include width(272,100,125);
-        @include marginLeft(289,165,288);
+        @include width(272,100,100);
+        @include marginLeft(289,165,165);
         position: absolute;
         top: -2.2rem;;
     }
@@ -111,20 +111,20 @@
 }
 
 .fan-de-vu__second-teaser {
-    @include width(272,153,999);    
+    @include width(272,153,276);    
     @include marginRight(16,0,24);
     @include marginTop(75,38,24); 
 }
 
 .fan-de-vu__third-teaser {
-    @include width(272,153,999);
+    @include width(272,153,276);
     @include marginRight(0,12,25);
     @include marginLeft(0,12,25);
     @include marginTop(75,38,24); 
 }
 
 .fan-de-vu__fourth-teaser { 
-    @include width(272,153,999);
+    @include width(272,153,276);
     @include marginTop(125,38,24); 
 }
 
@@ -133,12 +133,12 @@
 }
 
 .vu-astuces__first-teaser {
-    @include width(272,194,999);
+    @include width(272,194,276);
     @include marginRight(16,12,24);
 }
 
 .vu-astuces__second-teaser {
-    @include width(272,153,999);
+    @include width(272,153,276);
     @include marginRight(0,12,24);
     vertical-align: top;
 }
@@ -151,14 +151,14 @@
 }
 
 .vu-astuces__fourth-teaser {
-    @include width(272,153,999);
+    @include width(272,153,276);
     vertical-align: top;
     @include marginRight(16,12,24);
     @include marginTop(0,26,26)
 }
 
 .vu-astuces__fifth-teaser {
-    @include width(272,194,999);
+    @include width(272,194,276);
 }
 
 // Faq is in it's Own Folder //
@@ -168,34 +168,34 @@
 }
 
 .cote-business__first-teaser {
-    @include width(272,153,999);
+    @include width(272,153,276);
     @include marginRight(16,12,24);
     vertical-align: top;
     @include marginBottom(75,75,75);
 }
 
 .cote-business__second-teaser {
-    @include width(272,194,999);
+    @include width(272,194,276);
 }
 
 .cote-business__third-teaser {
-    @include width(272,194,999);
+    @include width(272,194,276);
     @include marginRight(16,12,24);
 }
 
 .cote-business__fourth-teaser {
-    @include width(272,153,999);
+    @include width(272,153,276);
     @include marginRight(0,12,24);
     @include marginBottom(60,60,60);
 }
 
 .cote-business__fifth-teaser {
-    @include width(272,153,999);    
+    @include width(272,153,276);    
     @include marginRight(16,0,24);
 }
 
 .cote-business__sixth-teaser {
-    @include width(272,153,999);
+    @include width(272,153,276);
     @include marginRight(0,12,25);
     @include marginLeft(0,12,25);
     @include marginBottom(100,100,100);

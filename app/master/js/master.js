@@ -3044,7 +3044,6 @@ faqSlider.slick({
 
     var lesPlusPrev = $(".les-plus-slider__arrows-prev"),
         lesPlusNext = $(".les-plus-slider__arrows-next"),
-        lesPlusNext = $(".les-plus-slider__arrows-next"),
         lesPlusSlider = $('.les-plus-slider');
 
 

@@ -1,20 +1,26 @@
 
 .faq__first-teaser__heading {
-    @include marginTop(-268,-20,-30);
-    @include marginBottom(35,35,35);
+    @include marginTop(-268,-50,-30);
+    @include marginBottom(35,-50,0);
 
 }
 
 .faq__first-teaser {
-    @include width(560,455,999);
+    @include width(560,400,400);
     display: block;
     margin: 0 auto;
+    position: relative;
 
     &__caption {
         @include width(560,150,175);
         display: inline-block;
-        @include marginBottom(75,0,0);
-        vertical-align: top;
+        margin-bottom: 7.5rem;
+
+        @include breakpoint(tabletAndDesktop) {
+            position: absolute;
+            right: -6rem;
+            bottom: 0;
+        }
     }
 
 }
@@ -49,6 +55,10 @@
     right: 4rem;
     color: $gray;
     @include fontSize(25,10,14);
+
+    @include breakpoint(tabletAndDesktop) {
+        right: -10rem;
+    }
 }
 
 .faq-slider__current {
