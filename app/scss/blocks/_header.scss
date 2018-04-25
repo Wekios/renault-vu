@@ -141,13 +141,14 @@
     z-index: 50;
     overflow: hidden;
     transition: all 0.2s linear;
+
     @include breakpoint(tabletOnly) {
       width: 77vw;
       margin: 0;
       padding: 22.3% 2vw 10vw 5.5vw;
-      left: -71vw;
       top: 8.5001rem;
     }
+
     @include breakpoint(desktopOnly) {
       height: auto;
       position: absolute;
@@ -159,16 +160,19 @@
       top: 0;
       overflow: visible;
     }
+
     &.inView {
       left: 0;
     }
   }
+
   & a {
     @include breakpoint(phoneAndTablet) {
       text-decoration: none;
       color: $black;
     }
   }
+
   &>li {
     @include breakpoint(phoneAndTablet) {
       margin-bottom: 11.3vw;
@@ -208,6 +212,7 @@
       }
     }
   }
+
   &>li>a {
     text-transform: uppercase;
     @include fontSize(28, 22.73, 12);
@@ -218,6 +223,7 @@
       text-decoration: none;
       transition: color 0.15s linear;
     }
+
     &.active,
     &:hover {
       @include breakpoint(desktopOnly) {
@@ -227,6 +233,7 @@
       }
     }
   }
+  
   & .sub__menu {
     display: none;
     padding-left: 12.6vw;

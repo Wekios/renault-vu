@@ -49,7 +49,8 @@
 
 .fan-de-vu__first-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__first-teaser-img.jpg"),
-    340,239,340);
+    340,242,340);
+    @include width(560,454.01,836);
 }
 
 .fan-de-vu__second-teaser__figure {
@@ -89,7 +90,8 @@
 }
 
 .vu-astuces__fifth-teaser__figure {
-    @extend .vu-astuces__first-teaser__figure;
+    @include teaser__figureResponsive(url("../../assets/image/vu-astuces__fifth-teaser-img.jpg"),
+    360,256,340);
 }
 
 // -- Faq Slider Is In It's Own File -- //
@@ -157,6 +159,9 @@
 /////// Media Queries /////////////
 //////////////////////////////////
 
-// @include breakpoint(tabletAndDesktop) {
-    
-// }
+@include breakpoint(tabletAndDesktop) {
+
+    .fan-de-vu__first-teaser__figure {
+        vertical-align: top;
+    }
+}

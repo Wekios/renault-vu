@@ -51,8 +51,7 @@
           font-size: 1.1rem;
           top: 12vw;
         }
-
-      }
+    }
 
       &__prev {
         left: 1vw;
@@ -86,10 +85,17 @@
       margin-left: -17%;
       z-index: 1000;
 
-    @include breakpoint(phoneAndTablet) {
-      display: none;
+      .slick-list {
+          transform: none!important;
+          .slick-track {
+              transform: none!important;
+          }
+        }
     }
-}
+
+    // @include breakpoint(phoneAndTablet) {
+    //   display: none;
+    // }
 
     &__thumb {
         position: relative;
@@ -122,42 +128,34 @@
 // Diaporama Images and Thumbs 
 
 .diaporama-trigger__slide1 {
-    @include teaser__figureResponsive(
-        url("https://dummyimage.com/1700x450/b8b8b8/474747.png"),
+    @include teaser__figureResponsive(url("../../assets/image/diaporama__first-slide.jpg"),
     330,202,700);
 }
 
 .diaporama-trigger__thumb1 {
-    @include teaser__figureResponsive(
-        url("https://dummyimage.com/100x81/b8b8b8/474747.png"),
+    @include teaser__figureResponsive(url("../../assets/image/diaporama__first-slide.jpg"),
         81,81,81
     );
 }
 
 .diaporama-trigger__slide2 {
-    @include teaser__figureResponsive(
-        url("https://dummyimage.com/1700x450/b8b8b8/474747.png"),
-        330,396,700
-    );
+    @include teaser__figureResponsive(url("../../assets/image/slide1.jpg"),
+    330,202,700);
 }
 
 .diaporama-trigger__thumb2 {
-    @include teaser__figureResponsive(
-        url("https://dummyimage.com/100x81/b8b8b8/474747.png"),
+    @include teaser__figureResponsive(url("../../assets/image/slide1.jpg"),
         81,81,81
     );
 }
 
 .diaporama-trigger__slide3 {
-    @include teaser__figureResponsive(
-        url("https://dummyimage.com/1700x800/b8b8b8/474747.png"),
-        330,396,700
-    );
+    @include teaser__figureResponsive(url("../../assets/image/diaporama__second-slide.jpg"),
+    330,202,700);
 }
 
 .diaporama-trigger__thumb3 {
-    @include teaser__figureResponsive(
-        url("https://dummyimage.com/100x81/b8b8b8/474747.png"),
+    @include teaser__figureResponsive(url("../../assets/image/diaporama__second-slide.jpg"),
         81,81,81
     );
 }
@@ -177,15 +175,12 @@
 }
 
 .diaporama-trigger__slide5 {
-    @include teaser__figureResponsive(
-        url("https://dummyimage.com/1700x800/b8b8b8/474747.png"),
-        330,396,700
-    );
+    @include teaser__figureResponsive(url("../../assets/image/slide2.jpg"),
+    330,202,700);
 }
 
 .diaporama-trigger__thumb5 {
-    @include teaser__figureResponsive(
-        url("https://dummyimage.com/100x81/b8b8b8/474747.png"),
+    @include teaser__figureResponsive(url("../../assets/image/slide2.jpg"),
         81,81,81
     );
 }

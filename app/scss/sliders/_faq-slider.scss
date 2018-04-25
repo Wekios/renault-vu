@@ -1,34 +1,54 @@
+
+.faq__first-teaser__heading {
+    @include marginTop(-268,-20,-30);
+    @include marginBottom(35,35,35);
+
+}
+
+.faq__first-teaser {
+    @include width(560,455,999);
+    display: block;
+    margin: 0 auto;
+
+    &__caption {
+        @include width(560,150,175);
+        display: inline-block;
+        @include marginBottom(75,0,0);
+        vertical-align: top;
+    }
+
+}
+
 .faq-slider {
     -webkit-box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
+    @include width(560,276,276);
+    display: inline-block;
+    @include marginBottom(18,24,24);
 }
 
 .faq__first-teaser__slide {
-    background: center / cover no-repeat url("../../assets/image/faq__first-teaser-img.jpg");
-    width: 100%;
-    height: 47rem;
+    @include teaser__figureResponsive(url("../../assets/image/faq__first-teaser-img.jpg"),
+    470,230,470);   
 }
 
 .faq__second-teaser__slide {
-    background: center / cover no-repeat url("../../assets/image/news-de-la__third-teaser-img.jpg");
-    width: 100%;
-    height: 47rem;
+    @include teaser__figureResponsive(url("../../assets/image/news-de-la__third-teaser-img.jpg"),
+    470,230,470);  
 }
 
 .faq__third-teaser__slide {
-    background: center / cover no-repeat url("../../assets/image/faq__first-teaser-img.jpg");
-    width: 100%;
-    height: 47rem;
+    @include teaser__figureResponsive(url("../../assets/image/faq__first-teaser-img.jpg"),
+    470,230,470);  
 }
 
 .faq-slider__navigation {
-    margin-top: 3.8rem;
+    position: absolute;
+    bottom: 3rem;
+    right: 4rem;
     color: $gray;
     @include fontSize(25,10,14);
-    position: absolute;
-    right: 0;
-    bottom: -4.6rem;
 }
 
 .faq-slider__current {

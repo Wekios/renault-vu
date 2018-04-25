@@ -9,21 +9,24 @@
 .fan-de-vu {
   background: $lightGray;
   height: 85rem;
-  @include marginBottom(835,730,730);
+  @include marginBottom(835,267,730);
+  padding-top: 6.6rem;
+
+  @include breakpoint(tabletAndDesktop) {
+    height: calcRem(359.56);
+  }
 }
 
 .line-break {
-  margin-top: 5rem;
-  margin-bottom: 8.7rem;
+  @include marginTop(50,32,32);
+  @include marginBottom(354,84,41);
   opacity: 0.3;
 }
 
 .faq {
-  height: 52rem;
-  top: 24.9rem;
   background: $lightGray;
   position: relative;
-  @include marginBottom(330,340,340)
+  @include marginBottom(84,117,117);
 }
 
 .les-plus {
