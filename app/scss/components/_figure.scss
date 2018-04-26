@@ -31,7 +31,7 @@
 .news-de-la__second-teaser__figure{
     @include teaser__figureResponsive( 
         url("../../assets/image/news-de-la__second-teaser-img.jpg"),
-    455,267,535);
+    455,257,535);
 }
 
 .news-de-la__third-teaser__figure {
@@ -49,7 +49,7 @@
 
 .fan-de-vu__first-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__first-teaser-img.jpg"),
-    340,242,242);
+    340,239,242);
     @include width(560,387,836);
     vertical-align: top;
 }
@@ -65,7 +65,7 @@
 }
 
 .fan-de-vu__fourth-teaser__figure {
-    @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__second-teaser-img.jpg"),
+    @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__fourth-teaser-img.jpg"),
     220,125,125);
 }
 

@@ -5,23 +5,29 @@
 .fan-de-vu {
   background: $lightGray;
   height: 85rem;
-  @include marginBottom(835,267,730);
+  @include marginBottom(774,267,730);
   padding-top: 6.6rem;
   @include width(640,647,1336);
 
   @include breakpoint(tabletAndDesktop) {
-    height: calcRem(359.56);
-    padding-top: 0;
+    height: auto;
     margin: 0 auto;
+    padding: 4.8rem 0 7.3rem 0; 
   }
   @include breakpoint(desktopOnly) {
-    height: 74.6rem;
+
+  }
+}
+
+.vu-astuces {
+  @include breakpoint(tabletAndDesktop) {
+    margin-top: 27.3rem;
   }
 }
 
 .line-break {
   @include marginTop(50,32,32);
-  @include marginBottom(354,84,41);
+  @include marginBottom(337,84,41);
   opacity: 0.3;
 }
 
@@ -45,7 +51,7 @@
 
 .les-plus { 
   background: $lightGray;
-  padding: 5rem 0 6rem;
+  padding: 5rem 0 4.5rem;
 
   @include breakpoint(tabletAndDesktop) {
     padding: 0;

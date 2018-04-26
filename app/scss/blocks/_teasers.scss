@@ -60,6 +60,7 @@
 .news-de-la__first-teaser {
     @include width(200,150,234);
     @include marginRight(16,11,24);
+    @include marginTop(0,55,225);
 }
 
 .news-de-la__second-teaser {
@@ -73,13 +74,14 @@
 }
 
 .news-de-la__fourth-teaser {
-    @include width(560,276,578);
+    @include width(560,265,578);
     @include marginTop(70,24,0);
     position: relative;
 
     &__caption {
-        @include width(272,100,200);
+        @include width(275,100,200);
         position: absolute;
+        right: 0;
         top: -2.2rem;;
     }
     
@@ -92,10 +94,10 @@
 }
 
 .fan-de-vu__first-teaser {
-    @include marginTop(0,48,99);
     -webkit-box-shadow: 0px 20px 31px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 20px 31px 3px rgba(0,0,0,0.75);
     box-shadow: 0px 20px 31px 3px rgba(0,0,0,0.75);
+    background: $white;
     
 
     &-white-background {
@@ -105,7 +107,7 @@
     }
 
     &__caption {
-        @include marginTop(35,15,15);
+        @include marginTop(30,15,15);
     }
 
 }
@@ -125,11 +127,11 @@
 
 .fan-de-vu__fourth-teaser { 
     @include width(272,153,276);
-    @include marginTop(125,38,24); 
+    @include marginTop(91,38,24); 
 }
 
 .vu-astuces__heading {
-    @include marginBottom(39,30,70)
+    @include marginBottom(34,30,70)
 }
 
 .vu-astuces__first-teaser {
@@ -147,7 +149,7 @@
     @extend .news-de-la__third-teaser;
     @include marginTop(66,-101,0);
     @include marginRight(16,0,24);
-    @include marginBottom(71,39,33);
+    @include marginBottom(80,39,33);
 }
 
 .vu-astuces__fourth-teaser {
@@ -164,7 +166,7 @@
 // Faq is in it's Own Folder //
 
 .cote-business__heading {
-    @include marginBottom(50,47,50);
+    @include marginBottom(41,47,50);
 }
 
 .cote-business__first-teaser {
@@ -182,7 +184,7 @@
 .cote-business__third-teaser {
     @include width(272,150,276);
     @include marginRight(16,12,24);
-    @include marginTop(0,-60,-60);
+    @include marginTop(-39,-60,-60);
 }
 
 .cote-business__fourth-teaser {
@@ -217,20 +219,25 @@
         background: center / cover no-repeat url("../../assets/image/quiz__bg-image--mob.jpg");
     }
     &__text-content {
-        padding: 6.7rem 11.6rem 5.1rem;
+        padding: 7.3rem 8rem 4.2rem;
+        text-align: center;
+    }
+    &__heading {
+        h2{
+            @include fontSize(46,30,12);
+        }
     }
     &__text {
-        margin: 4rem 0 4.5rem;
-        @include fontSize(26,26,14);
+        margin: 4rem 0 4.9rem;
+        @include fontSize(32,26,14);
         @include lineHeight(32,32,18);
         @include letterSpacing(50,50,50);
     }
     &__button {
-        text-align: center;
 
         .button--white-bg {
             @include fontSize(18,10,12);
-            padding: 1.5rem 9rem;
+            padding: 1.5rem 10rem;
         }
     }
 
@@ -280,24 +287,24 @@
         }
     }
 
-    .news-de-la__fourth-teaser__caption {
-        right: 0;
-    }
-
     //Fan De Vu
 
-    .fan-de-vu__first-teaser {
+    .fan-de-vu {
+        text-align: center;
+
+    &__first-teaser {
+        float: none;
             
         &-white-background {
             display: inline-block;
             box-sizing: border-box;
-            width: 194px;
+            width: 18rem;
             background: white;
             padding: 4.5vw 4vw 0 5vw;
-            height: 24.2rem;
+            text-align: left;
         }
-    
     }
+}
 
     .fan-de-vu__second-teaser,
     .fan-de-vu__third-teaser ,
