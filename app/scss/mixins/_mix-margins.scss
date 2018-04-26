@@ -24,7 +24,7 @@
     }
 
     @include breakpoint(desktopOnly){
-        margin-right: calcVw($fs-desktop, 1024);
+        margin-right: calcVw($fs-desktop, 1700);
     }
 }
 
@@ -52,6 +52,6 @@
     }
 
     @include breakpoint(desktopOnly){
-        margin-left: calcVw($fs-desktop, 1024);
+        margin-left: calcVw($fs-desktop, 1700);
     }
 }

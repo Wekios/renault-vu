@@ -25,24 +25,24 @@
 .news-de-la__first-teaser__figure {
     @include teaser__figureResponsive(
     url("../../assets/image/news-de-la__first-teaser-img.jpg"),
-    264,202,202);
+    264,202,309);
 }
 
 .news-de-la__second-teaser__figure{
     @include teaser__figureResponsive( 
         url("../../assets/image/news-de-la__second-teaser-img.jpg"),
-    455,195,195);
+    455,267,535);
 }
 
 .news-de-la__third-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/news-de-la__third-teaser-img.jpg"),
-    455,227,227);
+    455,227,473);
 }
 
 .news-de-la__fourth-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/news-de-la__fourth-teaser-img.jpg"),
-    222,154,154);
-    @include width(272,154,154);
+    222,154,262);
+    @include width(272,154,320);
 }
 
 //  Fan De Vu Figures //
@@ -50,7 +50,8 @@
 .fan-de-vu__first-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__first-teaser-img.jpg"),
     340,242,242);
-    @include width(560,453,836);
+    @include width(560,387,836);
+    vertical-align: top;
 }
 
 .fan-de-vu__second-teaser__figure {
@@ -137,7 +138,7 @@
 
 // -- Portrait Slider is in it's Own File -- //
 
-// Les Plus Figures and Slider //
+// Les Plus Figures//
 
 .les-plus__first-teaser__figure {
     @extend .fan-de-vu__third-teaser__figure;
@@ -160,8 +161,4 @@
 //////////////////////////////////
 
 @include breakpoint(tabletAndDesktop) {
-
-    .fan-de-vu__first-teaser__figure {
-        vertical-align: top;
-    }
 }

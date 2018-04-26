@@ -31,3 +31,10 @@ a img {
   font-size: 0;
   line-height: 0;
 }
+
+@include breakpoint(tabletAndDesktop) {
+  .row--td {
+    display: block;
+    @include clearfix;
+  }
+}

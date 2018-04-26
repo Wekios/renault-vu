@@ -1,3 +1,7 @@
+// Instructions:
+// Media Queries are located on the bottom of the page, for fine tuning. Margins and width and 
+// relative font sizes are declared with mixins
+
 .teaser {
     display: inline-block;
 }
@@ -49,32 +53,32 @@
 // News de la teasers
 
 .news-de-la__heading {
-    @include marginTop(22,30,30);
+    @include marginTop(22,-20,-20);
     position: absolute;
 }
 
 .news-de-la__first-teaser {
-    @include width(200,150,150);
+    @include width(200,150,234);
     @include marginRight(16,11,24);
 }
 
 .news-de-la__second-teaser {
-    @include width(344,195,195);
+    @include width(344,195,405);
+    @include marginRight(0,11,24);
 }
 
 .news-de-la__third-teaser {
-    @include width(560,276,276);
-    @include marginTop(75,-80,0)
+    @include width(560,276,578);
+    @include marginTop(75,-88,-88)
 }
 
 .news-de-la__fourth-teaser {
-    @include width(560,276,276);
+    @include width(560,276,578);
     @include marginTop(70,24,0);
     position: relative;
 
     &__caption {
-        @include width(272,100,100);
-        @include marginLeft(289,165,165);
+        @include width(272,100,200);
         position: absolute;
         top: -2.2rem;;
     }
@@ -88,26 +92,22 @@
 }
 
 .fan-de-vu__first-teaser {
-    @include marginTop(0,48,48);
+    @include marginTop(0,48,99);
     -webkit-box-shadow: 0px 20px 31px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 20px 31px 3px rgba(0,0,0,0.75);
     box-shadow: 0px 20px 31px 3px rgba(0,0,0,0.75);
+    
 
     &-white-background {
         background: $white;
         padding: 4rem 6rem 6rem 5.6rem;
         max-height: 100%;
-
-        .text--bolder {
-            margin-top: 3rem;
-        }
     }
 
     &__caption {
-        .text--bolder {
-            padding-right: 3rem;
-        }
+        @include marginTop(35,15,15);
     }
+
 }
 
 .fan-de-vu__second-teaser {
@@ -147,7 +147,7 @@
     @extend .news-de-la__third-teaser;
     @include marginTop(66,-101,0);
     @include marginRight(16,0,24);
-    @include marginBottom(71,33,33);
+    @include marginBottom(71,39,33);
 }
 
 .vu-astuces__fourth-teaser {
@@ -164,65 +164,67 @@
 // Faq is in it's Own Folder //
 
 .cote-business__heading {
-    @include marginBottom(50,50,50);
+    @include marginBottom(50,47,50);
 }
 
 .cote-business__first-teaser {
-    @include width(272,153,276);
+    @include width(272,150,276);
     @include marginRight(16,12,24);
     vertical-align: top;
     @include marginBottom(75,75,75);
 }
 
 .cote-business__second-teaser {
-    @include width(272,194,276);
+    @include width(272,150,276);
+    @include marginRight(0,12,24);
 }
 
 .cote-business__third-teaser {
-    @include width(272,194,276);
+    @include width(272,150,276);
     @include marginRight(16,12,24);
+    @include marginTop(0,-60,-60);
 }
 
 .cote-business__fourth-teaser {
-    @include width(272,153,276);
-    @include marginRight(0,12,24);
+    @include width(272,150,276);
+    @include marginTop(0,-60,-60);
+    @include marginRight(0,0,24);
     @include marginBottom(60,60,60);
 }
 
 .cote-business__fifth-teaser {
-    @include width(272,153,276);    
-    @include marginRight(16,0,24);
+    @include width(272,150,276);    
+    @include marginRight(16,12,24);
+    @include marginTop(0,-20,-20);
 }
 
 .cote-business__sixth-teaser {
-    @include width(272,153,276);
+    @include width(272,150,276);
+    @include marginTop(0,20,20);
     @include marginRight(0,12,25);
-    @include marginLeft(0,12,25);
+    @include marginLeft(0,0,25);
     @include marginBottom(100,100,100);
 }
 
 .quiz-teaser {
-    @include marginTop(81,81,81);
+    @include marginTop(81,76,76);
+    @include marginBottom(90,120,120);
 
     .container {
         width: 100%;
     }
-
     &__wrapper {
         background: center / cover no-repeat url("../../assets/image/quiz__bg-image--mob.jpg");
     }
-
     &__text-content {
         padding: 6.7rem 11.6rem 5.1rem;
     }
-
     &__text {
         margin: 4rem 0 4.5rem;
         @include fontSize(26,26,14);
         @include lineHeight(32,32,18);
         @include letterSpacing(50,50,50);
     }
-
     &__button {
         text-align: center;
 
@@ -230,20 +232,21 @@
             @include fontSize(18,10,12);
             padding: 1.5rem 9rem;
         }
-
     }
 
 }
 
 .les-plus__first-teaser,
-.les-plus__third-teaser {
-    @extend .fan-de-vu__second-teaser;
+.les-plus__second-teaser,
+.les-plus__third-teaser,
+.les-plus__fourth-teaser {
+    @include width(272,153,276);    
     @include marginTop(59,59,59);
 }
 
-.les-plus__second-teaser,
-.les-plus__fourth-teaser {
-    @extend .fan-de-vu__third-teaser;
+.les-plus__first-teaser,
+.les-plus__third-teaser {
+    @include marginRight(16,0,24);
 }
 
 .les-plus__teaser-hidden {
@@ -277,14 +280,9 @@
         }
     }
 
-    .news-de-la__first-teaser {
-        margin-top: 6rem;
+    .news-de-la__fourth-teaser__caption {
+        right: 0;
     }
-    
-    .news-de-la__second-teaser {
-        margin-right: 1.75%;
-    }
-
 
     //Fan De Vu
 
@@ -295,18 +293,10 @@
             box-sizing: border-box;
             width: 194px;
             background: white;
-            padding: 3.5rem 4rem 7.2rem;
-    
-            .text--bolder {
-                margin-top: 1.2rem;
-            }
+            padding: 4.5vw 4vw 0 5vw;
+            height: 24.2rem;
         }
     
-        &__caption {
-            .text--bolder {
-                padding-right: 0;
-            }
-        }
     }
 
     .fan-de-vu__second-teaser,
@@ -315,16 +305,35 @@
         float: right;
     }
 
+    .vu-astuces__fifth-teaser {
+        margin-top: 2.6rem;
+    }
 
+    .quiz-teaser {
 
+        &__wrapper {
+            @include teaser__figureResponsive(url("../../assets/image/quiz__bg-image.jpg"),
+            0,272,276);
+        }
 
+        &__text-content {
+            text-align: center;
+            padding-top: 4.2rem;
+        }
 
+        &__text {
+            display: none;
+        }
 
+        &__button {
+            margin-top: 2rem;
 
+            .button--white-bg {
+                padding: 1rem 5rem;
+            }
+        }
 
-
-
-
+    }
 
     .les-plus__teaser-hidden {
         display: inline-block;

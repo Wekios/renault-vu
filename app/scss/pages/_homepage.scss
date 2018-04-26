@@ -1,9 +1,5 @@
 .news-de-la {
-  margin-top: 4rem;
-
-  @include breakpoint(tabletAndDesktop) {
-    margin-top: 11rem;
-  }
+  @include marginTop(40,115,239)
 }
 
 .fan-de-vu {
@@ -11,9 +7,15 @@
   height: 85rem;
   @include marginBottom(835,267,730);
   padding-top: 6.6rem;
+  @include width(640,647,1336);
 
   @include breakpoint(tabletAndDesktop) {
     height: calcRem(359.56);
+    padding-top: 0;
+    margin: 0 auto;
+  }
+  @include breakpoint(desktopOnly) {
+    height: 74.6rem;
   }
 }
 
@@ -27,10 +29,29 @@
   background: $lightGray;
   position: relative;
   @include marginBottom(84,117,117);
+
+  @include breakpoint(tabletAndDesktop) {
+    width: 84.24479166666667vw;
+    margin: 0 auto;
+  }
+
 }
 
-.les-plus {
-  margin-top: 9rem; 
+.cote-business {
+  @include breakpoint(tabletAndDesktop) {
+    margin-top: 11.7rem;
+  }
+}
+
+.les-plus { 
   background: $lightGray;
-  padding: 5rem 0 6rem;  
+  padding: 5rem 0 6rem;
+
+  @include breakpoint(tabletAndDesktop) {
+    padding: 0;
+  }
+  
+  .container {
+    position: relative;
+  }
 }

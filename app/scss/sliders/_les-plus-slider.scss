@@ -1,14 +1,66 @@
+.les-plus-slider__arrows {
+    display: none;
+}
+
 @include breakpoint(tabletAndDesktop) {
-    .les-plus-slider {        
-        .les-plus__first-teaser,
-        .les-plus__second-teaser,
+
+    .les-plus__heading {
+        position: absolute;
+        width: calcVw(90,768);
+        top: 3.1rem;
+        left: -1rem;
+    }
+
+    .les-plus-slider {
+        width: 484px;
+        display: block;
+        margin: 0 auto;
+        margin-top: -3rem;
+
+        .les-plus__first-teaser,.les-plus__second-teaser,
         .les-plus__third-teaser,
         .les-plus__fourth-teaser, {
-            margin: 0 0.2%;
-            width: 25%;
             outline: none;
+            margin: 0 6px 1.8rem;
+
+            &__figure {
+                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                filter: grayscale(100%);
+                height: 9.1rem;
+            }
+
+            h4 {
+                font-size: 1.2rem;
+                margin-top: 0.8rem;
+                line-height: 14px;
+            }
+
+        }
+
+        &__arrows {
+            display: block;
+            width: 87%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            
+            &-prev {
+                float: left;
+                left: 0;
+
+            }
+
+            &-next {
+                float: right;
+                right: 0;
+                
+            }
+
         }
 
     }
+
 
 }

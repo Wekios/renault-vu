@@ -61,31 +61,6 @@
     }
   }
   
-  .les-plus-slider__arrows-prev {
-    float: left;
-    left: 6vw;
-  
-    @include breakpoint(tabletOnly) {
-      left: 3.5vw;
-    }
-  
-    @include breakpoint(desktopOnly) {
-      left: 0;
-    }
-  }
-  
-  .les-plus-slider__arrows-next {
-    float: right;
-    right: 6vw;
-  
-    @include breakpoint(tabletOnly) {
-      right: 3.5vw;
-    }
-  
-    @include breakpoint(desktopOnly) {
-      right: 0;
-    }
-  }
 
 .arrow {
   position: absolute;
@@ -94,9 +69,17 @@
   color: $yellow;
   @include fontSize(8,8,8);
 
-  &--alt {
+  &--black {
     @extend .arrow;
     background: $black;
+  }
+
+  &--gray {
+    @extend .arrow;
+    color: $gray;
+    background: none;
+    border: 1px solid $gray;
+    box-shadow: 0 0 1px $gray;
   }
 
 }
