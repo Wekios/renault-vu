@@ -32,6 +32,13 @@ a img {
   line-height: 0;
 }
 
+.hidden {
+  display: none;
+  @include breakpoint(desktopOnly) {
+    display: inline-block;
+  }
+}
+
 @include breakpoint(tabletAndDesktop) {
   .row--td {
     display: block;

@@ -1,12 +1,12 @@
 
 .faq__first-teaser__heading {
-    @include marginTop(-268,-50,-30);
-    @include marginBottom(35,-50,0);
+    @include marginTop(-268,-50,-100);
+    @include marginBottom(35,-50,-100);
 
 }
 
 .faq__first-teaser {
-    @include width(560,455,400);
+    @include width(560,455,860);
     display: block;
     margin: 0 auto;
     position: relative;
@@ -15,8 +15,12 @@
         margin-left: 12.5rem;
     }
 
+    @include breakpoint(desktopOnly) {
+        margin-left: 25rem;
+    }
+
     &__caption {
-        @include width(560,150,175);
+        @include width(560,150,325);
         display: inline-block;
         margin-bottom: 7.5rem;
 
@@ -24,6 +28,9 @@
             position: absolute;
             right: 0;
             bottom: 0;
+        }
+        @include breakpoint(desktopOnly) {
+            top: 14rem;
         }
     }
 
@@ -33,24 +40,24 @@
     -webkit-box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
-    @include width(560,276,276);
+    @include width(560,276,491);
     display: inline-block;
-    @include marginBottom(29,33,24);
+    @include marginBottom(29,33,78);
 }
 
 .faq__first-teaser__slide {
     @include teaser__figureResponsive(url("../../assets/image/faq__first-teaser-img.jpg"),
-    470,230,470);   
+    470,230,410);   
 }
 
 .faq__second-teaser__slide {
     @include teaser__figureResponsive(url("../../assets/image/news-de-la__third-teaser-img.jpg"),
-    470,230,470);  
+    470,230,410);  
 }
 
 .faq__third-teaser__slide {
     @include teaser__figureResponsive(url("../../assets/image/faq__first-teaser-img.jpg"),
-    470,230,470);  
+    470,230,410);  
 }
 
 .faq-slider__navigation {
@@ -62,6 +69,10 @@
 
     @include breakpoint(tabletAndDesktop) {
         right: -2rem;
+    }
+    @include breakpoint(desktopOnly) {
+        top: 16rem;
+        right: -6rem;
     }
 }
 

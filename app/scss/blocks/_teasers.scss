@@ -70,16 +70,16 @@
 
 .news-de-la__third-teaser {
     @include width(560,276,578);
-    @include marginTop(75,-88,-88)
+    @include marginTop(75,-88,-170)
 }
 
 .news-de-la__fourth-teaser {
     @include width(560,265,578);
-    @include marginTop(70,24,0);
+    @include marginTop(70,24,95);
     position: relative;
 
     &__caption {
-        @include width(275,100,200);
+        @include width(275,100,230);
         position: absolute;
         right: 0;
         top: -2.2rem;;
@@ -114,20 +114,20 @@
 
 .fan-de-vu__second-teaser {
     @include width(272,153,276);    
-    @include marginRight(16,0,24);
-    @include marginTop(75,38,24); 
+    @include marginRight(16,0,86);
+    @include marginTop(75,38,69); 
 }
 
 .fan-de-vu__third-teaser {
     @include width(272,153,276);
-    @include marginRight(0,12,25);
-    @include marginLeft(0,12,25);
-    @include marginTop(75,38,24); 
+    @include marginRight(0,12,24);
+    @include marginLeft(0,12,24);
+    @include marginTop(75,38,69); 
 }
 
 .fan-de-vu__fourth-teaser { 
     @include width(272,153,276);
-    @include marginTop(91,38,24); 
+    @include marginTop(91,38,69); 
 }
 
 .vu-astuces__heading {
@@ -135,32 +135,32 @@
 }
 
 .vu-astuces__first-teaser {
-    @include width(272,194,276);
+    @include width(272,194,320);
     @include marginRight(16,12,24);
 }
 
 .vu-astuces__second-teaser {
-    @include width(272,153,276);
+    @include width(272,153,320);
     @include marginRight(0,12,24);
     vertical-align: top;
 }
 
 .vu-astuces__third-teaser {
     @extend .news-de-la__third-teaser;
-    @include marginTop(66,-101,0);
-    @include marginRight(16,0,24);
-    @include marginBottom(80,39,33);
+    @include marginTop(66,-101,-210);
+    @include marginRight(16,0,0);
+    @include marginBottom(80,39,60);
 }
 
 .vu-astuces__fourth-teaser {
-    @include width(272,153,276);
+    @include width(272,153,320);
     vertical-align: top;
     @include marginRight(16,12,24);
     @include marginTop(0,26,26)
 }
 
 .vu-astuces__fifth-teaser {
-    @include width(272,194,276);
+    @include width(272,194,320);
 }
 
 // Faq is in it's Own Folder //
@@ -170,47 +170,45 @@
 }
 
 .cote-business__first-teaser {
-    @include width(272,150,276);
+    @include width(272,150,320);
     @include marginRight(16,12,24);
     vertical-align: top;
     @include marginBottom(75,75,75);
 }
 
 .cote-business__second-teaser {
-    @include width(272,150,276);
+    @include width(272,150,320);
     @include marginRight(0,12,24);
 }
 
 .cote-business__third-teaser {
-    @include width(272,150,276);
+    @include width(272,150,320);
     @include marginRight(16,12,24);
-    @include marginTop(-39,-60,-60);
+    @include marginTop(-39,-60,-110);
 }
 
 .cote-business__fourth-teaser {
-    @include width(272,150,276);
-    @include marginTop(0,-60,-60);
-    @include marginRight(0,0,24);
+    @include width(272,150,320);
+    @include marginTop(0,-60,-110);
     @include marginBottom(60,60,60);
 }
 
 .cote-business__fifth-teaser {
-    @include width(272,150,276);    
+    @include width(272,150,320);    
     @include marginRight(16,12,24);
-    @include marginTop(0,-20,-20);
+    @include marginTop(0,-20,-84);
 }
 
 .cote-business__sixth-teaser {
-    @include width(272,150,276);
-    @include marginTop(0,20,20);
-    @include marginRight(0,12,25);
-    @include marginLeft(0,0,25);
+    @include width(272,150,320);
+    @include marginTop(0,20,86);
+    @include marginRight(0,12,24);
     @include marginBottom(100,100,100);
 }
 
 .quiz-teaser {
-    @include marginTop(81,76,76);
-    @include marginBottom(90,120,120);
+    @include marginTop(81,76,113);
+    @include marginBottom(90,120,212);
 
     .container {
         width: 100%;
@@ -224,7 +222,7 @@
     }
     &__heading {
         h2{
-            @include fontSize(46,30,12);
+            @include fontSize(46,30,32);
         }
     }
     &__text {
@@ -232,6 +230,7 @@
         @include fontSize(32,26,14);
         @include lineHeight(32,32,18);
         @include letterSpacing(50,50,50);
+        color: $black;
     }
     &__button {
 
@@ -247,7 +246,7 @@
 .les-plus__second-teaser,
 .les-plus__third-teaser,
 .les-plus__fourth-teaser {
-    @include width(272,153,276);    
+    @include width(272,153,235);    
     @include marginTop(59,59,59);
 }
 
@@ -302,6 +301,10 @@
             background: white;
             padding: 4.5vw 4vw 0 5vw;
             text-align: left;
+
+            @include breakpoint(desktopOnly) {
+                width: 35rem;
+            }
         }
     }
 }
@@ -310,6 +313,7 @@
     .fan-de-vu__third-teaser ,
     .fan-de-vu__fourth-teaser  {
         float: right;
+        text-align: left;
     }
 
     .vu-astuces__fifth-teaser {
@@ -318,18 +322,34 @@
 
     .quiz-teaser {
 
+        .container {
+            width: 64.7rem;
+
+            @include breakpoint(desktopOnly) {
+                width: 135.5rem;
+            }
+        }
+
         &__wrapper {
             @include teaser__figureResponsive(url("../../assets/image/quiz__bg-image.jpg"),
-            0,272,276);
+            0,272,588);
         }
 
         &__text-content {
             text-align: center;
             padding-top: 4.2rem;
+            @include breakpoint(desktopOnly) {
+                padding: 10rem 52rem 23rem;
+                text-align: left;
+            }
         }
 
         &__text {
             display: none;
+            @include breakpoint(desktopOnly) {
+                display: block;
+                margin: 0;
+            }
         }
 
         &__button {

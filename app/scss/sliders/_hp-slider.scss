@@ -39,20 +39,44 @@
     position: absolute;
     top: 6.4rem;
     left: 6.25vw;
+
+    @include breakpoint(tabletAndDesktop) {
+        left: 11.8rem;
+        top: 14.8rem;
+    }
+
+    @include breakpoint(desktopOnly) {
+        left: 26.1rem;
+        top: 34.1rem;
+    }
 }
 
 .hp-slider__button {
-    @include marginBottom(20,50,50);
-    @include fontSize(12,12,12);
+    @include marginBottom(20,0,0);
+    @include fontSize(12,8,12);
     @include letterSpacing(50,50,50);
     padding: 0 calcRem(20);
 }
 
-.hp-slider__text-content-smaller {
+.hp-slider__text-content--smaller {
     color: $yellow;
-    @include marginBottom(-5,50,50);
+    margin-bottom: -0.5rem;
 }
 
-.hp-slider__text-content-bigger {
+.hp-slider__text-content--bigger {
     color: $white;
+    margin-bottom: -0.5rem;
+}
+
+.hp-slider__text-content--hidden {
+    display: none;
+    color: $white;
+    padding: 0;
+    @include fontSize(0,16,32);
+    @include lineHeight(0,32,70.7);
+    @include letterSpacing(0,0,0);
+    
+    @include breakpoint(tabletAndDesktop) {
+        display: block;
+    }
 }

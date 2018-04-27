@@ -49,41 +49,41 @@
 
 .fan-de-vu__first-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__first-teaser-img.jpg"),
-    340,239,242);
+    340,239,509);
     @include width(560,387,836);
-    vertical-align: top;
+    vertical-align: top; 
 }
 
 .fan-de-vu__second-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__second-teaser-img.jpg"),
-    220,125,125);
+    220,125,262);
 }
 
 .fan-de-vu__third-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__third-teaser-img.jpg"),
-    220,125,125);
+    220,125,262);
 }
 
 .fan-de-vu__fourth-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__fourth-teaser-img.jpg"),
-    220,125,125);
+    220,125,262);
 }
 
 //  Vu & Astuces Figures //
 
 .vu-astuces__first-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/vu-astuces__first-teaser-img.jpg"),
-    360,256,256);
+    360,256,423);
 }
 
 .vu-astuces__second-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/vu-astuces__second-teaser-img.jpg"),
-    220,125,256);
+    220,125,262);
 }
 
 .vu-astuces__third-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/vu-astuces__third-teaser-img.jpg"),
-    458,227,256);
+    458,227,473);
 }
 
 .vu-astuces__fourth-teaser__figure {
@@ -92,7 +92,7 @@
 
 .vu-astuces__fifth-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/vu-astuces__fifth-teaser-img.jpg"),
-    360,256,256);
+    360,256,423);
 }
 
 // -- Faq Slider Is In It's Own File -- //
@@ -109,6 +109,9 @@
     @include breakpoint(tabletAndDesktop) {
         height: 20rem;
     }
+    @include breakpoint(desktopOnly) {
+        height: 42.3rem;
+    }
 }
 
 .cote-business__third-teaser__figure {
@@ -117,11 +120,14 @@
     @include breakpoint(tabletAndDesktop) {
         height: 20rem;
     }
-
+    @include breakpoint(desktopOnly) {
+        height: 42.3rem;
+    }
 }
 
 .cote-business__fourth-teaser__figure {
-    @extend .vu-astuces__second-teaser__figure;
+    @include teaser__figureResponsive(url("../../assets/image/cote-business__fourth-teaser-img.jpg"),
+    220,125,262);
 }
 
 .cote-business__fifth-teaser__figure {

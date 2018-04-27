@@ -7,7 +7,7 @@
   height: 85rem;
   @include marginBottom(774,267,730);
   padding-top: 6.6rem;
-  @include width(640,647,1336);
+  @include width(640,647,1355);
 
   @include breakpoint(tabletAndDesktop) {
     height: auto;
@@ -15,7 +15,7 @@
     padding: 4.8rem 0 7.3rem 0; 
   }
   @include breakpoint(desktopOnly) {
-
+    padding: 9.9rem 0 13.8rem 0; 
   }
 }
 
@@ -23,11 +23,15 @@
   @include breakpoint(tabletAndDesktop) {
     margin-top: 27.3rem;
   }
+  @include breakpoint(desktopOnly) {
+    margin-top: 55rem;
+    padding-left: 13rem;
+  }
 }
 
 .line-break {
-  @include marginTop(50,32,32);
-  @include marginBottom(337,84,41);
+  @include marginTop(50,32,60);
+  @include marginBottom(337,84,164);
   opacity: 0.3;
 }
 
@@ -41,11 +45,19 @@
     margin: 0 auto;
   }
 
+  @include breakpoint(desktopOnly) {
+    width: 74.47058823529412vw;
+    margin: 0 auto;
+  }
+
 }
 
 .cote-business {
   @include breakpoint(tabletAndDesktop) {
     margin-top: 11.7rem;
+  }
+  @include breakpoint(desktopOnly) {
+    margin-top: 16.4rem;
   }
 }
 
@@ -55,9 +67,5 @@
 
   @include breakpoint(tabletAndDesktop) {
     padding: 0;
-  }
-  
-  .container {
-    position: relative;
   }
 }

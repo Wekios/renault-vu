@@ -51,6 +51,14 @@ h1,h2,h3 {
   text-transform: uppercase;
 }
 
+p {
+  font-size: 1.4rem;
+  letter-spacing: calcLS(50);
+  line-height: 1.8rem;
+  color: $gray;
+  padding-top: 2rem;
+}
+
 
 // text modifiers \\
 

@@ -67,7 +67,7 @@
   z-index: 999;
   @include circled-icon(calcRem(25));
   color: $yellow;
-  @include fontSize(8,8,8);
+  @include fontSize(8,8,12);
 
   &--black {
     @extend .arrow;
@@ -80,6 +80,10 @@
     background: none;
     border: 1px solid $gray;
     box-shadow: 0 0 1px $gray;
+    opacity: 0.6;
+    @include breakpoint(desktopOnly) {
+      @include circled-icon(calcRem(50));
+    }
   }
 
 }
