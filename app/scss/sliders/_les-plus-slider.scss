@@ -7,7 +7,10 @@
     .les-plus__heading {
         width: 12.5%;
         float: left;
-        margin-top: 3.1rem;
+        margin-top: 2.4rem;
+        @include breakpoint(desktopOnly) {
+            // margin-top: 2.7rem;
+        }
     }
 
     .les-plus-slider__wrap {

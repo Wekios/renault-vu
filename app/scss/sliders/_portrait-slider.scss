@@ -4,11 +4,11 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border: 2rem solid $yellow;
-    @include width(560,312,664);
+    @include width(560,317,664);
 
     @include breakpoint(tabletAndDesktop) {
         display: inline-block;
-        margin-top: 2rem;
+        margin-top: 2.7rem;
     }
     @include breakpoint(desktopOnly) {
         margin-top: 8.6rem;
@@ -18,13 +18,13 @@
 //Correct Measures//
 .portrait-slider__first-slide{
     @include teaser__figureResponsive(url("../../assets/image/portrait-slider__first-slide.jpg"),
-    500,289.63,610);
+    500,270,610);
     width: 100%;
 }
 
 .portrait-slider__second-slide {
     @include teaser__figureResponsive(url("../../assets/image/portrait-slider__second-slide.jpg"),
-    500,289.63,610);
+    500,270,610);
     width: 100%;
 }
 

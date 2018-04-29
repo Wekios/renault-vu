@@ -36,12 +36,12 @@
 
 .news-de-la__third-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/news-de-la__third-teaser-img.jpg"),
-    455,227,473);
+    458,227,473);
 }
 
 .news-de-la__fourth-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/news-de-la__fourth-teaser-img.jpg"),
-    222,154,262);
+    222,125,262);
     @include width(272,154,320);
 }
 
@@ -49,24 +49,22 @@
 
 .fan-de-vu__first-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__first-teaser-img.jpg"),
-    340,239,509);
-    @include width(560,387,836);
-    vertical-align: top; 
+    340,239,509); 
 }
 
 .fan-de-vu__second-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__second-teaser-img.jpg"),
-    220,125,262);
+    222,125,262);
 }
 
 .fan-de-vu__third-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__third-teaser-img.jpg"),
-    220,125,262);
+    222,125,262);
 }
 
 .fan-de-vu__fourth-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__fourth-teaser-img.jpg"),
-    220,125,262);
+    222,125,262);
 }
 
 //  Vu & Astuces Figures //
@@ -78,7 +76,7 @@
 
 .vu-astuces__second-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/vu-astuces__second-teaser-img.jpg"),
-    220,125,262);
+    222,125,262);
 }
 
 .vu-astuces__third-teaser__figure {

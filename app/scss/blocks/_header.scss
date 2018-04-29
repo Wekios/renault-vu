@@ -10,8 +10,7 @@
   box-sizing: border-box;
 
   @include breakpoint(tabletOnly) {
-    padding: 0 5%;
-    height: 8.5001rem;
+    padding: 0 7%;
   }
 
   @include breakpoint(desktopOnly) {
@@ -83,18 +82,18 @@
       }
     }
   }
+
   &__menu-trigger {
     color: $yellow;
     float: left;
     position: relative;
     cursor: pointer;
     top: 2.5rem;
-    font-size: 3.6rem;
+    @include fontSize(36,50,50);
 
     @include breakpoint(tabletOnly) {
-      font-size: 4.1rem;
-      top: 2.35rem;
-      left: 0.4rem;
+      top: 2rem;
+      left: 1rem;
     }
     @include breakpoint(desktopOnly) {
       display: none;
@@ -113,13 +112,16 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
   @include breakpoint(phoneOnly) {
     margin-bottom: 33vw;
     position: relative;
   }
+
   @include breakpoint(tabletOnly) {
     margin-bottom: 28vw;
   }
+
   @include breakpoint(desktopOnly) {
     width: 90%;
     text-align: center;
@@ -129,6 +131,7 @@
     margin-left: -44%;
     margin-bottom: 0;
   }
+  
   &--wrap {
     width: 77vw;
     margin: 0;

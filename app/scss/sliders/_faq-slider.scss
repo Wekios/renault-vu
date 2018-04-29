@@ -1,7 +1,7 @@
 
 .faq__first-teaser__heading {
-    @include marginTop(-268,-50,-100);
-    @include marginBottom(35,-50,-100);
+    @include marginTop(0,-50,-100);
+    @include marginBottom(42,-50,-100);
 
 }
 
@@ -42,7 +42,7 @@
     box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     @include width(560,276,491);
     display: inline-block;
-    @include marginBottom(29,33,78);
+    @include marginBottom(31,33,78);
 }
 
 .faq__first-teaser__slide {
