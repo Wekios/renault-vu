@@ -161,8 +161,69 @@
 }
 
 ////////////////////////////////////
-/////// Media Queries /////////////
+/////// SHP FIGURES /////////////
 //////////////////////////////////
 
-@include breakpoint(tabletAndDesktop) {
+// Editor Picks 
+
+.editor-picks__first-teaser__figure {    
+    @include teaser__figureResponsive(
+    url("../../assets/image/editor-picks__first-teaser-img.jpg"),
+    458,202,309);
+}
+
+.editor-picks__second-teaser__figure{
+    @include teaser__figureResponsive( 
+        url("../../assets/image/editor-picks__second-teaser-img.jpg"),
+    222,125,535);
+    @include width(272,153,320);
+    float: right;
+}
+
+.editor-picks__third-teaser__figure {
+    @extend .news-de-la__first-teaser__figure;
+}
+
+.editor-picks__fourth-teaser__figure {
+    @include teaser__figureResponsive( 
+        url("../../assets/image/editor-picks__fourth-teaser-img.jpg"),
+    455,257,535);
+}
+
+// Latest News Figures 
+
+.latest-news__first-teaser__figure {
+    @include teaser__figureResponsive( 
+        url("../../assets/image/latest-news__first-teaser-img.jpg"),
+    222,127.7,535);
+}
+
+.latest-news__second-teaser__figure {
+    @include teaser__figureResponsive( 
+        url("../../assets/image/latest-news__second-teaser-img.jpg"),
+    222,127.7,535);
+}
+
+.latest-news__third-teaser__figure {
+    @include teaser__figureResponsive( 
+        url("../../assets/image/latest-news__third-teaser-img.jpg"),
+    458,230,535);
+}
+
+
+.latest-news__fourth-teaser__figure,
+.latest-news__fifth-teaser__figure,
+.latest-news__sixth-teaser__figure,
+.latest-news__seventh-teaser__figure,
+.latest-news__eight-teaser__figure,
+.latest-news__ninth-teaser__figure,
+.latest-news__tenth-teaser__figure, 
+.latest-news__eleventh-teaser__figure,  {
+    background: url("http://via.placeholder.com/272x222");
+    height: 22rem;
+
+    @include breakpoint(tabletAndDesktop) {
+        background: url("http://via.placeholder.com/153x127");
+        height: 12.77rem;
+    }
 }

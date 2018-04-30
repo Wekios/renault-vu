@@ -1,0 +1,28 @@
+.pagination {
+    @include ulClean;
+    display: block;
+    text-align: center;
+    min-height: 7.6rem;
+
+    li {
+        @include fontSize(32,19,32);
+        display: inline-block;
+        width: 11.876vw;
+        text-align: center;
+        padding: 5rem calcVw(18,640);
+
+        @include breakpoint(tabletAndDesktop) {
+            padding: 3rem calcVw(5,768);
+        }
+    }
+
+    .active a {
+        @include circled-icon(11.875vw);
+        background: $lightGray;
+        display: inline-block;
+
+        @include breakpoint(tabletAndDesktop) {
+            @include circled-icon(6.510416666666667vw);
+        }
+    }
+}

@@ -42,7 +42,7 @@ h4 {
   @include fontSize(28,14,18);
   @include lineHeight(32,18,26);
   @include letterSpacing(50,50,50);
-  margin-top: 1.2rem;
+  @include marginTop(12,12,28);
   display: inline-block;
   vertical-align: top;
 }

@@ -1,0 +1,19 @@
+.topics {
+
+    &__heading {
+        @include marginBottom(79,79,79);
+        }
+
+    li {
+    @include fontSize(24,12v,24);
+    @include lineHeight(87,87,87);
+    @include letterSpacing(50,50,50);
+    display: block;
+    margin: 3.8rem 0 3.8rem;
+
+        a {
+            background: $lightGray;
+            padding: 3rem calcVw(56,640);
+        }
+    }
+}

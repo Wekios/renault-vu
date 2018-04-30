@@ -1,27 +1,26 @@
 .news-de-la {
-  @include marginTop(38,115,239)
+  @include marginTop(38,115,240)
 }
 
 .fan-de-vu {
-  @include marginBottom(100,107,90);
+  @include marginBottom(100,107,225);
 }
 
 .vu-astuces {
 
   @include breakpoint(desktopOnly) {
-    padding-left: 13rem;
+    padding-left: 17.5rem;
   }
   
 }
 
 .line-break {
   @include marginTop(50,32,60);
-  @include marginBottom(76,78,164);
+  @include marginBottom(76,78,188);
   opacity: 0.3;
 }
 
 .faq {
-  background: $lightGray;
   position: relative;
   @include marginBottom(90,117,117);
 
@@ -32,6 +31,7 @@
 
   @include breakpoint(desktopOnly) {
     width: 74.47058823529412vw;
+    margin-left: calcVw(180,1700);
   }
 
 }
@@ -41,7 +41,7 @@
     margin-top: 10.2rem;
   }
   @include breakpoint(desktopOnly) {
-    margin-top: 16.4rem;
+    margin-top: 13.9rem;
   }
 }
 

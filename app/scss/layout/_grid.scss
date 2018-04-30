@@ -44,4 +44,9 @@ a img {
     display: block;
     @include clearfix;
   }
+
+  .row--half-left {
+    float: left;
+    width: calcVw(289,768);
+  }
 }

@@ -1,5 +1,5 @@
 
-.faq__heading {
+.qa__heading {
     @include marginBottom(42,-50,-100);
 
 }
@@ -13,7 +13,7 @@
     @include marginTop(270,30,30);
 }
 
-.faq__first-teaser {
+.qa-slider {
     @include width(560,455,860);
     display: block;
     margin: 0 auto;
@@ -44,7 +44,7 @@
 
 }
 
-.faq-slider {
+.qa-slider {
     -webkit-box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
@@ -53,22 +53,27 @@
     @include marginBottom(31,33,78);
 }
 
-.faq__first-teaser__slide {
-    @include teaser__figureResponsive(url("../../assets/image/faq__first-teaser-img.jpg"),
+.qa-slider__first-slide {
+    @include teaser__figureResponsive(url("../../assets/image/qa-slider__first-slide.jpg"),
     470,230,410);   
 }
 
-.faq__second-teaser__slide {
+.qa-slider__second-slide {
     @include teaser__figureResponsive(url("../../assets/image/news-de-la__third-teaser-img.jpg"),
     470,230,410);  
 }
 
-.faq__third-teaser__slide {
+.qa-slider__third-slide {
     @include teaser__figureResponsive(url("../../assets/image/faq__first-teaser-img.jpg"),
     470,230,410);  
 }
 
-.faq-slider__navigation {
+.qa-slider__fourth-slide {
+    @include teaser__figureResponsive(url("../../assets/image/faq__first-teaser-img.jpg"),
+    470,230,410);  
+}
+
+.qa-slider__navigation {
     position: absolute;
     bottom: 3rem;
     right: 2rem;
@@ -84,11 +89,11 @@
     }
 }
 
-.faq-slider__current {
+.qa-slider__current {
     color: $yellow;
 }
 
-.faq-slider__arrows {
+.qa-slider__arrows {
     display: inline-block;
     padding: 0 1rem;
 
@@ -97,12 +102,12 @@
     }
 }
 
-.faq-slider__arrows-left {
+.qa-slider__arrows-left {
     bottom: -5rem;
     right: 17rem;
 }
 
-.faq-slider__arrows-right {
+.qa-slider__arrows-right {
     bottom: -5rem;
     right: 4rem;
 }

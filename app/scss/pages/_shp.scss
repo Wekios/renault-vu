@@ -1,0 +1,48 @@
+.shp__header {
+    @include marginBottom(77,79,77);
+    position: relative;
+}
+.shp__header-image {
+    @include teaser__figureResponsive(
+    url("../../assets/image/shp__header-img.jpg"),
+    330,396,309);
+    @include breakpoint(tabletAndDesktop) {
+        width: calcVw(708,768);
+    }
+}
+
+.shp__header-image__text {
+    box-sizing: border-box;
+    padding: 7.1rem 0 0 calcVw(115,640);
+    
+    @include breakpoint(tabletAndDesktop) {
+        padding: 16.5rem 0 0 calcVw(60,768);
+    }
+
+    .button {
+        @include marginBottom(16,11,15);
+    }
+}
+
+.shp__header-text {
+    box-sizing: border-box;
+    padding: 4.7rem calcVw(40,640) 4rem;
+    @include fontSize(28,14,28);
+    @include lineHeight(42,20,42);
+    @include letterSpacing(50,50,50);
+    color: $black; 
+    background-color: $yellow;
+    
+    @include breakpoint(tabletAndDesktop) {
+        width: calcVw(380,768);
+        padding: 4.3rem calcVw(47,768) 3.4rem calcVw(56,768);
+        position: absolute;
+        top: 5rem;
+        right: 0;
+    }
+}
+
+
+.editor-picks {
+    @include marginBottom(114,120v,0);
+}
