@@ -1,92 +1,57 @@
 
 .qa__heading {
-    @include marginBottom(42,-50,-100);
+    @include marginBottom(180,105,83);
 
 }
 
-.faq__teaser-underlay {
+.qa__slider-underlay {
     background: $lightGray;
-    height: 51.7rem;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    @include marginTop(270,30,30);
-}
-
-.qa-slider {
-    @include width(560,455,860);
-    display: block;
-    margin: 0 auto;
     position: relative;
 
     @include breakpoint(tabletAndDesktop) {
-        margin-left: 12.5rem;
+        width: calcVw(442,768);
     }
+}
 
-    @include breakpoint(desktopOnly) {
-        margin-left: 25rem;
+.qa__slider-wrapper {
+    @include width(560,380,860);
+    margin: -14.5rem auto 0;
+    @include breakpoint(tabletAndDesktop) {
+     margin: -8.3rem 0 0 calcVw(44,768);   
     }
-
-    &__caption {
-        @include width(560,150,325);
-        display: inline-block;
-        margin-bottom: 7.5rem;
-
-        @include breakpoint(tabletAndDesktop) {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-        }
-        @include breakpoint(desktopOnly) {
-            top: 14rem;
-        }
-    }
-
 }
 
 .qa-slider {
     -webkit-box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
-    @include width(560,276,491);
-    display: inline-block;
-    @include marginBottom(31,33,78);
+    @include width(560,299.41,491);
+    @include marginBottom(50,10,50);
 }
 
 .qa-slider__first-slide {
     @include teaser__figureResponsive(url("../../assets/image/qa-slider__first-slide.jpg"),
-    470,230,410);   
+    470,250.09,410);   
 }
 
 .qa-slider__second-slide {
     @include teaser__figureResponsive(url("../../assets/image/news-de-la__third-teaser-img.jpg"),
-    470,230,410);  
+    470,250.09,410);  
 }
 
-.qa-slider__third-slide {
-    @include teaser__figureResponsive(url("../../assets/image/faq__first-teaser-img.jpg"),
-    470,230,410);  
-}
-
-.qa-slider__fourth-slide {
-    @include teaser__figureResponsive(url("../../assets/image/faq__first-teaser-img.jpg"),
-    470,230,410);  
+.qa__slider__caption {
+    margin-bottom: 1rem;
+    @include breakpoint(tabletAndDesktop) {
+        width: 70%;
+    }
 }
 
 .qa-slider__navigation {
-    position: absolute;
-    bottom: 3rem;
-    right: 2rem;
+    float: right;
     color: $gray;
     @include fontSize(25,10,14);
-
-    @include breakpoint(tabletAndDesktop) {
-        right: -2rem;
-    }
-    @include breakpoint(desktopOnly) {
-        top: 16rem;
-        right: -6rem;
-    }
+    margin-bottom: 3rem;
+    // @include marginBottom(30,40,40); 
 }
 
 .qa-slider__current {
@@ -100,14 +65,4 @@
     &:hover {
         color: $black;
     }
-}
-
-.qa-slider__arrows-left {
-    bottom: -5rem;
-    right: 17rem;
-}
-
-.qa-slider__arrows-right {
-    bottom: -5rem;
-    right: 4rem;
 }

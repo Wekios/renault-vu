@@ -30,6 +30,10 @@ a img {
   margin: 0 auto;
   font-size: 0;
   line-height: 0;
+
+  &--full-mob {
+    @include width($site-mob-design, $container-tablet, $container-desktop);
+  }
 }
 
 .hidden {
@@ -42,6 +46,7 @@ a img {
 @include breakpoint(tabletAndDesktop) {
   .row--td {
     display: block;
+    margin: 0 auto;
     @include clearfix;
   }
 

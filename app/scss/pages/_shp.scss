@@ -44,5 +44,28 @@
 
 
 .editor-picks {
-    @include marginBottom(114,120v,0);
+    @include marginBottom(114,120,0);
+}
+
+.shp-row--td {
+    @include breakpoint(tabletAndDesktop) {
+        width: 84.24479vw;
+    }
+}
+
+.qa {
+    @include marginBottom(70,0,0);
+    @include breakpoint(tabletAndDesktop) {
+        max-width: calcVw(442,768);
+        float: left;
+        margin-right: 12px;
+    }
+}
+
+.topics {
+    @include breakpoint(tabletAndDesktop) {
+        float: left;
+        max-width: calcVw(192,768);
+        margin-top: 7rem;
+    }
 }
