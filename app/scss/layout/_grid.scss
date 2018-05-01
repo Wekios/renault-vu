@@ -50,8 +50,14 @@ a img {
     @include clearfix;
   }
 
-  .row--half-left {
+  .col--half-left {
     float: left;
     width: calcVw(289,768);
+    @include breakpoint(desktopOnly) {
+      width: calcVw(578, 1700);
+      padding-left: calcVw(84, 1700);
+      margin-right: calcVw(24, 1700);
+    }
   }
+
 }

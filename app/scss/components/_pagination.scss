@@ -5,12 +5,15 @@
     min-height: 7.6rem;
 
     li {
-        @include fontSize(32, 19, 32);
+        @include fontSize(32,19,20);
         display: inline-block;
         text-align: center;
         padding: 5rem calcVw(29, 640);
         @include breakpoint(tabletAndDesktop) {
             padding: 3rem calcVw(15, 768);
+        }
+        @include breakpoint(desktopOnly) {
+            padding: 1.5rem calcVw(15, 1700);
         }
 
         &.hidden--until-td {
@@ -21,12 +24,15 @@
 
         }
 
-        .active a {
+        &.active a {
             @include circled-icon(11.875vw);
             background: $lightGray;
             display: inline-block;
             @include breakpoint(tabletAndDesktop) {
                 @include circled-icon(6.25vw);
+            }
+            @include breakpoint(desktopOnly) {
+                @include circled-icon(3vw);
             }
         }
 

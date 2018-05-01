@@ -10,27 +10,25 @@
             width: 98%;
         }
     }
+
+    .caption {
+        @include marginTop(12,12,24);
+    }
 }
 
 .heading {
 
     .text--bolder {
         @include fontSize(45,20,32);
-        @include lineHeight(48,24,48);
-        @include letterSpacing(0,0,0);    
     }
 
     .text--italic {
         @include fontSize(50,20,30);
-        @include lineHeight(38,24.52,48);
-        @include letterSpacing(0,0,0);
         padding-left: 0.5rem;    
     }
 
     .text--regular {
         @include fontSize(40,20,30);
-        @include lineHeight(48,24.52,48);
-        @include letterSpacing(50,50,50);
     }
 
 }
@@ -149,7 +147,7 @@
         @include marginTop(37,9,37);
 
         h3 {
-            @include fontSize(22,22,28);
+            @include fontSize(36,22,28);
         }
     }
 
@@ -328,17 +326,25 @@
 
 // Editor-Picks Block
 .editor-picks__heading {
-    @include marginBottom(34,10,0);
+    @include marginBottom(34,10,50);
+    width: 8.4rem;
     @include breakpoint(tabletAndDesktop) {
         float: right;
-        margin-right: calcVw(277,768);
-        margin-top: 1rem;
+        margin-right: calcVw(274,768);
+        margin-top: 1.2rem;
+    }
+    @include breakpoint(desktopOnly) {
+        margin-right: calcVw(582,1700);
+        margin-top: 4rem;
+        span.text--bolder,span.text--regular,br,h2 {
+            line-height: 3rem;
+        }
     }
 }
 
 .editor-picks__first-teaser {
     @include width(560,277,578);
-    @include marginBottom(51,51,51);
+    @include marginBottom(51,51,81);
 }
 
 .editor-picks__second-teaser {
@@ -347,12 +353,12 @@
     position: relative;
 
     &__caption {
-        @include width(275,100,230);
+        @include width(275,100,250);
         position: absolute;
         left: 0;
         top: -1.7rem;
         @include breakpoint(desktopOnly) {
-            top: -3.5rem;
+            top: -1rem;
         }
     }
 }
@@ -370,7 +376,9 @@
 // Latest News Teasers
 
 .latest-news__heading {
-    @include marginBottom(38,20,0);
+    width: 8.4rem;
+    @include marginBottom(38,20,40);
+
 }
 
 .latest-news__first-teaser {
@@ -384,7 +392,7 @@
 
 .latest-news__third-teaser {
     @include width(560,277.84,578);
-    @include marginTop(0,-100,0);
+    @include marginTop(0,-100,-210);
     @include marginBottom(26,24,0);
 }
 
@@ -398,7 +406,7 @@
 .latest-news__ninth-teaser,
 .latest-news__tenth-teaser, 
 .latest-news__eleventh-teaser {
-    @include width(272,152.75,272);
+    @include width(272,152.75,319);
 }
 
 .latest-news__first-teaser,
@@ -407,7 +415,7 @@
 .latest-news__eight-teaser,
 .latest-news__tenth-teaser, {
     @include marginRight(16,12,24);
-    @include marginBottom(54,24,0);
+    @include marginBottom(54,24,75);
 }
 
 @include breakpoint(tabletAndDesktop) {

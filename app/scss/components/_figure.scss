@@ -169,13 +169,13 @@
 .editor-picks__first-teaser__figure {    
     @include teaser__figureResponsive(
     url("../../assets/image/editor-picks__first-teaser-img.jpg"),
-    458,202,309);
+    458,202,473);
 }
 
 .editor-picks__second-teaser__figure{
     @include teaser__figureResponsive( 
         url("../../assets/image/editor-picks__second-teaser-img.jpg"),
-    222,125,535);
+    222,125,262);
     @include width(272,153,320);
     float: right;
 }
@@ -195,19 +195,19 @@
 .latest-news__first-teaser__figure {
     @include teaser__figureResponsive( 
         url("../../assets/image/latest-news__first-teaser-img.jpg"),
-    222,127.7,535);
+    222,127.7,262);
 }
 
 .latest-news__second-teaser__figure {
     @include teaser__figureResponsive( 
         url("../../assets/image/latest-news__second-teaser-img.jpg"),
-    222,127.7,535);
+    222,127.7,262);
 }
 
 .latest-news__third-teaser__figure {
     @include teaser__figureResponsive( 
         url("../../assets/image/latest-news__third-teaser-img.jpg"),
-    458,230,535);
+    458,230,473);
 }
 
 
@@ -225,5 +225,9 @@
     @include breakpoint(tabletAndDesktop) {
         background: url("http://via.placeholder.com/153x127");
         height: 12.77rem;
+    } 
+    @include breakpoint(desktopOnly) {
+        background: url("http://via.placeholder.com/319x262");
+        height: 26.2rem;
     }
 }

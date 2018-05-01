@@ -1,6 +1,7 @@
 
 .qa__heading {
-    @include marginBottom(180,105,83);
+    @include marginBottom(180,105,170);
+    @include marginLeft(0,44,173);
 
 }
 
@@ -11,14 +12,20 @@
     @include breakpoint(tabletAndDesktop) {
         width: calcVw(442,768);
     }
+    @include breakpoint(desktopOnly) {
+        width: calcVw(835,1700);
+    }
 }
 
 .qa__slider-wrapper {
-    @include width(560,380,860);
+    @include width(560,380,492);
     margin: -14.5rem auto 0;
     @include breakpoint(tabletAndDesktop) {
      margin: -8.3rem 0 0 calcVw(44,768);   
     }
+    @include breakpoint(desktopOnly) {
+        margin: -13.6rem 0 0 calcVw(173,1700);   
+       }
 }
 
 .qa-slider {
@@ -26,7 +33,7 @@
     -moz-box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     @include width(560,299.41,491);
-    @include marginBottom(50,10,50);
+    @include marginBottom(50,10,32);
 }
 
 .qa-slider__first-slide {
@@ -44,6 +51,10 @@
     @include breakpoint(tabletAndDesktop) {
         width: 70%;
     }
+    @include breakpoint(desktopOnly) {
+        float: left;
+        margin-bottom: 6.4rem;
+    }
 }
 
 .qa-slider__navigation {
@@ -51,7 +62,7 @@
     color: $gray;
     @include fontSize(25,10,14);
     margin-bottom: 3rem;
-    // @include marginBottom(30,40,40); 
+    @include marginBottom(30,40,0); 
 }
 
 .qa-slider__current {

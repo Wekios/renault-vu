@@ -28,7 +28,7 @@ h1{
 
 h2 {
   @include fontSize(40,20,32);
-  @include lineHeight(38,24.52,48);
+  @include lineHeight(38,18,28);
   @include letterSpacing(50,50,0);
 }
 
@@ -42,7 +42,6 @@ h4 {
   @include fontSize(28,14,18);
   @include lineHeight(32,18,26);
   @include letterSpacing(50,50,50);
-  @include marginTop(12,12,28);
   display: inline-block;
   vertical-align: top;
 }

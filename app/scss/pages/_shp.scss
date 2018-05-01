@@ -1,13 +1,16 @@
 .shp__header {
-    @include marginBottom(77,79,77);
+    @include marginBottom(77,79,150);
     position: relative;
 }
 .shp__header-image {
     @include teaser__figureResponsive(
     url("../../assets/image/shp__header-img.jpg"),
-    330,396,309);
+    330,396,700);
     @include breakpoint(tabletAndDesktop) {
         width: calcVw(708,768);
+    }
+    @include breakpoint(desktopOnly) {
+        width: calcVw(1354,1700);
     }
 }
 
@@ -18,6 +21,9 @@
     @include breakpoint(tabletAndDesktop) {
         padding: 16.5rem 0 0 calcVw(60,768);
     }
+    @include breakpoint(desktopOnly) {
+        padding: 29.1rem 0 0 calcVw(260,1700);
+    }
 
     .button {
         @include marginBottom(16,11,15);
@@ -27,8 +33,8 @@
 .shp__header-text {
     box-sizing: border-box;
     padding: 4.7rem calcVw(40,640) 4rem;
-    @include fontSize(28,14,28);
-    @include lineHeight(42,20,42);
+    @include fontSize(28,14,18);
+    @include lineHeight(42,20,28);
     @include letterSpacing(50,50,50);
     color: $black; 
     background-color: $yellow;
@@ -39,17 +45,26 @@
         position: absolute;
         top: 5rem;
         right: 0;
+        @include breakpoint(desktopOnly) {
+            width: calcVw(580,1700);
+            padding: 12.1rem calcVw(84, 1700) 12.7rem calcVw(86, 1700);
+            max-height: 62.8rem;
+            top: 16rem;
+        }
     }
 }
 
 
 .editor-picks {
-    @include marginBottom(114,120,0);
+    @include marginBottom(114,120,207);
 }
 
 .shp-row--td {
     @include breakpoint(tabletAndDesktop) {
         width: 84.24479vw;
+    }
+    @include breakpoint(desktopOnly) {
+        width: 79.70588vw;
     }
 }
 
@@ -58,8 +73,12 @@
     @include breakpoint(tabletAndDesktop) {
         max-width: calcVw(442,768);
         float: left;
-        margin-right: 12px;
+        margin-right: 1.2rem;
     }
+    @include breakpoint(desktopOnly) {
+        max-width: calcVw(835,1700);
+        margin-right: 19.6rem;
+    } 
 }
 
 .topics {
@@ -67,5 +86,9 @@
         float: left;
         max-width: calcVw(192,768);
         margin-top: 7rem;
+    }
+    @include breakpoint(desktopOnly) {
+        max-width: calcVw(215,1700);
+        margin-top: 24.8rem;
     }
 }
