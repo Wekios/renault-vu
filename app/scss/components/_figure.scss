@@ -3,7 +3,6 @@
     position: relative;
     width: 100%;
     // background: url("../../assets/image/teaser--default-img.jpg");
-
 }
 
 // Sub Menu Desktop Top Article Figures
@@ -161,7 +160,7 @@
 }
 
 ////////////////////////////////////
-/////// SHP FIGURES /////////////
+/////// SHP FIGURES ///////////////
 //////////////////////////////////
 
 // Editor Picks 
@@ -230,4 +229,43 @@
         background: url("http://via.placeholder.com/319x262");
         height: 26.2rem;
     }
+}
+
+////////////////////////////////////
+/////// SHPFaq FIGURES ////////////
+//////////////////////////////////
+
+.qa-list__first-teaser__figure {    
+    @include teaser__figureResponsive(
+    url("../../assets/image/qa-list__first-teaser-img.jpg"),
+    226,112,235);
+    @include width(272,135,284);
+}
+
+.qa-list__second-teaser__figure {    
+    @include teaser__figureResponsive(
+    url("../../assets/image/cote-business__fourth-teaser-img.jpg"),
+    226,112,235);
+    @include width(272,136,284);
+}
+
+.qa-list__third-teaser__figure {    
+    @include teaser__figureResponsive(
+    url("../../assets/image/editor-picks__second-teaser-img.jpg"),
+    226,112,235);
+    @include width(272,136,284);
+}
+
+.qa-list__fourth-teaser__figure {    
+    @include teaser__figureResponsive(
+    url("../../assets/image/latest-news__second-teaser-img.jpg"),
+    226,112,235);
+    @include width(272,136,284);
+}
+
+.qa-list__fifth-teaser__figure {    
+    @include teaser__figureResponsive(
+    url("../../assets/image/qa-list__fifth-teaser-img.jpg"),
+    226,112,235);
+    @include width(272,136,284);
 }

@@ -37,12 +37,17 @@
 }
 
 .cote-business {
+  @include marginBottom(83,68,133);
   @include breakpoint(tabletAndDesktop) {
     margin-top: 10.2rem;
   }
   @include breakpoint(desktopOnly) {
     margin-top: 13.9rem;
   }
+}
+
+.quiz-teaser {
+  @include marginBottom(88,178,333); 
 }
 
 .les-plus { 

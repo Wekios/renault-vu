@@ -1,0 +1,113 @@
+.quiz-teaser-wrapper {
+    background: center / cover no-repeat url("../../assets/image/quiz__bg-image--mob.jpg");
+    height: 49.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    @include breakpoint(tabletAndDesktop) {
+        height: 21.2rem;
+    }
+    @include breakpoint(desktopOnly) {
+        height: 44.1rem;
+    }
+}
+
+.quiz-teaser__text-content {
+    @include width(416,219,315);
+    margin: 0 auto;
+    padding-top: 7.5rem;
+    @include breakpoint(tabletAndDesktop) {
+        padding-top: 3.8rem;
+    }
+    @include breakpoint(desktopOnly) {
+        padding-top: 9.4rem;
+    }
+
+}
+
+.quiz-teaser__heading {
+    padding-bottom: 3rem;
+    @include breakpoint(tabletAndDesktop) {
+        padding-bottom: 2rem;
+    }
+    h2 {
+        @include fontSize(45,22,32);
+        @include letterSpacing(0,50,0);
+    }
+}
+
+.quiz-teaser__description {
+    color: $black;
+    @include fontSize(26,0,14);
+    @include lineHeight(32,0,18);
+    padding-bottom: 4.6rem;
+}
+
+.quiz-teaser__button {
+    text-align: center;
+    button {
+        @include fontSize(18,10,18);
+        min-height: 7.1rem;
+        min-width: 26.6rem;
+        @include breakpoint(tabletAndDesktop) {
+            min-height: 3rem;
+            min-width: 10rem;
+        }
+    }
+
+}
+
+.quiz-teaser__figures {
+    @include breakpoint(phoneOnly){
+        display: none;
+    }
+    
+    width: 90%;
+    margin: 6rem auto 0;
+    position: relative;
+    @include breakpoint(desktopOnly) {
+        margin-top: 6.6rem;
+    }
+    
+
+    &__first-car {
+        @include teaser__figureResponsive(url("../../assets/image/truck1.png"),
+        0,74,165);
+        @include width(0,175,351);
+        display: inline-block;
+        position: absolute;
+    }
+
+    &__second-car {
+        @include teaser__figureResponsive(url("../../assets/image/truck2.png"),
+        0,74,165);
+        @include width(0,175,351);
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+    }
+
+    &__third-car {
+        @include teaser__figureResponsive(url("../../assets/image/truck3.png"),
+        0,74,165);
+        @include width(0,175,351);
+        display: inline-block;
+        position: absolute;
+        right: 0;
+    }
+
+    .car__caption {
+        text-align: center;
+        color: $black;
+        margin-top: 5rem;
+        @include breakpoint(desktopOnly) {
+            margin-top: 13rem;
+            font-size: 2.2rem;
+            letter-spacing: -0.025em;
+        }
+    }
+    
+
+}

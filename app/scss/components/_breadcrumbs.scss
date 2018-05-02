@@ -1,0 +1,28 @@
+// .breadcrumbs {
+//   @include breakpoint(phoneAndTablet) {
+//     display: none;
+//   }
+
+//   display: block;
+//   width: 80%;
+//   margin: 3% 0 0 15.2%;
+//   font-size: calcRem(14);
+//   letter-spacing: calcLS(50);
+//   font-weight: 400;
+//   color: $black;
+
+//   & a {
+//     text-decoration: none;
+//     color: inherit;
+//     margin: 0 0.2vw;
+
+//     &:first-child {
+//       margin-left: 0;
+//     }
+//   }
+
+//   & span {
+//     margin-left: 0 10px;
+//     cursor: default;
+//   }
+// }

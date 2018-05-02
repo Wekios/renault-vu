@@ -12,7 +12,6 @@
     @include letterSpacing(50,50,50);
 
     &--white-bg {
-        @extend .button;
         background: white;
         padding-left: 2.1rem;
         padding-right: 2.1rem;

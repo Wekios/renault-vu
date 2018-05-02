@@ -3,7 +3,7 @@
 // relative font sizes are declared with mixins
 
 .teaser {
-    display: inline-block;
+    float: left;
 
     @include breakpoint(tabletAndDesktop) {
         h4 {
@@ -260,45 +260,6 @@
     @include marginBottom(107,100,100);
 }
 
-.quiz-teaser {
-    @include marginTop(84,64,113);
-    @include marginBottom(90,120,160);
-
-    @include breakpoint(phoneOnly) {
-        .container {
-            width: 100%;
-        }
-    }
-
-    &__wrapper {
-        background: center / cover no-repeat url("../../assets/image/quiz__bg-image--mob.jpg");
-    }
-    &__text-content {
-        padding: 7.3rem 8rem 4.2rem;
-        text-align: center;
-    }
-    &__heading {
-        h2{
-            @include fontSize(46,30,32);
-        }
-    }
-    &__text {
-        margin: 3.7rem 0 4.8rem;
-        @include fontSize(26,26,14);
-        @include lineHeight(32,32,18);
-        @include letterSpacing(50,50,50);
-        color: $black;
-    }
-    &__button {
-
-        .button--white-bg {
-            @include fontSize(18,10,12);
-            padding: 1.5rem 10rem;
-        }
-    }
-
-}
-
 .les-plus__heading {
     @include marginBottom(6,0,0);
 }
@@ -321,10 +282,53 @@
 }
 
 ////////////////////////////////////
+/////// Media Queries /////////////
+//////////////////////////////////
+
+
+@include breakpoint(tabletAndDesktop) {
+    
+    .teaser {
+        float: left;
+    }
+
+    .news-de-la__heading {
+
+        .text--bolder {
+            display: inline;
+        }
+
+        .text--italic {
+            display: inline;
+            padding-left: 0.5rem;
+        }
+
+        @include breakpoint(desktopOnly) {
+            .text--regular {
+                margin-top: -1.9rem;
+            }
+        }
+    }
+
+    //Fan De Vu
+
+    .fan-de-vu__second-teaser,
+    .fan-de-vu__third-teaser ,
+    .fan-de-vu__fourth-teaser  {
+        float: right;
+    }
+
+    .les-plus__teaser-hidden {
+        display: inline-block;
+    }
+}
+
+////////////////////////////////////
 /////// SHP TEASERS /////////////
 //////////////////////////////////
 
 // Editor-Picks Block
+
 .editor-picks__heading {
     @include marginBottom(34,10,50);
     width: 8.4rem;
@@ -426,79 +430,162 @@
 }
 
 
+/////////////////////////////////////
+///////// New Teasers!!! ///////////
+///////////////////////////////////
 
-////////////////////////////////////
-/////// Media Queries /////////////
-//////////////////////////////////
 
+.qa-list__heading {
+    margin-bottom: 9.7rem;
+    @include breakpoint(tabletAndDesktop) {
+        float: left;
+        margin: 6.6rem 0 0 0;
+    }
+}
+
+.qa-list-teaser .teaser--underlay {
+    @include breakpoint(phoneOnly) {
+    margin-bottom: 14.6rem;
+    }
+}
+
+
+.teaser--underlay {
+    background: $lightGray;
+}
+
+.teaser--wide-mob {
+    width: calcVw(560,640);
+
+    &__caption {
+        display: inline-block;
+        width: calcVw(250,640);
+    }
+
+}
+
+.teaser--wide-mob.teaser--underlay .figure {
+    @include breakpoint(phoneOnly) {
+    margin-top: -3.9rem;
+    }
+}
+
+.teaser--portrait-mob {
+    @include width(272,194,405);
+}
+
+.teaser--portrait-mob.teaser--underlay {
+    height: 31.5rem;
+    @include breakpoint(tabletAndDesktop) {
+        height: 15rem;
+        margin-bottom: 3.8rem;
+        @include breakpoint(desktopOnly) {
+            height: 31.5rem;
+            margin-bottom: 5.9rem;
+        }
+    }
+
+    & .caption {
+        @include width(230,160,284);
+        @include marginTop(30,15,30);
+        margin-left: auto;
+        margin-right: auto;
+
+        p {
+            padding-top: 1rem;
+        }
+    }
+
+}
+
+.figure--padded-top {
+    margin-top: -11rem;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.7);
+    box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.7);
+    @include breakpoint(tabletAndDesktop) {
+        margin-top: -5rem;
+        @include breakpoint(desktopOnly) {
+        margin-top: -11.7rem;
+        }
+    }
+}
 
 @include breakpoint(tabletAndDesktop) {
-    
-    .teaser {
-        float: left;
+    .teaser--wide-tab.teaser--underlay {
+        width: calcVw(398.97,768);
+        height: 13.3rem;
+        margin-bottom: 7.3rem;
+        @include breakpoint(desktopOnly) {
+            width: calcVw(773, 1700);
+            height: 25.9rem;
+            margin-bottom: 14.2rem;
+        }
     }
 
-    .news-de-la__heading {
+    .teaser--wide-tab{
 
-        .text--bolder {
-            display: inline;
+        &__caption {
+            display: inline-block;
+            width: 18.5vw;
+            vertical-align: bottom;
+            @include breakpoint(desktopOnly) {
+                width: calcVw(292, 1700);
+                padding-bottom: 1.8rem;
+            }
         }
 
-        .text--italic {
-            display: inline;
-            padding-left: 0.5rem;
-        }
-
-        @include breakpoint(desktopOnly) {
-            .text--regular {
-                margin-top: -1.9rem;
+        &__figure {
+            margin: -1.2rem 3rem 0 2.8rem;
+            @include breakpoint(desktopOnly) {
+                margin: -3.4rem 2.5rem 0 8.6rem;
             }
         }
     }
+    
+}
 
-    //Fan De Vu
-
-    .fan-de-vu__second-teaser,
-    .fan-de-vu__third-teaser ,
-    .fan-de-vu__fourth-teaser  {
+.qa-list__first-teaser {
+    height: 25rem;
+    @include breakpoint(tabletAndDesktop) {
         float: right;
     }
+}
 
-    .quiz-teaser {
+.qa-list__first-teaser__caption {
+    vertical-align: bottom;
+}
 
-        &__wrapper {
-            @include teaser__figureResponsive(url("../../assets/image/quiz__bg-image.jpg"),
-            0,272,588);
-        }
+.qa-list__second-teaser {
+    @include marginRight(16,12,24);
+}
 
-        &__text-content {
-            text-align: center;
-            padding-top: 4.2rem;
-            @include breakpoint(desktopOnly) {
-                padding: 10rem 52rem 23rem;
-                text-align: left;
-            }
-        }
+.qa-list__third-teaser {
+    @include marginRight(0,12,24);
+}
 
-        &__text {
-            display: none;
-            @include breakpoint(desktopOnly) {
-                display: block;
-                margin: 0;
-            }
-        }
+.qa-list__fourth-teaser {
+    @include marginRight(16,0,0);
+}
 
-        &__button {
-            margin-top: 2rem;
+.qa-list__fifth-teaser {
+    @include marginLeft(0,30,60);
+}
 
-            .button--white-bg {
-                padding: 1rem 5rem;
-            }
-        }
+.qa-list__sixth-teaser {
+    @include marginRight(16,12,24);
+}
 
-    }
+.qa-list__seventh-teaser {
+    @include marginRight(0,12,24);
+}
 
-    .les-plus__teaser-hidden {
-        display: inline-block;
-    }
+.qa-list__eight-teaser {
+    @include marginRight(16,0,24);
+}
+
+.qa-list__ninth-teaser {
+    float: right;
 }

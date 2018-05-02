@@ -33,20 +33,32 @@
     box-sizing: border-box;
     position: absolute;
     top: 0;
-    padding: 13% 10%;
-
-    .text--slider {
-        margin: 10% 0 23%;
-    }
+    padding: 17.9% 36.6% 0 9.7%;
 }
+
+.portrait-slider__heading {
+    @include fontSize(50,18,36);
+    color: $yellow;
+    @include marginBottom(15,8,15);
+}
+
+.portrait-slider__description {
+    @include fontSize(36,16,36);
+    letter-spacing: 0.05em;
+    @include lineHeight(38,20,38);
+    text-transform: none;
+    color: $white;
+    @include marginBottom(50,50,50);
+}
+
+
 
 .portrait-slider__navigation {
     position: absolute;
-    top: 8rem;
+    top: 22%;
     color: $white;
     @include fontSize(25,10,14);
     right: 1rem;
-
 }
 
 .portrait-slider__arrows {

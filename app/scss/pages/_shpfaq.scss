@@ -1,0 +1,20 @@
+.shp__header--faq {
+    @include marginBottom(73,157,191);
+    position: relative;
+}
+
+.shp__header-image--faq {
+    @include teaser__figureResponsive(
+    url("../../assets/image/shpfaq__header-img.jpg"),
+    330,396,700);
+    @include breakpoint(tabletAndDesktop) {
+        width: calcVw(708,768);
+    }
+    @include breakpoint(desktopOnly) {
+        width: calcVw(1354,1700);
+    }
+}
+
+.shp__header-text--faq {
+    background-color: $lightGray;
+}

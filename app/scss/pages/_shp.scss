@@ -1,7 +1,8 @@
 .shp__header {
-    @include marginBottom(77,79,150);
+    @include marginBottom(74,79,150);
     position: relative;
 }
+
 .shp__header-image {
     @include teaser__figureResponsive(
     url("../../assets/image/shp__header-img.jpg"),
@@ -23,6 +24,10 @@
     }
     @include breakpoint(desktopOnly) {
         padding: 29.1rem 0 0 calcVw(260,1700);
+    }
+
+    h1 {
+        word-spacing: 9999999px;
     }
 
     .button {
