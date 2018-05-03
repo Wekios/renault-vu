@@ -7,7 +7,7 @@
 
     @include breakpoint(tabletAndDesktop) {
         h4 {
-            width: 98%;
+            width: 95%;
         }
     }
 
@@ -20,11 +20,12 @@
 
     .text--bolder {
         @include fontSize(45,20,32);
+        @include letterSpacing(-50,-50,-50);
     }
 
     .text--italic {
         @include fontSize(50,20,30);
-        padding-left: 0.5rem;    
+        padding-left: 0.5rem;
     }
 
     .text--regular {
@@ -57,14 +58,18 @@
 // News de la teasers
 
 .news-de-la__heading {
-    @include marginTop(23,-23,-10);
+    @include width(150,152,234);
     position: absolute;
+    top: 3rem;
+    @include breakpoint(tabletAndDesktop) {
+        top: -1.7rem;
+    }
 }
 
 .news-de-la__first-teaser {
     @include width(200,152.75,234);
     @include marginRight(16,11,24);
-    @include marginTop(0,55,227);
+    @include marginTop(191,55,227);
 }
 
 .news-de-la__second-teaser {
@@ -143,6 +148,10 @@
 
     }
 
+    &__heading h2 {
+        @include letterSpacing(90,90,90);
+    }
+
     &__caption {
         @include marginTop(37,9,37);
 
@@ -161,6 +170,12 @@
         }
     }
 
+}
+
+.fan-de-vu {
+    .caption h4 {
+        letter-spacing: 0.06em;
+    }
 }
 
 .fan-de-vu__second-teaser {
@@ -184,7 +199,7 @@
 // Vu Astuces Section
 
 .vu-astuces__heading {
-    @include marginBottom(47,30,37)
+    @include marginBottom(51,30,37)
 }
 
 .vu-astuces__first-teaser {
@@ -193,7 +208,7 @@
 }
 
 .vu-astuces__second-teaser {
-    @include width(272,152.75,320);
+    @include width(272,153.75,320);
     @include marginRight(0,12,24);
     vertical-align: top;
 }
@@ -220,7 +235,7 @@
 // Faq is in it's Own Folder //
 
 .cote-business__heading {
-    @include marginBottom(46,26,50);
+    @include marginBottom(52,26,50);
 }
 
 .cote-business__first-teaser {
@@ -243,7 +258,7 @@
 
 .cote-business__fourth-teaser {
     @include width(272,152.75,320);
-    @include marginTop(0,-60,-110);
+    @include marginTop(107,-60,-110);
     @include marginBottom(60,60,60);
 }
 
@@ -261,7 +276,7 @@
 }
 
 .les-plus__heading {
-    @include marginBottom(6,0,0);
+    @include marginBottom(15,0,0);
 }
 
 .les-plus__first-teaser,

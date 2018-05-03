@@ -1,9 +1,10 @@
 .news-de-la {
-  @include marginTop(38,115,240)
+  @include marginTop(38,115,240);
+  position: relative;
 }
 
 .fan-de-vu {
-  @include marginBottom(100,107,225);
+  @include marginBottom(104,107,225);
 }
 
 .vu-astuces {

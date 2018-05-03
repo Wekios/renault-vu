@@ -11,3 +11,17 @@
       width: calcVw($fs-desktop, 1700);
     }
   }
+
+  // Height sizes for all viewports
+
+  @mixin height($h-phone, $h-tablet, $h-desktop) {
+    @include breakpoint(phoneOnly) {
+      height: calcRem($h-phone);
+    }
+    @include breakpoint(tabletOnly){
+      height: calcRem($h-tablet);
+    }
+    @include breakpoint(desktopOnly){
+      height: calcRem($h-desktop);
+    }
+  }

@@ -1,0 +1,27 @@
+.social-box {
+    @include width(415,283,0);
+    @include height(92,74,74);
+    text-align: center;
+}
+
+.social-box__box {
+    width: 9.8rem;
+    height: 9.8rem;
+    background: $white;
+    border: 0.1rem solid $yellow;
+    display: inline-block;
+    margin-top: -3.6rem;
+
+    svg {
+        @include fontSize(30,40,40);
+        color: $yellow;
+        margin: auto;
+        height: 100%;
+    }
+
+}
+
+.social-box__box--padder {
+    margin-left: 3.65rem;
+    margin-right: 3.65rem;
+}

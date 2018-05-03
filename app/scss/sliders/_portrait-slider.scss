@@ -33,13 +33,17 @@
     box-sizing: border-box;
     position: absolute;
     top: 0;
-    padding: 17.9% 36.6% 0 9.7%;
+    padding: 7rem 36.6% 0 9.7%;
+
+    .button {
+        letter-spacing: 2px;
+    }
 }
 
 .portrait-slider__heading {
     @include fontSize(50,18,36);
     color: $yellow;
-    @include marginBottom(15,8,15);
+    @include marginBottom(22,8,15);
 }
 
 .portrait-slider__description {
@@ -48,14 +52,14 @@
     @include lineHeight(38,20,38);
     text-transform: none;
     color: $white;
-    @include marginBottom(50,50,50);
+    @include marginBottom(67,50,50);
 }
 
 
 
 .portrait-slider__navigation {
     position: absolute;
-    top: 22%;
+    top: 17%;
     color: $white;
     @include fontSize(25,10,14);
     right: 1rem;
