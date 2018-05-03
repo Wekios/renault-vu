@@ -1,19 +1,23 @@
 .social-box {
-    @include width(415,283,0);
-    @include height(92,74,74);
+    margin-top: 10rem;
+    @include width(415,283,74);
+    @include height(92,74,335);
     text-align: center;
 }
 
 .social-box__box {
-    width: 9.8rem;
-    height: 9.8rem;
+    @include width(98,63,63);
+    @include height(98,63,63);
     background: $white;
     border: 0.1rem solid $yellow;
     display: inline-block;
-    margin-top: -3.6rem;
+    @include marginTop(-36,-23,0);
+    @include breakpoint(desktopOnly) {
+        margin: 3.6rem 3.7rem 0 -3.6rem;
+    }
 
     svg {
-        @include fontSize(30,40,40);
+        @include fontSize(30,23,25);
         color: $yellow;
         margin: auto;
         height: 100%;
@@ -22,6 +26,6 @@
 }
 
 .social-box__box--padder {
-    margin-left: 3.65rem;
-    margin-right: 3.65rem;
+    @include marginLeft(36.5,23,-36);
+    @include marginRight(36.5,23,37);
 }
