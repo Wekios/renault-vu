@@ -61,11 +61,12 @@
         display: none;
     }
     
-    width: 90%;
+    width: 96%;
     margin: 6rem auto 0;
     position: relative;
     @include breakpoint(desktopOnly) {
         margin-top: 6.6rem;
+        width: 90%;
     }
     
 

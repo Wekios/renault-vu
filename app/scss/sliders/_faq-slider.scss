@@ -1,10 +1,16 @@
 
 .faq__heading {
     @include width(220,220,220);
-    @include marginBottom(42,-50,-100);
+    @include marginBottom(42,-50,-65);
 
     h2 {
         line-height: 4.2rem;
+        @include breakpoint(tabletAndDesktop) {
+            line-height: 2rem;
+        }
+        @include breakpoint(desktopOnly) {
+            line-height: 2.6rem;
+        }
 
         .text--bolder {
         letter-spacing: 0;
@@ -16,10 +22,11 @@
 .faq__teaser-underlay {
     background: $lightGray;
     height: 51.7rem;
+    @include height(517,218,396);
     width: 100%;
     position: absolute;
     z-index: -1;
-    @include marginTop(270,30,30);
+    @include marginTop(270,30,88);
 }
 
 .faq__first-teaser {
@@ -37,17 +44,27 @@
     }
 
     &__caption {
-        @include width(560,150,325);
+        @include width(560,150,340);
         display: inline-block;
         margin-bottom: 7.5rem;
 
         @include breakpoint(tabletAndDesktop) {
             position: absolute;
             right: 0;
-            bottom: 0;
-        }
-        @include breakpoint(desktopOnly) {
-            top: 14rem;
+            bottom: 1rem;
+            @include breakpoint(desktopOnly) {
+                top: 15.3rem;
+            }
+
+            h4 {
+                font-size: 1.6rem;
+                line-height: 2rem;
+                @include breakpoint(desktopOnly) {
+                    font-size: 2.2rem;
+                    line-height: 3rem;
+                }
+            }
+
         }
     }
 
@@ -89,7 +106,7 @@
     }
     @include breakpoint(desktopOnly) {
         top: 16rem;
-        right: -6rem;
+        right: -10rem;
     }
 }
 

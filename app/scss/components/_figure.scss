@@ -124,19 +124,17 @@
 
 .cote-business__fourth-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/cote-business__fourth-teaser-img.jpg"),
-    220,125,262);
+    220,125,261);
 }
 
 .cote-business__fifth-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/cote-business__fifth-teaser-img.jpg"),
-        222,125,300
-        );
+        222,125,261);
 }
 
 .cote-business__sixth-teaser__figure {
     @include teaser__figureResponsive(url("../../assets/image/cote-business__sixth-teaser-img.jpg"),
-    222,125,300
-    );
+    222,125,261);
 }
 
 // -- Portrait Slider is in it's Own File -- //

@@ -8,9 +8,11 @@
 
     @include breakpoint(tabletAndDesktop) {
         display: inline-block;
-        margin-top: 2.7rem;
+        border: 1.7rem solid $yellow;
+        margin-top: 1.1rem;
     }
     @include breakpoint(desktopOnly) {
+        border: 3rem solid $yellow;
         margin-top: 8.6rem;
     }
 }
@@ -18,13 +20,13 @@
 //Correct Measures//
 .portrait-slider__first-slide{
     @include teaser__figureResponsive(url("../../assets/image/portrait-slider__first-slide.jpg"),
-    500,270,610);
+    500,270,580);
     width: 100%;
 }
 
 .portrait-slider__second-slide {
     @include teaser__figureResponsive(url("../../assets/image/portrait-slider__second-slide.jpg"),
-    500,270,610);
+    500,270,580);
     width: 100%;
 }
 
@@ -34,25 +36,36 @@
     position: absolute;
     top: 0;
     padding: 7rem 36.6% 0 9.7%;
+    @include breakpoint(tabletAndDesktop) {
+        padding-top: 3.5rem;
+        padding-right: 40%;
+    }
+    @include breakpoint(desktopOnly) {
+        padding-top: 6.5rem;
+        padding-right: 50%;
+    }
 
     .button {
         letter-spacing: 2px;
+        @include breakpoint(desktopOnly) {
+            margin-top: 5rem;
+        }
     }
 }
 
 .portrait-slider__heading {
-    @include fontSize(50,18,36);
+    @include fontSize(50,18,30);
     color: $yellow;
-    @include marginBottom(22,8,15);
+    @include marginBottom(22,-5,-15);
 }
 
 .portrait-slider__description {
-    @include fontSize(36,16,36);
+    @include fontSize(36,16,28);
     letter-spacing: 0.05em;
-    @include lineHeight(38,20,38);
+    @include lineHeight(38,20,35);
     text-transform: none;
     color: $white;
-    @include marginBottom(67,50,50);
+    @include marginBottom(67,45,-10);
 }
 
 

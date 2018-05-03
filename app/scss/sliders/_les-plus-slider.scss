@@ -5,27 +5,32 @@
 @include breakpoint(tabletAndDesktop) {
 
     .les-plus__heading {
-        width: 12.5%;
+        width: 13.3%;
         float: left;
         margin-top: 2.4rem;
         @include breakpoint(desktopOnly) {
-            // margin-top: 2.7rem;
+            width: 12%;
+            margin-top: 6.4rem;
         }
     }
 
     .les-plus-slider__wrap {
-        width: 87.5%;
+        width: 86.6%;
         position: relative;
         float: right;
         margin-top: -3rem;
+        @include breakpoint(desktopOnly) {
+            width: 87.6%;
+            margin-top: -6.5rem;
+        }
 
     }
 
     .les-plus-slider {
-        width: 63.020833333333336vw;
+        width: 50rem;
         margin: 0 auto;
         @include breakpoint(desktopOnly) {
-            width: 58.8235294117647vw;
+            width: 59.3vw;
         }
 
         .les-plus__first-teaser,.les-plus__second-teaser,
@@ -33,6 +38,9 @@
         .les-plus__fourth-teaser, {
             outline: none;
             margin: 0 0.6rem 3rem;
+            @include breakpoint(desktopOnly) {
+                margin-bottom: 11rem;
+            }
 
             &__figure {
                 -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -60,6 +68,9 @@
             top: 35%;
             left: 0;
             right: 0;
+            @include breakpoint(desktopOnly) {
+                top: 45%;
+            }
             
             &-prev {
                 float: left;

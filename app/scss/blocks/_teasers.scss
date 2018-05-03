@@ -64,6 +64,9 @@
     @include breakpoint(tabletAndDesktop) {
         top: -1.7rem;
     }
+    @include breakpoint(desktopOnly) {
+        top: 0;
+    }
 }
 
 .news-de-la__first-teaser {
@@ -83,17 +86,17 @@
 }
 
 .news-de-la__fourth-teaser {
-    @include width(560,265,578);
-    @include marginTop(72,27,75);
+    @include width(560,265,605);
+    @include marginTop(72,27,80);
     position: relative;
 
     &__caption {
-        @include width(275,100,230);
+        @include width(275,100,260);
         position: absolute;
         right: 0;
         top: -1.7rem;
         @include breakpoint(desktopOnly) {
-            top: -3.5rem;
+            top: -3rem;
         }
     }
     
@@ -142,7 +145,7 @@
             box-sizing: border-box;
             @include breakpoint(desktopOnly) {
                 padding: 5rem  calcVw(31,1700) 0 calcVw(85,1700);
-                width: 27%;
+                width: 29.2%;
             }
         }
 
@@ -153,10 +156,10 @@
     }
 
     &__caption {
-        @include marginTop(37,9,37);
+        @include marginTop(37,15,58);
 
         h3 {
-            @include fontSize(36,22,28);
+            @include fontSize(36,16,28);
         }
     }
 
@@ -166,7 +169,7 @@
             width: 68%;
         }
         @include breakpoint(desktopOnly) {
-            width: 73%;
+            width: 70.8%;
         }
     }
 
@@ -199,7 +202,7 @@
 // Vu Astuces Section
 
 .vu-astuces__heading {
-    @include marginBottom(51,30,37)
+    @include marginBottom(51,30,65)
 }
 
 .vu-astuces__first-teaser {
@@ -208,7 +211,7 @@
 }
 
 .vu-astuces__second-teaser {
-    @include width(272,153.75,320);
+    @include width(272,153,320);
     @include marginRight(0,12,24);
     vertical-align: top;
 }
@@ -217,25 +220,23 @@
     @extend .news-de-la__third-teaser;
     @include marginTop(69,-101,-210);
     @include marginRight(16,0,0);
-    @include marginBottom(82,39,60);
+    @include marginBottom(82,50,110);
 }
 
 .vu-astuces__fourth-teaser {
     @include width(272,152.75,320);
     vertical-align: top;
     @include marginRight(16,12,24);
-    @include marginTop(0,11,45)
 }
 
 .vu-astuces__fifth-teaser {
     @include width(272,194,320);
-    @include marginTop(0,11,45)
 }
 
 // Faq is in it's Own Folder //
 
 .cote-business__heading {
-    @include marginBottom(52,26,50);
+    @include marginBottom(52,29,65);
 }
 
 .cote-business__first-teaser {
@@ -253,24 +254,24 @@
 .cote-business__third-teaser {
     @include width(272,152.75,320);
     @include marginRight(16,12,24);
-    @include marginTop(-33,-60,-110);
+    @include marginTop(-33,-52,-115);
 }
 
 .cote-business__fourth-teaser {
     @include width(272,152.75,320);
-    @include marginTop(107,-60,-110);
+    @include marginTop(107,-55,-115);
     @include marginBottom(60,60,60);
 }
 
 .cote-business__fifth-teaser {
     @include width(272,152.75,320);    
     @include marginRight(16,12,24);
-    @include marginTop(0,-20,-84);
+    @include marginTop(0,-35,-78);
 }
 
 .cote-business__sixth-teaser {
     @include width(272,152.75,320);
-    @include marginTop(0,27,86);
+    @include marginTop(0,12,90);
     @include marginRight(0,12,24);
     @include marginBottom(107,100,100);
 }
