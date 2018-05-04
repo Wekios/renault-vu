@@ -76,6 +76,7 @@
         @include width(0,175,351);
         display: inline-block;
         position: absolute;
+        left: 0;
     }
 
     &__second-car {
@@ -111,4 +112,48 @@
     }
     
 
+}
+
+// Modifiers //
+
+.quiz-teaser-wrapper--mini {
+
+    @include breakpoint(desktopOnly) {
+        width: 40.7rem;
+        height: 49.2rem;
+
+        .quiz-teaser__text-content {
+            padding-top: 16.4rem;
+            width: 28rem;
+        }
+        .quiz-teaser__description {
+            padding: 1rem 0 3rem 0;
+        }
+
+        .quiz-teaser__figures {
+            margin-top: 9rem;
+            width: 99%;
+            
+            &__first-car {
+                width: 13.5rem;
+                height: 6.4rem;
+            }
+
+            &__second-car {
+                width: 13.5rem;
+                height: 6.8rem;
+        }
+        
+            &__third-car {
+                width: 13.5rem;
+                height: 7.8rem;
+        }
+    
+            .car__caption {
+                margin-top: 5rem;
+                font-size: 1.2rem;
+                letter-spacing: -0.025em;
+            }
+        }
+    }
 }

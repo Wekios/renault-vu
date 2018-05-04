@@ -22,3 +22,19 @@
         padding: 0;
     }
 }
+
+
+@include breakpoint(desktopOnly) {
+    .container--article {
+        text-align: center;
+    }
+
+    .widget__social-box--article {
+        float: left;
+    }
+
+    .quiz-teaser--article {
+        float: right;
+    }
+}
+

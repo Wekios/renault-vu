@@ -2053,14 +2053,21 @@ a img {
 .teaser--underlay {
   background: #f6f6f6; }
 
-.teaser--wide-mob {
-  width: 87.5vw; }
-  @media (min-width: 768px) {
-    .teaser--wide-mob {
-      width: 36.06771vw; } }
-  .teaser--wide-mob__caption {
-    display: inline-block;
-    width: 39.0625vw; }
+@media (max-width: 767px) {
+  .teaser--wide-mob {
+    width: 87.5vw; } }
+
+@media (min-width: 768px) {
+  .teaser--wide-mob {
+    width: 36.06771vw; } }
+
+@media (min-width: 1024px) {
+  .teaser--wide-mob {
+    width: 34vw; } }
+
+.teaser--wide-mob__caption {
+  display: inline-block;
+  width: 39.0625vw; }
 
 @media (max-width: 767px) {
   .teaser--wide-mob.teaser--underlay .figure {
@@ -2188,7 +2195,7 @@ a img {
 
 @media (min-width: 1024px) {
   .teaser--tall-mob {
-    width: 23.82353vw; } }
+    width: 18.82353vw; } }
 
 @media (max-width: 767px) {
   .teaser--tall-mob {
@@ -2254,6 +2261,10 @@ a img {
   .articles-lies-teaser .caption {
     margin-top: 1rem; } }
 
+@media (min-width: 1024px) {
+  .articles-lies-teaser .caption {
+    margin-top: 2rem; } }
+
 @media (max-width: 767px) {
   .articles-lies-teaser h4 {
     letter-spacing: 0.09em; } }
@@ -2264,7 +2275,7 @@ a img {
 
 @media (min-width: 1024px) {
   .articles-lies-teaser h4 {
-    letter-spacing: 0.09em; } }
+    letter-spacing: 0.055em; } }
 
 @media (max-width: 767px) {
   .articles-lies__heading {
@@ -2276,7 +2287,7 @@ a img {
 
 @media (min-width: 1024px) {
   .articles-lies__heading {
-    margin-top: 0rem; } }
+    margin-top: 8rem; } }
 
 @media (max-width: 767px) {
   .articles-lies__heading {
@@ -2288,7 +2299,7 @@ a img {
 
 @media (min-width: 1024px) {
   .articles-lies__heading {
-    margin-bottom: 0rem; } }
+    margin-bottom: 2rem; } }
 
 @media (min-width: 768px) {
   .articles-lies__heading {
@@ -2307,7 +2318,7 @@ a img {
 @media (min-width: 1024px) {
   .articles-lies__first-teaser__figure {
     background: center/cover no-repeat url("../../assets/image/vu-astuces__second-teaser-img.jpg");
-    height: 50.9rem; } }
+    height: 26.2rem; } }
 
 @media (max-width: 767px) {
   .articles-lies__second-teaser__figure {
@@ -2322,7 +2333,7 @@ a img {
 @media (min-width: 1024px) {
   .articles-lies__second-teaser__figure {
     background: center/cover no-repeat url("../../assets/image/articles-lies__second-teaser-img.jpg");
-    height: 45.5rem; } }
+    height: 42rem; } }
 
 @media (max-width: 767px) {
   .articles-lies__third-teaser__figure {
@@ -2337,7 +2348,7 @@ a img {
 @media (min-width: 1024px) {
   .articles-lies__third-teaser__figure {
     background: center/cover no-repeat url("../../assets/image/articles-lies__third-teaser-img.jpg");
-    height: 45.5rem; } }
+    height: 47.4rem; } }
 
 @media (max-width: 767px) {
   .articles-lies__fourth-teaser__figure {
@@ -2352,7 +2363,7 @@ a img {
 @media (min-width: 1024px) {
   .articles-lies__fourth-teaser__figure {
     background: center/cover no-repeat url("../../assets/image/articles-lies__fourth-teaser-img.jpg");
-    height: 0rem; } }
+    height: 42rem; } }
 
 .articles-lies__fifth-teaser {
   margin-right: 0; }
@@ -2370,7 +2381,7 @@ a img {
   @media (min-width: 1024px) {
     .articles-lies__fifth-teaser__figure {
       background: center/cover no-repeat url("../../assets/image/latest-news__first-teaser-img.jpg");
-      height: 0rem; } }
+      height: 26rem; } }
 
 .articles-lies__seventh-teaser {
   margin-right: 0; }
@@ -2591,7 +2602,8 @@ a img {
       width: 90%; } }
   .quiz-teaser__figures__first-car {
     display: inline-block;
-    position: absolute; }
+    position: absolute;
+    left: 0; }
     @media (max-width: 767px) {
       .quiz-teaser__figures__first-car {
         background: center/cover no-repeat url("../../assets/image/truck1.png");
@@ -2673,6 +2685,32 @@ a img {
       .quiz-teaser__figures .car__caption {
         margin-top: 13rem;
         font-size: 2.2rem;
+        letter-spacing: -0.025em; } }
+
+@media (min-width: 1024px) {
+  .quiz-teaser-wrapper--mini {
+    width: 40.7rem;
+    height: 49.2rem; }
+    .quiz-teaser-wrapper--mini .quiz-teaser__text-content {
+      padding-top: 16.4rem;
+      width: 28rem; }
+    .quiz-teaser-wrapper--mini .quiz-teaser__description {
+      padding: 1rem 0 3rem 0; }
+    .quiz-teaser-wrapper--mini .quiz-teaser__figures {
+      margin-top: 9rem;
+      width: 99%; }
+      .quiz-teaser-wrapper--mini .quiz-teaser__figures__first-car {
+        width: 13.5rem;
+        height: 6.4rem; }
+      .quiz-teaser-wrapper--mini .quiz-teaser__figures__second-car {
+        width: 13.5rem;
+        height: 6.8rem; }
+      .quiz-teaser-wrapper--mini .quiz-teaser__figures__third-car {
+        width: 13.5rem;
+        height: 7.8rem; }
+      .quiz-teaser-wrapper--mini .quiz-teaser__figures .car__caption {
+        margin-top: 5rem;
+        font-size: 1.2rem;
         letter-spacing: -0.025em; } }
 
 .button {
@@ -2982,6 +3020,12 @@ a img {
       .topics li a {
         font-weight: 700;
         padding: 1.3rem 1.47059vw; } }
+
+@media (min-width: 1024px) {
+  .article-body {
+    width: 39.88235vw;
+    display: inline-block;
+    text-align: left; } }
 
 .article-body__heading h1 {
   text-transform: uppercase;
@@ -5183,6 +5227,9 @@ html.diaporamaOpened, body.diaporamaOpened {
   @media (min-width: 1024px) {
     .social-box {
       height: 33.5rem; } }
+  @media (min-width: 1024px) {
+    .social-box {
+      margin-top: 0; } }
 
 .social-box__box {
   background: #ffffff;
@@ -5712,6 +5759,14 @@ html.diaporamaOpened, body.diaporamaOpened {
     @media (min-width: 1024px) {
       .article__header-image__caption p {
         font-size: 2rem; } }
+
+@media (min-width: 1024px) {
+  .container--article {
+    text-align: center; }
+  .widget__social-box--article {
+    float: left; }
+  .quiz-teaser--article {
+    float: right; } }
 
 @media (min-width: 768px) {
   .hidden--tab {

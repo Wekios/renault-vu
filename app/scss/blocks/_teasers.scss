@@ -433,10 +433,7 @@
 }
 
 .teaser--wide-mob {
-    width: calcVw(560,640);
-    @include breakpoint(tabletAndDesktop) {
-        width: calcVw(277,768)
-    }
+    @include width(560,277,578);
 
     &__caption {
         display: inline-block;
@@ -534,7 +531,7 @@
 }
 
 .teaser--tall-mob {
-    @include width(344,152,405);
+    @include width(344,152,320);
     @include marginRight(0,12,24);
 }
 
@@ -558,17 +555,20 @@
         @include breakpoint(tabletAndDesktop) {
             margin-top: 1rem;
         }
+        @include breakpoint(desktopOnly) {
+            margin-top: 2rem;
+        }
     }
     h4 {
         // letter-spacing: 0.25rem;
-        @include letterSpacing(90,90,90);
+        @include letterSpacing(90,90,55);
     }
 
 }
 
 .articles-lies__heading {
-    @include marginTop(139,12,0);
-    @include marginBottom(74,30,0);
+    @include marginTop(139,12,80);
+    @include marginBottom(74,30,20);
     @include breakpoint(tabletAndDesktop) {
         margin-left: 1.2rem;
     }
@@ -579,7 +579,7 @@
     &__figure {
         @include teaser__figureResponsive(
             url("../../assets/image/vu-astuces__second-teaser-img.jpg"),
-        164,125,509); 
+        164,125,262); 
     }
 
 }
@@ -589,8 +589,7 @@
     &__figure {
         @include teaser__figureResponsive(
             url("../../assets/image/articles-lies__second-teaser-img.jpg"),
-            455,202,455
-        );
+            455,202,420);
     }
 
 }
@@ -600,8 +599,7 @@
     &__figure {
         @include teaser__figureResponsive(
             url("../../assets/image/articles-lies__third-teaser-img.jpg"),
-            458,228,455
-        );
+            458,228,474);
     }
 
 }
@@ -611,7 +609,7 @@
     &__figure {
         @include teaser__figureResponsive(
             url("../../assets/image/articles-lies__fourth-teaser-img.jpg"),
-            360,203,0
+            360,203,420
         );
     }
 
@@ -626,7 +624,7 @@
     &__figure {
         @include teaser__figureResponsive(
             url("../../assets/image/latest-news__first-teaser-img.jpg"),
-            222,127,0
+            222,127,260
         );
     }
 
