@@ -69,7 +69,7 @@
 }
 
 .news-de-la__first-teaser {
-    @include width(200,152.75,234);
+    @include width(200,152,234);
     @include marginRight(16,11,24);
     @include marginTop(191,55,227);
 }
@@ -80,7 +80,7 @@
 }
 
 .news-de-la__third-teaser {
-    @include width(560,276,578);
+    @include width(560,277,578);
     @include marginTop(79,-86,-165)
 }
 
@@ -205,12 +205,12 @@
 }
 
 .vu-astuces__first-teaser {
-    @include width(272,194,320);
+    @include width(272,193,320);
     @include marginRight(16,12,24);
 }
 
 .vu-astuces__second-teaser {
-    @include width(272,153,320);
+    @include width(272,152,320);
     @include marginRight(0,12,24);
     vertical-align: top;
 }
@@ -302,28 +302,6 @@
 
 
 @include breakpoint(tabletAndDesktop) {
-    
-    .teaser {
-        float: left;
-    }
-
-    .news-de-la__heading {
-
-        .text--bolder {
-            display: inline;
-        }
-
-        .text--italic {
-            display: inline;
-            padding-left: 0.5rem;
-        }
-
-        @include breakpoint(desktopOnly) {
-            .text--regular {
-                margin-top: -1.9rem;
-            }
-        }
-    }
 
     //Fan De Vu
 
@@ -450,27 +428,15 @@
 ///////////////////////////////////
 
 
-.qa-list__heading {
-    margin-bottom: 9.7rem;
-    @include breakpoint(tabletAndDesktop) {
-        float: left;
-        margin: 6.6rem 0 0 0;
-    }
-}
-
-.qa-list-teaser .teaser--underlay {
-    @include breakpoint(phoneOnly) {
-    margin-bottom: 14.6rem;
-    }
-}
-
-
 .teaser--underlay {
     background: $lightGray;
 }
 
 .teaser--wide-mob {
     width: calcVw(560,640);
+    @include breakpoint(tabletAndDesktop) {
+        width: calcVw(277,768)
+    }
 
     &__caption {
         display: inline-block;
@@ -560,6 +526,134 @@
         }
     }
     
+}
+
+.teaser--short-mob {
+    @include width(200,152,320);
+    @include marginRight(16,12,24);
+}
+
+.teaser--tall-mob {
+    @include width(344,152,405);
+    @include marginRight(0,12,24);
+}
+
+.teaser--md-mob {
+    @include width(272,152,320);
+    @include marginRight(16,12,24);
+}
+
+.teaser--square-mob {
+    @include width(272,152,320);    
+    @include marginRight(16,12,34);
+}
+
+
+////////////////////////////////
+//// Articles Lies Teasers ////
+//////////////////////////////
+
+.articles-lies-teaser {
+    .caption {
+        @include breakpoint(tabletAndDesktop) {
+            margin-top: 1rem;
+        }
+    }
+    h4 {
+        // letter-spacing: 0.25rem;
+        @include letterSpacing(90,90,90);
+    }
+
+}
+
+.articles-lies__heading {
+    @include marginTop(139,12,0);
+    @include marginBottom(74,30,0);
+    @include breakpoint(tabletAndDesktop) {
+        margin-left: 1.2rem;
+    }
+}
+
+.articles-lies__first-teaser {
+
+    &__figure {
+        @include teaser__figureResponsive(
+            url("../../assets/image/vu-astuces__second-teaser-img.jpg"),
+        164,125,509); 
+    }
+
+}
+
+.articles-lies__second-teaser {
+
+    &__figure {
+        @include teaser__figureResponsive(
+            url("../../assets/image/articles-lies__second-teaser-img.jpg"),
+            455,202,455
+        );
+    }
+
+}
+
+.articles-lies__third-teaser {
+
+    &__figure {
+        @include teaser__figureResponsive(
+            url("../../assets/image/articles-lies__third-teaser-img.jpg"),
+            458,228,455
+        );
+    }
+
+}
+
+.articles-lies__fourth-teaser {
+
+    &__figure {
+        @include teaser__figureResponsive(
+            url("../../assets/image/articles-lies__fourth-teaser-img.jpg"),
+            360,203,0
+        );
+    }
+
+}
+
+.articles-lies__fifth-teaser {
+    margin-right: 0;
+    @include breakpoint(tabletAndDesktop) {
+        margin-right: 1.2rem;
+    }
+
+    &__figure {
+        @include teaser__figureResponsive(
+            url("../../assets/image/latest-news__first-teaser-img.jpg"),
+            222,127,0
+        );
+    }
+
+}
+
+.articles-lies__seventh-teaser {
+    margin-right: 0;
+}
+
+
+
+/////////////////////////
+///////  Q&A List //////
+///////////////////////
+
+.qa-list__heading {
+    margin-bottom: 9.7rem;
+    @include breakpoint(tabletAndDesktop) {
+        float: left;
+        margin: 6.6rem 0 0 0;
+    }
+}
+
+.qa-list-teaser .teaser--underlay {
+    @include breakpoint(phoneOnly) {
+    margin-bottom: 14.6rem;
+    }
 }
 
 .qa-list__first-teaser {

@@ -7,7 +7,7 @@
         font-weight: 900;
         @include fontSize(40,32,54);
         @include lineHeight(42,32,55);
-        @include letterSpacing(0,-25,0);
+        @include letterSpacing(-14,-25,0);
     
         @include breakpoint(tabletOnly) {
           margin-top: 1.9vw;
@@ -67,7 +67,7 @@
             padding-top: 0;
             @include fontSize(28, 16, 16);
             @include lineHeight(42, 22, 22);
-            @include letterSpacing(50, 50, 50);
+            @include letterSpacing(45, 50, 50);
             margin-bottom: 6.5vw;
             @include breakpoint(tabletOnly) {
                 margin-bottom: 2.9vw;

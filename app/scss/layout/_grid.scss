@@ -43,6 +43,10 @@ a img {
   }
 }
 
+.col-wrap--left {
+  float: left;
+}
+
 @include breakpoint(tabletAndDesktop) {
   .row--td {
     display: block;
