@@ -104,12 +104,4 @@ $(document).ready(function () {
     });
 
   }
-
-  // Slick Slider 
-
-  $('.hp-slider').slick({
-    arrows: true,
-    prevArrow: '<div class="hp-slider__arrows hp-slider__arrows-left"><span class="fas fa-arrow-circle-left"></span><span class="sr-only">Prev</span></div>',
-    nextArrow: '<div class="hp-slider__arrows hp-slider__arrows-right"><span class="fas fa-arrow-circle-right"></span><span class="sr-only">Next</span></div>'
-  });
 });

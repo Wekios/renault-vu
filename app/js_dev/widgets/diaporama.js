@@ -44,7 +44,7 @@
     diaporamaWrap.slick('slickPause');
   });
 
-  // Mobile + Tablet version \\
+  // Mobile & Tablet
 
   if (windowWidth < 1024) {
 
@@ -61,7 +61,7 @@
 
   }
 
-  // Desktop version \\
+  // Desktop version 
 
   if (windowWidth >= 1024) {
 

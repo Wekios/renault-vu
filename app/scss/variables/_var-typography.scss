@@ -24,7 +24,6 @@ h1{
   @include lineHeight(42,32,70.78);
   @include letterSpacing(-25,-25,-25);
   color: $white;
-  font-weight: 900;
 }
 
 h2 {

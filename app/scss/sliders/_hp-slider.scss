@@ -1,99 +1,113 @@
-.hp-slider__wrapper {
+.hp-slider__wrap {
     position: relative;
 }
 
-.hp-slider__images {
-    width: 100%;
+.hp-slider__slide1 {
+    background: center / cover no-repeat url("../../assets/image/hp-slider__first-slide.jpg");
+    @include height(330,396,875);
 }
 
-.hp-slider__arrows {
-    z-index: 999;
+.hp-slider__slide2 {
+    background: top / cover no-repeat url("../../assets/image/hp-slider__second-slide.jpg");
+    @include height(330,396,875);
+}
+
+.hp-slider__slide3 {
+    background: center / cover no-repeat url("../../assets/image/article-faq__header-img.jpg");
+    @include height(330,396,875);
+    filter: brightness(0.6);
+}
+
+.container--slider {
     position: absolute;
-    top: 20rem;
-    color: $yellow;
-    @include fontSize(25,25,50);
-    visibility: hidden;
-    @include breakpoint(tabletAndDesktop) {
-        visibility: visible;
-    }
-
-    @include breakpoint(desktopOnly) {
-        top: 44rem;
-    }
-
-    &:hover {
-        color: $gray;
-    }
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 666;
 }
 
-.hp-slider__arrows-left {
-    left: 2.82vw;
-}
-
-.hp-slider__arrows-right {
-    right: 2.82vw;
-}
+// Text And Button
 
 .hp-slider__text-content {
-    width: 88%;
+    @include width(455,365,790);
+    @include marginTop(64,148,341);
+    @include breakpoint(tabletAndDesktop) {
+        margin-left: calcVw(58,768);
+        @include breakpoint(desktopOnly) {
+            margin-left: calcVw(90,1700);
+        }
+    }
+
+    p {
+        padding: 0;
+        @include breakpoint(desktopOnly) {
+            margin-top: 0.9rem;
+            font-size: 3.2rem;
+        }
+    }
+
+}
+
+.hp-slider__btn {
+    letter-spacing: 0.07rem;
+    padding: 0 3.5%;
+    line-height: 3.5rem;
+    @include marginBottom(24,7,12);
+    @include breakpoint(tabletAndDesktop) {
+        line-height: 2.2rem;
+        @include breakpoint(desktopOnly) { 
+            line-height: 3.5rem;
+            padding: 0 3.7%;
+        }
+    }
+
+}
+
+.hp-slider__text-sm {
+    line-height: normal;
+}
+
+// Navigation And Counter
+
+.hp-slider__counter-wrap {
     position: absolute;
-    top: 6.4rem;
-    left: 6.25vw;
-
+    right: 0;
+    bottom: 6rem;
     @include breakpoint(tabletAndDesktop) {
-        left: 11.8rem;
-        top: 14.8rem;
+        left: calcVw(58,768);
+        right: auto;
+        bottom: 2.7rem;
+        @include breakpoint(desktopOnly) {
+            left: calcVw(90,1700);
+            bottom: 6.7rem;
+        }
     }
 
-    @include breakpoint(desktopOnly) {
-        left: 26.1rem;
-        top: 34.1rem;
+    span {
+        @include fontSize(25,12,22);
     }
+
 }
 
-.hp-slider__button {
-    @include marginBottom(20,0,12);
-    @include fontSize(12,8,12);
-    @include letterSpacing(50,50,50);
-    padding: 0 calcRem(20);
+.hp-slider__current {
+    padding-right: 0.7rem;
 }
 
-.hp-slider__text-content--smaller {
-    color: $yellow;
-    margin-bottom: -0.5rem;
+.hp-slider__arrows-prev {
+    top: 51%;
+    left: calcVw(22,768);
 }
 
-.hp-slider__text-content--bigger {
-    color: $white;
-    margin-bottom: -0.5rem;
-}
-
-.hp-slider__text-content--hidden {
-    display: none;
-    color: $white;
-    padding: 0;
-    @include fontSize(0,16,32);
-    @include lineHeight(0,32,0);
-    @include letterSpacing(0,0,0);
-    
-    @include breakpoint(tabletAndDesktop) {
-        display: block;
-    }
+.hp-slider__arrows-next {
+    top: 51%;
+    right: calcVw(22,768);
 }
 
 @include breakpoint(desktopOnly) {
-    .hp-slider__text-content--smaller {
-        margin-bottom: -0.7rem;
-        line-height: normal;
+    .hp-slider__arrows-prev, 
+    .hp-slider__arrows-next {
+        @include circled-icon(calcRem(50));
+        line-height: 5rem;
     }
-    
-    .hp-slider__text-content--bigger {
-        line-height: 7.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .hp-slider__button {
-        padding: 0 3rem;
-    }
-    
 }

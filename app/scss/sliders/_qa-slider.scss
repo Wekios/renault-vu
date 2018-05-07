@@ -17,7 +17,7 @@
     }
 }
 
-.qa__slider-wrapper {
+.qa__slider-wrap {
     @include width(560,380,492);
     margin: -14.5rem auto 0;
     @include breakpoint(tabletAndDesktop) {

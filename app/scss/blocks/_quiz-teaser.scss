@@ -1,4 +1,4 @@
-.quiz-teaser-wrapper {
+.quiz-teaser-wrap {
     background: center / cover no-repeat url("../../assets/image/quiz__bg-image--mob.jpg");
     height: 49.2rem;
     width: 100%;
@@ -116,7 +116,7 @@
 
 // Modifiers //
 
-.quiz-teaser-wrapper--mini {
+.quiz-teaser-wrap--mini {
 
     @include breakpoint(desktopOnly) {
         width: 40.7rem;

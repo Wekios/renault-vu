@@ -173,39 +173,61 @@
 
   <div class="page">
 
-    <!-- Main Slider Slick -->
+    <!-- Main Slider -->
 
-    <div class="hp-slider__wrapper">
+    <div class="hp-slider__wrap">
+
       <div class="hp-slider">
-        <div>
-          <img class="hp-slider__images" src="./assets/image/slide1.jpg" alt=""> </div>
-        <div>
-          <img class="hp-slider__images" src="./assets/image/slide2.jpg" alt=""> </div>
-        <div>
-          <img class="hp-slider__images" src="./assets/image/slide3.jpg" alt=""> </div>
+
+        <div class="hp-slider__slide1"></div>
+        <div class="hp-slider__slide2"></div>
+        <div class="hp-slider__slide3"></div>
+        <div class="hp-slider__slide1"></div>
+        <div class="hp-slider__slide2"></div>
+
       </div>
 
-      <div class="hp-slider__text-content">
-        <a class="button hp-slider__button" href="article-diaporama.html">Lorem Ipsum</a>
-        <h3 class="hp-slider__text-content--smaller">
-          Communication
-        </h3>
-        <h1 class="hp-slider__text-content--bigger text--bold">
-          Maecenas velit nunc,
-          <br> ultricies a fringilla
-        </h1>
-        <p class="hp-slider__text-content--hidden">Etiam tincidunt diam et nisl</p>
+      <div class="container container--slider">
+
+        <div class="hp-slider__text-content">
+
+          <a class="button hp-slider__btn" href="article-diaporama.html">Lorem Ipsum</a>
+          <h3 class="text--bolder text--yellow hp-slider__text-sm">
+            Communication
+          </h3>
+          <h1 class="text--bolder hp-slider__text-big">
+            Maecenas velit nunc, ultricies a fringilla
+          </h1>
+          <p class="text--white hidden--until-td">Etiam tincidunt diam et nisl</p>
+
+        </div>
+
+        <div class="hp-slider__counter-wrap">
+          <span class="hp-slider__current text--yellow"></span>
+          <span class="hp-slider__total text--white"></span>
+        </div>
+
       </div>
+
+      <div class="arrow hp-slider__arrows-prev hidden--until-td">
+        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+      </div>
+      <div class="arrow hp-slider__arrows-next hidden--until-td">
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </div>
+
     </div>
 
-    <!-- End Of Main Slick Slider -->
+    <!--Main Slider End -->
 
     <!-- News De La Semaine Block  -->
     <section class="news-de-la teaser-block clearfix">
       <div class="container">
 
         <div class="news-de-la__heading heading">
-          <h2><span class="text--bolder">News</span> <span class="text--italic">de la</span> semaine</h2>
+          <h2>
+            <span class="text--bolder">News</span>
+            <span class="text--italic">de la</span> semaine</h2>
         </div>
 
         <div class="news-de-la__first-teaser teaser">
@@ -274,7 +296,9 @@
         <div class="fan-de-vu__first-teaser">
           <div class="fan-de-vu__first-teaser-white-background">
             <div class="fan-de-vu__first-teaser__heading heading">
-              <h2>Fan<span class="text--italic"> de</span><span class="text--bold">Vu</span>
+              <h2>Fan
+                <span class="text--italic"> de</span>
+                <span class="text--bold">Vu</span>
               </h2>
             </div>
             <div class="fan-de-vu__first-teaser__caption caption">
@@ -529,8 +553,8 @@
             <h4 class="text--bolder">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </h4>
-            <p class="hidden">Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue
-              augue. Suspendisse id commodo tellus.</p>
+            <p class="hidden">Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue.
+              Suspendisse id commodo tellus.</p>
           </div>
         </div>
 
@@ -542,8 +566,8 @@
             <h4 class="text--bolder">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </h4>
-            <p class="hidden">Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue
-              augue. Suspendisse id commodo tellus.</p>
+            <p class="hidden">Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue.
+              Suspendisse id commodo tellus.</p>
           </div>
         </div>
 
@@ -594,7 +618,7 @@
     <section class="quiz-teaser teaser-block clearfix">
       <div class="container container--full-mob">
 
-        <div class="quiz-teaser-wrapper">
+        <div class="quiz-teaser-wrap">
 
           <div class="quiz-teaser__text-content">
 
@@ -607,23 +631,23 @@
             </div>
 
             <p class="quiz-teaser__description hidden--tab">
-                Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. Suspendisse</p>
+              Cras luctus hendrerit neque lacinia scelerisque. Integer nulla turpis, mattis at libero et, vehicula congue augue. Suspendisse</p>
             <div class="quiz-teaser__button">
               <button class="button button--white-bg">start</button>
             </div>
 
           </div>
-          
+
           <div class="quiz-teaser__figures">
-              <div class="quiz-teaser__figures__first-car">
-                <p class="car__caption text--bolder">KANGOOZE</p>
-              </div>
-              <div class="quiz-teaser__figures__second-car">
-                  <p class="car__caption text--bolder">TRAFFIC</p>
-              </div>
-              <div class="quiz-teaser__figures__third-car">
-                  <p class="car__caption text--bolder">MASTER FOURGON</p>
-              </div>
+            <div class="quiz-teaser__figures__first-car">
+              <p class="car__caption text--bolder">KANGOOZE</p>
+            </div>
+            <div class="quiz-teaser__figures__second-car">
+              <p class="car__caption text--bolder">TRAFFIC</p>
+            </div>
+            <div class="quiz-teaser__figures__third-car">
+              <p class="car__caption text--bolder">MASTER FOURGON</p>
+            </div>
           </div>
 
         </div>
