@@ -1,8 +1,3 @@
-.article-faq__header {
-    @include marginBottom(0,0,0);
-    position: relative;
-}
-
 .article-faq__header-image {
     @include teaser__figureResponsive(
     url("../../assets/image/article-faq__header-img.jpg"),
@@ -24,13 +19,30 @@
     }
 }
 
-section {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-}
-
 .more-qa-teaser {
-    .row--td {
-        float: right;
+
+    .teaser--right {
+        float: left;
     }
+
+    @include breakpoint(tabletOnly) {
+        .teaser-wide--xs:nth-child(odd) {
+            margin-right: calcVw(10,768);
+        }
+    }
+
+    @include breakpoint(tabletAndDesktop) {
+        .more-qa-wrap {
+            float: right;
+            width: calcVw(566,768);
+            @include breakpoint(desktopOnly) {
+                width: calcVw(1180,1700);
+            }
+        }
+
+        .teaser--right {
+            float: right;
+        }
+    }
+
 }

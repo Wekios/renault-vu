@@ -14,6 +14,7 @@
     .caption {
         @include marginTop(12,12,24);
     }
+
 }
 
 .heading {
@@ -443,30 +444,20 @@
 }
 
 .teaser-wide--xs {
-    width: 56rem;
-    height: 15.7rem;
-    @include breakpoint(tabletAndDesktop) {
-        width: 27.8rem;
-        height: 7rem;
-    }
+    @include width(560,278,319);
+    @include height(157,70,83);
 
     & .caption {
         display: inline-block;
-        width: calcVw(300,640);
         vertical-align: top;
-        margin-top: 2.3rem;
-        @include breakpoint(tabletAndDesktop) {
-        margin-top: 0;
-        width: calcVw(170,768);
-        }
+        @include width(300,170,170);
+        @include marginTop(23,8,5);
         h4 {
-            font-size: 2.2rem;         // @include fontSize(22)
-            @include breakpoint(tabletAndDesktop) {
-                font-size: 1.4rem;
-
+            @include fontSize(22,14,14);
+            @include breakpoint(desktopOnly) {
+                line-height: 1.6rem;
             }
         }
-
     }
 
 }
@@ -729,22 +720,25 @@
 
 .more-qa__figure {
     margin: -2.5rem 3.9rem 3rem 1.6rem;
-    background: center / cover no-repeat url("http://via.placeholder.com/184x150");
     height: 15rem;
     width: 18.45rem;
+    @include width(184.5,68,86);
+    @include height(150,56,71);
+    background: center / cover no-repeat url("http://via.placeholder.com/184x150");
+
     @include breakpoint(tabletAndDesktop) {
         margin: -0.7rem 1.5rem 2.2rem 1.5rem;
         background: center / cover no-repeat url("http://via.placeholder.com/68x56");
-        height: 5.6rem;
-        width: 6.8rem;
     }
+    @include breakpoint(desktopOnly) {
+        margin: -1.5rem 2rem 2.7rem 2.3rem;
+        background: center / cover no-repeat url("http://via.placeholder.com/86x71");
+    }
+
 }
 
 .more-qa__teaser {
-    margin-bottom: 5.3rem;
-    @include breakpoint(tabletAndDesktop) {
-        margin-bottom: 2.4rem;
-    }
+    @include marginBottom(53,24,42.5);
 
     & .figure {
         -webkit-box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.7);
@@ -760,13 +754,14 @@
 
 .more-qa__first-teaser {
     @include height(250,228,336);
-    margin-bottom: 6.1rem;
+    @include marginBottom(61,28,42);
     @include breakpoint(tabletAndDesktop) {
-        width: 56.6rem;
-        margin-bottom: 2.8rem;
-        @include breakpoint(tabletAndDesktop) {
+        width: calcVw(566,768);
+        @include breakpoint(desktopOnly) {
             width: calcVw(834,1700);
+            margin-right: calcVw(24,1700);
         }
+
     }
 
     &__figure {
@@ -775,7 +770,7 @@
             226,266,409.7);
         @include width(272,318,491);
         @include marginLeft(16,83,86);
-        @include marginRight(30,27,23);
+        @include marginRight(30,27,24);
         @include marginTop(-39,-94,-145);
     }
 
@@ -786,11 +781,16 @@
     }
 }
 
-.more-qa__tenth-teaser {
-    margin-bottom: 3.1rem;
-    @include breakpoint(tabletAndDesktop) {
-    margin-right: calcVw(278,768);
-    margin-bottom: 12.5rem;
+.teaser--divider {
+    @include breakpoint(desktopOnly) {
+        margin-left: calcVw(25,1700);
+        margin-right: calcVw(25,1700);
     }
+}
 
+.more-qa__tenth-teaser {
+    @include marginBottom(31,125,214);
+    @include breakpoint(tabletOnly) {
+        margin-right: calcVw(288,768);
+    }
 }
