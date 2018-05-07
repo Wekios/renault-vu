@@ -1,0 +1,125 @@
+.accordion-wrap {
+    width: 100%;
+    margin-bottom: 6.4rem;
+    @include breakpoint(phoneOnly) {
+      width: 115%;
+      margin-left: -7%;
+    }
+  
+    @include breakpoint(tabletOnly) {
+      margin-top: 8.5vw;
+      margin-bottom: 6.4vw;
+    }
+  
+    @include breakpoint(desktopOnly) {
+      margin-top: 3.5vw;
+      margin-bottom: 3.4vw;
+    }
+  
+    & .faq-accordion {
+      width: 100%;
+  
+      & .accordion__element {
+        width: 100%;
+        background: $lightGray;
+        border-bottom: 2px solid #e1dede;
+  
+        @include breakpoint(tabletOnly) {
+          border-bottom: 1px solid #e1dede;
+        }
+  
+        &:last-child {
+          border-bottom: none;
+        }
+  
+        &__heading {
+          position: relative;
+          width: 100%;
+          font-size: 1rem;
+          cursor: pointer;
+          min-height: 12.8rem;
+          padding: 2rem 0;
+          display: table;
+  
+          @include breakpoint(tabletOnly) {
+            padding: 1.1rem 0;
+            min-height: 7.8rem;
+          }
+  
+          @include breakpoint(desktopOnly) {
+            padding: 2rem 0;
+          }
+  
+          & .accordion-heading__text {
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 7.5%;
+            width: 80%;
+            color: #6e6d6d;
+            font-weight: 900;
+            @include fontSize(28,16,18);
+            @include letterSpacing(50,50,50);
+  
+            @include breakpoint(tabletOnly) {
+              width: 82%;
+              padding-left: 9.3%;
+            }
+  
+            @include breakpoint(desktopOnly) {
+  
+            }
+          }
+  
+          & .accordion-heading__arrow {
+            @include circled-icon(7.5vw);
+            background: $white;
+            color: #6e6d6d;
+            position: absolute;
+            top: 50%;
+            right: 7vw;
+            margin-top: -4vw;
+            font-size: 2.5rem;
+  
+            @include breakpoint(tabletOnly) {
+              width: 5.5vw;
+              height: 5.5vw;
+              line-height: 5.5vw;
+              margin-top: -2.75vw;
+              right: 5.3vw;
+              font-size: 1.5rem;
+            }
+  
+            @include breakpoint(desktopOnly) {
+              width: 3vw;
+              height: 3vw;
+              line-height: 3vw;
+              margin-top: -1.5vw;
+              right: 3vw;
+              font-size: 1.9rem;
+            }
+          }
+        }
+  
+        &__text {
+          display: none;
+          padding-bottom: 9vw;
+          width: 76%;
+          margin-left: 7.7%;
+          color: #6e6d6d;
+          @include fontSize(28,14,16);
+          @include lineHeight(42,18,22);
+          @include letterSpacing(50,50,50);
+  
+          @include breakpoint(tabletOnly) {
+            margin-left: 9.3%;
+            padding-bottom: 4vw;
+          }
+  
+          @include breakpoint(desktopOnly) {
+            width: 69%;
+          }
+        }
+      }
+    }
+  }
+  
