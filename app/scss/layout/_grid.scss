@@ -11,7 +11,10 @@ body {
 }
 
 .page {
-  @include marginTop(85,85,66);
+  padding-top: 8.5rem;
+  @include breakpoint(desktopOnly) {
+    padding-top: 6.6rem;
+  }
 }
 
 a img {
