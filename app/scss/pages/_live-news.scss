@@ -1,0 +1,11 @@
+.live-news__heading {
+    @include fontSize(70,36,90);
+    line-height: 1;
+    letter-spacing: 0;
+    @include marginTop(107,80,0);
+    @include marginBottom(80,-61,0);
+    @include breakpoint(tabletAndDesktop) {
+        float: left;
+        margin-left: calcVw(63,768);
+    }
+}
