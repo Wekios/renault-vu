@@ -33,7 +33,7 @@
     -moz-box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 20px 52px 0px rgba(0,0,0,0.75);
     @include width(560,299.41,491);
-    @include marginBottom(50,10,32);
+    @include marginBottom(47,20,30);
 }
 
 .qa-slider__first-slide {
@@ -47,13 +47,20 @@
 }
 
 .qa__slider__caption {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     @include breakpoint(tabletAndDesktop) {
         width: 70%;
+        margin-bottom: 0;
     }
     @include breakpoint(desktopOnly) {
         float: left;
         margin-bottom: 6.4rem;
+
+        h4 {
+            font-size: 2.2rem;
+            line-height: 3rem;
+            
+        }
     }
 }
 
@@ -61,8 +68,11 @@
     float: right;
     color: $gray;
     @include fontSize(25,10,14);
-    margin-bottom: 3rem;
-    @include marginBottom(30,40,0); 
+    @include marginBottom(30,44,0);
+    margin-top: -1rem;
+    @include breakpoint(desktopOnly) {
+        margin-top: 1.2rem;
+    }
 }
 
 .qa-slider__current {

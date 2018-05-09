@@ -1,7 +1,7 @@
 .topics {
 
     &__heading {
-        @include marginBottom(79,16,20);
+        @include marginBottom(67,23,20);
         @include breakpoint(tabletAndDesktop) {
             width: 7.2rem;
         }
@@ -9,17 +9,15 @@
 
     li {
     @include fontSize(24,12,12);
-    @include lineHeight(87,34,44);
+    @include lineHeight(87,34,37);
     @include letterSpacing(50,50,50);
+    @include marginBottom(33,14,32);
+    text-transform: uppercase;
     display: block;
-    margin: 3.8rem 0 3.8rem;
-    @include breakpoint(tabletAndDesktop) {
-        margin: 1.2rem 0 1.2rem;
-    }
 
         a {
             background: $lightGray;
-            padding: 3rem calcVw(56,640);
+            padding: 3rem calcVw(36,640);
 
             @include breakpoint(tabletAndDesktop) {
                 font-weight: 700;

@@ -1,5 +1,5 @@
 .shp__header {
-    @include marginBottom(74,79,150);
+    @include marginBottom(74,80,115);
     position: relative;
 }
 
@@ -31,13 +31,13 @@
     }
 
     .button {
-        @include marginBottom(16,11,15);
+        @include marginBottom(16,7,15);
     }
 }
 
 .shp__header-text {
     box-sizing: border-box;
-    padding: 4.7rem calcVw(40,640) 4rem;
+    padding: 3.82rem 3.5rem 4.1rem 3.8rem;
     @include fontSize(28,14,18);
     @include lineHeight(42,20,28);
     @include letterSpacing(50,50,50);
@@ -46,13 +46,15 @@
     
     @include breakpoint(tabletAndDesktop) {
         width: calcVw(380,768);
-        padding: 4.3rem calcVw(47,768) 3.4rem calcVw(56,768);
+        padding: 4rem calcVw(47,768) 3.4rem calcVw(56,768);
+        line-height: 20px;
         position: absolute;
         top: 5rem;
         right: 0;
         @include breakpoint(desktopOnly) {
             width: calcVw(580,1700);
-            padding: 12.1rem calcVw(84, 1700) 12.7rem calcVw(86, 1700);
+            padding: 11.3rem calcVw(78, 1700) 12.7rem calcVw(86, 1700);
+            line-height: 2.8rem;
             max-height: 62.8rem;
             top: 16rem;
         }
@@ -61,20 +63,44 @@
 
 
 .editor-picks {
-    @include marginBottom(114,120,207);
+    @include marginBottom(122,118,207);
 }
 
 .shp-row--td {
     @include breakpoint(tabletAndDesktop) {
         width: 84.24479vw;
+        margin-bottom: 5.8rem;
     }
     @include breakpoint(desktopOnly) {
         width: 79.70588vw;
+        margin-bottom: 15.7rem;
+    }
+}
+.latest-news--shp {
+    @include marginBottom(0,15,0);
+}
+
+.pagination-block--shp {
+    @include marginBottom(125,45,65);
+
+    @include breakpoint(tabletAndDesktop) {
+        .pagination:first-child {
+            margin-left: 11.5rem;
+            @include breakpoint(desktopOnly) {
+                margin-top: -1rem;
+            }
+        }
+        .pagination:last-child {
+            margin-top: -3.7rem;
+            @include breakpoint(desktopOnly) {
+                margin-top: -0.4rem;
+            }
+        }
     }
 }
 
 .qa {
-    @include marginBottom(70,0,0);
+    @include marginBottom(77,0,0);
     @include breakpoint(tabletAndDesktop) {
         max-width: calcVw(442,768);
         float: left;
@@ -87,13 +113,14 @@
 }
 
 .topics {
+    @include marginBottom(110,0,0);
     @include breakpoint(tabletAndDesktop) {
         float: left;
         max-width: calcVw(192,768);
-        margin-top: 7rem;
+        margin-top: 5.4rem;
     }
     @include breakpoint(desktopOnly) {
         max-width: calcVw(215,1700);
-        margin-top: 24.8rem;
+        margin-top: 23rem;
     }
 }

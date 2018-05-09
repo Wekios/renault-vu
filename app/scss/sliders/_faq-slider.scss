@@ -99,10 +99,11 @@
     bottom: 3rem;
     right: 2rem;
     color: $gray;
-    @include fontSize(25,10,14);
+    @include fontSize(25,13,14);
 
     @include breakpoint(tabletAndDesktop) {
-        right: -2rem;
+        right: -5.5rem;
+        bottom: 2rem;
     }
     @include breakpoint(desktopOnly) {
         top: 16rem;

@@ -1,65 +1,102 @@
-.les-plus-slider__arrows {
-    display: none;
+.les-plus { 
+    background: $lightGray;
+    padding-top: 5.5rem;
+  
+    @include breakpoint(tabletAndDesktop) {
+      padding-top: 3.1rem;
+      @include breakpoint(desktopOnly) {
+          padding-top: 6.5rem;
+      }
+    }
+  }
+
+.les-plus__heading {
+    margin-bottom: 6.5rem;
+    @include breakpoint(tabletAndDesktop) {
+        margin-bottom: 0;
+        float: left;
+        width: calcVw(80,768);
+        @include breakpoint(desktopOnly) {
+            width: calcVw(135,1700);
+        }
+    }
 }
 
-@include breakpoint(tabletAndDesktop) {
-
-    .les-plus__heading {
-        width: 13.3%;
-        float: left;
-        margin-top: 2.4rem;
+.les-plus__first-teaser,
+.les-plus__second-teaser,
+.les-plus__third-teaser,
+.les-plus__fourth-teaser {
+    @include width(272,111,235);
+    @include breakpoint(tabletAndDesktop) {
+        margin-right: calcVw(6,768);
+        margin-left: calcVw(6,768);
         @include breakpoint(desktopOnly) {
-            width: 12%;
-            margin-top: 6.4rem;
+            margin-right: calcVw(12,1700);
+            margin-left: calcVw(12,1700);
         }
     }
 
-    .les-plus-slider__wrap {
-        width: 86.6%;
+    .caption h4 {
+        @include fontSize(26,12,16);
+        @include lineHeight(32,14,20);
+    }
+
+    .figure {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+}
+
+.les-plus__first-teaser,
+.les-plus__third-teaser {
+    @include breakpoint(phoneOnly) {
+        margin-right: 1.2rem;
+    }
+    @include marginBottom(49,31,0);
+}
+
+// Les Plus Figures//
+
+.les-plus__first-teaser__figure {
+    @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__third-teaser-img.jpg"),
+    222,91,193);
+}
+
+.les-plus__second-teaser__figure {
+    @include teaser__figureResponsive(url("../../assets/image/fan-de-vu__fourth-teaser-img.jpg"),
+    222,91,193);
+}
+
+.les-plus__third-teaser__figure {
+    @include teaser__figureResponsive(url("../../assets/image/cote-business__fifth-teaser-img.jpg"),
+    222,91,193);
+}
+
+.les-plus__fourth-teaser__figure {
+    @include teaser__figureResponsive(url("../../assets/image/cote-business__sixth-teaser-img.jpg"),
+    222,91,193);
+}
+
+
+@include breakpoint(tabletAndDesktop) {
+
+    .les-plus-slider-wrap {
+        width: calcVw(566,768);
         position: relative;
         float: right;
-        margin-top: -3rem;
+        margin-top: -5.9rem;
         @include breakpoint(desktopOnly) {
-            width: 87.6%;
-            margin-top: -6.5rem;
+            width: calcVw(1179,1700);
+            margin-top: -12.7rem;
         }
 
     }
 
     .les-plus-slider {
-        width: 50rem;
+        width: calcVw(485,768);
         margin: 0 auto;
         @include breakpoint(desktopOnly) {
-            width: 59.3vw;
-        }
-
-        .les-plus__first-teaser,.les-plus__second-teaser,
-        .les-plus__third-teaser,
-        .les-plus__fourth-teaser, {
-            outline: none;
-            margin: 0 0.6rem 3rem;
-            @include breakpoint(desktopOnly) {
-                margin-bottom: 11rem;
-            }
-
-            &__figure {
-                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-                filter: grayscale(100%);
-                height: 9.1rem;
-                @include breakpoint(desktopOnly) {
-                    height: 19.3rem;
-                }
-            }
-        }
-
-            h4 {
-                font-size: 1.2rem;
-                margin-top: 0.8rem;
-                line-height: 14px;
-                @include breakpoint(desktopOnly) {
-
-            }
-
+            width: calcVw(1010,1700);
         }
 
         &__arrows {
@@ -67,9 +104,10 @@
             position: absolute;
             top: 35%;
             left: 0;
-            right: 0;
+            right: 1.2rem;
             @include breakpoint(desktopOnly) {
                 top: 45%;
+                right: 2.4rem;
             }
             
             &-prev {
@@ -80,11 +118,9 @@
 
             &-next {
                 float: right;
-                right: 0;
+                right: -0.6rem;
                 
             }
         }
     }
-
-
 }

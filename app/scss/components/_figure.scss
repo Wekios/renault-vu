@@ -139,24 +139,6 @@
 
 // -- Portrait Slider is in it's Own File -- //
 
-// Les Plus Figures//
-
-.les-plus__first-teaser__figure {
-    @extend .fan-de-vu__third-teaser__figure;
-}
-
-.les-plus__second-teaser__figure {
-    @extend .fan-de-vu__fourth-teaser__figure;
-}
-
-.les-plus__third-teaser__figure {
-    @extend .cote-business__fifth-teaser__figure;
-}
-
-.les-plus__fourth-teaser__figure {
-    @extend .cote-business__sixth-teaser__figure;
-}
-
 ////////////////////////////////////
 /////// SHP FIGURES ///////////////
 //////////////////////////////////
@@ -166,7 +148,7 @@
 .editor-picks__first-teaser__figure {    
     @include teaser__figureResponsive(
     url("../../assets/image/editor-picks__first-teaser-img.jpg"),
-    458,202,473);
+    458,222,473);
 }
 
 .editor-picks__second-teaser__figure{

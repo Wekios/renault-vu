@@ -48,14 +48,5 @@
 }
 
 .quiz-teaser {
-  @include marginBottom(88,178,333); 
-}
-
-.les-plus { 
-  background: $lightGray;
-  padding: 5rem 0 4.5rem;
-
-  @include breakpoint(tabletAndDesktop) {
-    padding: 0;
-  }
+  @include marginBottom(88,180,333); 
 }

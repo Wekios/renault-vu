@@ -237,7 +237,7 @@
     @include width(272,152.75,320);
     @include marginRight(16,12,24);
     vertical-align: top;
-    @include marginBottom(78,75,75);
+    @include marginBottom(78,92,75);
 }
 
 .cote-business__second-teaser {
@@ -270,27 +270,6 @@
     @include marginBottom(107,100,100);
 }
 
-.les-plus__heading {
-    @include marginBottom(15,0,0);
-}
-
-.les-plus__first-teaser,
-.les-plus__second-teaser,
-.les-plus__third-teaser,
-.les-plus__fourth-teaser {
-    @include width(272,152.75,235);    
-    @include marginTop(56,59,59);
-}
-
-.les-plus__first-teaser,
-.les-plus__third-teaser {
-    @include marginRight(16,0,24);
-}
-
-.les-plus__teaser-hidden {
-    display: none;
-}
-
 ////////////////////////////////////
 /////// Media Queries /////////////
 //////////////////////////////////
@@ -305,10 +284,6 @@
     .fan-de-vu__fourth-teaser  {
         float: right;
     }
-
-    .les-plus__teaser-hidden {
-        display: inline-block;
-    }
 }
 
 ////////////////////////////////////
@@ -318,25 +293,28 @@
 // Editor-Picks Block
 
 .editor-picks__heading {
-    @include marginBottom(34,10,50);
+    @include marginBottom(44,16,58);
     width: 8.4rem;
     @include breakpoint(tabletAndDesktop) {
         float: right;
         margin-right: calcVw(274,768);
-        margin-top: 1.2rem;
+        margin-top: 1.5rem;
     }
     @include breakpoint(desktopOnly) {
         margin-right: calcVw(582,1700);
-        margin-top: 4rem;
+        margin-top: 4.5rem;
         span.text--bolder,span.text--regular,br,h2 {
             line-height: 3rem;
         }
+    }
+    h2 {
+        @include lineHeight(48,20,24);
     }
 }
 
 .editor-picks__first-teaser {
     @include width(560,277,578);
-    @include marginBottom(51,51,81);
+    @include marginBottom(61,60,102);
 }
 
 .editor-picks__second-teaser {
@@ -350,7 +328,7 @@
         left: 0;
         top: -1.7rem;
         @include breakpoint(desktopOnly) {
-            top: -1rem;
+            top: -3rem;
         }
     }
 }
@@ -368,9 +346,11 @@
 // Latest News Teasers
 
 .latest-news__heading {
-    width: 8.4rem;
-    @include marginBottom(38,20,40);
-
+    @include width(250,0,0);
+    @include marginBottom(37,20,40);
+}
+.latest-news .teaser .caption {
+    @include marginTop(22,10,28);
 }
 
 .latest-news__first-teaser {
@@ -385,7 +365,7 @@
 .latest-news__third-teaser {
     @include width(560,277.84,578);
     @include marginTop(0,-100,-210);
-    @include marginBottom(26,24,0);
+    @include marginBottom(40,24,0);
 }
 
 .latest-news__first-teaser,
@@ -407,7 +387,7 @@
 .latest-news__eight-teaser,
 .latest-news__tenth-teaser, {
     @include marginRight(16,12,24);
-    @include marginBottom(54,24,75);
+    @include marginBottom(54,24,81);
 }
 
 @include breakpoint(tabletAndDesktop) {
@@ -680,7 +660,13 @@
 ///////////////////////
 
 .qa-list__heading {
-    margin-bottom: 9.7rem;
+    margin-bottom: 8rem;
+    width: 10rem;
+
+    h2 {
+        line-height: 5.5rem;
+    }
+
     @include breakpoint(tabletAndDesktop) {
         float: left;
         margin: 6.6rem 0 0 0;
@@ -689,7 +675,7 @@
 
 .qa-list-teaser .teaser--underlay {
     @include breakpoint(phoneOnly) {
-    margin-bottom: 14.6rem;
+    margin-bottom: 14.3rem;
     }
 }
 
@@ -701,6 +687,10 @@
 }
 
 .qa-list__first-teaser__caption {
+    @include breakpoint(phoneOnly) {
+        margin-left: 3.7rem;
+        margin-top: 6.4rem;
+    }
     vertical-align: bottom;
 }
 
