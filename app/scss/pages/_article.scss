@@ -26,8 +26,37 @@
     }
 }
 
+.breadcrumbs--article {
+    margin: 6.2rem 0 5.5rem 0;
+}
+
+.container--article {
+    @include breakpoint(tabletAndDesktop) {
+        width: calcVw(566,768);
+        margin: 0 auto;
+        @include breakpoint(desktopOnly) {
+            width: calcVw(1180, 1700);
+        }
+    }
+}
+
+.container--article-body {
+    @include breakpoint(desktopOnly) {
+        width: 50%;
+        float: left;
+        text-align: left;
+        margin-left: calcVw(70,1700);
+    }
+}
+
 .widget__social-box--article {
     @include marginBottom(55,40,0);
+    @include breakpoint(tabletOnly) {
+        margin-left: 4.05rem;
+    }
+    @include breakpoint(desktopOnly) {
+        margin-left: 3rem;
+    }
 }
 
 .quiz-teaser--article {
@@ -44,9 +73,6 @@
 
 
 @include breakpoint(desktopOnly) {
-    .container--article {
-        text-align: center;
-    }
 
     .widget__social-box--article {
         float: left;

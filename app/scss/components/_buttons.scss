@@ -16,11 +16,17 @@
         padding-left: 2.1rem;
         padding-right: 2.1rem;
         @include letterSpacing(100,100,100);
+
+        &:active {
+            background-color: $black;
+            color: $white;
+        }
     }
 
     &--caption {
         position: absolute;
         bottom: 0;
+        cursor: default;
     }
 }
 
@@ -35,6 +41,12 @@
     border: 0.1rem solid rgba(0,0,0,0.1);
     -webkit-box-shadow: 0px 2px 24px -2px rgba(0,0,0,0.76); 
     box-shadow: 0px 2px 24px -2px rgba(0,0,0,0.76);
+    cursor: pointer;
+
+    &:active {
+        background-color: $black;
+        color: $white;
+    }
 }
 
 .button--shp {

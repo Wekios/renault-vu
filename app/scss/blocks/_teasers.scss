@@ -615,11 +615,14 @@
 }
 
 .articles-lies__heading {
-    @include marginTop(138,12,0);
+    @include marginTop(138,12,64);
     @include width(150,100,0);
     position: absolute;
     @include breakpoint(tabletAndDesktop) {
         margin-left: 1rem;
+    }
+    @include breakpoint(desktopOnly) {
+        margin-left: 0;
     }
 }
 
@@ -629,7 +632,7 @@
             url("../../assets/image/vu-astuces__second-teaser-img.jpg"),
         164,125,262); 
     }
-    @include marginBottom(71,34,0);
+    @include marginBottom(71,34,118);
 }
 
 .articles-lies__second-teaser {
@@ -657,7 +660,7 @@
             url("../../assets/image/articles-lies__fourth-teaser-img.jpg"),
             360,203,420);
     }
-    @include marginBottom(71,100,0);
+    @include marginBottom(71,100,233);
 }
 
 
@@ -768,6 +771,7 @@
 .more-qa__heading {
     float: left;
     width: 8.1rem;
+    @include marginBottom(100,0,0);
 }
 
 .more-qa__first-teaser {

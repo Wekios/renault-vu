@@ -1,6 +1,6 @@
 .article-body {
 
-    @include height(4246,1364,0);
+    @include height(4246,1364,1316);
     @include breakpoint(desktopOnly) {
         width: calcVw(678,1700);
         display: inline-block;
@@ -16,16 +16,18 @@
         font-weight: 700;
         text-transform: uppercase;
         background: #ffcc33;
-        @include marginBottom(20,16,0);
-        margin-bottom: 2rem;
+        @include marginBottom(20,16,28);
         @include breakpoint(tabletAndDesktop) {
             padding: 1rem 1rem;
+            @include breakpoint(desktopOnly) {
+                padding: 1rem 2rem;
+            }
         }
       }
 
      &__heading {
          text-align: left;
-         @include marginBottom(97,70,0);
+         @include marginBottom(97,70,96);
          @include breakpoint(tabletAndDesktop) {
              margin-top: 5rem;
          }
@@ -36,6 +38,9 @@
             @include fontSize(40,32,54);
             @include lineHeight(42,32,55);
             @include letterSpacing(-14,-25,0);
+            @include breakpoint(desktopOnly) {
+                width: 83%;
+            }
         }
     }
 
@@ -44,7 +49,7 @@
         color: $darkGray;
         @include fontSize(24, 12, 10);
         @include letterSpacing(50, 50, 50);
-        @include marginBottom(21,13,0);
+        @include marginBottom(21,13,11);
     }
 
     &__paragraphs {
@@ -98,4 +103,8 @@
         }
     }
 
+}
+
+.article-body--faq {
+    @include height(3518,1551,1686);
 }
