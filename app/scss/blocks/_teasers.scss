@@ -553,6 +553,16 @@
     }
 }
 
+.teaser--padded-top {
+    vertical-align: top;
+}
+
+.padded-top-td {
+    @include breakpoint(tabletAndDesktop) {
+        vertical-align: top;
+    }
+}
+
 .teaser--lg {
     @include width(560,276,578);
     .figure {
@@ -573,86 +583,82 @@
 //////////////////////////////
 
 .articles-lies-teaser {
-    .caption {
-        @include breakpoint(tabletAndDesktop) {
-            margin-top: 1rem;
-        }
-        @include breakpoint(desktopOnly) {
-            margin-top: 2rem;
-        }
-    }
-    h4 {
-        // letter-spacing: 0.25rem;
-        @include letterSpacing(90,90,55);
+
+    .teaser {
+        display: inline-block;
+        float: none;
     }
 
+    .caption {
+        margin-top: 1.5rem;
+        @include marginTop(15,10,20);
+    }
+
+    h4 {
+        @include letterSpacing(60,90,55);
+    }
+
+    .row--mob .teaser:first-child {
+        @include marginRight(16,12,24);
+    }
+
+    .row--td:nth-child(3) {
+        .row--mob:first-child {
+            @include breakpoint(tabletAndDesktop) {
+                margin-right: calcVw(12,768);
+            }
+            @include breakpoint(desktopOnly) {
+                margin-right: calcVw(24,1700);
+            }
+        }
+    }
 }
 
 .articles-lies__heading {
-    @include marginTop(139,12,80);
-    @include marginBottom(74,30,20);
+    @include marginTop(138,12,0);
+    @include width(150,100,0);
+    position: absolute;
     @include breakpoint(tabletAndDesktop) {
-        margin-left: 1.2rem;
+        margin-left: 1rem;
     }
 }
 
 .articles-lies__first-teaser {
-
-    &__figure {
+    .figure {
         @include teaser__figureResponsive(
             url("../../assets/image/vu-astuces__second-teaser-img.jpg"),
         164,125,262); 
     }
-
+    @include marginBottom(71,34,0);
 }
 
 .articles-lies__second-teaser {
-
-    &__figure {
+    .figure {
         @include teaser__figureResponsive(
             url("../../assets/image/articles-lies__second-teaser-img.jpg"),
             455,202,420);
     }
-
 }
 
 .articles-lies__third-teaser {
-
-    &__figure {
+    .figure {
         @include teaser__figureResponsive(
             url("../../assets/image/articles-lies__third-teaser-img.jpg"),
             458,228,474);
     }
-
+    @include breakpoint(phoneOnly) {
+        margin-bottom: 7rem;
+    }
 }
 
 .articles-lies__fourth-teaser {
-
-    &__figure {
+    .figure {
         @include teaser__figureResponsive(
             url("../../assets/image/articles-lies__fourth-teaser-img.jpg"),
-            360,203,420
-        );
+            360,203,420);
     }
-
+    @include marginBottom(71,100,0);
 }
-
-.articles-lies__fifth-teaser {
-    @include marginRight(0,12,24);
-
-    &__figure {
-        @include teaser__figureResponsive(
-            url("../../assets/image/latest-news__first-teaser-img.jpg"),
-            222,127,260
-        );
-    }
-
-}
-
-.articles-lies__seventh-teaser {
-    margin-right: 0;
-}
-
 
 
 /////////////////////////

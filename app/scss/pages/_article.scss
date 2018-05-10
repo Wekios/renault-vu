@@ -16,23 +16,30 @@
     right: 0;
     background: $white;
     padding: 1.05rem 1.3rem;
+    @include breakpoint(tabletAndDesktop) {
+
+    }
     
     p {
-        @include fontSize(20,20,12);
+        @include fontSize(20,11,12);
         padding: 0;
     }
 }
 
 .widget__social-box--article {
-    margin-bottom: 5.5rem;
+    @include marginBottom(55,40,0);
 }
 
 .quiz-teaser--article {
-    @include marginBottom(49,0,0);
+    @include marginBottom(48,144,0);
     @include breakpoint(phoneOnly) {
         width: 64rem;
         margin-left: -4rem;
     }
+}
+
+.articles-lies-teaser--article {
+    @include marginBottom(43,0,0);
 }
 
 

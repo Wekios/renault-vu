@@ -1,11 +1,7 @@
 .social-box {
-    margin-top: 10rem;
     @include width(415,283,74);
     @include height(92,74,335);
     text-align: center;
-    @include breakpoint(desktopOnly) {
-        margin-top: 0;
-    }
 }
 
 .social-box__box {

@@ -51,6 +51,11 @@ a img {
 }
 
 @include breakpoint(tabletAndDesktop) {
+
+  .row--mob {
+    display: inline-block;
+  }
+  
   .row--td {
     display: block;
     margin: 0 auto;

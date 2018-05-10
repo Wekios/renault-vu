@@ -5,6 +5,13 @@
     width: 100%;
 }
 
+.container--article-body {
+    @include breakpoint(tabletAndDesktop) {
+        width: calcVw(566,768);
+        margin: 0 auto;
+    }
+}
+
 @include breakpoint(desktopOnly) {
     .container--article {
         text-align: center;

@@ -1,13 +1,34 @@
 .article-body {
 
+    @include height(4246,1364,0);
     @include breakpoint(desktopOnly) {
         width: calcVw(678,1700);
         display: inline-block;
         text-align: left;
     }
 
+    &__category {
+        line-height: 1;
+        display: inline-block;
+        padding: 1.8vw 2.2vw;
+        @include fontSize(13.32,8,13);
+        @include letterSpacing(50,50,50);
+        font-weight: 700;
+        text-transform: uppercase;
+        background: #ffcc33;
+        @include marginBottom(20,16,0);
+        margin-bottom: 2rem;
+        @include breakpoint(tabletAndDesktop) {
+            padding: 1rem 1rem;
+        }
+      }
+
      &__heading {
          text-align: left;
+         @include marginBottom(97,70,0);
+         @include breakpoint(tabletAndDesktop) {
+             margin-top: 5rem;
+         }
          
             h1 {
             text-transform: uppercase;
@@ -15,39 +36,16 @@
             @include fontSize(40,32,54);
             @include lineHeight(42,32,55);
             @include letterSpacing(-14,-25,0);
-        
-            @include breakpoint(tabletOnly) {
-            margin-top: 1.9vw;
-            margin-bottom: 6vw;
-            }
-        
-            @include breakpoint(desktopOnly) {
-            width: 76%;
-            margin-top: 1.6vw;
-            margin-bottom: 5.3vw;
-            }
         }
     }
-    
-      &__category {
-          line-height: 1;
-          display: inline-block;
-          padding: 1.8vw 2.2vw;
-          @include fontSize(13.32,8,13);
-          @include letterSpacing(50,50,50);
-          font-weight: 700;
-          text-transform: uppercase;
-          background: #ffcc33;
-          margin-bottom: 2rem;
-        }
 
-        &__date {
-            line-height: 1;
-            color: $darkGray;
-            @include fontSize(24, 12, 10);
-            @include letterSpacing(50, 50, 50);
-            margin-bottom: 2rem;
-        }
+    &__date {
+        line-height: 1;
+        color: $darkGray;
+        @include fontSize(24, 12, 10);
+        @include letterSpacing(50, 50, 50);
+        @include marginBottom(21,13,0);
+    }
 
     &__paragraphs {
 
@@ -57,14 +55,7 @@
             @include fontSize(28, 16, 16);
             @include lineHeight(42, 22, 22);
             @include letterSpacing(45, 50, 50);
-            margin-bottom: 6.5vw;
-            @include breakpoint(tabletOnly) {
-                margin-bottom: 2.9vw;
-            }
-
-            @include breakpoint(desktopOnly) {
-                margin-bottom: 1.3vw;
-            }
+            @include marginBottom(50,32,0);
 
         }
 
@@ -75,7 +66,7 @@
             @include lineHeight(42, 26, 26);
             @include letterSpacing(50, 50, 50);
             @include breakpoint(tabletOnly) {
-                margin-bottom: 4.8vw;
+                margin-bottom: 5.2vw;
             }
 
             @include breakpoint(desktopOnly) {
@@ -94,18 +85,10 @@
 
     &__tags {
         color: $yellow;
-        margin: 8vw 0 16vw 0;
         @include fontSize(28, 16, 12);
         @include letterSpacing(50, 50, 50);
-        @include breakpoint(tabletOnly) {
-            margin: 8vw 0 5vw 0;
-        }
-
-        @include breakpoint(desktopOnly) {
-            margin: 2vw 0;
-        }
-
     }
+
     &__main-content {
         letter-spacing: 0.2vw;
         @include breakpoint(desktopOnly) {
