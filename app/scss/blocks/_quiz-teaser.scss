@@ -14,7 +14,7 @@
 .quiz-teaser__text-content {
     @include width(416,190,286);
     margin: 0 auto;
-    padding-top: 7.5rem;
+    padding-top: 7rem;
     @include breakpoint(tabletAndDesktop) {
         padding-top: 3.8rem;
     }
