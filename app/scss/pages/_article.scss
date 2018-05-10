@@ -1,5 +1,5 @@
 .article__header {
-    @include marginBottom(0,0,0);
+    @include marginBottom(42,0,0);
     position: relative;
 }
 
@@ -18,8 +18,20 @@
     padding: 1.05rem 1.3rem;
     
     p {
-        @include fontSize(20,20,20);
+        @include fontSize(20,20,12);
         padding: 0;
+    }
+}
+
+.widget__social-box--article {
+    margin-bottom: 5.5rem;
+}
+
+.quiz-teaser--article {
+    @include marginBottom(49,0,0);
+    @include breakpoint(phoneOnly) {
+        width: 64rem;
+        margin-left: -4rem;
     }
 }
 

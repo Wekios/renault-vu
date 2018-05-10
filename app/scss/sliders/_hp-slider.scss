@@ -30,7 +30,7 @@
 // Text And Button
 
 .hp-slider__text-content {
-    @include width(455,365,800);
+    @include width(460,365,800);
     @include marginTop(64,148,341);
     @include breakpoint(tabletAndDesktop) {
         margin-left: calcVw(58,768);

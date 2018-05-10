@@ -46,7 +46,7 @@
     
     @include breakpoint(tabletAndDesktop) {
         width: calcVw(380,768);
-        padding: 4rem calcVw(47,768) 3.4rem calcVw(56,768);
+        padding: 4rem calcVw(47,768) 3.2rem calcVw(56,768);
         line-height: 20px;
         position: absolute;
         top: 5rem;
@@ -100,7 +100,7 @@
 }
 
 .qa {
-    @include marginBottom(77,0,0);
+    @include marginBottom(87,0,0);
     @include breakpoint(tabletAndDesktop) {
         max-width: calcVw(442,768);
         float: left;

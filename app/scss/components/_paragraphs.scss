@@ -6,65 +6,48 @@
         text-align: left;
     }
 
-     &__heading h1 {
-        text-transform: uppercase;
-        margin-top: 3vw;
-        margin-bottom: 6vw;
-        font-weight: 900;
-        @include fontSize(40,32,54);
-        @include lineHeight(42,32,55);
-        @include letterSpacing(-14,-25,0);
-    
-        @include breakpoint(tabletOnly) {
-          margin-top: 1.9vw;
-          margin-bottom: 6vw;
+     &__heading {
+         text-align: left;
+         
+            h1 {
+            text-transform: uppercase;
+            font-weight: 900;
+            @include fontSize(40,32,54);
+            @include lineHeight(42,32,55);
+            @include letterSpacing(-14,-25,0);
+        
+            @include breakpoint(tabletOnly) {
+            margin-top: 1.9vw;
+            margin-bottom: 6vw;
+            }
+        
+            @include breakpoint(desktopOnly) {
+            width: 76%;
+            margin-top: 1.6vw;
+            margin-bottom: 5.3vw;
+            }
         }
-    
-        @include breakpoint(desktopOnly) {
-          width: 76%;
-          margin-top: 1.6vw;
-          margin-bottom: 5.3vw;
-        }
-      }
+    }
     
       &__category {
           line-height: 1;
-        display: inline-block;
-        padding: 1.8vw 2.2vw;
-        @include fontSize(13.32,8,13);
-        @include letterSpacing(50,50,50);
-        font-weight: 700;
-        text-transform: uppercase;
-        background: #ffcc33;
-        margin-top: 1vw;
-    
-        @include breakpoint(tabletOnly) {
-          padding: 1.3vw;
-          margin-top: 3vw;
-        }
-    
-        @include breakpoint(desktopOnly) {
-          padding: 0.7vw 1.3vw;
-          margin-top: 0.5vw;
-        }
-      }
-
-    &__date {
-
-        line-height: 1;
-        color: $darkGray;
-        margin: 1vw 0 3vw 0;
-        @include fontSize(24, 12, 10);
-        @include letterSpacing(50, 50, 50);
-        @include breakpoint(tabletOnly) {
-            margin: 0.5vw 0 1.5vw 0;
+          display: inline-block;
+          padding: 1.8vw 2.2vw;
+          @include fontSize(13.32,8,13);
+          @include letterSpacing(50,50,50);
+          font-weight: 700;
+          text-transform: uppercase;
+          background: #ffcc33;
+          margin-bottom: 2rem;
         }
 
-        @include breakpoint(desktopOnly) {
-            margin: 0.3vw 0 0.6vw 0;
+        &__date {
+            line-height: 1;
+            color: $darkGray;
+            @include fontSize(24, 12, 10);
+            @include letterSpacing(50, 50, 50);
+            margin-bottom: 2rem;
         }
-
-    }
 
     &__paragraphs {
 

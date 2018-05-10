@@ -51,12 +51,18 @@
     text-align: center;
     button {
         @include fontSize(18,10,18);
-        min-height: 7.1rem;
-        min-width: 26.6rem;
-        @include breakpoint(tabletAndDesktop) {
-            min-height: 3rem;
-            min-width: 10rem;
-        }
+        // min-height: 7.1rem;
+        // min-width: 26.6rem;
+        @include width(266,100,200);
+        @include height(71,30,40);
+        // @include breakpoint(tabletAndDesktop) {
+        //     min-height: 3rem;
+        //     min-width: 10rem;
+        // }
+        // @include breakpoint(desktopOnly) {
+        //     min-height: 4rem;
+        //     min-width: 17rem;
+        // }
     }
 
 }

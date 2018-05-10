@@ -6,6 +6,7 @@
       padding-top: 3.1rem;
       @include breakpoint(desktopOnly) {
           padding-top: 6.5rem;
+          height: 25rem;
       }
     }
   }
@@ -52,7 +53,10 @@
     @include breakpoint(phoneOnly) {
         margin-right: 1.2rem;
     }
-    @include marginBottom(49,31,0);
+    @include marginBottom(56,31,0);
+    .caption {
+        width: 94%;
+    }
 }
 
 // Les Plus Figures//
