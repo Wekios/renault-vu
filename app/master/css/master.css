@@ -714,7 +714,7 @@ a img {
         font-size: 2rem; } }
     @media (min-width: 768px) {
       .pagination li {
-        padding: 3rem 1.95312vw; } }
+        padding: 3rem 1.95313vw; } }
     @media (min-width: 1024px) {
       .pagination li {
         padding: 1.5rem 0.88235vw; } }
@@ -2484,7 +2484,7 @@ a img {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .news-de-la__second-teaser {
-    width: 25.39062vw; } }
+    width: 25.39063vw; } }
 
 @media (min-width: 1024px) {
   .news-de-la__second-teaser {
@@ -3245,7 +3245,7 @@ a img {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .editor-picks__fourth-teaser {
-    width: 25.39062vw; } }
+    width: 25.39063vw; } }
 
 @media (min-width: 1024px) {
   .editor-picks__fourth-teaser {
@@ -4067,7 +4067,7 @@ a img {
   background: center/cover no-repeat url("http://via.placeholder.com/184x150"); }
   @media (max-width: 767px) {
     .more-qa__figure {
-      width: 28.82812vw; } }
+      width: 28.82813vw; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .more-qa__figure {
       width: 8.85417vw; } }
@@ -4199,7 +4199,7 @@ a img {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .more-qa__first-teaser__figure {
-    margin-right: 3.51562vw; } }
+    margin-right: 3.51563vw; } }
 
 @media (min-width: 1024px) {
   .more-qa__first-teaser__figure {
@@ -5361,7 +5361,7 @@ a img {
   .les-plus__second-teaser,
   .les-plus__third-teaser,
   .les-plus__fourth-teaser {
-    width: 14.45312vw; } }
+    width: 14.45313vw; } }
 
 @media (min-width: 1024px) {
   .les-plus__first-teaser,
@@ -5912,15 +5912,35 @@ html.diaporamaOpened, body.diaporamaOpened {
 .diaporama__image {
   position: relative;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background: center/cover no-repeat url("https://dummyimage.com/640x550/b8b8b8/474747.png"); }
+  @media (max-width: 767px) {
+    .diaporama__image {
+      width: 100vw; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .diaporama__image {
+      width: 100vw; } }
   @media (min-width: 1024px) {
     .diaporama__image {
-      width: 55.706%;
+      width: 40.29412vw; } }
+  @media (max-width: 767px) {
+    .diaporama__image {
+      height: 55rem; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .diaporama__image {
+      height: 57rem; } }
+  @media (min-width: 1024px) {
+    .diaporama__image {
+      height: 58.4rem; } }
+  @media (min-width: 768px) {
+    .diaporama__image {
+      background: center/cover no-repeat url("http://via.placeholder.com/768x570"); } }
+  @media (min-width: 1024px) {
+    .diaporama__image {
+      background: center/cover no-repeat url("http://via.placeholder.com/500x584");
       top: 13%;
       left: 10.2%;
       z-index: 100; } }
-  .diaporama__image img {
-    width: 100%; }
 
 .diaporama__body {
   width: 87%;
@@ -6104,11 +6124,10 @@ html.diaporamaOpened, body.diaporamaOpened {
     height: 100%;
     margin-right: 0.79%;
     cursor: pointer;
-    outline: none; }
-    .diaporama__thumbs .diaporama__thumb img {
-      width: 100%;
-      height: 100%;
-      filter: grayscale(100%); }
+    outline: none;
+    background: center/cover no-repeat url("https://dummyimage.com/100x82/b8b8b8/474747.png");
+    height: 8.2rem;
+    width: 10rem; }
     .diaporama__thumbs .diaporama__thumb .overlay {
       opacity: 0;
       position: absolute;
@@ -6163,7 +6182,7 @@ html.diaporamaOpened, body.diaporamaOpened {
       width: 15.3125vw; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .social-box__box {
-      width: 8.20312vw; } }
+      width: 8.20313vw; } }
   @media (min-width: 1024px) {
     .social-box__box {
       width: 3.70588vw; } }
@@ -6204,7 +6223,7 @@ html.diaporamaOpened, body.diaporamaOpened {
 
 @media (max-width: 767px) {
   .social-box__box--padder {
-    margin-left: 5.70312vw; } }
+    margin-left: 5.70313vw; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .social-box__box--padder {
@@ -6216,7 +6235,7 @@ html.diaporamaOpened, body.diaporamaOpened {
 
 @media (max-width: 767px) {
   .social-box__box--padder {
-    margin-right: 5.70312vw; } }
+    margin-right: 5.70313vw; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .social-box__box--padder {
@@ -6882,7 +6901,7 @@ html.diaporamaOpened, body.diaporamaOpened {
   @media (min-width: 768px) {
     .live-news__heading {
       float: left;
-      margin-left: 8.20312vw; } }
+      margin-left: 8.20313vw; } }
 
 .page--all-tags {
   padding-top: 12.34rem; }

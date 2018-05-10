@@ -85,17 +85,19 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    @include width(640,768,685);
+    @include height(550,570,584);
+    background: center / cover no-repeat url("https://dummyimage.com/640x550/b8b8b8/474747.png");
+
+    @include breakpoint(tabletAndDesktop) {
+      background: center / cover no-repeat url("http://via.placeholder.com/768x570");
+    } 
   
     @include breakpoint(desktopOnly) {
-      width: 55.706%;
-      // width: 101vh;
+      background: center / cover no-repeat url("http://via.placeholder.com/500x584");
       top: 13%;
       left: 10.2%;
       z-index: 100;
-    }
-  
-    & img {
-      width: 100%;
     }
   }
   
@@ -185,8 +187,6 @@
       margin-right: 0.1vw;
     }
   }
-
-  //Insert Diaporama Arrows Here 
   
   .diaporama__counter {
     font-weight: 900;
@@ -238,12 +238,10 @@
       margin-right: 0.79%;
       cursor: pointer;
       outline: none;
-  
-      & img {
-        width: 100%;
-        height: 100%;
-        filter: grayscale(100%);
-      }
+      // filter: grayscale(100%);
+      background: center / cover no-repeat url("https://dummyimage.com/100x82/b8b8b8/474747.png");
+      height: 8.2rem;
+      width: 10rem;
   
       & .overlay {
         opacity: 0;
