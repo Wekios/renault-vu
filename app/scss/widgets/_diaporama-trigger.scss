@@ -128,59 +128,72 @@
 // Diaporama Images and Thumbs 
 
 .diaporama-trigger__slide1 {
-    @include teaser__figureResponsive(url("../../assets/image/diaporama__first-slide.jpg"),
+    @include teaser__figureResponsive(
+        url("../../assets/image/diaporama__first-slide.jpg"),
     330,202,700);
 }
 
 .diaporama-trigger__thumb1 {
-    @include teaser__figureResponsive(url("../../assets/image/diaporama__first-slide.jpg"),
+    @include teaser__figureResponsive(
+        url("../../assets/image/diaporama__first-slide.jpg"),
         81,81,81
     );
 }
 
 .diaporama-trigger__slide2 {
-    @include teaser__figureResponsive(url("../../assets/image/slide1.jpg"),
+    @include teaser__figureResponsive(
+        url("../../assets/image/vu-astuces__third-teaser-img.jpg"),
     330,202,700);
 }
 
 .diaporama-trigger__thumb2 {
-    @include teaser__figureResponsive(url("../../assets/image/slide1.jpg"),
+    @include teaser__figureResponsive(
+        url("../../assets/image/vu-astuces__third-teaser-img.jpg"),
         81,81,81
     );
 }
 
 .diaporama-trigger__slide3 {
-    @include teaser__figureResponsive(url("../../assets/image/diaporama__second-slide.jpg"),
+    @include teaser__figureResponsive(
+        url("../../assets/image/articles-lies__third-teaser-img.jpg"),
     330,202,700);
 }
 
 .diaporama-trigger__thumb3 {
-    @include teaser__figureResponsive(url("../../assets/image/diaporama__second-slide.jpg"),
+    @include teaser__figureResponsive(
+        url("../../assets/image/articles-lies__third-teaser-img.jpg"),
         81,81,81
     );
 }
 
 .diaporama-trigger__slide4 {
     @include teaser__figureResponsive(
-        url("https://dummyimage.com/1700x450/b8b8b8/474747.png"),
+        url("../../assets/image/hp-slider__second-slide.jpg"),
         330,396,700
     );
 }
 
 .diaporama-trigger__thumb4 {
     @include teaser__figureResponsive(
-        url("../../assets/image/diaporama__fourth-slide.jpg"),
+        url("../../assets/image/hp-slider__second-slide"),
         81,81,81
     );
 }
 
 .diaporama-trigger__slide5 {
-    @include teaser__figureResponsive(url("../../assets/image/slide2.jpg"),
+    @include teaser__figureResponsive(
+        url("../../assets/image/hp-slider__first-slide.jpg"),
     330,202,700);
 }
 
 .diaporama-trigger__thumb5 {
-    @include teaser__figureResponsive(url("../../assets/image/slide2.jpg"),
+    @include teaser__figureResponsive(
+        url("../../assets/image/hp-slider__first-slide.jpg"),
         81,81,81
     );
+}
+
+.diaporama-trigger--portrait {
+    width: 100vw;
+    margin-left: calcVw(-40,640);
 }

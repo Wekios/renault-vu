@@ -28,9 +28,6 @@
      &__heading {
          text-align: left;
          @include marginBottom(97,70,96);
-         @include breakpoint(tabletAndDesktop) {
-             margin-top: 5rem;
-         }
          
             h1 {
             text-transform: uppercase;
@@ -52,10 +49,72 @@
         @include marginBottom(21,13,11);
     }
 
+    &__video {
+        width: 100%;
+        @include height(314,0,0);
+        display: flex;
+        justify-content: center; /* center items vertically, in this case */
+        align-items: center;
+        background: center / cover no-repeat url("../../assets/image/yt-play-img.jpg");
+        @include marginBottom(40,0,0);
+        .yt-play {
+            text-align: center;
+            width: 7.5rem;
+            height: 5.3rem;
+            background: center / contain no-repeat url("../../assets/image/yt-play.png");
+            cursor: pointer;
+        }
+    }
+
+    &__list {
+        list-style: square inside;
+        @include marginBottom(83,50,50);
+        li {
+            font-size: 3rem;
+            color: $yellow;
+            span {
+                color: $darkGray;
+                @include fontSize(28,0,0);
+                line-height: 1.5;
+            }
+        }
+    }
+
+    &__table {
+        tr {
+            border: 2px dashed $yellow;
+            font-size: 2.8rem;
+            line-height: 1.5;
+            padding: 0 2rem;
+            color: $darkGray;
+            th {
+                line-height: 2;
+                font-weight: 700;
+                padding: 0 2.2rem;
+            }
+            td {
+                padding: 2rem 2.1rem;
+            }
+        }
+    }
+
+    &__teaser {
+        @include marginBottom(55,0,0);
+        &-img {
+            background: center / cover no-repeat url("../../assets/image/article-body__teaser-img.jpg");
+            height: 31.6rem;
+        }
+        &-caption {
+            @include fontSize(24,0,0);
+            @include lineHeight(30,0,0);
+            color: $darkGray;
+        }
+    }
+
     &__paragraphs {
 
         & p {
-            color: $black;
+            color: $darkGray;
             padding-top: 0;
             @include fontSize(28, 16, 16);
             @include lineHeight(42, 22, 22);
@@ -64,7 +123,18 @@
 
         }
 
+        &--heading {
+            text-transform: uppercase;
+            @include fontSize(34,22,0);
+            line-height: 2;
+            font-weight: 700;
+            @include breakpoint(tabletAndDesktop) {
+                margin-bottom: 1.3rem;
+            }
+        }
+
         & .article-body__paragraphs--intro {
+            color: $black;
             font-weight: 900;
             margin-bottom: 9.5vw;
             @include fontSize(28, 18, 18);
@@ -92,6 +162,7 @@
         color: $yellow;
         @include fontSize(28, 16, 12);
         @include letterSpacing(50, 50, 50);
+        line-height: 1;
     }
 
     &__main-content {
@@ -107,4 +178,8 @@
 
 .article-body--faq {
     @include height(3518,1551,1686);
+}
+
+.article-body--portrait {
+    @include height(7500,1551,1686);
 }

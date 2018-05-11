@@ -1,0 +1,24 @@
+.page--portrait {
+
+    .article__header {
+        margin-bottom: 5.4rem;
+        position: relative;
+        @include breakpoint(tabletAndDesktop) {
+            width: calcVw(566,768);
+            margin:  0 auto 3rem;
+        }
+
+        .article__header-image {
+            @include height(890,782,0);
+        }
+    }
+
+    .article-body__category{
+        padding: 1.1rem 2.6rem;
+    }
+}
+
+.diaporama--portrait-page {
+    margin-bottom: 6rem;
+}
+
