@@ -181,7 +181,8 @@
 
     .article-body {
 
-        @include height(3507,1591,1686);
+        // @include height(3507,1591,1686);
+
 
         &__category {
             padding: 1.8vw 4vw;
@@ -200,8 +201,6 @@
         &__paragraphs p {
             @include marginBottom(47,73,37);
         }
-
-
     }
 
 }

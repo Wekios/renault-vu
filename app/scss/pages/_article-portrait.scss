@@ -197,9 +197,9 @@
         }
 
         & .diaporama-trigger__prev {
-          @include breakpoint(tabletOnly) {
+          @include breakpoint(tabletAndDesktop) {
             left: -5%;
-            top: 31vw;
+            top: 24.3rem;
           }
 
           @include breakpoint(desktopOnly) {
@@ -208,9 +208,9 @@
         }
 
         & .diaporama-trigger__next {
-          @include breakpoint(tabletOnly) {
+          @include breakpoint(tabletAndDesktop) {
             right: -5%;
-            top: 31vw;
+            top: 24.3rem;
           }
 
           @include breakpoint(desktopOnly) {
@@ -236,7 +236,7 @@
       }
 
       & .diaporama-trigger__thumbs.slick-slider {
-        @include breakpoint(tabletOnly) {
+        @include breakpoint(tabletAndDesktop) {
           height: 7vw;
           width: 83%;
           bottom: -8vw;
@@ -315,7 +315,7 @@
       }
 
       &:first-child td {
-        @include breakpoint(tabletAndDesktop) {
+        @include breakpoint(tabletOnly) {
           border-right: none;
         }
       }
@@ -349,7 +349,7 @@
       }
     }
 
-    & tr:last-child td:last-child {
+    & tr:last-child {
       border-bottom: 2px dashed $yellow;
     }
 

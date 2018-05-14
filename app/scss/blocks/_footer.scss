@@ -66,3 +66,7 @@
     }
   }
 }
+
+.footer--404 {
+  @include marginTop(70,130,120);
+}

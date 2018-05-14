@@ -48,6 +48,28 @@
       background: $black;
       color: $white;
     }
+
+    &-alt {
+        @include fontSize(21,12,12);
+        @include lineHeight(54,36,36);
+        @include letterSpacing(50,100,100);
+        @include width(352,191,191);
+        box-sizing: border-box;
+        text-align: center;
+        border: 0.001rem solid rgba(0,0,0,0.01);
+        -webkit-box-shadow: 0px 9px 22px 1px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 9px 22px 1px rgba(0,0,0,0.41);
+        box-shadow: 0px 9px 22px 1px rgba(0,0,0,0.41);
+        cursor: pointer;
+        @include breakpoint(tabletAndDesktop) {
+            padding: 1rem 0;
+        }
+    
+        &:active {
+            background-color: $black;
+            color: $white;
+        }
+    }
     
     &--centered {
         display: block;

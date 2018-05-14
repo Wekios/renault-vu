@@ -1,0 +1,60 @@
+.page-404 {
+
+    @include marginTop(73,163,180);
+
+    &--wrap {
+        position: relative;
+        @include marginBottom(68,97,90);
+    }
+
+    &__heading { 
+        position: absolute;
+        top: 1.6rem;
+        left: 2rem;
+        z-index: -1;
+        @include breakpoint(tabletAndDesktop) {
+            top: -7.3rem;
+            left: 1rem;
+        }
+        @include breakpoint(desktopOnly) {
+            top: -11.8rem;
+            left: 15.1rem;;
+        }
+
+        .text--bolder {
+            color: $yellow;
+            letter-spacing: calcLS(-25);
+            @include fontSize(40,47.42,80.35);
+            @include lineHeight(114,133.73,226.63);
+            @include breakpoint(desktopOnly) {
+                letter-spacing: calcLS(-40);
+            }
+        }
+
+        .text--bolder--bigger {
+            @include fontSize(78,92,156);
+            @include lineHeight(66,77.58,131.47);
+            vertical-align: middle;
+            @include breakpoint(desktopOnly) {
+                vertical-align: text-top;
+            }
+        }
+    }
+
+    &__van {
+        @include width(560,682,1156);
+        @include height(402,311,527);
+        margin: 0 auto;
+        background: center / contain no-repeat url("../../assets/image/404-img.png");   
+        
+        @include breakpoint(tabletAndDesktop) {
+            background: center / contain no-repeat url("../../assets/image/404-img.png");
+            margin-left: -1.7rem;   
+        }
+        @include breakpoint(desktopOnly) {
+            background: center / contain no-repeat url("../../assets/image/404-img.png");
+            margin-left: 10rem;    
+        }
+    }
+
+}
