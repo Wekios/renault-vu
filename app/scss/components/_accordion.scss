@@ -8,11 +8,11 @@
   
     @include breakpoint(tabletOnly) {
       margin-top: 8.5vw;
-      margin-bottom: 6.4vw;
+      margin-bottom: 11rem;
     }
   
     @include breakpoint(desktopOnly) {
-      margin-top: 3.5vw;
+      margin-top: 6rem;
       margin-bottom: 3.4vw;
     }
   
@@ -38,10 +38,10 @@
           font-size: 1rem;
           cursor: pointer;
           min-height: 12.8rem;
-          padding: 2rem 0;
+          padding: 1rem 0;
           display: table;
   
-          @include breakpoint(tabletOnly) {
+          @include breakpoint(tabletAndDesktop) {
             padding: 1.1rem 0;
             min-height: 7.8rem;
           }
@@ -60,7 +60,7 @@
             @include fontSize(28,16,18);
             @include letterSpacing(50,50,50);
   
-            @include breakpoint(tabletOnly) {
+            @include breakpoint(tabletAndDesktop) {
               width: 82%;
               padding-left: 9.3%;
             }
@@ -110,13 +110,14 @@
           @include lineHeight(42,18,22);
           @include letterSpacing(50,50,50);
   
-          @include breakpoint(tabletOnly) {
+          @include breakpoint(tabletAndDesktop) {
             margin-left: 9.3%;
             padding-bottom: 4vw;
           }
   
           @include breakpoint(desktopOnly) {
             width: 69%;
+            padding-bottom: 2rem;
           }
         }
       }

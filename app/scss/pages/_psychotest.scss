@@ -1,0 +1,548 @@
+.psychotest {
+    width: 100%;
+    background: $white;
+  
+    @include breakpoint(desktopOnly) {
+      overflow: hidden;
+    }
+
+    p {
+      padding-top: 0;
+    }
+  }
+  
+  .psychotest-intro {
+    width: 100%;
+    position: relative;
+    margin: 0;
+  
+    @include breakpoint(desktopOnly) {
+      height: 100%;
+    }
+  
+    &__image {
+      width: 100%;
+      height: 51.2rem;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      background: center / cover no-repeat url('../../assets/image/psychotest/psychotest-intro__image.png');
+      margin-bottom: 4.6rem;
+  
+      @include breakpoint(tabletAndDesktop) {
+        height: 52vw;
+        margin-bottom: 6vw;
+      }
+  
+      @include breakpoint(desktopOnly) {
+        display: inline-block;
+        width: 44.2%;
+        height: 100%;
+        background-size: 100% 100%;
+      }
+  
+      & h2 {
+        position: relative;
+        top: 21.7rem;
+        color: $black;
+        font-weight: 900;
+        line-height: 1.1;
+  
+        @include breakpoint(tabletAndDesktop) {
+          top: 19vw;
+        }
+  
+        @include breakpoint(desktopOnly) {
+          display: block;
+          position: relative;
+          top: 20vw;
+          left: -1vw;
+        }
+  
+        & .text--bold {
+          @include fontSize(50.16,48.2,32);
+          @include letterSpacing(0,0,0);
+        }
+  
+        & .text--italic {
+          @include letterSpacing(0,0,0);
+        }
+  
+        & .text--regular {
+          @include letterSpacing(50,50,50);
+        }
+
+        & .text--italic, & .text--regular {
+          @include fontSize(47.02,45.19,30);
+        }
+      }
+    }
+  
+    &__body {
+      width: 87.7%;
+      margin: 0 auto;
+      padding-bottom: 3.2rem;
+  
+      @include breakpoint(tabletAndDesktop) {
+        width: 63%;
+      }
+  
+      @include breakpoint(desktopOnly) {
+        display: inline-block;
+        position: absolute;
+        // top: 24.5%;
+        top: 24vh;
+        width: 31%;
+        margin-left: 13%;
+      }
+  
+      &__title {
+        font-weight: 900;
+        margin-bottom: 1.6rem;
+        @include fontSize(40,24,24);
+        @include lineHeight(42,30,30);
+        @include letterSpacing(50,50,50);
+  
+        @include breakpoint(tabletAndDesktop) {
+          margin-bottom: 2.5vw;
+        }
+  
+        @include breakpoint(desktopOnly) {
+          margin-bottom: 1.2vw;
+        }
+  
+      }
+  
+      &__text {
+        margin-bottom: 6.4rem;
+        @include fontSize(28,16,16);
+        @include lineHeight(42,22,22);
+        @include letterSpacing(50,50,50);
+  
+        @include breakpoint(tabletAndDesktop) {
+          margin-bottom: 6vw;
+        }
+  
+        @include breakpoint(desktopOnly) {
+          margin-bottom: 4vw;
+        }
+      }
+  
+      & .btn {
+        @include fontSize(21.18,14,14);
+        @include letterSpacing(50,50,50);
+        background: $yellow;
+        color: $black;
+        padding: 4.8vw 10vw;
+  
+        @include breakpoint(tabletAndDesktop) {
+          padding: 2.8vw 6vw;
+        }
+  
+        @include breakpoint(desktopOnly) {
+          padding: 1.1vw 2.2vw;
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+  .psychotest-counter {
+    @include fontSize(30,30,30);
+    @include letterSpacing(50,50,50);
+    font-weight: 900;
+    color: $black;
+    margin-top: 2.5rem;
+    margin-bottom: 4.7rem;
+  
+    @include breakpoint(tabletAndDesktop) {
+      display: inline-block;
+      width: 15%;
+      margin: 0% 7% 0 0;
+      position: relative;
+      top: -2vw;
+    }
+  
+    @include breakpoint(desktopOnly) {
+      width: 7%;
+      top: -0.8vw;
+      margin: 0 3.5% 0 14.5%;
+    }
+  
+    &__divider {
+      color: $yellow;
+    }
+  
+  }
+  
+  .psychotest-question {
+    position: relative;
+    width: 100%;
+    padding: 10vw 0;
+  
+    @include breakpoint(tabletAndDesktop) {
+      padding: 5vw 0;
+    }
+  
+    @include breakpoint(desktopOnly) {
+      padding: 2vw 0;
+    }
+  
+    &--wrap {
+      width: 88%;
+      margin: 0 auto;
+  
+      @include breakpoint(tabletAndDesktop) {
+        width: 84%;
+      }
+  
+      @include breakpoint(desktopOnly) {
+        width: 143.571vh;
+        max-width: 87.5%;
+      }
+    }
+  
+    &__title {
+      @include fontSize(40,30,30);
+      @include lineHeight(42,34,34);
+      @include letterSpacing(50,50,50);
+      color: $black;
+      font-weight: 900;
+      margin-bottom: 11vw;
+  
+      @include breakpoint(tabletAndDesktop) {
+        display: inline-block;
+        width: 75%;
+        margin-top: 9%;
+        margin-bottom: 12.4vw;
+      }
+  
+      @include breakpoint(desktopOnly) {
+        width: 50%;
+        margin: 1% 0 5vh 0;
+      }
+    }
+  
+    & .question-option {
+      width: 100%;
+      background: $lightGray;
+      border-bottom: 1px solid #e1dede;
+      overflow: visible;
+      position: relative;
+      z-index: 5;
+      opacity: 1;
+      cursor: pointer;
+      transition: opacity .2s linear;
+  
+      @include breakpoint(desktopOnly) {
+        width: 50%;
+        float: left;
+  
+        &:nth-last-child(-n+2) {
+          border-bottom: none;
+          margin-bottom: 1px;
+        }
+      }
+  
+      &.no-image {
+        &:nth-of-type(2n+3) {
+          @include breakpoint(desktopOnly) {
+            width: calc(50% - 1px);
+            border-right: 1px solid #e1dede;
+          }
+        }
+  
+        & .question-option__text {
+          @include breakpoint(tabletAndDesktop) {
+            width: 72%;
+            padding: 6.6% 0 6.6% 9.4%;
+          }
+  
+          @include breakpoint(desktopOnly) {
+            width: 65%;
+            padding: 6% 1% 6% 11%;
+          }
+  
+          @include breakpoint(desktopLarge) {
+            padding: 5% 1% 5% 10%;
+          }
+        }
+      }
+  
+      &:last-child {
+        border-bottom: none;
+      }
+  
+      &.inactive {
+        filter: grayscale(100%);
+        opacity: 0.6;
+      }
+  
+      &__overlay {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 10;
+  
+        & .btn, & .option-cancel {
+          z-index: 20;
+        }
+  
+        & .btn {
+          margin-top: 36%;
+          padding: 4vw 14vw;
+          background: $yellow;
+          color: $black;
+          font-size: calcRem(19.05);
+          letter-spacing: calcLS(50);
+  
+          @include breakpoint(tabletAndDesktop) {
+            margin-top: 10%;
+            padding: 2.8vw 2vw;
+            width: 31%;
+            font-size: calcRem(14);
+          }
+        }
+  
+        & a.btn {
+          text-align: center;
+          width: 15vw;
+        }
+  
+        & .option-cancel {
+          position: absolute;
+          top: -2vw;
+          right: -1vw;
+          @include circled-icon(8vw);
+          background: $yellow;
+          color: $white;
+          font-size: 3.6rem;
+  
+          @include breakpoint(tabletAndDesktop) {
+            @include circled-icon(5vw);
+            top: -1vw;
+            right: -1vw;
+            font-size: 2.6rem;
+          }
+        }
+      }
+  
+      &__image {
+        float: left;
+        width: 25.5%;
+        position: relative;
+        text-align: center;
+        padding-bottom: 12vw;
+  
+        @include breakpoint(tabletAndDesktop) {
+          width: 23.5%;
+          padding-bottom: 0;
+          position: static;
+        }
+  
+        @include breakpoint(desktopOnly) {
+          width: 21.5%;
+        }
+  
+        @include breakpoint(desktopLarge) {
+          width: 18%;
+        }
+  
+        & img {
+          width: 100%;
+          margin-bottom: -3px;
+  
+          @include breakpoint(tabletAndDesktop) {
+            margin-bottom: 0;
+          }
+        }
+  
+        & .question-option-circle {
+          @include circled-icon(8vw);
+          background: $white;
+          border: 1px solid #e1dede;
+          margin: 76% auto 0 auto;
+          position: relative;
+          transition: all .2s linear;
+  
+          @include breakpoint(tabletAndDesktop) {
+            @include circled-icon(6vw);
+            position: absolute;
+            top: 48%;
+            right: 3.2%;
+            margin: -3vw 0 0 0;
+          }
+  
+          @include breakpoint(desktopOnly) {
+            @include circled-icon(2.8vw);
+            top: 66%;
+            right: 7%;
+          }
+  
+          &.text-only {
+            margin-top: 133%;
+  
+            @include breakpoint(tabletAndDesktop) {
+              position: absolute;
+              top: 42%;
+              right: 3%;
+              margin: 0;
+            }
+  
+            @include breakpoint(desktopOnly) {
+              top: 39%;
+              right: 7%;
+            }
+  
+          }
+  
+          &.active {
+            background: $lightGray;
+            border-color: $white;
+          }
+  
+          & .tick {
+            display: none;
+            position: relative;
+            top: -1vw;
+            left: 1vw;
+  
+            @include breakpoint(tabletAndDesktop) {
+              top: -0.6vw;
+              left: 0.6vw;
+            }
+  
+            @include breakpoint(desktopOnly) {
+              top: -0.4vw;
+              left: 0.4vw;
+            }
+          }
+        }
+  
+      }
+  
+      &__text {
+        float: left;
+        width: 62.5%;
+        padding: 11.5vw 3% 9vw 9%;
+        position: relative;
+        overflow: hidden;
+        font-size: 1.042rem;
+        line-height: 6.57vw;
+        letter-spacing: 0.05em;
+  
+        @include breakpoint(tabletAndDesktop) {
+          width: 52%;
+          padding: 6.6% 0 2% 6.6%;
+        }
+  
+        @include breakpoint(desktopOnly) {
+          padding: 6% 0 0 7.5%;
+          line-height: 1.3vw;
+          font-size: 0.8rem;
+        }
+  
+        @include breakpoint(desktopLarge) {
+          padding: 4% 0 0 6%;
+        }
+  
+        &::before {
+          display: block;
+          content: "";
+          width: 1px;
+          background: #e1dede;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 70vw;
+  
+          @include breakpoint(tabletAndDesktop) {
+            display: none;
+          }
+        }
+  
+        &__title {
+          @include fontSize(28,18,18);
+          @include letterSpacing(50,50,50);
+          @include lineHeight(42,42,22);
+          font-weight: 900;
+          color: #6e6d6d;
+          margin-bottom: 4.1vw;
+  
+          @include breakpoint(tabletAndDesktop) {
+            margin-bottom: 1.3vw;
+          }
+  
+          @include breakpoint(desktopOnly) {
+            margin-bottom: 0.6vw;
+          }
+        }
+  
+        &__body {
+          color: #7e7e7e;
+          @include fontSize(28,16,16);
+          @include lineHeight(42,22,22);
+          @include letterSpacing(50,50,50);
+        }
+      }
+  
+    }
+  
+    & .btn-confirm {
+      position: relative;
+      top: 4vh;
+      width: 11.5%;
+      padding: 1.1vw 1vw;
+      font-size: calcRem(14);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+  
+      @include breakpoint(desktopLarge) {
+        top: 2vw;
+      }
+  
+      @include breakpoint(phoneAndTablet) {
+        display: none;
+      }
+  
+      & span {
+        display: inline-block;
+      }
+  
+      & svg {
+        display: none;
+        font-size: 2rem;
+        color: $white;
+        position: absolute;
+        right: 15%;
+        top: 30%;
+      }
+    }
+  
+    & .btn-confirm:hover svg {
+      display: inline-block;
+    }
+  
+    & .btn-confirm:hover span {
+      padding-right: 1.6vw;
+    }
+  
+    & a.btn-confirm {
+      width: 7vw;
+  
+      @include breakpoint(desktopOnly) {
+        width: 10%;
+        text-align: center;
+        padding: 1.2vw 1vw;
+      }
+    }
+  
+  }
+  
+//   .slick-list {
+//       height: calc(100% + 84px);
+//   }

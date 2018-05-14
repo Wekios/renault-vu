@@ -47,25 +47,27 @@
     padding-top: 1rem;
 }
 
-.quiz-teaser__button {
+.btn--test-start {
+    @include fontSize(18,10,12);
+    @include letterSpacing(100,100,100);
+    width: 24vw;
     text-align: center;
-    button {
-        @include fontSize(18,10,18);
-        // min-height: 7.1rem;
-        // min-width: 26.6rem;
-        @include width(266,100,200);
-        @include height(71,30,40);
-        // @include breakpoint(tabletAndDesktop) {
-        //     min-height: 3rem;
-        //     min-width: 10rem;
-        // }
-        // @include breakpoint(desktopOnly) {
-        //     min-height: 4rem;
-        //     min-width: 17rem;
-        // }
+    padding: 4vw 8vw;
+
+    @include breakpoint(tabletOnly) {
+      width: 16vw;
+      text-align: center;
+      padding: 1.4vw 1.2vw;
+      margin: 0 0 0 12%;
     }
 
-}
+    @include breakpoint(desktopOnly) {
+      width: 9vw;
+      padding: 0.8vw 1.2vw;
+      margin: 0;
+    }
+
+  }
 
 .quiz-teaser__figures {
     @include breakpoint(phoneOnly){

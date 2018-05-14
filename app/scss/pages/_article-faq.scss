@@ -5,8 +5,12 @@
     width: 100%;
 }
 
+.widget__social-box--article {
+    @include marginBottom(65,31,0);
+}
+
 .articles-lies-teaser--article-faq {
-    @include marginBottom(92,50,-20);
+    @include marginBottom(95,0,-23);
 }
 
 .more-qa-teaser {

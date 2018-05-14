@@ -1,6 +1,4 @@
 .article-body {
-
-    @include height(4246,1364,1316);
     @include breakpoint(desktopOnly) {
         width: calcVw(678,1700);
         display: inline-block;
@@ -27,16 +25,16 @@
 
      &__heading {
          text-align: left;
-         @include marginBottom(97,70,96);
+         @include marginBottom(97,70,97);
          
             h1 {
             text-transform: uppercase;
             font-weight: 900;
             @include fontSize(40,32,54);
             @include lineHeight(42,32,55);
-            @include letterSpacing(-14,-25,0);
+            @include letterSpacing(0,-25,0);
             @include breakpoint(desktopOnly) {
-                width: 83%;
+                width: 80%;
             }
         }
     }
@@ -67,15 +65,18 @@
     }
 
     &__list {
-        list-style: square inside;
+        list-style: square;
         @include marginBottom(83,50,50);
+        @include marginTop(110,0,0);
+        @include marginLeft(42,0,0);
         li {
-            font-size: 3rem;
+            font-size: 3.2rem;
             color: $yellow;
             span {
                 color: $darkGray;
-                @include fontSize(28,0,0);
-                line-height: 1.5;
+                @include fontSize(28,16,16);
+                @include lineHeight(42,22,22);
+                @include letterSpacing(50,50,50);
             }
         }
     }
@@ -119,7 +120,7 @@
             @include fontSize(28, 16, 16);
             @include lineHeight(42, 22, 22);
             @include letterSpacing(45, 50, 50);
-            @include marginBottom(50,32,0);
+            @include marginBottom(41,22,22);
 
         }
 
@@ -176,10 +177,31 @@
 
 }
 
-.article-body--faq {
-    @include height(3518,1551,1686);
-}
+.page--article-faq {
 
-.article-body--portrait {
-    @include height(7500,1551,1686);
+    .article-body {
+
+        @include height(3507,1591,1686);
+
+        &__category {
+            padding: 1.8vw 4vw;
+                @include breakpoint(tabletAndDesktop) {
+                    padding: 1rem 3rem;
+                }
+                @include breakpoint(desktopOnly) {
+                    padding: 1rem 2rem;
+            }
+        }
+
+        & .article-body__paragraphs--intro {
+            @include marginBottom(21.7,41,23);
+        }
+
+        &__paragraphs p {
+            @include marginBottom(47,73,37);
+        }
+
+
+    }
+
 }

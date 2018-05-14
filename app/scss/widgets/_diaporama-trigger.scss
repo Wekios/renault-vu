@@ -3,6 +3,7 @@
     height: auto;
     position: relative;
     overflow: hidden;
+    @include marginBottom(42,0,0);
 
     &__button {
         position: absolute;
@@ -130,7 +131,7 @@
 .diaporama-trigger__slide1 {
     @include teaser__figureResponsive(
         url("../../assets/image/diaporama__first-slide.jpg"),
-    330,202,700);
+    330,396,700);
 }
 
 .diaporama-trigger__thumb1 {
@@ -141,49 +142,73 @@
 }
 
 .diaporama-trigger__slide2 {
-    @include teaser__figureResponsive(
-        url("../../assets/image/vu-astuces__third-teaser-img.jpg"),
-    330,202,700);
+    @include height(330,396,700);
+    background: center / cover no-repeat url("http://via.placeholder.com/640x330");
+
+    @include breakpoint(tabletAndDesktop) {
+        background: center / cover no-repeat url("http://via.placeholder.com/768x396");
+    }
+    @include breakpoint(desktopOnly) {
+        background: center / cover no-repeat url("http://via.placeholder.com/1700x700");
+    }
 }
 
 .diaporama-trigger__thumb2 {
-    @include teaser__figureResponsive(
-        url("../../assets/image/vu-astuces__third-teaser-img.jpg"),
-        81,81,81
-    );
+    @include breakpoint(desktopOnly) {
+        height: 8.1rem;
+        @include height(81,81,81);
+        box-sizing: border-box;
+        border: 5px solid #9FC2BA;
+        background: center / cover no-repeat url("http://via.placeholder.com/100x81");
+    }
 }
 
 .diaporama-trigger__slide3 {
-    @include teaser__figureResponsive(
-        url("../../assets/image/articles-lies__third-teaser-img.jpg"),
-    330,202,700);
+    @include height(330,396,700);
+    background: center / cover no-repeat url("http://via.placeholder.com/640x330");
+
+    @include breakpoint(tabletAndDesktop) {
+        background: center / cover no-repeat url("http://via.placeholder.com/768x396");
+    }
+    @include breakpoint(desktopOnly) {
+        background: center / cover no-repeat url("http://via.placeholder.com/1700x700");
+    }
 }
 
 .diaporama-trigger__thumb3 {
-    @include teaser__figureResponsive(
-        url("../../assets/image/articles-lies__third-teaser-img.jpg"),
-        81,81,81
-    );
+    @include breakpoint(desktopOnly) {
+        height: 8.1rem;
+        box-sizing: border-box;
+        border: 5px solid #9FC2BA;
+        background: center / cover no-repeat url("http://via.placeholder.com/100x81");
+    }
 }
 
 .diaporama-trigger__slide4 {
-    @include teaser__figureResponsive(
-        url("../../assets/image/hp-slider__second-slide.jpg"),
-        330,396,700
-    );
+    @include height(330,396,700);
+    background: center / cover no-repeat url("http://via.placeholder.com/640x330");
+
+    @include breakpoint(tabletAndDesktop) {
+        background: center / cover no-repeat url("http://via.placeholder.com/768x396");
+    }
+    @include breakpoint(desktopOnly) {
+        background: center / cover no-repeat url("http://via.placeholder.com/1700x700");
+    }
 }
 
 .diaporama-trigger__thumb4 {
-    @include teaser__figureResponsive(
-        url("../../assets/image/hp-slider__second-slide"),
-        81,81,81
-    );
+    @include breakpoint(desktopOnly) {
+        height: 8.1rem;
+        box-sizing: border-box;
+        border: 5px solid #9FC2BA;
+        background: center / cover no-repeat url("http://via.placeholder.com/100x81");
+    }
 }
 
 .diaporama-trigger__slide5 {
     @include teaser__figureResponsive(
         url("../../assets/image/hp-slider__first-slide.jpg"),
-    330,202,700);
+    330,396,700);
 }
 
 .diaporama-trigger__thumb5 {

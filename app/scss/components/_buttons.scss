@@ -30,6 +30,35 @@
     }
 }
 
+.btn {
+    padding: 15px 25px;
+    font-size: $fontSmall;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: $white;
+    color: $black;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.15s linear;
+    margin-bottom: 15px;
+    outline: none;
+  
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+    
+    &--centered {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    &--yellow {
+        background: $yellow;
+    }
+}
+
 
 .button-alt {
     text-align: center;

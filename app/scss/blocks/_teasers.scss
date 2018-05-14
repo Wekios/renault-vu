@@ -421,7 +421,7 @@
         display: inline-block;
         vertical-align: top;
         @include width(300,170,170);
-        @include marginTop(23,8,5);
+        @include marginTop(23,8,14);
         h4 {
             @include fontSize(22,14,14);
             @include breakpoint(desktopOnly) {
@@ -737,7 +737,6 @@
 
 .more-qa__figure {
     margin: -2.5rem 3.9rem 3rem 1.6rem;
-    height: 15rem;
     width: 18.45rem;
     @include width(184.5,68,86);
     @include height(150,56,71);
@@ -767,7 +766,12 @@
 .more-qa__heading {
     float: left;
     width: 8.1rem;
-    @include marginBottom(100,0,0);
+    @include breakpoint(phoneOnly) {
+        margin-bottom: 10rem;
+    }
+    @include breakpoint(desktopOnly) {
+        margin-left: calcVw(40,1700);
+    }
 }
 
 .more-qa__first-teaser {
@@ -794,8 +798,19 @@
 
     &__caption {
         vertical-align: top;
-        @include marginTop(68,30,41);
-        @include width(220,121,210);
+        @include marginTop(68,30,37);
+        @include width(220,121,208);
+
+        h4 {
+            @include breakpoint(desktopOnly) {
+                font-size: 2.2rem;
+                line-height: 3rem;
+                margin-bottom: 1rem;
+            }
+        }
+        p {
+            padding-top: 0.7rem;
+        }
     }
 }
 

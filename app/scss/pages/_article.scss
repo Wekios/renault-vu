@@ -1,5 +1,5 @@
 .article__header {
-    @include marginBottom(42,0,0);
+    @include marginBottom(42,50,0);
     position: relative;
 }
 
@@ -23,6 +23,7 @@
     p {
         @include fontSize(20,11,12);
         padding: 0;
+        color: $black;
     }
 }
 

@@ -39,53 +39,12 @@
       right: 1.5vw;
     }
   }
-  
-  .diaporama .slick-dots {
-    @include ulClean;
-    position: absolute;
-    top: 38vw;
-    left: 6vw;
-    width: 46vw;
-    height: 5vw;
-    z-index: 30;
-  }
-  
-  .diaporama .slick-dots li {
-    display: inline-block;
-    max-width: calc(100% / 6 - 2%);
-    height: 5vw;
-    margin-right: 2%;
-    position: relative;
-  }
-  
-  .diaporama .slick-dots li img {
-    width: 100%;
-    height: 100%;
-    filter: grayscale(100%);
-  }
-  
-  .diaporama .slick-dots li .shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0 0 0 5px transparent;
-  }
-  
-  .diaporama .slick-dots li:hover .shadow, .diaporama .slick-dots li.slick-active .shadow {
-    box-shadow: inset 0 0 0 5px $yellow;
-  }
-  
-  .diaporama .slick-dots li:hover img, .diaporama .slick-dots li.slick-active img {
-    filter: grayscale(0);
-  }
-  
+    
   .diaporama__image {
     position: relative;
     width: 100%;
     overflow: hidden;
-    @include width(640,768,685);
+    @include width(640,768,947);
     @include height(550,570,584);
     background: center / cover no-repeat url("https://dummyimage.com/640x550/b8b8b8/474747.png");
 
@@ -94,7 +53,7 @@
     } 
   
     @include breakpoint(desktopOnly) {
-      background: center / cover no-repeat url("http://via.placeholder.com/500x584");
+      background: center / cover no-repeat url("http://via.placeholder.com/947x584");
       top: 13%;
       left: 10.2%;
       z-index: 100;
@@ -155,6 +114,7 @@
   
   .diaporama__text {
     margin-bottom: 8vw;
+    color: $black;
     @include fontSize(28,16,16);
     @include lineHeight(40,24,24);
     @include letterSpacing(50,50,50);
@@ -168,25 +128,29 @@
     }
   }
   
-  .diaporama__social i {
-    @include circled-icon(10vw);
+  .diaporama__social-twitter,
+  .diaporama__social-facebook {
+
+    @include circled-icon(6.8rem);
+    display: inline-block;
     background: $black;
     color: $yellow;
     margin-right: 8vw;
-    font-size: 1.2rem;
+    @include fontSize(30,23,12);
   
     @include breakpoint(tabletOnly) {
-      @include circled-icon(6.5vw);
+      @include circled-icon(4.9rem);
       margin-right: 0.4vw;
-      font-size: 1.6rem;
     }
   
     @include breakpoint(desktopOnly) {
-      @include circled-icon(1.65vw);
-      font-size: 0.7rem;
+      @include circled-icon(2.8rem);
       margin-right: 0.1vw;
     }
+    
   }
+
+
   
   .diaporama__counter {
     font-weight: 900;
@@ -270,7 +234,7 @@
   
   }
   
-  @media only screen and (min-width: $break-desk) {
+  @include breakpoint(desktopOnly) {
   
     .diaporama {
       background: $white;
