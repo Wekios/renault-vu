@@ -1,50 +1,66 @@
 .search-results {
     @include width(560,649,1352);
-    @include marginTop(116,176,0);
     @include marginBottom(70,55,40);
     margin: 0 auto;
-}
-
-.search-results__heading {
-    @include marginBottom(60,45,40);
-    @include fontSize(52,32,32);
-    line-height: normal;
-}
-
-.search-results__field {
+    
+    &__heading {
+        @include marginBottom(60,45,40);
+        color: #000000;
+        @include fontSize(52,32,32);
+        @include lineHeight(48,32,32);
+        @include letterSpacing(0,0,0);
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 11.5vw 0 9.4vw 0;
+    
+        @include breakpoint(tabletOnly) {
+          margin: 8vw 0 6vw 0;
+        }
+    
+        @include breakpoint(desktopOnly) {
+          margin: 3.6vw 0 2.5vw 0;
+        }
+      }
+    
+    &__field {
     border: 1px solid $yellow;
     position: relative;
     @include height(151,73,151);
     
-    input {
-        @include fontSize(42,18,32);
-        position: absolute;
-        font-weight: 300;
-        left: 2.6rem;
-        top: 30%;
-        @include breakpoint(tabletAndDesktop) {
-            left: 4rem;
-            @include breakpoint(desktopOnly) {
-                left: 8.4rem;
-                letter-spacing: 0.2rem;
-                top: 35%;
+        input {
+            @include fontSize(42,18,32);
+            position: absolute;
+            font-weight: 300;
+            color: $darkGray;
+            left: 2.6rem;
+            top: 30%;
+            text-decoration: none;
+            border: none;
+            @include breakpoint(tabletAndDesktop) {
+                left: 4rem;
+                @include breakpoint(desktopOnly) {
+                    left: 8.4rem;
+                    letter-spacing: 0.2rem;
+                    top: 35%;
+                }
+            }
+        }
+
+        svg {
+            @include fontSize(38,20,40);
+            color: $darkGray;
+            cursor: pointer;
+            position: absolute;
+            top: 33%;
+            right: 2.9rem;
+            @include breakpoint(tabletAndDesktop) {
+                right: 3.2rem;
+                @include breakpoint(desktopOnly) {
+                    right: 11.9rem;
+                    top: 37%;
+                }
             }
         }
     }
-
-    svg {
-        @include fontSize(38,20,40);
-        cursor: pointer;
-        position: absolute;
-        top: 33%;
-        right: 2.9rem;
-        @include breakpoint(tabletAndDesktop) {
-            right: 3.2rem;
-            @include breakpoint(desktopOnly) {
-                right: 11.9rem;
-                top: 37%;
-            }
-        }
-    }
-
 }

@@ -1,60 +1,58 @@
 .article-body {
     @include breakpoint(desktopOnly) {
-        width: calcVw(678,1700);
+        width: calcVw(678, 1700);
         display: inline-block;
         text-align: left;
     }
-
     &__category {
         line-height: 1;
         display: inline-block;
         padding: 1.8vw 2.2vw;
-        @include fontSize(13.32,8,13);
-        @include letterSpacing(50,50,50);
+        @include fontSize(13.32, 8, 13);
+        @include letterSpacing(50, 50, 50);
         font-weight: 700;
         text-transform: uppercase;
         background: #ffcc33;
-        @include marginBottom(20,16,28);
+        @include marginBottom(20, 16, 28);
         @include breakpoint(tabletAndDesktop) {
             padding: 1rem 1rem;
             @include breakpoint(desktopOnly) {
                 padding: 1rem 2rem;
             }
         }
-      }
-
-     &__heading {
-         text-align: left;
-         @include marginBottom(97,70,97);
-         
-            h1 {
+    }
+    &__heading {
+        text-align: left;
+        @include marginBottom(97, 70, 97);
+        h1 {
             text-transform: uppercase;
             font-weight: 900;
-            @include fontSize(40,32,54);
-            @include lineHeight(42,32,55);
-            @include letterSpacing(0,-25,0);
+            @include fontSize(40, 32, 54);
+            @include lineHeight(42, 32, 55);
+            @include letterSpacing(0, -25, 0);
             @include breakpoint(desktopOnly) {
                 width: 80%;
             }
         }
     }
-
     &__date {
         line-height: 1;
         color: $darkGray;
         @include fontSize(24, 12, 10);
         @include letterSpacing(50, 50, 50);
-        @include marginBottom(21,13,11);
+        @include marginBottom(21, 13, 11);
     }
-
     &__video {
         width: 100%;
-        @include height(314,0,0);
+        @include height(314, 0, 0);
         display: flex;
-        justify-content: center; /* center items vertically, in this case */
+        justify-content: center;
+        /* center items vertically, in this case */
         align-items: center;
         background: center / cover no-repeat url("../../assets/image/yt-play-img.jpg");
-        @include marginBottom(40,0,0);
+        @include marginBottom(40,
+        0,
+        0);
         .yt-play {
             text-align: center;
             width: 7.5rem;
@@ -63,24 +61,34 @@
             cursor: pointer;
         }
     }
-
     &__list {
         list-style: square;
-        @include marginBottom(83,50,50);
-        @include marginTop(110,0,0);
-        @include marginLeft(42,0,0);
+        @include marginBottom(83,
+        50,
+        50);
+        @include marginTop(110,
+        0,
+        0);
+        @include marginLeft(42,
+        0,
+        0);
         li {
             font-size: 3.2rem;
             color: $yellow;
             span {
                 color: $darkGray;
-                @include fontSize(28,16,16);
-                @include lineHeight(42,22,22);
-                @include letterSpacing(50,50,50);
+                @include fontSize(28,
+                16,
+                16);
+                @include lineHeight(42,
+                22,
+                22);
+                @include letterSpacing(50,
+                50,
+                50);
             }
         }
     }
-
     &__table {
         tr {
             border: 2px dashed $yellow;
@@ -98,35 +106,47 @@
             }
         }
     }
-
     &__teaser {
-        @include marginBottom(55,0,0);
+        @include marginBottom(55,
+        0,
+        0);
         &-img {
             background: center / cover no-repeat url("../../assets/image/article-body__teaser-img.jpg");
             height: 31.6rem;
         }
         &-caption {
-            @include fontSize(24,0,0);
-            @include lineHeight(30,0,0);
+            @include fontSize(24,
+            0,
+            0);
+            @include lineHeight(30,
+            0,
+            0);
             color: $darkGray;
         }
     }
-
     &__paragraphs {
-
         & p {
             color: $darkGray;
             padding-top: 0;
-            @include fontSize(28, 16, 16);
-            @include lineHeight(42, 22, 22);
-            @include letterSpacing(45, 50, 50);
-            @include marginBottom(41,22,22);
-
+            @include fontSize(28,
+            16,
+            16);
+            @include lineHeight(42,
+            22,
+            22);
+            @include letterSpacing(45,
+            50,
+            50);
+            @include marginBottom(41,
+            22,
+            22);
         }
-
+        
         &--heading {
             text-transform: uppercase;
-            @include fontSize(34,22,0);
+            @include fontSize(34,
+            22,
+            0);
             line-height: 2;
             font-weight: 700;
             @include breakpoint(tabletAndDesktop) {
@@ -138,34 +158,46 @@
             color: $black;
             font-weight: 900;
             margin-bottom: 9.5vw;
-            @include fontSize(28, 18, 18);
-            @include lineHeight(42, 26, 26);
-            @include letterSpacing(50, 50, 50);
+            @include fontSize(28,
+            18,
+            18);
+            @include lineHeight(42,
+            26,
+            26);
+            @include letterSpacing(50,
+            50,
+            50);
             @include breakpoint(tabletOnly) {
                 margin-bottom: 5.2vw;
             }
-
             @include breakpoint(desktopOnly) {
                 margin-bottom: 1.5vw;
             }
-
         }
-
         & a {
             color: $yellow;
             padding-bottom: 2px;
             border-bottom: 1px solid #ffcc33;
         }
-
     }
 
     &__tags {
         color: $yellow;
-        @include fontSize(28, 16, 12);
-        @include letterSpacing(50, 50, 50);
         line-height: 1;
+        @include fontSize(28,
+        16,
+        12);
+        @include letterSpacing(50,
+        50,
+        50);
+        margin: 8vw 0 16vw 0;
+        @include breakpoint(tabletOnly) {
+            margin: 8vw 0 5vw 0;
+        }
+        @include breakpoint(desktopOnly) {
+            margin: 2vw 0;
+        }
     }
-
     &__main-content {
         letter-spacing: 0.2vw;
         @include breakpoint(desktopOnly) {
@@ -174,33 +206,29 @@
             margin-right: 8.9%;
         }
     }
-
 }
 
 .page--article-faq {
-
     .article-body {
-
         // @include height(3507,1591,1686);
-
-
         &__category {
             padding: 1.8vw 4vw;
-                @include breakpoint(tabletAndDesktop) {
-                    padding: 1rem 3rem;
-                }
-                @include breakpoint(desktopOnly) {
-                    padding: 1rem 2rem;
+            @include breakpoint(tabletAndDesktop) {
+                padding: 1rem 3rem;
+            }
+            @include breakpoint(desktopOnly) {
+                padding: 1rem 2rem;
             }
         }
-
         & .article-body__paragraphs--intro {
-            @include marginBottom(21.7,41,23);
+            @include marginBottom(21.7,
+            41,
+            23);
         }
-
         &__paragraphs p {
-            @include marginBottom(47,73,37);
+            @include marginBottom(47,
+            73,
+            37);
         }
     }
-
 }
