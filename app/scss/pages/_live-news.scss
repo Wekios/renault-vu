@@ -1,11 +1,22 @@
 .live-news__heading {
-    @include fontSize(70,36,90);
+    @include fontSize(70,36,70);
+    color: $black;
+    text-align: center;
+    font-weight: 900;
     line-height: 1;
     letter-spacing: 0;
-    @include marginTop(107,80,0);
-    @include marginBottom(80,-61,0);
+    @include marginTop(107,80,127);
+    @include marginBottom(80.5,-61,-119);
     @include breakpoint(tabletAndDesktop) {
         float: left;
         margin-left: calcVw(63,768);
     }
+    @include breakpoint(desktopOnly) {
+        line-height: 3.6rem;
+        letter-spacing: -0.025em;
+        margin-left: calcVw(148,1700);
+    }
+}
+.pagination-block--live-news {
+    @include marginBottom(65,61,102);
 }

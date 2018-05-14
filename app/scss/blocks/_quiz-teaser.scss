@@ -43,28 +43,37 @@
     color: $black;
     @include fontSize(26,0,14);
     @include lineHeight(32,0,18);
-    padding-bottom: 4.2rem;
+    padding-bottom: 6.3rem;
     padding-top: 1rem;
+    @include breakpoint(desktopOnly) {
+        padding-bottom: 2.1rem;
+    }
 }
 
 .btn--test-start {
     @include fontSize(18,10,12);
     @include letterSpacing(100,100,100);
-    width: 24vw;
+    font-weight: 900;
+    width: 26vw;
     text-align: center;
     padding: 4vw 8vw;
 
     @include breakpoint(tabletOnly) {
       width: 16vw;
       text-align: center;
-      padding: 1.4vw 1.2vw;
+      padding: 1.6rem 1.2vw;
       margin: 0 0 0 12%;
     }
 
     @include breakpoint(desktopOnly) {
       width: 9vw;
-      padding: 0.8vw 1.2vw;
+      padding: 1.9rem 1.2vw;
       margin: 0;
+    }
+
+    &:active {
+        background-color: $black;
+        color: $white;
     }
 
   }
@@ -78,39 +87,8 @@
     margin: 4.7rem auto 0;
     position: relative;
     @include breakpoint(desktopOnly) {
-        margin-top: 4.6rem;
-        width: 90%;
-    }
-    
-
-    &__first-car {
-        @include teaser__figureResponsive(url("../../assets/image/truck1.png"),
-        0,74,165);
-        @include width(0,175,351);
-        display: inline-block;
-        position: absolute;
-        left: 0;
-    }
-
-    &__second-car {
-        @include teaser__figureResponsive(url("../../assets/image/truck2.png"),
-        0,74,165);
-        @include width(0,175,351);
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-
-    }
-
-    &__third-car {
-        @include teaser__figureResponsive(url("../../assets/image/truck3.png"),
-        0,74,165);
-        @include width(0,175,351);
-        display: inline-block;
-        position: absolute;
-        right: 0;
+        margin-top: 7.6rem;
+        width: 94%;
     }
 
     .car__caption {
@@ -124,6 +102,54 @@
         }
     }
     
+
+    &__first-car {
+        @include teaser__figureResponsive(url("../../assets/image/truck1.png"),
+        0,74,155);
+        @include width(0,175,351);
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        @include breakpoint(desktopOnly) {
+            left: -0.6rem;
+            bottom: -16.6rem;
+        }
+    }
+
+    &__second-car {
+        @include teaser__figureResponsive(url("../../assets/image/truck2.png"),
+        0,74,165);
+        @include width(0,175,351);
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        @include breakpoint(desktopOnly) {
+            left: -3.4rem;
+
+            .car__caption {
+                margin-top: 14rem;
+            }
+        }
+    }
+
+    &__third-car {
+        @include teaser__figureResponsive(url("../../assets/image/truck3.png"),
+        0,74,165);
+        @include width(0,175,366);
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        @include breakpoint(desktopOnly) {
+            right: 0.6rem;
+            bottom: -14.7rem;
+
+            .car__caption {
+                margin-top: 15.5rem;
+            }
+        }
+    }
 
 }
 
