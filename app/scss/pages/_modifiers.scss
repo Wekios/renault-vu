@@ -22,3 +22,9 @@
     }
 
 }
+
+.hidden--mob {
+    @include breakpoint(phoneOnly) {
+        display: none;
+    }
+}

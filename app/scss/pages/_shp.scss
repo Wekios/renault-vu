@@ -80,25 +80,6 @@
     @include marginBottom(0,15,0);
 }
 
-.pagination-block--shp {
-    @include marginBottom(125,45,65);
-
-    @include breakpoint(tabletAndDesktop) {
-        .pagination:first-child {
-            margin-left: 11.5rem;
-            @include breakpoint(desktopOnly) {
-                margin-top: -1rem;
-            }
-        }
-        .pagination:last-child {
-            margin-top: -3.7rem;
-            @include breakpoint(desktopOnly) {
-                margin-top: -0.4rem;
-            }
-        }
-    }
-}
-
 .qa {
     @include marginBottom(87,0,0);
     @include breakpoint(tabletAndDesktop) {
