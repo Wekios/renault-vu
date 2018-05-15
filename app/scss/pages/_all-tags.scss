@@ -120,4 +120,33 @@
     }
   
   }
+.article-body {
   
+  &__paragraphs {
+    & p {
+        color: $darkGray;
+        padding-top: 0;
+        @include fontSize(28,16,16);
+        @include lineHeight(42,22,22);
+        @include letterSpacing(45,50,50);
+        @include marginBottom(41,22,22);
+    }
+    
+    &--heading {
+      font-size: 3.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 7vw 0 3.7vw 0;
+
+      @include breakpoint(tabletOnly) {
+        font-size: 2.2rem;
+        margin: 5vw 0 3vw 0;
+      }
+
+      @include breakpoint(desktopOnly) {
+        font-size: 1.8rem;
+        margin: 1.6vw 0;
+      }
+    }
+  }
+}

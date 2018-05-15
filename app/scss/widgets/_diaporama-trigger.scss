@@ -3,7 +3,7 @@
     height: auto;
     position: relative;
     overflow: hidden;
-    @include marginBottom(42,0,0);
+    @include marginBottom(42,50,0);
 
     &__button {
         position: absolute;
