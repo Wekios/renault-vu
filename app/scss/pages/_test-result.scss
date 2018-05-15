@@ -1,0 +1,93 @@
+.page-test-result {
+
+	@include marginTop(80,130,180);
+
+	&__heading {
+		text-transform: none;
+		@include fontSize(50,44,0);
+		@include lineHeight(42,30,0);
+		letter-spacing: calcLs(50);
+	}
+
+	&__car {
+		@include width(560,640,600);
+		@include height(330,355,354);
+		margin: 0 auto;
+		background: center / cover no-repeat url("../../assets/image/psychotest/test-result__car.png");   
+		
+		@include breakpoint(tabletAndDesktop) {
+				background: center / cover no-repeat url("../../assets/image/psychotest/test-result__car.png");
+		}
+		@include breakpoint(desktopOnly) {
+				background: center / cover no-repeat url("../../assets/image/psychotest/test-result__car.png");
+		}
+	}
+
+	.widget__social-box .social-box{
+		margin: 5.8rem auto 5rem;
+
+	}
+
+	&__paragraphs {
+		@include breakpoint(desktopOnly) {
+			width: calcVw(492,1700);
+		}
+		p {
+			color: #7e7e7e;
+			padding-top: 0;
+			@include fontSize(28,16,16);
+			@include lineHeight(42,22,22);
+			@include letterSpacing(45,50,50);
+		}
+
+	}
+
+	.btn--wrap {
+		margin: 5.5rem auto 12rem;
+		@include breakpoint(tabletAndDesktop) {
+			margin: 4.1rem auto 13.2rem;
+			text-align: center;
+		}
+		@include breakpoint(desktopOnly) {
+			margin: 2.4rem auto 19.1rem;
+		}
+	}
+
+	.btn {
+		margin: 2.8rem auto;
+		@include breakpoint(tabletAndDesktop) {
+			display: inline-block;
+			margin: 0 2.5rem;
+		}
+	}
+
+}
+
+// Modifier For Desktop!
+
+@include breakpoint(desktopOnly) {
+	.page-test-result {
+		display: flex;
+		justify-content: space-evenly;
+
+		.widget__social-box {
+			order: 1;
+		}
+
+		.page-test-result--wrap {
+			order: 2;
+		}
+
+		.textbtn--wrap {
+			order: 3;
+		}
+
+		.desktop-heading {
+			letter-spacing: calcLS(50);
+			font-size: 4.4rem;
+			line-height: 3rem;
+			color: $yellow;
+			margin-bottom: 3rem;
+		}
+	}
+}

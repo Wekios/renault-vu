@@ -11,6 +11,20 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 300;
+        max-height: 6.1rem;
+        max-width: 19rem;
+
+        .btn--diaporama {
+            font-size: 1.6rem;
+            box-sizing: border-box;
+            color: $darkGray;
+            letter-spacing: calcLS(100);
+
+            &:active, &:hover {
+                background: $yellow;
+                color: $darkGray;
+            }
+        }
     }
   
     &__slide {
