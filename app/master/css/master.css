@@ -2542,11 +2542,11 @@ a img {
     @media (min-width: 768px) and (max-width: 1023px) {
       .footer__img {
         width: 22%;
-        margin: 0 auto 3vw auto; } }
+        margin: 0 auto 3vw; } }
     @media (min-width: 1024px) {
       .footer__img {
         width: 9%;
-        margin: 0 auto 2.6vw auto; } }
+        margin: 0 auto 2.6vw; } }
   .footer__nav {
     list-style-type: none;
     margin: 0;
@@ -4641,7 +4641,8 @@ a img {
     margin-bottom: 10.3rem; } }
 
 .quiz-teaser-wrap {
-  background: center/cover no-repeat url("../../assets/image/quiz__bg-image--mob.jpg");
+  background: center/cover no-repeat url("../../assets/image/quiz__bg-image.png");
+  background-color: #ffcc33;
   height: 49.2rem;
   width: 100%;
   box-sizing: border-box; }

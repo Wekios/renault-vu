@@ -8,12 +8,12 @@
 
     @include breakpoint(tabletOnly) {
       width: 22%;
-      margin: 0 auto 3vw auto;
+      margin: 0 auto 3vw;
     }
 
     @include breakpoint(desktopOnly) {
       width: 9%;
-      margin: 0 auto 2.6vw auto;
+      margin: 0 auto 2.6vw;
     }
   }
 
