@@ -4,7 +4,7 @@
 
   // Variables 
 
-  const header = $('.header'),
+  var  header = $('.header'),
     headerHeight = header.outerHeight(),
     windowWidth = $(window).outerWidth(),
     windowHeight = $(window).outerHeight();
@@ -20,7 +20,7 @@
 
   // pageWrap.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
   //     //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-  //     let i = (currentSlide ? currentSlide : 0) + 1;
+  //     var  i = (currentSlide ? currentSlide : 0) + 1;
   //     counterCurrent.text("0" + i);
   //     counterTotal.text(" / " + "0" + slick.slideCount);
   //     if (slick.slideCount == null) {
@@ -30,7 +30,7 @@
 
 
   $.each(counters, function () {
-    let counter = $(this),
+    var  counter = $(this),
       currentQuestion = counter.closest('.psychotest-question'),
       total = counter.find('.psychotest-counter__total'),
       current = counter.find('.psychotest-counter__current');

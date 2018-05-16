@@ -50,9 +50,8 @@
         /* center items vertically, in this case */
         align-items: center;
         background: center / cover no-repeat url("../../assets/image/yt-play-img.jpg");
-        @include marginBottom(40,
-        0,
-        0);
+        @include marginBottom(40,0,0);
+        
         .yt-play {
             text-align: center;
             width: 7.5rem;

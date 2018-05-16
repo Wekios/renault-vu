@@ -3116,7 +3116,7 @@ $(document).ready(function () {
 
   // Variables 
 
-  const header = $('.header'),
+  var  header = $('.header'),
     headerHeight = header.outerHeight(),
     windowWidth = $(window).outerWidth(),
     windowHeight = $(window).outerHeight();
@@ -3132,7 +3132,7 @@ $(document).ready(function () {
 
   // pageWrap.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
   //     //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-  //     let i = (currentSlide ? currentSlide : 0) + 1;
+  //     var  i = (currentSlide ? currentSlide : 0) + 1;
   //     counterCurrent.text("0" + i);
   //     counterTotal.text(" / " + "0" + slick.slideCount);
   //     if (slick.slideCount == null) {
@@ -3142,7 +3142,7 @@ $(document).ready(function () {
 
 
   $.each(counters, function () {
-    let counter = $(this),
+    var  counter = $(this),
       currentQuestion = counter.closest('.psychotest-question'),
       total = counter.find('.psychotest-counter__total'),
       current = counter.find('.psychotest-counter__current');
@@ -3302,17 +3302,17 @@ $(document).ready(function () {
 })(jQuery);
 (function ($) {
 
-  // Const and Lets
+  // var  and Lets
 
-  const faqSlider = $('.faq-slider');
-  const counterCurrent = $('.faq-slider__current');
-  const counterTotal = $('.faq-slider__total');
+  var  faqSlider = $('.faq-slider');
+  var  counterCurrent = $('.faq-slider__current');
+  var  counterTotal = $('.faq-slider__total');
 
   // Counter Function
 
   faqSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
     //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-    let i = (currentSlide ? currentSlide : 0) + 1;
+    var  i = (currentSlide ? currentSlide : 0) + 1;
     counterCurrent.text("0" + i);
     counterTotal.text(" / " + "0" + slick.slideCount);
     if (slick.slideCount == null) {
@@ -3343,7 +3343,7 @@ $(document).ready(function () {
 
     // Variables
 
-    let hpSlider = $('.hp-slider'),
+    var hpSlider = $('.hp-slider'),
         counterCurrent = $('.hp-slider__current'),
         counterTotal = $('.hp-slider__total'),
         hpPrev = $(".hp-slider__arrows-prev"),
@@ -3370,7 +3370,7 @@ $(document).ready(function () {
 
     hpSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
         //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-        let i = (currentSlide ? currentSlide : 0) + 1;
+        var i = (currentSlide ? currentSlide : 0) + 1;
         counterCurrent.text("0" + i);
         counterTotal.text(" / " + "0" + slick.slideCount);
         if (slick.slideCount == null) {
@@ -3386,6 +3386,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         fade: true,
         arrows: false,
+        swipe: true,
         speed: 400,
         autoplay: true,
         autoplaySpeed: 6000,
@@ -3440,16 +3441,16 @@ $(document).ready(function () {
 
   // Variables
 
-  let portraitSlider = $('.portrait-slider');
-  let counterCurrent = $('.portrait-slider__current');
-  let counterTotal = $('.portrait-slider__total');
+  var  portraitSlider = $('.portrait-slider');
+  var  counterCurrent = $('.portrait-slider__current');
+  var  counterTotal = $('.portrait-slider__total');
 
 
   // Counter Function
 
   portraitSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
     //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-    let i = (currentSlide ? currentSlide : 0) + 1;
+    var  i = (currentSlide ? currentSlide : 0) + 1;
     counterCurrent.text("0" + i);
     counterTotal.text(" / " + "0" + slick.slideCount);
     if (slick.slideCount == null) {
@@ -3478,17 +3479,17 @@ $(document).ready(function () {
 })(jQuery);
 $(document).ready(function () {
 
-// Const and Lets
+// var  and Lets
 
-const qaSlider = $('.qa-slider');
-let counterCurrent = $('.qa-slider__current');
-let counterTotal = $('.qa-slider__total');
+var  qaSlider = $('.qa-slider');
+var  counterCurrent = $('.qa-slider__current');
+var  counterTotal = $('.qa-slider__total');
 
 // Counter Function
 
 qaSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
   //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-  let i = (currentSlide ? currentSlide : 0) + 1;
+  var  i = (currentSlide ? currentSlide : 0) + 1;
   counterCurrent.text("0" + i);
   counterTotal.text(" / " + "0" + slick.slideCount);
   if(slick.slideCount == null ) {

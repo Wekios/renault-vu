@@ -470,9 +470,9 @@
     margin-top: -11rem;
     margin-left: auto;
     margin-right: auto;
-    -webkit-box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.7);
-    -moz-box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.7);
-    box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 5px 12px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 12px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 12px 3px rgba(0,0,0,0.3);
     @include breakpoint(tabletAndDesktop) {
         margin-top: -5rem;
         @include breakpoint(desktopOnly) {
@@ -757,9 +757,9 @@
     @include marginBottom(53,24,42.5);
 
     & .figure {
-        -webkit-box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.7);
-        -moz-box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.7);
-        box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.7);
+        -webkit-box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.3);
+        box-shadow: 0px 15px 18px 1px rgba(0,0,0,0.3);
     }
 }
 

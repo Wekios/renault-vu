@@ -77,7 +77,7 @@
     }
 }
 .latest-news--shp {
-    @include marginBottom(0,15,0);
+    @include marginBottom(0,23,0);
 }
 
 .qa {
@@ -91,6 +91,10 @@
         max-width: calcVw(835,1700);
         margin-right: 19.6rem;
     } 
+}
+
+.pagination-block--shp {
+    @include marginBottom(50,41,74);
 }
 
 .topics {

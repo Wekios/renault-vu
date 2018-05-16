@@ -1,15 +1,54 @@
 .pagination {
 	display: flex;
 	text-align: center;
-	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	margin: 5rem auto;
+
+	@include breakpoint(tabletOnly) {
+		&:first-child {
+			margin: 2.3rem auto 0;
+			justify-content: flex-end;
+
+			.divider {
+				margin: 0 1.2rem;
+			}
+		}
+		&:last-child {
+			width: 40%;
+			margin: -3.8rem auto 4.1rem;
+		}
+	}
+	@include breakpoint(desktopOnly) {
+
+		&:first-child {
+			width: 45%;
+			margin: -1.4rem auto 0;
+
+			.divider {
+				margin: 0 2rem 0 3rem;
+			}
+		}
+
+		&:last-child {
+			width: 20%;
+			margin: -3.8rem auto 0;
+		}
+
+	}
 
 
 	&__item {
 		@include fontSize(32, 19, 20);
 		line-height: 11.8vw;
+		@include breakpoint(tabletAndDesktop) {
+			a {
+				padding: 0 1.7rem;
+			}
+		}
+		@include breakpoint(desktopOnly) {
+			line-height: 5.5vw;
+		}
 	}
 
 	& .active {
