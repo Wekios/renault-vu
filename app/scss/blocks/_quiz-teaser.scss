@@ -54,10 +54,14 @@
 .btn--test-start {
     @include fontSize(18,10,12);
     @include letterSpacing(100,100,100);
-    font-weight: 900;
+    font-weight: 700;
     width: 26vw;
     text-align: center;
     padding: 4vw 8vw;
+    color: $darkGray;
+    @include breakpoint(phoneOnly) {
+        line-height: 1;
+    }
 
     @include breakpoint(tabletOnly) {
       width: 16vw;

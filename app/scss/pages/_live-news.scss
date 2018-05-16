@@ -17,3 +17,7 @@
         margin-left: calcVw(148,1700);
     }
 }
+
+.pagination-block--live-news {
+    @include marginBottom(88,66,0);
+}

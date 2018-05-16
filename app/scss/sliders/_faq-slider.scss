@@ -98,7 +98,7 @@
     position: absolute;
     bottom: 3rem;
     right: -0.3rem;
-    color: $gray;
+    color: $darkGray;
     @include fontSize(25,13,14);
 
     @include breakpoint(tabletAndDesktop) {

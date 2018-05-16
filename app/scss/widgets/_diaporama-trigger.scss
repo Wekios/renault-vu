@@ -27,10 +27,47 @@
         }
     }
   
-    &__slide {
-      position: relative;
-      width: 100%;
+        &__slide {
+        position: relative;
+        width: 100%;
+
+        &__overlay {
+            @include breakpoint(phoneAndTablet) {
+            display: none;
+            }
+
+            @include breakpoint(desktopOnly) {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: $black;
+                z-index: 30;
+                opacity: 0;
+                transition: opacity .2s linear;
+            }
+        }
     }
+
+    &:hover {
+    
+        .diaporama-trigger__slide__overlay {
+          opacity: 0.3;
+        }
+    
+        .diaporama-trigger__thumb.slick-current {
+            filter: grayscale(0);
+    
+          & .overlay {
+            opacity: 1;
+          }
+        }
+    
+        .diaporama-trigger__thumb img {
+         filter: grayscale(100%);
+       }
+      }
 
     &__navigation {
         position: relative;
