@@ -46,7 +46,6 @@
     }
 
     .button {
-        letter-spacing: 2px;
         @include breakpoint(desktopOnly) {
             margin-top: 5rem;
         }
