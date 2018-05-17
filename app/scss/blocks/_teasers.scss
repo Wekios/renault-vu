@@ -674,6 +674,9 @@
 
     h2 {
         line-height: 5.5rem;
+        @include breakpoint(desktopOnly) {
+            line-height: 1;
+        }
     }
 
     @include breakpoint(tabletAndDesktop) {

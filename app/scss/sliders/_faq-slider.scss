@@ -122,6 +122,11 @@
     &:hover {
         color: $black;
         cursor: pointer;
+        @include breakpoint(desktopOnly) {
+            background: $gray;
+            height: 1.6rem;
+            border-radius: 50%;
+        }
     }
 }
 

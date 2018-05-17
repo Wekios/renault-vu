@@ -540,7 +540,7 @@ a img {
     cursor: pointer; }
 
 .btn {
-  padding: 15px 25px;
+  padding: 1.5rem 2.5rem;
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -790,6 +790,10 @@ a img {
         text-align: center;
         cursor: pointer;
         border-radius: 100%; } }
+    .arrow--gray:hover {
+      background: #ffffff;
+      color: #000000;
+      border: 1px solid #ffffff; }
 
 .pagination {
   display: flex;
@@ -4295,6 +4299,9 @@ a img {
   width: 10rem; }
   .qa-list__heading h2 {
     line-height: 5.5rem; }
+    @media (min-width: 1024px) {
+      .qa-list__heading h2 {
+        line-height: 1; } }
   @media (min-width: 768px) {
     .qa-list__heading {
       float: left;
@@ -5432,6 +5439,11 @@ a img {
   .faq-slider__arrows:hover {
     color: #000000;
     cursor: pointer; }
+    @media (min-width: 1024px) {
+      .faq-slider__arrows:hover {
+        background: #8b8b8b;
+        height: 1.6rem;
+        border-radius: 50%; } }
 
 .faq-slider__arrows-left {
   bottom: -5rem;
@@ -5667,6 +5679,8 @@ a img {
   @media (min-width: 1024px) {
     .portrait-slider__text-content .button {
       margin-top: 5rem; } }
+  .portrait-slider__text-content .button:hover {
+    background-color: #ffcc33; }
 
 .portrait-slider__heading {
   color: #ffcc33; }
@@ -5740,7 +5754,8 @@ a img {
   display: inline-block !important;
   padding: 0 2rem; }
   .portrait-slider__arrows:hover {
-    color: #8b8b8b; }
+    color: #8b8b8b;
+    cursor: pointer; }
 
 .portrait-slider__current {
   color: #ffcc33; }
@@ -6721,7 +6736,7 @@ html.diaporamaOpened, body.diaporamaOpened {
   bottom: 0;
   left: 0;
   z-index: 999999999;
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(0, 0, 0, 0.89); }
   .search-popup .search__close {
     position: absolute;
     top: 2.7vw;
@@ -6759,7 +6774,9 @@ html.diaporamaOpened, body.diaporamaOpened {
       border: 0;
       color: #ffffff;
       border-bottom: 1px solid #ffffff;
-      padding-bottom: 2vw; }
+      padding-bottom: 2vw;
+      text-transform: uppercase;
+      font-weight: 700; }
       @media (max-width: 767px) {
         .search-popup .search__field input {
           font-size: 4rem; } }
@@ -6778,7 +6795,7 @@ html.diaporamaOpened, body.diaporamaOpened {
       @media (min-width: 1024px) {
         .search-popup .search__field input {
           letter-spacing: 0em; } }
-      @media (min-width: 768px) and (max-width: 1023px) {
+      @media (min-width: 768px) {
         .search-popup .search__field input {
           padding-bottom: 1vw;
           width: 85.5%; } }
@@ -7347,7 +7364,7 @@ html.diaporamaOpened, body.diaporamaOpened {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .article-portrait-body__wrap {
-    width: 73.568%;
+    width: 73.668%;
     margin: 1vw auto 7.5vw auto; } }
 
 @media (min-width: 1024px) {
@@ -7384,7 +7401,10 @@ html.diaporamaOpened, body.diaporamaOpened {
     margin: 0; } }
 
 .article-portrait-body__wrap .article-body__heading {
-  margin-bottom: 7vw; }
+  margin-bottom: 16vw; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .article-portrait-body__wrap .article-body__heading {
+      margin-bottom: 7rem; } }
   @media (min-width: 1024px) {
     .article-portrait-body__wrap .article-body__heading {
       width: 100%;
@@ -7875,6 +7895,15 @@ html.diaporamaOpened, body.diaporamaOpened {
         margin-top: 5.95rem; } }
     @media (max-width: 767px) {
       .all-tags .page-title {
+        margin-bottom: 9rem; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .all-tags .page-title {
+        margin-bottom: 7rem; } }
+    @media (min-width: 1024px) {
+      .all-tags .page-title {
+        margin-bottom: 7.6rem; } }
+    @media (max-width: 767px) {
+      .all-tags .page-title {
         line-height: 6.8rem; } }
     @media (min-width: 768px) and (max-width: 1023px) {
       .all-tags .page-title {
@@ -8016,8 +8045,10 @@ html.diaporamaOpened, body.diaporamaOpened {
       margin: 5vw 0 3vw 0; } }
   @media (min-width: 1024px) {
     .article-body__paragraphs--heading {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
       margin: 1.6vw 0; } }
+  .article-body__paragraphs--heading:first-child {
+    margin-top: 0; }
 
 @media (max-width: 767px) {
   .page-404 {

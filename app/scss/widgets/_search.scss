@@ -27,7 +27,7 @@
     bottom: 0;
     left: 0;
     z-index: 999999999;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.89);
   
     & .search__close {
       position: absolute;
@@ -76,8 +76,10 @@
         padding-bottom: 2vw;
         @include fontSize(40,40,80);
         @include letterSpacing(0,0,0);
+        text-transform: uppercase;
+        font-weight: 700;
   
-        @include breakpoint(tabletOnly) {
+        @include breakpoint(tabletAndDesktop) {
           padding-bottom: 1vw;
           width: 85.5%;
         }

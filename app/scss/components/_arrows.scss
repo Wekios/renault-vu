@@ -85,6 +85,12 @@
     @include breakpoint(desktopOnly) {
       @include circled-icon(calcRem(50));
     }
+    
+    &:hover {
+      background: $white;
+      color: $black;
+      border: 1px solid $white;
+    }
   }
 
 }

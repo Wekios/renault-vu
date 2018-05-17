@@ -31,7 +31,7 @@
     }
 
     @include breakpoint(tabletOnly) {
-      width: 73.568%;
+      width: 73.668%;
       margin: 1vw auto 7.5vw auto;
     }
 
@@ -82,7 +82,10 @@
     }
 
     & .article-body__heading {
-      margin-bottom: 7vw;
+      margin-bottom: 16vw;
+      @include breakpoint(tabletOnly) {
+        margin-bottom: 7rem;
+      }
       @include breakpoint(desktopOnly) {
         width: 100%;
         margin-left: 0;

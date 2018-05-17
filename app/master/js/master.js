@@ -3015,6 +3015,7 @@ $(document).ready(function () {
     mainContent = $('.page'),
     headerSearch = $('.search-trigger'),
     searchOverlay = $('.search-popup'),
+    searchInput = $('.search__field').find('input'),
     searchClose = $('.search__close'),
     windowWidth = $(window).outerWidth();
 
@@ -3073,6 +3074,7 @@ $(document).ready(function () {
   headerSearch.on('click', function () {
 
     searchOverlay.fadeIn(200);
+    searchInput.focus();
 
   });
 

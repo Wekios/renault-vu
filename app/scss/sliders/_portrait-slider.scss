@@ -49,6 +49,9 @@
         @include breakpoint(desktopOnly) {
             margin-top: 5rem;
         }
+        &:hover {
+            background-color: $yellow;
+        }
     }
 }
 
@@ -83,6 +86,7 @@
 
     &:hover {
         color: $gray;
+        cursor: pointer;
     }
 }
 
