@@ -79,6 +79,10 @@ $(document).ready(function () {
 
   });
 
+  searchInput.on('click', function(){
+    $('.search-popup .search__field svg').css('color', 'white');
+  });
+
   // desktop main menu \\
 
   if (windowWidth > 1024) {

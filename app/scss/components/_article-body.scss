@@ -72,8 +72,11 @@
         0,
         0);
         li {
-            @include fontSize(32,28,15);
+            @include fontSize(35,20,15);
             color: $yellow;
+            @include breakpoint(tabletOnly) {
+                margin-left: 2rem;
+            }
             @include breakpoint(desktopOnly) {
                 line-height: 3rem;
             }

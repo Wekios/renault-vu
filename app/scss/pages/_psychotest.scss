@@ -131,6 +131,7 @@
       & .btn {
         @include fontSize(21.18,14,14);
         @include letterSpacing(50,50,50);
+        font-weight: 400;
         background: $yellow;
         color: $black;
         padding: 4.8vw 10vw;
@@ -299,6 +300,7 @@
           color: $black;
           font-size: calcRem(19.05);
           letter-spacing: calcLS(50);
+          font-weight: 400;
   
           @include breakpoint(tabletAndDesktop) {
             margin-top: 10%;

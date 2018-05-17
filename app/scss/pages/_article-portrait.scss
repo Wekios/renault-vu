@@ -469,3 +469,12 @@
     }
   }
 }
+
+.quiz-teaser.quiz-teaser--article-portrait  {
+  @include breakpoint(phone only) {
+    margin-bottom: 4.8rem;
+  }
+  @include breakpoint(tabletOnly) {
+    margin-bottom: 14.4rem
+  }
+}

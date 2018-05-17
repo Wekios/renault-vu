@@ -98,6 +98,7 @@
         font-size: 4rem;
         position: relative;
         top: -1.6vw;
+        color: $gray;
   
         @include breakpoint(tabletOnly) {
           font-size: 4rem;

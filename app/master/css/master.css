@@ -1139,13 +1139,16 @@ a img {
     color: #ffcc33; }
     @media (max-width: 767px) {
       .article-body__list li {
-        font-size: 3.2rem; } }
+        font-size: 3.5rem; } }
     @media (min-width: 768px) and (max-width: 1023px) {
       .article-body__list li {
-        font-size: 2.8rem; } }
+        font-size: 2rem; } }
     @media (min-width: 1024px) {
       .article-body__list li {
         font-size: 1.5rem; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .article-body__list li {
+        margin-left: 2rem; } }
     @media (min-width: 1024px) {
       .article-body__list li {
         line-height: 3rem; } }
@@ -1575,7 +1578,7 @@ a img {
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    margin: 11.5vw 0 9.4vw 0; }
+    margin: 18vw 0 9.4vw 0; }
     @media (max-width: 767px) {
       .search-results__heading {
         margin-bottom: 6rem; } }
@@ -1633,7 +1636,7 @@ a img {
     .search-results__field input {
       position: absolute;
       font-weight: 300;
-      color: #404040;
+      color: #000000;
       left: 2.6rem;
       top: 30%;
       text-decoration: none;
@@ -6805,7 +6808,8 @@ html.diaporamaOpened, body.diaporamaOpened {
     .search-popup .search__field svg {
       font-size: 4rem;
       position: relative;
-      top: -1.6vw; }
+      top: -1.6vw;
+      color: #8b8b8b; }
       @media (min-width: 768px) and (max-width: 1023px) {
         .search-popup .search__field svg {
           font-size: 4rem;
@@ -7814,6 +7818,10 @@ html.diaporamaOpened, body.diaporamaOpened {
         line-height: 1.7rem;
         letter-spacing: 0.05em; } }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .quiz-teaser.quiz-teaser--article-portrait {
+    margin-bottom: 14.4rem; } }
+
 .live-news__heading {
   color: #000000;
   text-align: center;
@@ -8345,6 +8353,7 @@ html.diaporamaOpened, body.diaporamaOpened {
         .psychotest-intro__body__text {
           margin-bottom: 4vw; } }
     .psychotest-intro__body .btn {
+      font-weight: 400;
       background: #ffcc33;
       color: #000000;
       padding: 4.8vw 10vw; }
@@ -8527,7 +8536,8 @@ html.diaporamaOpened, body.diaporamaOpened {
         background: #ffcc33;
         color: #000000;
         font-size: 1.905rem;
-        letter-spacing: 0.05em; }
+        letter-spacing: 0.05em;
+        font-weight: 400; }
         @media (min-width: 768px) {
           .psychotest-question .question-option__overlay .btn {
             margin-top: 10%;

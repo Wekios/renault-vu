@@ -12,7 +12,7 @@
         font-weight: 900;
         text-align: center;
         text-transform: uppercase;
-        margin: 11.5vw 0 9.4vw 0;
+        margin: 18vw 0 9.4vw 0;
     
         @include breakpoint(tabletOnly) {
           margin: 8vw 0 6vw 0;
@@ -32,7 +32,7 @@
             @include fontSize(42,18,32);
             position: absolute;
             font-weight: 300;
-            color: $darkGray;
+            color: $black;
             left: 2.6rem;
             top: 30%;
             text-decoration: none;
