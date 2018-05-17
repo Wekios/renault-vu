@@ -1419,6 +1419,15 @@ a img {
       @media (min-width: 768px) and (max-width: 1023px) {
         .accordion-wrap .faq-accordion .accordion__element {
           border-bottom: 1px solid #e1dede; } }
+      .accordion-wrap .faq-accordion .accordion__element.opened .accordion-heading__arrow {
+        -webkit-transition: all 0.3s ease;
+        /* Safari */
+        transition: all 0.3s ease;
+        -ms-transform: rotate(180deg);
+        /* IE 9 */
+        -webkit-transform: rotate(180deg);
+        /* Safari 3-8 */
+        transform: rotate(180deg); }
       .accordion-wrap .faq-accordion .accordion__element:last-child {
         border-bottom: none; }
       .accordion-wrap .faq-accordion .accordion__element__heading {
@@ -5991,11 +6000,19 @@ a img {
     z-index: 300;
     max-height: 6.1rem;
     max-width: 19rem; }
+    @media (min-width: 768px) {
+      .diaporama-trigger__button {
+        top: 53%; } }
+    @media (min-width: 1024px) {
+      .diaporama-trigger__button {
+        top: 58.5%; } }
     .diaporama-trigger__button .btn--diaporama {
       font-size: 1.6rem;
       box-sizing: border-box;
       color: #404040;
-      letter-spacing: 0.1em; }
+      letter-spacing: 0.1em;
+      height: 6.1rem;
+      width: 19rem; }
       .diaporama-trigger__button .btn--diaporama:active, .diaporama-trigger__button .btn--diaporama:hover {
         background: #ffcc33;
         color: #404040; }
@@ -7262,7 +7279,7 @@ html.diaporamaOpened, body.diaporamaOpened {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .widget__social-box--article {
-    margin-bottom: 3.1rem; } }
+    margin-bottom: 4.1rem; } }
 
 @media (min-width: 1024px) {
   .widget__social-box--article {

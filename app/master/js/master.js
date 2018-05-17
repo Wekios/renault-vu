@@ -3576,22 +3576,22 @@ qaSlider.slick({
           $heading = $current.find('.accordion__element__heading');
   
       $heading.on('click', function() {
+
   
-        var $arrow = $(this).find('.accordion-heading__arrow svg'),
+        var $arrow = $(this).find('.accordion-heading__arrow'),
             $accordionText = $(this).next('.accordion__element__text');
   
         if ($current.hasClass('opened')) {
   
           $current.removeClass('opened');
           $accordionText.slideUp(200);
-          $arrow.removeClass('fa-caret-up').addClass('fa-caret-down');
+          $arrow.removeClass('opened');
   
         } else {
   
           closeOpenedElement();
           $current.addClass('opened');
           $accordionText.slideDown(200);
-          $arrow.removeClass('fa-caret-down').addClass('fa-caret-up');
   
         }
   

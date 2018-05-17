@@ -13,12 +13,20 @@
         z-index: 300;
         max-height: 6.1rem;
         max-width: 19rem;
+        @include breakpoint(tabletAndDesktop) {
+            top: 53%;
+        }
+        @include breakpoint(desktopOnly) {
+            top: 58.5%;
+        }
 
         .btn--diaporama {
             font-size: 1.6rem;
             box-sizing: border-box;
             color: $darkGray;
             letter-spacing: calcLS(100);
+            height: 6.1rem;
+            width: 19rem;
 
             &:active, &:hover {
                 background: $yellow;
