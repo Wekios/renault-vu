@@ -305,6 +305,10 @@
     }
     h2 {
         @include lineHeight(48,20,24);
+        .text--bolder .text--italic {
+            @include marginLeft(10,5,9);
+            font-weight: normal;
+        }
     }
 }
 
@@ -771,6 +775,10 @@
     }
     @include breakpoint(desktopOnly) {
         margin-left: calcVw(40,1700);
+        
+        h2 {
+            line-height: 3rem;
+        }
     }
 }
 
@@ -800,6 +808,9 @@
         vertical-align: top;
         @include marginTop(68,30,37);
         @include width(220,121,208);
+        @include breakpoint(desktopOnly) {
+            vertical-align: baseline;
+        }
 
         h4 {
             @include breakpoint(desktopOnly) {

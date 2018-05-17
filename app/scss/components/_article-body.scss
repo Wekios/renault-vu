@@ -31,7 +31,7 @@
             @include lineHeight(42, 32, 55);
             @include letterSpacing(0, -25, 0);
             @include breakpoint(desktopOnly) {
-                width: 80%;
+                width: 82%;
             }
         }
     }
@@ -72,8 +72,11 @@
         0,
         0);
         li {
-            font-size: 3.2rem;
+            @include fontSize(32,28,15);
             color: $yellow;
+            @include breakpoint(desktopOnly) {
+                line-height: 3rem;
+            }
             span {
                 color: $darkGray;
                 @include fontSize(28,

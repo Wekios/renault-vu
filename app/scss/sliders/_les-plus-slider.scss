@@ -19,6 +19,9 @@
         width: calcVw(80,768);
         @include breakpoint(desktopOnly) {
             width: calcVw(135,1700);
+            h2 {
+                line-height: 3.5rem;
+            }
         }
     }
 }

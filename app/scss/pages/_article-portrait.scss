@@ -236,7 +236,7 @@
           width: 87%;
           height: 5vw;
           bottom: -6vw;
-          left: 6.5%;
+          left: 7.5%;
         }
 
         & .diaporama-trigger__thumb--article {
@@ -275,7 +275,7 @@
       margin: 17vw 0 0 0;
 
       @include breakpoint(desktopOnly) {
-        margin: 5rem 0 3rem 0;
+        margin: 6rem 0 5rem 0;
       }
     }
 
@@ -293,7 +293,7 @@
     }
 
     & tr {
-      @include breakpoint(tabletOnly) {
+      @include breakpoint(tabletAndDesktop) {
         display: inline-block;
         width: 49%;
       }
@@ -303,7 +303,7 @@
       }
 
       &:first-child td {
-        @include breakpoint(tabletOnly) {
+        @include breakpoint(tabletAndDesktop) {
           border-right: none;
         }
       }
@@ -325,7 +325,7 @@
         display: inline-block;
       }
 
-      @include breakpoint(tabletOnly) {
+      @include breakpoint(tabletAndDesktop) {
         display: inline-block;
         padding: 2.5vw;
         width: calc(100% - 5vw - 4px);
@@ -337,7 +337,7 @@
       }
     }
 
-    & tr:last-child {
+    & tr:last-child td:last-child {
       border-bottom: 2px dashed $yellow;
     }
 
