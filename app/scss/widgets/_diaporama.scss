@@ -181,6 +181,11 @@
   
   .diaporama__counter .diaporama__current {
     color: $black;
+    font-weight: 600;
+  }
+
+  .diaporama__total {
+    font-weight: 600;
   }
   
   .diaporama__thumbs {

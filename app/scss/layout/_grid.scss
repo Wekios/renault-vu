@@ -11,7 +11,8 @@ body {
 }
 
 .page {
-  padding-top: 8.5rem;
+  padding-top: 8.48rem;
+  transition: all 0.2s linear;
   @include breakpoint(desktopOnly) {
     padding-top: 6.6rem;
   }

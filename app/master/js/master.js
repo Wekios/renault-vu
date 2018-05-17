@@ -3015,6 +3015,7 @@ $(document).ready(function () {
     mainContent = $('.page'),
     headerSearch = $('.search-trigger'),
     searchOverlay = $('.search-popup'),
+    pageOverlay = $('.page-overlay'),
     searchInput = $('.search__field').find('input'),
     searchClose = $('.search__close'),
     windowWidth = $(window).outerWidth();
@@ -3028,6 +3029,8 @@ $(document).ready(function () {
 
       e.stopPropagation();
 
+            
+      pageOverlay.fadeToggle(200);
       headerNavWrap.toggleClass('inView');
       headerSearch.fadeToggle(200);
       menuOpenedOverlay.fadeToggle(200);
@@ -3084,8 +3087,20 @@ $(document).ready(function () {
 
   });
 
-  searchInput.on('click', function(){
+  // searchInput.on('click', function(){
+  //   $('.search-popup .search__field svg').css('color', 'white');
+  // });
+
+  searchInput.on('mouseenter', function () {
+
     $('.search-popup .search__field svg').css('color', 'white');
+
+  });
+
+  searchInput.on('mouseleave', function () {
+
+    $('.search-popup .search__field svg').css('color', 'gray');
+
   });
 
   // desktop main menu \\

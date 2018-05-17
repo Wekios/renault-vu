@@ -312,9 +312,9 @@
 }
 
 .page.menuOpened {
-  left: 84vw;
+  margin-left: 84vw;
   @include breakpoint(tabletOnly) {
-    left: 69vw;
+    margin-left: 69vw;
   }
 }
 

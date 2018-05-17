@@ -417,7 +417,8 @@ body {
   transition: all 0.2s linear; }
 
 .page {
-  padding-top: 8.5rem; }
+  padding-top: 8.48rem;
+  transition: all 0.2s linear; }
   @media (min-width: 1024px) {
     .page {
       padding-top: 6.6rem; } }
@@ -1443,7 +1444,7 @@ a img {
         font-size: 1rem;
         cursor: pointer;
         min-height: 12.8rem;
-        padding: 1rem 0;
+        padding: 2rem 0;
         display: table; }
         @media (min-width: 768px) {
           .accordion-wrap .faq-accordion .accordion__element__heading {
@@ -2554,10 +2555,10 @@ a img {
               letter-spacing: 0.05em; } }
 
 .page.menuOpened {
-  left: 84vw; }
+  margin-left: 84vw; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .page.menuOpened {
-      left: 69vw; } }
+      margin-left: 69vw; } }
 
 @media (max-width: 1023px) {
   body.menuOpened,
@@ -5022,7 +5023,8 @@ a img {
   overflow: hidden;
   display: block;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  outline: none; }
   .slick-list:focus {
     outline: none; }
   .slick-list.dragging {
@@ -6568,7 +6570,11 @@ html.diaporamaOpened, body.diaporamaOpened {
         margin: 0 -0.4vw; } }
 
 .diaporama__counter .diaporama__current {
-  color: #000000; }
+  color: #000000;
+  font-weight: 600; }
+
+.diaporama__total {
+  font-weight: 600; }
 
 .diaporama__thumbs {
   width: 41.7%;
@@ -8949,5 +8955,15 @@ html.diaporamaOpened, body.diaporamaOpened {
 @media (max-width: 767px) {
   .hidden--mob {
     display: none; } }
+
+.page-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.89); }
 
 /*# sourceMappingURL=master.css.map */
