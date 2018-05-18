@@ -18,7 +18,9 @@
         }
 
         .article__header-image {
-            @include height(890,782,955);
+          @include teaser__figureResponsive(
+            url("../../assets/image/article--portrait__header-img.jpg"),
+            890,782,955);            
         }
     }
 }
