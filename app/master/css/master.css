@@ -2582,7 +2582,9 @@ a img {
       display: block;
       float: left;
       width: 32%;
-      padding: 4% 10% 0 5.7%; } }
+      padding: 4% 10% 0 5.7%; }
+      .sub-menu-articles h2 {
+        font-size: 2.5rem; } }
 
 .footer {
   text-align: center; }
@@ -2762,7 +2764,9 @@ a img {
     top: 0; }
     .sub-menu__first-teaser__caption h4,
     .sub-menu__second-teaser__caption h4 {
-      margin: 0; }
+      margin: 0;
+      font-size: 1.3rem;
+      line-height: 1.5rem; }
 
 .news-de-la__heading {
   position: absolute;
