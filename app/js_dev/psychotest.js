@@ -128,6 +128,8 @@
 
     pageWrap.on('afterChange', function (event, slick, currentSlide) {
 
+      $('html, body, window').animate({scrollTop: 0}, 400);
+      
       var currentQuestion = $(questions[currentSlide - 1]),
         options = currentQuestion.find('.question-option');
 

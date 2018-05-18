@@ -64,7 +64,7 @@
 
 .arrow {
   position: absolute;
-  z-index: 999;
+  z-index: 48;
   @include circled-icon(calcRem(25));
   background-color: $yellow;
   

@@ -758,7 +758,7 @@ a img {
 
 .arrow, .arrow--black, .arrow--gray {
   position: absolute;
-  z-index: 999;
+  z-index: 48;
   width: 2.5rem;
   height: 2.5rem;
   line-height: 2.5rem;
@@ -1659,6 +1659,18 @@ a img {
       left: 8.4rem;
       letter-spacing: 0.2rem;
       top: 35%; } }
+      .search-results__field input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #000000; }
+      .search-results__field input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #000000; }
+      .search-results__field input:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #000000; }
+      .search-results__field input:-moz-placeholder {
+        /* Firefox 18- */
+        color: #000000; }
     .search-results__field svg {
       color: #404040;
       cursor: pointer;
@@ -2545,7 +2557,7 @@ a img {
             margin-top: 0;
             margin-bottom: 19.3%; } }
         .main-navigation .sub__menu > ul > li > a {
-          font-weight: 700; }
+          font-weight: 400; }
           @media (min-width: 1024px) {
             .main-navigation .sub__menu > ul > li > a {
               text-decoration: none;
@@ -7913,7 +7925,7 @@ html.diaporamaOpened, body.diaporamaOpened {
         margin-top: 5.95rem; } }
     @media (max-width: 767px) {
       .all-tags .page-title {
-        margin-bottom: 9rem; } }
+        margin-bottom: 6rem; } }
     @media (min-width: 768px) and (max-width: 1023px) {
       .all-tags .page-title {
         margin-bottom: 7rem; } }
@@ -8967,7 +8979,7 @@ html.diaporamaOpened, body.diaporamaOpened {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: 49;
   background: rgba(0, 0, 0, 0.89); }
 
 /*# sourceMappingURL=master.css.map */
