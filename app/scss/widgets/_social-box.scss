@@ -16,7 +16,7 @@
     }
 
     svg {
-        @include fontSize(30,23,25);
+        @include fontSize(30,23,20);
         color: $yellow;
         margin: auto;
         height: 100%;

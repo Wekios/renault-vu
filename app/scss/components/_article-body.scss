@@ -1,6 +1,6 @@
 .article-body {
     @include breakpoint(desktopOnly) {
-        width: calcVw(678, 1700);
+        width: calcVw(668, 1700);
         display: inline-block;
         text-align: left;
     }
@@ -192,7 +192,7 @@
             margin: 3rem 0 7rem 0;
         }
         @include breakpoint(desktopOnly) {
-            margin: 1.9rem 0 13rem;
+            margin: 2.7rem 0 15rem;
         }
     }
     &__main-content {

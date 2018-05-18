@@ -29,7 +29,7 @@
     &-body__wrap {
     @include breakpoint(phoneOnly) {
       width: 87.5%;
-      margin: 8.5vw auto 8vw auto;
+      margin: 8.5vw auto 14vw auto;
     }
 
     @include breakpoint(tabletOnly) {
@@ -57,6 +57,7 @@
           @include breakpoint(desktopOnly) {
               float: none;
               margin-bottom: 7.3rem;
+              margin-left: 0;
 
                 .social-box {
                     width: calcVw(283,1700);
@@ -94,6 +95,7 @@
         margin-bottom: 4vw;
         h1 {
             width: 100%;
+            letter-spacing: -0.01em
         }
       }
     }
@@ -107,7 +109,7 @@
 
     & .breadcrumbs {
       @include breakpoint(desktopOnly) {
-        margin: 2.5vw 0 1vw 0;
+        margin: 2.5vw 0 2.9vw 0;
         width: 100%;
       }
     }
@@ -130,7 +132,7 @@
       }
 
       @include breakpoint(desktopOnly) {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         margin: 1.6vw 0;
       }
     }
@@ -145,6 +147,7 @@
       @include breakpoint(phoneOnly) {
         width: 114%;
         margin-left: -7%;
+        margin-bottom: 0;
         overflow: visible;
       }
 
@@ -280,7 +283,7 @@
       margin: 17vw 0 0 0;
 
       @include breakpoint(desktopOnly) {
-        margin: 6rem 0 5rem 0;
+        margin: 11rem 0 7.4rem 0;
       }
     }
 
@@ -473,10 +476,5 @@
 }
 
 .quiz-teaser.quiz-teaser--article-portrait  {
-  @include breakpoint(phone only) {
-    margin-bottom: 4.8rem;
-  }
-  @include breakpoint(tabletOnly) {
-    margin-bottom: 14.4rem
-  }
+  @include marginBottom(48,144,288);
 }
