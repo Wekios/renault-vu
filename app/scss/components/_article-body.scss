@@ -62,18 +62,13 @@
     }
     &__list {
         list-style: square;
-        @include marginBottom(83,
-        50,
-        50);
-        @include marginTop(110,
-        0,
-        0);
-        @include marginLeft(42,
-        0,
-        0);
+        @include marginBottom(68,50,50);
+        @include marginTop(59,0,0);
+        @include marginLeft(31,0,0);
         li {
             @include fontSize(35,20,15);
             color: $yellow;
+            padding-left: 1rem;
             @include breakpoint(tabletOnly) {
                 margin-left: 2rem;
             }

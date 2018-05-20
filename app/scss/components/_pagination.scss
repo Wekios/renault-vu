@@ -53,6 +53,10 @@
 		@include breakpoint(desktopOnly) {
 			line-height: 5.5vw;
 		}
+
+		&--play {
+			@include fontSize(13, 7, 8);
+		}
 	}
 
 	& .active {

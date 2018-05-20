@@ -13,6 +13,11 @@
     @include breakpoint(desktopOnly) {
         width: calcVw(1354,1700);
     }
+
+    h1 {
+        @include width(240,190,410);
+    }
+
 }
 
 .shp__header-text--faq {

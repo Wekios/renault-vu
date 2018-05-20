@@ -3175,7 +3175,7 @@ $(document).ready(function () {
         e.stopPropagation();
 
         var $sub = $current.next('.sub__menu');
-        var $arrow = $current.prev('i.fa');
+        var $arrow = $current.prev('svg');
 
         headerNavWrap.css('overflow-y', 'scroll');
         $sub.slideToggle(200);
@@ -3206,10 +3206,6 @@ $(document).ready(function () {
     searchOverlay.fadeOut(200);
 
   });
-
-  // searchInput.on('click', function(){
-  //   $('.search-popup .search__field svg').css('color', 'white');
-  // });
 
   searchInput.on('mouseenter', function () {
 
@@ -3768,44 +3764,44 @@ $(document).ready(function () {
 
     // Article-faq accordion
   
-    var $accordionWrap = $('.accordion-wrap'),
-        $accordion = $('.faq-accordion'),
-        $accordionElements = $('.accordion__element');
+    var accordionWrap = $('.accordion-wrap'),
+        accordion = $('.faq-accordion'),
+        accordionElements = $('.accordion__element');
   
     function closeOpenedElement() {
   
-        var $opened = $accordion.find('.accordion__element.opened'),
-            $openedText = $opened.find('.accordion__element__text'),
-            $openedArrow = $opened.find('.accordion-heading__arrow svg');
+        var opened = accordion.find('.accordion__element.opened'),
+            openedText = opened.find('.accordion__element__text'),
+            openedArrow = opened.find('.accordion-heading__arrow svg');
   
-        $opened.removeClass('opened');
-        $openedText.slideUp(200);
-        $openedArrow.removeClass('fa-caret-up').addClass('fa-caret-down');
+        opened.removeClass('opened');
+        openedText.slideUp(200);
+        openedArrow.removeClass('fa-caret-up').addClass('fa-caret-down');
   
     }
   
-    $.each($accordionElements, function() {
+    $.each(accordionElements, function() {
   
-      var $current = $(this);
-          $heading = $current.find('.accordion__element__heading');
+      var current = $(this);
+          heading = current.find('.accordion__element__heading');
   
-      $heading.on('click', function() {
+      heading.on('click', function() {
 
   
-        var $arrow = $(this).find('.accordion-heading__arrow'),
-            $accordionText = $(this).next('.accordion__element__text');
+        var arrow = $(this).find('.accordion-heading__arrow'),
+            accordionText = $(this).next('.accordion__element__text');
   
-        if ($current.hasClass('opened')) {
+        if (current.hasClass('opened')) {
   
-          $current.removeClass('opened');
-          $accordionText.slideUp(200);
-          $arrow.removeClass('opened');
+          current.removeClass('opened');
+          accordionText.slideUp(200);
+          arrow.removeClass('opened');
   
         } else {
   
           closeOpenedElement();
-          $current.addClass('opened');
-          $accordionText.slideDown(200);
+          current.addClass('opened');
+          accordionText.slideDown(200);
   
         }
   

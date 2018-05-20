@@ -50,7 +50,7 @@ $(document).ready(function () {
         e.stopPropagation();
 
         var $sub = $current.next('.sub__menu');
-        var $arrow = $current.prev('i.fa');
+        var $arrow = $current.prev('svg');
 
         headerNavWrap.css('overflow-y', 'scroll');
         $sub.slideToggle(200);
@@ -81,10 +81,6 @@ $(document).ready(function () {
     searchOverlay.fadeOut(200);
 
   });
-
-  // searchInput.on('click', function(){
-  //   $('.search-popup .search__field svg').css('color', 'white');
-  // });
 
   searchInput.on('mouseenter', function () {
 

@@ -25,11 +25,6 @@
     @include breakpoint(desktopOnly) {
         padding: 29.1rem 0 0 calcVw(260,1700);
     }
-
-    h1 {
-        word-spacing: 9999999px;
-    }
-
     .button {
         @include marginBottom(16,7,15);
     }

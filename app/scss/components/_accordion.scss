@@ -89,6 +89,8 @@
             right: 7vw;
             margin-top: -4vw;
             font-size: 2.5rem;
+            -webkit-transition: all 0.3s ease; /* Safari */
+            transition: all 0.3s ease;
   
             @include breakpoint(tabletOnly) {
               width: 5.5vw;
