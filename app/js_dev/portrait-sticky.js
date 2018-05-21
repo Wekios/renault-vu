@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
-    var windowWidth = $(window).outerWidth();
+    var windowWidth = $(window).outerWidth(),
+        articlePortrait = $('.page--article-portrait').find('.article-portrait-body__wrap'),
+        articleHero = $('.page--article-portrait').find('.article__header');
 
-    if (windowWidth > 1023) {
+    if (windowWidth > 1023 && articlePortrait.length > 0) {
 
-        var articlePortrait = $('.page--article-portrait').find('.article-portrait-body__wrap'),
-            articleHero = $('.page--article-portrait').find('.article__header'),
-            headerHeight = $('.header').outerHeight(),
+        var headerHeight = $('.header').outerHeight(),
             articlePortraitHeight = articlePortrait.outerHeight(),
             articlePortraitTopPosition = articlePortrait.offset().top,
             articlePortraitBottomPosition = articlePortraitTopPosition + articlePortraitHeight,
@@ -29,7 +29,7 @@ $(document).ready(function () {
                 articleHero.stop();
                 articleHero.css('margin-bottom', 'auto');
                 articleHero.animate({
-                    marginTop: offset  + 'px'
+                    marginTop: offset + 'px'
                 });
 
                 if (windowTopPosition < articlePortraitTopPosition) {
