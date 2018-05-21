@@ -38,12 +38,14 @@
 
 .qa-slider__first-slide {
     @include teaser__figureResponsive(url("../../assets/image/qa-slider__first-slide.jpg"),
-    470,250.09,410);   
+    470,250.09,410);
+    background-size: 105%;
 }
 
 .qa-slider__second-slide {
     @include teaser__figureResponsive(url("../../assets/image/news-de-la__third-teaser-img.jpg"),
-    470,250.09,410);  
+    470,250.09,410);
+    background-size: 105%;
 }
 
 .qa__slider__caption {

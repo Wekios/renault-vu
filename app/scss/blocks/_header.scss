@@ -89,11 +89,11 @@
     position: relative;
     cursor: pointer;
     top: 2.5rem;
-    @include fontSize(36,50,50);
+    @include fontSize(36,40,50);
 
     @include breakpoint(tabletOnly) {
-      top: 2rem;
-      left: 1rem;
+      top: 2.5rem;
+      left: -1rem;
     }
     @include breakpoint(desktopOnly) {
       display: none;
@@ -146,9 +146,9 @@
     transition: all 0.2s linear;
 
     @include breakpoint(tabletOnly) {
-      width: 77vw;
+      width: 60vw;
       margin: 0;
-      padding: 22.3% 2vw 10vw 5.5vw;
+      padding: 16.3% 2vw 10vw 8.5vw;
       top: 8.5001rem;
     }
 

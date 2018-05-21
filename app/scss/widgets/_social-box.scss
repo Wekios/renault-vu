@@ -8,9 +8,12 @@
     @include width(98,63,63);
     @include height(98,63,63);
     background: $white;
-    border: 0.1rem solid $yellow;
+    border: 0.11rem solid $yellow;
     display: inline-block;
     @include marginTop(-36,-23,0);
+    -webkit-box-shadow: 1px 1px 15px 3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 1px 1px 15px 3px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 15px 3px rgba(0,0,0,0.1);
     @include breakpoint(desktopOnly) {
         margin: 3.6rem 3.7rem 0 -3.6rem;
     }

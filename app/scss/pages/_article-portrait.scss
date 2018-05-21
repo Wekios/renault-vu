@@ -241,7 +241,7 @@
         @include breakpoint(tabletAndDesktop) {
           height: 7vw;
           width: 83%;
-          bottom: -8vw;
+          bottom: -9vw;
           left: 6.5vw;
           margin-left: 0;
         }
@@ -324,14 +324,14 @@
 
       &:first-child td:last-child {
         @include breakpoint(tabletAndDesktop) {
-          border-bottom: 2px dashed $yellow;
+          border-bottom: 0.2rem dashed $yellow;
         }
       }
     }
 
     & td {
-      padding: 2vw 3vw;
-      border: 2px dashed $yellow;
+      padding: 3.5vw 3vw;
+      border: 0.2rem dashed $yellow;
       border-bottom: none;
       width: calc(100% - 6vw - 4px);
 
@@ -352,7 +352,7 @@
     }
 
     & tr:last-child td:last-child {
-      border-bottom: 2px dashed $yellow;
+      border-bottom: 0.2rem dashed $yellow;
     }
 
     & .table__heading {
@@ -468,8 +468,9 @@
       line-height: 2.9rem;
 
       @include breakpoint(tabletOnly) {
-        font-size: 1.2rem;
-        line-height: 1.9rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.05em;
       }
 
       @include breakpoint(desktopOnly) {

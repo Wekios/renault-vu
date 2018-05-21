@@ -8,7 +8,7 @@
   
     @include breakpoint(tabletOnly) {
       margin-top: 8.5vw;
-      margin-bottom: 11rem;
+      margin-bottom: 5.1rem;
     }
   
     @include breakpoint(desktopOnly) {
@@ -125,6 +125,7 @@
           @include breakpoint(tabletAndDesktop) {
             margin-left: 9.3%;
             padding-bottom: 4vw;
+            margin-bottom: 0;
           }
   
           @include breakpoint(desktopOnly) {

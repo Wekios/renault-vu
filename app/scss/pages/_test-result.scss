@@ -1,17 +1,17 @@
 .page-test-result {
 
-	@include marginTop(80,130,180);
+	@include marginTop(120,110,180);
 
 	&__heading {
 		text-transform: none;
 		@include fontSize(50,44,0);
 		@include lineHeight(42,30,0);
 		letter-spacing: calcLS(50);
-		margin-bottom: 9.375vh;
+		margin-bottom: 8rem;
 	}
 
 	&__car {
-		@include width(560,640,600);
+		@include width(570,640,600);
 		@include height(330,355,354);
 		margin: 0 auto;
 		background: center / cover no-repeat url("../../assets/image/psychotest/test-result__car.png");   
@@ -25,7 +25,7 @@
 	}
 
 	.widget__social-box .social-box{
-		margin: 10vh auto 5rem;
+		margin: 14.8rem auto 5rem;
 
 	}
 
@@ -44,7 +44,7 @@
 	}
 
 	.btn--wrap {
-		margin: 5.5rem auto 12rem;
+		margin: 7.5rem auto 12rem;
 		@include breakpoint(tabletAndDesktop) {
 			margin: 4.1rem auto 13.2rem;
 			text-align: center;
@@ -55,7 +55,7 @@
 	}
 
 	.btn {
-		margin: 2.8rem auto;
+		margin: 3.5rem auto;
 		padding-left: 0;
 		padding-right: 0;
 		@include breakpoint(tabletAndDesktop) {
