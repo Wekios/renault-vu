@@ -679,7 +679,7 @@ a img {
   @media (min-width: 1024px) {
     .button-alt {
       letter-spacing: 0.1em; } }
-  .button-alt:active {
+  .button-alt:active, .button-alt:hover {
     background-color: #000000;
     color: #ffffff; }
 
@@ -1149,7 +1149,7 @@ a img {
       margin-left: 0vw; } }
   @media (min-width: 1024px) {
     .article-body__list {
-      margin-left: 0vw; } }
+      margin-left: 1vw; } }
   .article-body__list li {
     color: #ffcc33;
     padding-left: 1rem; }
@@ -1375,7 +1375,7 @@ a img {
       margin: 3rem 0 7rem 0; } }
   @media (min-width: 1024px) {
     .article-body__tags {
-      margin: 2.7rem 0 15rem; } }
+      margin: 2.7rem 0 0; } }
 
 .article-body__main-content {
   letter-spacing: 0.2vw; }
@@ -4345,11 +4345,17 @@ a img {
     @media (min-width: 768px) {
       .qa-list__heading h2 {
         line-height: 1.3; } }
+    @media (min-width: 1024px) {
+      .qa-list__heading h2 {
+        line-height: 1; } }
   @media (min-width: 768px) {
     .qa-list__heading {
       float: left;
       margin: 6.6rem 0 0 2.9rem;
       width: 9rem; } }
+  @media (min-width: 1024px) {
+    .qa-list__heading {
+      margin: 11.5rem 0 0 6rem; } }
 
 @media (max-width: 767px) {
   .qa-list-teaser .teaser--underlay {
@@ -5626,7 +5632,7 @@ a img {
 
 .qa-slider__navigation {
   float: right;
-  color: #8b8b8b;
+  color: #404040;
   margin-top: -1rem; }
   @media (max-width: 767px) {
     .qa-slider__navigation {
@@ -5656,7 +5662,8 @@ a img {
 .qa-slider__arrows {
   display: inline-block;
   padding: 0 1rem;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #404040; }
   .qa-slider__arrows:hover {
     color: #000000; }
 
@@ -6034,7 +6041,7 @@ a img {
       right: 1.2rem; } }
     @media (min-width: 768px) and (min-width: 1024px) {
       .les-plus-slider__arrows {
-        top: 50%;
+        top: 48%;
         right: 2.4rem; } }
 
 @media (min-width: 768px) {
@@ -7292,7 +7299,8 @@ html.diaporamaOpened, body.diaporamaOpened {
     width: 50%;
     float: left;
     text-align: left;
-    margin-left: 4.11765vw; } }
+    margin-left: 4.11765vw;
+    margin-bottom: 15rem; } }
 
 @media (max-width: 767px) {
   .widget__social-box--article {
@@ -8233,7 +8241,8 @@ html.diaporamaOpened, body.diaporamaOpened {
       .page-404__heading .text--bolder {
         letter-spacing: -0.04em; } }
   .page-404__heading .text--bolder--bigger {
-    vertical-align: middle; }
+    position: relative;
+    top: 2.7rem; }
     @media (max-width: 767px) {
       .page-404__heading .text--bolder--bigger {
         font-size: 7.8rem; } }
@@ -8252,9 +8261,12 @@ html.diaporamaOpened, body.diaporamaOpened {
     @media (min-width: 1024px) {
       .page-404__heading .text--bolder--bigger {
         line-height: 13.147rem; } }
+    @media (min-width: 768px) {
+      .page-404__heading .text--bolder--bigger {
+        top: 3.2rem; } }
     @media (min-width: 1024px) {
       .page-404__heading .text--bolder--bigger {
-        vertical-align: text-top; } }
+        top: 5.4rem; } }
 
 .page-404__van {
   margin: 0 auto;
@@ -8913,7 +8925,7 @@ html.diaporamaOpened, body.diaporamaOpened {
 
 @media (min-width: 1024px) {
   .page-test-result {
-    margin-top: 18rem; } }
+    margin-top: 15.9rem; } }
 
 .page-test-result__heading {
   text-transform: none;
@@ -8937,6 +8949,9 @@ html.diaporamaOpened, body.diaporamaOpened {
   @media (min-width: 1024px) {
     .page-test-result__heading {
       line-height: 0rem; } }
+  @media (min-width: 1024px) {
+    .page-test-result__heading {
+      margin-bottom: 0; } }
 
 .page-test-result__car {
   margin: 0 auto;
@@ -8967,7 +8982,17 @@ html.diaporamaOpened, body.diaporamaOpened {
       background: center/cover no-repeat url("../../assets/image/psychotest/test-result__car.png"); } }
 
 .page-test-result .widget__social-box .social-box {
-  margin: 14.8rem auto 5rem; }
+  margin: 5rem auto 5rem; }
+  @media (min-width: 1024px) {
+    .page-test-result .widget__social-box .social-box {
+      width: 4.7rem;
+      height: 25.9rem; }
+      .page-test-result .widget__social-box .social-box .social-box__box {
+        width: 4.6rem;
+        height: 4.6rem;
+        margin: 2.8rem 2.9rem 0 -2.8rem; }
+        .page-test-result .widget__social-box .social-box .social-box__box svg {
+          font-size: 1.5rem; } }
 
 @media (min-width: 1024px) {
   .page-test-result__paragraphs {

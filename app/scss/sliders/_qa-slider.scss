@@ -68,7 +68,7 @@
 
 .qa-slider__navigation {
     float: right;
-    color: $gray;
+    color: $darkGray;
     @include fontSize(25,10,14);
     @include marginBottom(30,44,0);
     margin-top: -1rem;
@@ -85,6 +85,7 @@
     display: inline-block;
     padding: 0 1rem;
     cursor: pointer;
+    color: $darkGray;
 
     &:hover {
         color: $black;

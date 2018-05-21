@@ -679,12 +679,18 @@
         @include breakpoint(tabletAndDesktop) {
             line-height: 1.3;
         }
+        @include breakpoint(desktopOnly) {
+            line-height: 1;
+        }
     }
 
     @include breakpoint(tabletAndDesktop) {
         float: left;
         margin: 6.6rem 0 0 2.9rem;
         width: 9rem;
+    }
+    @include breakpoint(desktopOnly) {
+        margin: 11.5rem 0 0 6rem;
     }
 }
 

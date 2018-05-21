@@ -1,6 +1,6 @@
 .page-test-result {
 
-	@include marginTop(120,110,180);
+	@include marginTop(120,110,159);
 
 	&__heading {
 		text-transform: none;
@@ -8,6 +8,9 @@
 		@include lineHeight(42,30,0);
 		letter-spacing: calcLS(50);
 		margin-bottom: 8rem;
+		@include breakpoint(desktopOnly) {
+			margin-bottom: 0;
+		}
 	}
 
 	&__car {
@@ -25,8 +28,20 @@
 	}
 
 	.widget__social-box .social-box{
-		margin: 14.8rem auto 5rem;
+		margin: 5rem auto 5rem;
+		@include breakpoint(desktopOnly) {
+			width: 4.7rem;
+			height: 25.9rem;
 
+			.social-box__box {
+				width: 4.6rem;
+				height: 4.6rem;
+				margin: 2.8rem 2.9rem 0 -2.8rem;
+				svg {
+					font-size: 1.5rem;
+				}
+			}
+		}
 	}
 
 	&__paragraphs {

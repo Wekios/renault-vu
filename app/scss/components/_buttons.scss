@@ -124,7 +124,7 @@
     box-shadow: 0px 5px 10.3rem 2px rgba(0,0,0,0.1);
     cursor: pointer;
 
-    &:active {
+    &:active, &:hover {
         background-color: $black;
         color: $white;
     }

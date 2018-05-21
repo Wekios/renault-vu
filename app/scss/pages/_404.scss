@@ -34,9 +34,15 @@
         .text--bolder--bigger {
             @include fontSize(78,92,156);
             @include lineHeight(66,77.58,131.47);
-            vertical-align: middle;
+            position: relative;
+            top: 2.7rem;
+
+            @include breakpoint(tabletAndDesktop) {
+                top: 3.2rem;
+
+            }
             @include breakpoint(desktopOnly) {
-                vertical-align: text-top;
+                top: 5.4rem;
             }
         }
     }

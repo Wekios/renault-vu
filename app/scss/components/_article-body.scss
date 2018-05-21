@@ -64,7 +64,7 @@
         list-style: square;
         @include marginBottom(68,50,50);
         @include marginTop(59,0,0);
-        @include marginLeft(31,0,0);
+        @include marginLeft(31,0,17);
         li {
             @include fontSize(35,15,15);
             color: $yellow;
@@ -187,7 +187,7 @@
             margin: 3rem 0 7rem 0;
         }
         @include breakpoint(desktopOnly) {
-            margin: 2.7rem 0 15rem;
+            margin: 2.7rem 0 0;
         }
     }
     &__main-content {
