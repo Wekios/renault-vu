@@ -174,6 +174,17 @@
             margin: 0 calcVw(20, 1700);
         }
 
+        & .overlay {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            box-shadow: inset 0 0 0 5px $yellow;
+            transition: opacity .1s linear;
+          }
+
     }
 
     &__footnote {
@@ -224,7 +235,6 @@
         height: 8.1rem;
         @include height(81,81,81);
         box-sizing: border-box;
-        border: 5px solid #9FC2BA;
         background: center / cover no-repeat url("http://via.placeholder.com/100x81");
     }
 }
@@ -245,7 +255,6 @@
     @include breakpoint(desktopOnly) {
         height: 8.1rem;
         box-sizing: border-box;
-        border: 5px solid #9FC2BA;
         background: center / cover no-repeat url("http://via.placeholder.com/100x81");
     }
 }
@@ -266,7 +275,6 @@
     @include breakpoint(desktopOnly) {
         height: 8.1rem;
         box-sizing: border-box;
-        border: 5px solid #9FC2BA;
         background: center / cover no-repeat url("http://via.placeholder.com/100x81");
     }
 }
