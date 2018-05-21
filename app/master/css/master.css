@@ -538,7 +538,9 @@ a img {
   .button--caption, .diaporama-trigger__footnote {
     position: absolute;
     bottom: 0;
-    cursor: pointer; }
+    left: 0;
+    cursor: pointer;
+    margin: 0; }
 
 .btn {
   padding: 1.5rem 2.5rem;
