@@ -3194,8 +3194,14 @@ $(document).ready(function () {
 
   // search overlay \\
 
-  headerSearch.on('click', function () {
+  headerSearch.on('click', function (e) {
 
+    if((navigator.userAgent.indexOf('Safari') !== -1) &&
+        (navigator.userAgent.indexOf('Version/9') !== -1)) {
+          searchOverlay.css("height", "600px");
+        }
+
+    e.preventDefault();
     searchOverlay.fadeIn(200);
     searchInput.focus();
 
