@@ -194,6 +194,7 @@
     }
     @include breakpoint(desktopOnly) {
       display: inline-block;
+      height: 5rem;
       margin-right: 4.9rem;
       margin-bottom: 0;
       z-index: 110;

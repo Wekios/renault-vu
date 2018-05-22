@@ -312,7 +312,10 @@
   
         & a.btn {
           text-align: center;
-          width: 22vw;
+          width: 15vw;
+          @include breakpoint(tabletOnly) {
+            width: 22vw;
+          }
         }
   
         & .option-cancel {
