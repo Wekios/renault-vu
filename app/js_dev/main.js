@@ -32,11 +32,8 @@ $(document).ready(function () {
       mainContent.toggleClass('menuOpened');
       $('body, html').toggleClass('menuOpened');
 
-      if (menuTrigger.children().hasClass('fa-bars')) {
-        menuTrigger.children().removeClass('fa-bars').addClass('fa-times');
-      } else {
-        menuTrigger.children().removeClass('fa-times').addClass('fa-bars');
-      }
+      menuTrigger.find('.fa-bars').toggleClass('closed');
+      menuTrigger.find('.fa-times').toggleClass('closed');
 
     });
 
@@ -55,11 +52,7 @@ $(document).ready(function () {
         headerNavWrap.css('overflow-y', 'scroll');
         $sub.slideToggle(200);
 
-        if ($arrow.hasClass('fa-chevron-down')) {
-          $arrow.removeClass('fa-chevron-down').addClass('fa-chevron-up');
-        } else {
-          $arrow.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-        }
+        $arrow.toggleClass('rotate');
 
       });
 

@@ -90,6 +90,10 @@
     cursor: pointer;
     top: 2.5rem;
     @include fontSize(36,40,50);
+    .closed {
+      display: none;
+    }
+
 
     @include breakpoint(tabletOnly) {
       top: 2.5rem;
@@ -180,6 +184,10 @@
     @include breakpoint(phoneAndTablet) {
       margin-bottom: 11.3vw;
       position: relative;
+      & svg {
+        -webkit-transition: all 0.3s ease; /* Safari */
+        transition: all 0.3s ease;
+      }
     }
     @include breakpoint(tabletOnly) {
       margin-bottom: 7.7vw;
@@ -350,4 +358,12 @@
     }
 
   }
+}
+
+.rotate {
+  -webkit-transition: all 0.3s ease; /* Safari */
+  transition: all 0.3s ease;
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Safari 3-8 */
+  transform: rotate(180deg);
 }
