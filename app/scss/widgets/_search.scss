@@ -52,15 +52,13 @@
     & .search__field {
       position: absolute;
       top: 37.2%;
-      // width: 93%;
-      // margin-left: 6.3%;
-      width: 90%;
-      margin-left: 5%;
+      width: 93%;
+      margin-left: 6.3%;
 
-      // @include breakpoint(320px) {
-      //   width: 90%;
-      //   margin-left: 5%;
-      // }
+      @media only screen and (max-width: 600px) {
+        width: 90%;
+        margin-left: 5%;
+      }
   
       @include breakpoint(tabletOnly) {
         top: 34.3%;

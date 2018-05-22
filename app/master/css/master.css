@@ -6836,8 +6836,12 @@ html.diaporamaOpened, body.diaporamaOpened {
   .search-popup .search__field {
     position: absolute;
     top: 37.2%;
-    width: 90%;
-    margin-left: 5%; }
+    width: 93%;
+    margin-left: 6.3%; }
+    @media only screen and (max-width: 600px) {
+      .search-popup .search__field {
+        width: 90%;
+        margin-left: 5%; } }
     @media (min-width: 768px) and (max-width: 1023px) {
       .search-popup .search__field {
         top: 34.3%;
