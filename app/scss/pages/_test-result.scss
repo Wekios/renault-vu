@@ -37,11 +37,12 @@
 	}
 
 	.widget__social-box .social-box{
-		margin: 5rem auto 5rem;
+		margin: 15rem auto 5rem;
 		@include breakpoint(tabletOnly) {
 			margin: 8rem auto 6rem; 
 		}
 		@include breakpoint(desktopOnly) {
+			margin: 7.6rem auto 5rem; 
 			width: 4.7rem;
 			height: 25.9rem;
 

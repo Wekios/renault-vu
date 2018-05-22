@@ -9001,12 +9001,13 @@ html.diaporamaOpened, body.diaporamaOpened {
       background: center/cover no-repeat url("../../assets/image/psychotest/test-result__car.png"); } }
 
 .page-test-result .widget__social-box .social-box {
-  margin: 5rem auto 5rem; }
+  margin: 15rem auto 5rem; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .page-test-result .widget__social-box .social-box {
       margin: 8rem auto 6rem; } }
   @media (min-width: 1024px) {
     .page-test-result .widget__social-box .social-box {
+      margin: 7.6rem auto 5rem;
       width: 4.7rem;
       height: 25.9rem; }
       .page-test-result .widget__social-box .social-box .social-box__box {
