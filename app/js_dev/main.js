@@ -83,13 +83,13 @@ $(document).ready(function () {
     $('body').removeClass('overflow-none');
   });
 
-  searchInput.on('mouseenter', function () {
+  searchInput.on('keypress', function () {
 
     $('.search-popup .search__field svg').css('color', 'white');
 
   });
 
-  searchInput.on('mouseleave', function () {
+  searchInput.on('focusout', function () {
 
     $('.search-popup .search__field svg').css('color', 'gray');
 
