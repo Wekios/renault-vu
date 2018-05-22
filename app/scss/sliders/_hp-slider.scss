@@ -109,5 +109,10 @@
     .hp-slider__arrows-next {
         @include circled-icon(calcRem(50));
         line-height: 5rem;
+
+        &:hover {
+            background: $lightGray;
+        }
+
     }
 }

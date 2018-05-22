@@ -5307,7 +5307,10 @@ a img {
     text-align: center;
     cursor: pointer;
     border-radius: 100%;
-    line-height: 5rem; } }
+    line-height: 5rem; }
+    .hp-slider__arrows-prev:hover,
+    .hp-slider__arrows-next:hover {
+      background: #f6f6f6; } }
 
 @media (max-width: 767px) {
   .faq__heading {
