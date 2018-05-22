@@ -3237,7 +3237,7 @@ $(document).ready(function () {
 
       });
 
-      $li.on('mouseleave', function () {
+      $sub.on('mouseleave', function () {
 
         $sub.fadeOut(200);
         $current.removeClass('active');

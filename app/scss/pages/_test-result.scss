@@ -99,7 +99,9 @@
 			letter-spacing: 0.05em;
 		}
 	}
+}
 
+.related-articles--wrapper {
 	.les-plus {
 
 		&__heading {
@@ -123,7 +125,6 @@
 		}
 	
 	}
-
 }
 
 
@@ -154,7 +155,9 @@
 			color: $yellow;
 			margin-bottom: 3rem;
 		}
+	}
 
+	.related-articles--wrapper {
 		.les-plus {
 			width: 79.52941vw;
 			margin: 0 auto;

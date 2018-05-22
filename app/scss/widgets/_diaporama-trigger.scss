@@ -74,9 +74,9 @@
         .diaporama-trigger__thumb.slick-current {
             filter: grayscale(0);
     
-          & .overlay {
-            opacity: 1;
-          }
+        //   & .overlay {
+        //     opacity: 1;
+        //   }
         }
     
         .diaporama-trigger__thumb img {
