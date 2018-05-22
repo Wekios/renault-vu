@@ -112,12 +112,18 @@
             top: 35%;
             left: 0;
             right: 1.2rem;
+            @include breakpoint(tabletOnly) {
+                top: 33%;
+        }
             @include breakpoint(desktopOnly) {
                 top: 48%;
                 right: 2.4rem;
             }
             
             &-prev {
+                @include breakpoint(tabletOnly) {
+                    left: 1rem;
+                }
                 float: left;
                 left: 0;
 

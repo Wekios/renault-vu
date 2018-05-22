@@ -3235,6 +3235,12 @@ $(document).ready(function () {
         $current.addClass('active');
         $sub.fadeIn(200);
 
+        if($current.hasClass('active')) {
+          $sub.fadeIn(200);
+        } else {
+          sub.fadeOut(200);
+        }
+
       });
 
       $sub.on('mouseleave', function () {
