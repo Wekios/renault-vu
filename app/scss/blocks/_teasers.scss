@@ -44,8 +44,13 @@
             line-height: 1.5rem;
         }
     }
-    
 }
+
+@include breakpoint(desktopOnly) {
+    .sub-menu-articles .teaser:nth-child(even) {
+        margin-right: 2rem;
+    }  
+}  
 
 // News de la teasers
 

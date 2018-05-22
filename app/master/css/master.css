@@ -2510,7 +2510,7 @@ a img {
         text-decoration: none;
         transition: color 0.15s linear; } }
     @media (min-width: 1024px) {
-      .main-navigation > li > a.active, .main-navigation > li > a:hover {
+      .main-navigation > li > a:hover {
         color: #ffffff;
         padding-bottom: 0.35rem;
         border-bottom: 3px solid #ffffff; } }
@@ -2820,6 +2820,10 @@ a img {
       margin: 0;
       font-size: 1.3rem;
       line-height: 1.5rem; }
+
+@media (min-width: 1024px) {
+  .sub-menu-articles .teaser:nth-child(even) {
+    margin-right: 2rem; } }
 
 .news-de-la__heading {
   position: absolute;
@@ -5722,7 +5726,7 @@ a img {
       margin-top: 1.1rem; } }
   @media (min-width: 1024px) {
     .cote-business__portrait-slider {
-      border: 3rem solid #ffcc33;
+      border: 2.5rem solid #ffcc33;
       margin-top: 8.6rem; } }
 
 .portrait-slider__first-slide {
@@ -5738,7 +5742,7 @@ a img {
   @media (min-width: 1024px) {
     .portrait-slider__first-slide {
       background: center/cover no-repeat url("../../assets/image/portrait-slider__first-slide.jpg");
-      height: 58rem; } }
+      height: 58.5rem; } }
 
 .portrait-slider__second-slide {
   width: 100%; }
@@ -5753,7 +5757,7 @@ a img {
   @media (min-width: 1024px) {
     .portrait-slider__second-slide {
       background: center/cover no-repeat url("../../assets/image/portrait-slider__second-slide.jpg");
-      height: 58rem; } }
+      height: 58.5rem; } }
 
 .portrait-slider__text-content {
   box-sizing: border-box;

@@ -234,8 +234,7 @@
       text-decoration: none;
       transition: color 0.15s linear;
     }
-
-    &.active,
+    
     &:hover {
       @include breakpoint(desktopOnly) {
         color: $white;
