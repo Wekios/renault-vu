@@ -11,9 +11,11 @@
     arrowPrev = navigation.find('.diaporama-trigger__prev'),
     arrowNext = navigation.find('.diaporama-trigger__next'),
     openDiaporama = diaporamaTrigger.find('.diaporama-trigger__button'),
+    openDiaporamaBtn = openDiaporama.find('.btn--diaporama'),
     diaporama = $('body').find('.diaporama'),
     diaporamaSlider = diaporama.find('.diaporama--wrap'),
     diaporamaTriggerThumbs = diaporamaTrigger.find('.diaporama-trigger__thumbs'),
+    diaporamaTriggerThumb = diaporamaTriggerThumbs.find('.diaporama-trigger__thumb'),
 
     // Diaporama 
     diaporama = $('.diaporama'),
@@ -37,6 +39,10 @@
     diaporamaSlider.slick('setPosition');
     $('.diaporama .diaporama__thumbs').slick('setPosition');
     $('body, html').addClass('diaporamaOpened');
+  });
+
+  diaporamaTriggerThumb.on('hover', function(e){
+    openDiaporamaBtn.toggleClass('btn--yellow');
   });
 
   arrowPrev.on('click', function (e) {

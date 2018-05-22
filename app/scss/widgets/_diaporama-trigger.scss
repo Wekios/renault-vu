@@ -183,8 +183,12 @@
             left: 0;
             box-shadow: inset 0 0 0 5px $yellow;
             transition: opacity .1s linear;
-          }
 
+            &:hover {
+                opacity: 1;
+            }
+
+          }
     }
 
     &__footnote {
