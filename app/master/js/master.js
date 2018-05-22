@@ -3198,7 +3198,8 @@ $(document).ready(function () {
 
     if((navigator.userAgent.indexOf('Safari') !== -1) &&
         (navigator.userAgent.indexOf('Version/9') !== -1)) {
-          searchOverlay.css("height", "600px");
+          $('html').addClass('overflow-none');
+          $('body').addClass('overflow-none');
         }
 
     e.preventDefault();
@@ -3210,7 +3211,8 @@ $(document).ready(function () {
   searchClose.on('click', function () {
 
     searchOverlay.fadeOut(200);
-
+    $('html').removeClass('overflow-none');
+    $('body').removeClass('overflow-none');
   });
 
   searchInput.on('mouseenter', function () {
