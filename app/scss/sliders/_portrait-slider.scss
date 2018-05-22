@@ -83,10 +83,16 @@
 .portrait-slider__arrows {
     display: inline-block!important;
     padding: 0 2rem;
+    cursor: pointer;
 
-    &:hover {
-        color: $gray;
-        cursor: pointer;
+    @include breakpoint(desktopOnly) {
+        // padding: 0.1rem;
+        // @include circled-icon(1.4vw);
+        
+        &:hover {
+            // background: $yellow;
+            color: $yellow;
+        }
     }
 }
 

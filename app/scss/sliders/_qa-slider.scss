@@ -86,8 +86,14 @@
     padding: 0 1rem;
     cursor: pointer;
     color: $darkGray;
-
-    &:hover {
-        color: $black;
+    @include breakpoint(desktopOnly) {
+        margin-top: -0.9rem;
+        padding: 0.1rem;
+        @include circled-icon(1.4vw);
+        
+        &:hover {
+            background: $gray;
+            color: $white;
+        }
     }
 }

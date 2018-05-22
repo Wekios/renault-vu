@@ -117,19 +117,19 @@ box-shadow: 0px 1rem 2.2rem -0.4rem rgba(0,0,0,0.5);
 
 .faq-slider__arrows {
     display: inline-block;
+    cursor: pointer;
     padding: 0 1rem;
-
-    &:hover {
-        color: $black;
-        cursor: pointer;
-        @include breakpoint(desktopOnly) {
-            color: $white;
+    @include breakpoint(desktopOnly) {
+        padding: 0.1rem;
+        @include circled-icon(1.4vw);
+        
+        &:hover {
             background: $gray;
-            height: 1.6rem;
-            border-radius: 50%;
+            color: $white;
         }
     }
 }
+
 
 .faq-slider__arrows-left {
     bottom: -5rem;
