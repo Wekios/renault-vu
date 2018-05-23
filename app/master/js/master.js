@@ -3558,16 +3558,17 @@ $(document).ready(function () {
         hpSlider.slick('slickPause');
 	});
 
-	hpNext.on('mouseenter', function(){
+	hpNext.on('mouseenter click', function(){
 		var hpSlideCurrent = $('.hp-slider__slide.slick-slide.slick-current.slick-active');
-		hpSlideCurrent.next().css('opacity', '1');
-		hpSlideCurrent.animate({ "left": "-=50px" }, "slow" );
+		hpSlideCurrent.siblings().css('opacity', '1');
+		hpSlideCurrent.animate({ "left": "-=50px" }, "fast" );
 	});
 
 	hpNext.on('mouseleave', function(){
 		var hpSlideCurrent = $('.hp-slider__slide.slick-slide.slick-current.slick-active');
-		hpSlideCurrent.animate({ "left": "+=50px" }, "slow" );
-		hpSlideCurrent.next().css('opacity', '0');
+		hpSlideCurrent.animate({ "left": "+=50px" }, "fast", function(){
+            hpSlideCurrent.siblings().css('opacity', '0');
+        });
 	});
 
 	
