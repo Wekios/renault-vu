@@ -22,7 +22,31 @@
         e.stopPropagation();
         hpSlider.slick('slickNext');
         hpSlider.slick('slickPause');
-    });
+	});
+
+	hpNext.on('mouseenter', function(){
+		var hpSlideCurrent = $('.hp-slider__slide.slick-slide.slick-current.slick-active');
+		hpSlideCurrent.next().css('opacity', '1');
+		hpSlideCurrent.animate({ "left": "-=50px" }, "slow" );
+	});
+
+	hpNext.on('mouseleave', function(){
+		var hpSlideCurrent = $('.hp-slider__slide.slick-slide.slick-current.slick-active');
+		hpSlideCurrent.animate({ "left": "+=50px" }, "slow" );
+		hpSlideCurrent.next().css('opacity', '0');
+	});
+
+	
+	// hpNext.on('hover', function(){
+	// 	var $this = $(this); 
+	// 	var hpSlideCurrent = $('.hp-slider__slide.slick-slide.slick-current.slick-active');
+	// 	hpSlideCurrent.css('left', '2rem');
+	// 	$this.click(function(){
+	// 		hpSlideCurrent = hpSlideCurrent.prev();
+	// 		$('.hp-slider__slide').css('left', '-1376px');
+	// 		hpSlideCurrent.css('left', '2rem');
+	// 	});
+	// });
 
 
     // Counter Function

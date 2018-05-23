@@ -1722,6 +1722,8 @@ a img {
 .figure {
   display: inline-block;
   position: relative;
+  top: 0;
+  transition: all 0.2s ease-in-out;
   width: 100%; }
 
 @media (max-width: 767px) {
@@ -2657,11 +2659,11 @@ a img {
     @media (min-width: 768px) and (max-width: 1023px) {
       .footer__img {
         width: 22%;
-        margin: 0 auto 3vw; } }
+        margin-bottom: 3vw; } }
     @media (min-width: 1024px) {
       .footer__img {
         width: 9%;
-        margin: 0 auto 2.6vw; } }
+        margin-bottom: 2.6vw; } }
   .footer__nav {
     list-style-type: none;
     margin: 0;
@@ -7418,6 +7420,9 @@ html.diaporamaOpened, body.diaporamaOpened {
   .quiz-teaser--article {
     float: right;
     margin-top: 2.4rem; } }
+
+.figure:hover {
+  top: -1.5rem; }
 
 .article-faq__header-image {
   width: 100%; }
